@@ -1,0 +1,486 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={CH10009 Workshop Questions},
+  pdfauthor={Fiona Dickinson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{CH10009 Workshop Questions}
+\author{Fiona Dickinson}
+\date{2020-10-05}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{welcome}{%
+\chapter*{Welcome}\label{welcome}}
+\addcontentsline{toc}{chapter}{Welcome}
+
+The notes have been prepared in a package called BookDown for RStudio so that the equations are accessible to screen readers. However, by providing the notes as a .html webpage I can also embed short videos to further describe some of the topics. Further you can download the questions (and later the answers, top left of the screen) in a format that suits you (either pdf or epub) to view offline, or change the way this document appears for ease of reading.
+
+If you spot any typos or think there are any errors please let me know and I will do my best to fix them.
+
+\hypertarget{workshops-for-ch10009}{%
+\section*{Workshops for CH10009}\label{workshops-for-ch10009}}
+\addcontentsline{toc}{section}{Workshops for CH10009}
+
+The topics for LOILS each week are as follows:
+
+\begin{itemize}
+\tightlist
+\item
+  Week 1: General Q\&A
+\item
+  Week 2: Rearranging equations, units and standard form
+\item
+  Week 3: Logarithms and exponentials
+\item
+  Week 4: Tables and graphs
+\item
+  Week 5: Calculus - differentiation - the basics and the chain rule
+\item
+  Week 6: Calculus - differentiation - the product rule and partial differentiation
+\item
+  Week 7: Calculus - integration - the basics and definite integrals
+\item
+  Week 8: Some more examples of integration and revision
+\end{itemize}
+
+This `book' will be updated weekly with workshop questions, answers will be provided and some answers will include `process' as well as answer. Please contact me if you need help.
+
+I am using this format as it is an accessible format.
+
+\hypertarget{version-history}{%
+\section*{Version history}\label{version-history}}
+\addcontentsline{toc}{section}{Version history}
+
+The initial commit of this book is dated 2nd October 2020.
+
+\hypertarget{ch:Workshop1}{%
+\chapter{Week 1}\label{ch:Workshop1}}
+
+\hypertarget{sec:Prelim}{%
+\section{Preliminary infomation}\label{sec:Prelim}}
+
+\hypertarget{si-base-units}{%
+\subsection{SI base units}\label{si-base-units}}
+
+The SI system of base units has seven fundamental units from which the others are derived.
+
+\begin{longtable}[]{@{}cccc@{}}
+\caption{\label{tab:SIbase} The seven base units from which all others are dervied.}\tabularnewline
+\toprule
+SI base unit & symbol & quantity symbol (dimension) & quantity\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+SI base unit & symbol & quantity symbol (dimension) & quantity\tabularnewline
+\midrule
+\endhead
+kilogram & kg & M & mass\tabularnewline
+metre & m & L & length\tabularnewline
+second & s & T & time\tabularnewline
+ampere & A & I & electric current\tabularnewline
+kelvin & K & Θ & temperature\tabularnewline
+mole & mol & N & amount of substance\tabularnewline
+candela & cd & J & luminous intensity\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{si-derived-units}{%
+\subsection{SI Derived units}\label{si-derived-units}}
+
+\begin{longtable}[]{@{}ccccc@{}}
+\caption{\label{tab:SIderive} Some common SI derived units used in chemistry.}\tabularnewline
+\toprule
+symbol & SI derived unit & quantity & SI base units & other SI units\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+symbol & SI derived unit & quantity & SI base units & other SI units\tabularnewline
+\midrule
+\endhead
+Hz & hertz & frequency & s\textsuperscript{-1} &\tabularnewline
+N & newton & force & kg m s\textsuperscript{-2} &\tabularnewline
+Pa & pascal & pressure & kg m\textsuperscript{-1} s\textsuperscript{-2} & N m\textsuperscript{-2}\tabularnewline
+J & joule & energy & kg m\textsuperscript{2} s\textsuperscript{-2} & N m\tabularnewline
+W & watt & power & kg m\textsuperscript{2} s\textsuperscript{-3} & J s\textsuperscript{-1}\tabularnewline
+C & coulomb & electrical charge & A s &\tabularnewline
+V & volt & electrical potential & kg m\textsuperscript{2} s\textsuperscript{-3} A\textsuperscript{-1} & J C\textsuperscript{-1}\tabularnewline
+F & farad & electrical capacitance & kg\textsuperscript{-1} m\textsuperscript{-2} s\textsuperscript{4} A\textsuperscript{2} & C V\textsuperscript{-1}\tabularnewline
+Ω & ohm & electrical resistance & kg m\textsuperscript{2} s\textsuperscript{-3} A\textsuperscript{-2} & V A\textsuperscript{-1}\tabularnewline
+S & siemens & electrical conductance & kg\textsuperscript{-1} m\textsuperscript{-2} s\textsuperscript{3} A\textsuperscript{2} & A V\textsuperscript{-1} or 1/Ω\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{other-units-and-conversion-factors}{%
+\subsection{Other units and conversion factors}\label{other-units-and-conversion-factors}}
+
+There are a number of non-SI base or derived units which are in common usage which are useful to know and be able to convert between. Table \ref{tab:nonSI} contains a number of useful unit conversions.
+
+\begin{longtable}[]{@{}ccc@{}}
+\caption{\label{tab:nonSI} The relationship between some other common units and the SI system.}\tabularnewline
+\toprule
+unit & quantity & SI equivalant\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+unit & quantity & SI equivalant\tabularnewline
+\midrule
+\endhead
+torr (or mm Hg) & pressure & \(\frac{101325}{760}\) Pa\tabularnewline
+atm & pressure & 101325 Pa\tabularnewline
+bar & pressure & 100000 Pa\tabularnewline
+eV & energy & 1.602176634 × 10\textsuperscript{-19} J\tabularnewline
+cal & energy & 4.184 J\tabularnewline
+Å & length & 1 × 10\textsuperscript{-10} m\tabularnewline
+\bottomrule
+\end{longtable}
+
+There are myriad other units in use, either with historical or geographic preference, or just for niche purposes (where would we be without olympic swimming pools or London buses). Examples such as the mile, furlong or beard-second are all units of length.
+
+Further, the unit ºC is formally an SI derived unit. The temperature in Kelvin is:
+
+\begin{equation*}
+T (\textrm{K}) = T (\textrm{K}) + 273.15
+\end{equation*}
+
+\hypertarget{si-prefixes-and-standard-form}{%
+\subsection{SI prefixes and standard form}\label{si-prefixes-and-standard-form}}
+
+In general lower case prefixes are used for negative powers and upper case prefixes are used for positive powers, however k (kilo) is an obvious exception to this rule. (Other exceptions are da (deca, 10\textsuperscript{1}) and h (hecto, 10\textsuperscript{2})).
+
+\begin{longtable}[]{@{}ccc@{}}
+\caption{\label{tab:SIprefix} The more common SI prefixes used in chemistry.}\tabularnewline
+\toprule
+SI prefix & SI prefix `name' & standard form multiplier\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+SI prefix & SI prefix `name' & standard form multiplier\tabularnewline
+\midrule
+\endhead
+y & yocto & 10\textsuperscript{-24}\tabularnewline
+z & zepto & 10\textsuperscript{-21}\tabularnewline
+a & atto & 10\textsuperscript{-18}\tabularnewline
+f & femto & 10\textsuperscript{-15}\tabularnewline
+p & pico & 10\textsuperscript{-12}\tabularnewline
+n & nano & 10\textsuperscript{-9}\tabularnewline
+μ & micro & 10\textsuperscript{-6}\tabularnewline
+m & milli & 10\textsuperscript{-3}\tabularnewline
+c & centi & 10\textsuperscript{-2}\tabularnewline
+d & deci & 10\textsuperscript{-1}\tabularnewline
+& &\tabularnewline
+k & kilo & 10\textsuperscript{3}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{sec:Questions}{%
+\section{Questions}\label{sec:Questions}}
+
+\hypertarget{subsec:rearrange}{%
+\subsection{Rearranging equations}\label{subsec:rearrange}}
+
+Answers for these questions are in Section \ref{subsec:rearrangeans}.
+
+For each of the following rearrange to make the specified variable the subject of the equation.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \([A]= [A]_0 - kt\), \(t\)
+\item
+  \(E = \frac{1}{2}mv^2\), \(v\)
+\item
+  \(F = \frac{q_1 q_2}{4 \pi \varepsilon _0 r^2}\), \(r\)
+\item
+  \(\frac{1}{[A]}=\frac{1}{[A]_0}+kt\), \([A]_0\)
+\item
+  \(\ln (x_A)=-\frac{\Delta H}{R}(\frac{1}{T_1}-\frac{1}{T_2})\), \(T_1\)
+\item
+  \(K_a=\frac{\alpha ^2 c}{1- \alpha}\), \(\alpha\)
+\end{enumerate}
+
+\hypertarget{subsec:Unitconv}{%
+\subsection{Unit conversion questions}\label{subsec:Unitconv}}
+
+Answers for these questions are in Section \ref{subsec:Unitconvans}.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Convert the following:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    3.4 µm to mm and m
+  \item
+    270.4 g mol\textsuperscript{-1} to kg mol\textsuperscript{-1} and yg (molecule\textsuperscript{-1})
+  \item
+    23.4 μg dm\textsuperscript{−3} to mg dm\textsuperscript{−3}, g m\textsuperscript{−3}, and kg m\textsuperscript{−3}
+  \item
+    17.5 µHz to Hz
+  \item
+    5796 cm\textsuperscript{-1} to µm\textsuperscript{-1} and m\textsuperscript{-1}
+  \end{enumerate}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  If a box has dimensions 0.234 m x 34.5 cm x 26.8 mm. What is the volume of the box in:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    cm\textsuperscript{3}?
+  \item
+    dm\textsuperscript{3}?
+  \item
+    m\textsuperscript{3}?
+  \item
+    Å\textsuperscript{3}?
+  \end{itemize}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+The Gibbs free energy of a reaction, \(\Delta G\) is given by equation \eqref{eq:gibbs}.
+
+\begin{equation}
+\Delta G = \Delta H - T \Delta S
+\label{eq:gibbs}
+\end{equation}
+
+Determine the value of \(\Delta G\) at 40 ºC when the enthalpy of reaction, \(\Delta H\) = -10.235 kJ mol\textsuperscript{-1} and the molar entropy, \(\Delta S\) = +34 J K\textsuperscript{-1} mol\textsuperscript{-1}
+
+\hypertarget{subsec:detunits}{%
+\subsection{Determining units of variables in equations}\label{subsec:detunits}}
+
+Answers for these questions are in Section \ref{subsec:detunitsans}.
+
+The ideal gas equation is given in equation \eqref{eq:idealgas}.
+
+\begin{equation}
+pV = n\textrm{R}T
+\label{eq:idealgas}
+\end{equation}
+
+The units of the variables are:
+\(p\) (pressure), Pa (pascals)
+\(V\) (volume), m\textsuperscript{3}
+\(n\) (number of moles), mol
+\(T\) (absolute temperature), K
+
+\begin{itemize}
+\item
+  Determine the SI base units of the gas constant, R.
+\item
+  Determine the pressure in mmHg of 1.00 mmol of an ideal gas that occupies 1.65 dm\textsuperscript{3} at 25 ºC.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+The famous Einstein equation \(E=mc^2\) is more properly written as:
+
+\begin{equation*}
+E^2 = p^2 c^2 + m_0^2 c^4
+\end{equation*}
+
+Determine the units of the variable \(p\).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+At low temperatures the molar heat capacity of a material \(c_{p, m}\) (J K\textsuperscript{-1} mol\textsuperscript{-1}) is given by equation \eqref{eq:lowtempheat}.
+
+\begin{equation}
+c_{p, m}= a T^3
+\label{eq:lowtempheat}
+\end{equation}
+
+Determine the units of the constant, a.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Determine the units of the coulomb constant, \(k_e\), in equation \eqref{eq:coulomb}, given that r is the separation of two charges, F the force of attraction between the two charges, and \(q_x\) is teh charge (in coulombs, C) on each of the particles.
+
+\begin{equation}
+F = k_e \frac{q_1 q_2}{r^2}
+\label{eq:coulomb}
+\end{equation}
+
+\hypertarget{sec:Answers}{%
+\section{Answers}\label{sec:Answers}}
+
+\hypertarget{subsec:rearrangeans}{%
+\subsection{Rearranging equations answers}\label{subsec:rearrangeans}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(t =\frac{[A]_0-[A]}{k}\)
+\item
+  \(v = \sqrt {\frac{2E}{m}}\)
+\item
+  \(r = \sqrt{\frac{q_1 q_2}{4 \pi \varepsilon_0 F }}\)
+\item
+  \([A]_0=\frac{[A]}{1-[A]kt}\)
+\item
+  \(\frac{\Delta H T_2}{\Delta H - R T \ln {x_A}}\)
+\item
+  \(\alpha = \frac{-K_a \pm \sqrt{K_a^2 + 4 c K_a}}{2c}\)
+\end{enumerate}
+
+\hypertarget{subsec:Unitconvans}{%
+\subsection{Unit conversion answers}\label{subsec:Unitconvans}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    3.4 × 10\textsuperscript{-3} mm; 3.4 × 10\textsuperscript{-6} m
+  \item
+    0.2704 kg mol\textsuperscript{-1}; 449.0 yg
+  \item
+    23.4 × 10\textsuperscript{-3} mg dm\textsuperscript{−3}; 23.4 × 10\textsuperscript{-3} g m\textsuperscript{−3}; and 23.4 × 10\textsuperscript{-6} kg m\textsuperscript{−3}
+  \item
+    17.5 × 10\textsuperscript{-6} Hz
+  \item
+    0.5796 µm\textsuperscript{-1} and 5.796 × 10\textsuperscript{5} m\textsuperscript{-1}
+  \end{enumerate}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{itemize}
+\item
+  \begin{itemize}
+  \tightlist
+  \item
+    2.16 × 10\textsuperscript{3} cm\textsuperscript{3}
+  \item
+    2.16 dm\textsuperscript{3}
+  \item
+    2.16 × 10\textsuperscript{-3} m\textsuperscript{3}
+  \item
+    2.16 × 10\textsuperscript{27} Å\textsuperscript{3}
+  \end{itemize}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+0.0 kJ mol\textsuperscript{-1} - please note this value is correct to the appropriate sig figs
+
+\hypertarget{subsec:detunitsans}{%
+\subsection{Determining units of variables in equations answers}\label{subsec:detunitsans}}
+
+\begin{itemize}
+\tightlist
+\item
+  kg m\textsuperscript{2} s\textsuperscript{-2} K\textsuperscript{-1} mol\textsuperscript{-1} (this is more ususally written as J K\textsuperscript{-1} mol\textsuperscript{-1})
+\item
+  11.3 mm Hg (1.50 kPa)
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+m s\textsuperscript{-1}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+J K\textsuperscript{-4} mol\textsuperscript{-1}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+kg m\textsuperscript{3} s\textsuperscript{-4} A\textsuperscript{-2} or N m\textsuperscript{2} C\textsuperscript{-2}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

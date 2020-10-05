@@ -38,7 +38,26 @@ Table: (\#tab:SIderive) Some common SI derived units used in chemistry.
 
 ### Other units and conversion factors
 
+There are a number of non-SI base or derived units which are in common usage which are useful to know and be able to convert between. Table \@ref(tab:nonSI) contains a number of useful unit conversions.
 
+Table: (\#tab:nonSI) The relationship between some other common units and the SI system.
+
+| unit | quantity  | SI equivalant |
+|:--------:|:--------:|:--------:|
+| torr (or mm Hg) | pressure | $\frac{101325}{760}$ Pa |
+| atm | pressure | 101325 Pa |
+| bar | pressure | 100000 Pa |
+| eV | energy | 1.602176634 × 10^-19^ J |
+| cal | energy | 4.184 J |
+| Å | length | 1 × 10^-10^ m|
+
+There are myriad other units in use, either with  historical or geographic preference, or just for niche purposes (where would we be without olympic swimming pools or London buses). Examples such as the mile, furlong or beard-second are all units of length.
+
+Further, the unit ºC is formally an SI derived unit. The temperature in Kelvin is:
+
+\begin{equation*}
+T (\textrm{K}) = T (\textrm{K}) + 273.15
+\end{equation*}
 
 ### SI prefixes and standard form
 
@@ -66,16 +85,29 @@ Table: (\#tab:SIprefix) The more common SI prefixes used in chemistry.
 
 ## Questions {#sec:Questions}
 
+### Rearranging equations {#subsec:rearrange}
+
+Answers for these questions are in Section \@ref(subsec:rearrangeans).
+
+For each of the following rearrange to make the specified variable the subject of the equation.
+
+1. $[A]= [A]_0 - kt$, $t$
+1. $E = \frac{1}{2}mv^2$, $v$
+1. $F = \frac{q_1 q_2}{4 \pi \varepsilon _0 r^2}$, $r$
+1. $\frac{1}{[A]}=\frac{1}{[A]_0}+kt$, $[A]_0$
+1. $\ln (x_A)=-\frac{\Delta H}{R}(\frac{1}{T_1}-\frac{1}{T_2})$, $T_1$
+1. $K_a=\frac{\alpha ^2 c}{1- \alpha}$, $\alpha$
+
 ### Unit conversion questions {#subsec:Unitconv}
 
 Answers for these questions are in Section \@ref(subsec:Unitconvans).
 
-- Convert the following: 
-    - 3.4 µm to mm and m
-    - 270.4 g mol^-1^ to kg mol^-1^ and yg (molecule^-1^)
-    - 23.4 μg dm^−3^ to mg dm^−3^, g m^−3^, and kg m^−3^
-    - 17.5 µHz to Hz
-    - 5796 cm^-1^ to µm^-1^ and m^-1^
+1. Convert the following: 
+    a. 3.4 µm to mm and m
+    a. 270.4 g mol^-1^ to kg mol^-1^ and yg (molecule^-1^)
+    a. 23.4 μg dm^−3^ to mg dm^−3^, g m^−3^, and kg m^−3^
+    a. 17.5 µHz to Hz
+    a. 5796 cm^-1^ to µm^-1^ and m^-1^
 
 ***
 
@@ -96,8 +128,10 @@ The Gibbs free energy of a reaction, $\Delta G$ is given by equation \@ref(eq:gi
 
 Determine the value of $\Delta G$ at 40 ºC when the enthalpy of reaction, $\Delta H$ = -10.235 kJ mol^-1^ and the molar entropy, $\Delta S$ = +34 J K^-1^ mol^-1^
 
+
+
 ### Determining units of variables in equations {#subsec:detunits}
-Answers for these questions are in Section \@ref(subsec:Unitconvans).
+Answers for these questions are in Section \@ref(subsec:detunitsans).
 
 The ideal gas equation is given in equation \@ref(eq:idealgas).
 
@@ -114,7 +148,7 @@ The units of the variables are:
 
 -  Determine the SI base units of the gas constant, R.
 
-- Determine the pressure of 1.00 mmol of an ideal gas that occupies 1.65 dm^3^ at 25 ºC.
+- Determine the pressure in mmHg of 1.00 mmol of an ideal gas that occupies 1.65 dm^3^ at 25 ºC.
 
 ***
 
@@ -149,14 +183,24 @@ F = k_e \frac{q_1 q_2}{r^2}
 
 ## Answers {#sec:Answers}
 
+### Rearranging equations answers {#subsec:rearrangeans}
+
+1. $t =\frac{[A]_0-[A]}{k}$
+1. $v = \sqrt {\frac{2E}{m}}$
+1. $r = \sqrt{\frac{q_1 q_2}{4 \pi \varepsilon_0 F }}$
+1. $[A]_0=\frac{[A]}{1-[A]kt}$
+1. $\frac{\Delta H T_2}{\Delta H - R T \ln {x_A}}$
+1. $\alpha = \frac{-K_a \pm \sqrt{K_a^2 + 4 c K_a}}{2c}$
+
+
 ### Unit conversion answers {#subsec:Unitconvans}
 
-- 
-    - 3.4 × 10^-3^ mm;    3.4 × 10^-6^ m
-    - 0.2704 kg mol^-1^; 449.0 yg
-    - 23.4 × 10^-3^ mg dm^−3^;    23.4 × 10^-3^ g m^−3^;   and 23.4 × 10^-6^ kg m^−3^
-    - 17.5 × 10^-6^ Hz
-    - 0.5796 µm^-1^ and 5.796 × 10^5^ m^-1^
+1. 
+    a. 3.4 × 10^-3^ mm;    3.4 × 10^-6^ m
+    a. 0.2704 kg mol^-1^; 449.0 yg
+    a. 23.4 × 10^-3^ mg dm^−3^;    23.4 × 10^-3^ g m^−3^;   and 23.4 × 10^-6^ kg m^−3^
+    a. 17.5 × 10^-6^ Hz
+    a. 0.5796 µm^-1^ and 5.796 × 10^5^ m^-1^
  
 ***
 
@@ -173,7 +217,7 @@ F = k_e \frac{q_1 q_2}{r^2}
 ### Determining units of variables in equations answers {#subsec:detunitsans}
 
 - kg m^2^ s^-2^ K^-1^ mol^-1^ (this is more ususally written as J K^-1^ mol^-1^)
-- 1.50 kPa
+- 11.3 mm Hg (1.50 kPa)
 
 *** 
 
