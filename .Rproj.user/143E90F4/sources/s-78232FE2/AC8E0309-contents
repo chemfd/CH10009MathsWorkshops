@@ -162,10 +162,10 @@ Determine the units of the variable $p$.
 
 ***
 
-3. At low temperatures the molar heat capacity of a material $c_{p, m}$ (J K^-1^ mol^-1^) is given by equation \@ref(eq:lowtempheat).
+3. At low temperatures the molar heat capacity of a material $C_{p, m}$ (J K^-1^ mol^-1^) is given by equation \@ref(eq:lowtempheat).
 
 \begin{equation}
-c_{p, m}= a T^3
+C_{p, m}= a T^3
 (\#eq:lowtempheat)
 \end{equation}
 
@@ -173,7 +173,7 @@ Determine the units of the constant, a.
 
 ***
 
-4. Determine the units of the coulomb constant, $k_e$, in equation \@ref(eq:coulomb), given that r is the separation of two charges, F the force of attraction between the two charges, and $q_x$ is teh charge (in coulombs, C) on each of the particles.
+4. Determine the units of the coulomb constant, $k_e$, in equation \@ref(eq:coulomb), given that r is the separation of two charges, F the force of attraction between the two charges, and $q_x$ is the charge (in coulombs, C) on each of the particles.
 
 \begin{equation}
 F = k_e \frac{q_1 q_2}{r^2}
@@ -206,9 +206,9 @@ F = k_e \frac{q_1 q_2}{r^2}
     
    <div style="text-align: center;"> <iframe width="847" height="635" src="https://www.youtube.com/embed/IKM6a3VxWKs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
-    a. 23.4 × 10^-3^ mg dm^−3^;    23.4 × 10^-3^ g m^−3^;   and 23.4 × 10^-6^ kg m^−3^
-    a. 17.5 × 10^-6^ Hz
-    a. 0.5796 µm^-1^ and 5.796 × 10^5^ m^-1^
+    c. 23.4 × 10^-3^ mg dm^−3^;    23.4 × 10^-3^ g m^−3^;   and 23.4 × 10^-6^ kg m^−3^
+    d. 17.5 × 10^-6^ Hz
+    e. 0.5796 µm^-1^ and 5.796 × 10^5^ m^-1^
  
 ***
 

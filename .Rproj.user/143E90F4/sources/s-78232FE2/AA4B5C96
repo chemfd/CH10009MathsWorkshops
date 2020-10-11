@@ -3,22 +3,22 @@
     "path": "~/Documents/GitHub/CH10009MathsWorkshops/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "2181697128",
+    "hash": "2702611193",
     "contents": "",
     "dirty": false,
     "created": 1602284296848.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
-        "cursorPosition": "38,56",
-        "scrollLine": "0"
+        "cursorPosition": "39,0",
+        "scrollLine": "16"
     },
     "folds": "",
-    "lastKnownWriteTime": 1602284329,
+    "lastKnownWriteTime": 1602426441,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1602284329705,
+    "last_content_update": 1602426441743,
     "read_only": false,
     "read_only_alternatives": []
 }
