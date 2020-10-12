@@ -1,0 +1,144 @@
+# Week 2 {#ch:Workshop2}
+
+## Preliminary infomation {#sec:Prelim2}
+
+
+
+### Rules of powers and exponents {#sec:rulespowers}
+
+\begin{equation}
+m^a \times m^b = m^{a+b}
+(\#eq:combpowermult)
+\end{equation}
+
+\begin{equation}
+\frac{p^a}{p^b} = p^{a - b}
+(\#eq:combpowerdiv)
+\end{equation}
+
+\begin{equation}
+\left(q^a\right)^b =  q^{a\times b}
+(\#eq:combpowerraise)
+\end{equation}
+
+*Anything* raised to the power 0 is equal to 1.
+
+\begin{equation*}
+x^0=1
+\end{equation*}
+
+
+Roots may be expressed as fractional powers:
+
+\begin{equation}
+\sqrt[n]{x}=x^{\frac{1}{n}}
+(\#eq:fracpower)
+\end{equation}
+
+
+When we see negative powers it is the same as the inverser of the positive power.
+
+\begin{equation}
+x^{-n}=x^{\frac{1}{x^n}}
+(\#eq:negpower)
+\end{equation}
+
+### Rules of logs {#sec:rulelog}
+
+Logs are the inverse function of exponents, and can have many bases:
+
+When we use 'natural logs' we use the terminology $\ln$, a natural log is the inverse of '$e$'.
+
+\begin{equation}
+x = \ln e^x
+(\#eq:natlog)
+\end{equation}
+
+Other logs are ususally marked with the *base*, however if no base is indicated it should be considered that this is $\log_{10}$.
+
+\begin{equation}
+x = \log_{10} 10^x
+(\#eq:10log)
+\end{equation}
+
+When combining logs (these rules are the same regardless of base):
+
+\begin{equation}
+\log_x A + \log_x B = \log_x (AB)
+(\#eq:logadd)
+\end{equation}
+
+\begin{equation}
+\log_x A  - \log_x B = \log_x \left(\frac{A}{B}\right)
+(\#eq:logsub)
+\end{equation}
+
+\begin{equation}
+\log_x (A^n)= n \log_x A
+(\#eq:logpower)
+\end{equation}
+
+If we want to change the bases of logs (such as in the Beer-Lambert law):
+
+\begin{equation}
+log_b A = \frac{\log_x A}{\log_x b}
+(\#eq:convpower)
+\end{equation}
+
+
+## Questions {#sec:Questions2}
+
+### Simple log practice {#sec:logpractice}
+
+Evaluate the following expressions:
+
+1. $\log_{10} 10^6$
+1. $\log_{10} 10^{-5}$
+1. $\log_{10} (5^4 \times 3^{-2})$
+1. $\ln {\pi 6^2}$
+1. $e^{\log_e x}=\ln y$
+
+### Rearranging equations {#sec:logrearrange}
+
+1. Rearrange the following to make the highlighted term the subject:
+    a. $\Delta S = k_B \ln W$, $W$
+    a. $\Delta S = nR \ln \frac{V_f}{V_i}$, $V_f$
+    a. $\nu =\frac{1}{2 \pi} \left(\frac{k}{\mu}\right)^\frac{1}{2}$
+    a. $\ln K = \frac{nFE}{RT}$, $E$
+    a. $\ln K'- \ln K = \frac{\Delta H}{R}\left(\frac{1}{T}-\frac{1}{T'}\right)$, $\Delta H$
+
+***
+
+2. The integrated rate equation for a first order reaction is $[A]=[A]_0 e^{-kt}$. 
+    a. Rearrange this equation in order to make $k$ the subject.
+    a. What units must k have?
+    
+
+### pK_a question. {#sec:pKa}
+
+The degree of dissociation of an acid, $\alpha$ is related to the acid dissociation constant, $K_a$ and the concentration of the acid, c, as shown in equation \@ref(eq:aciddissociation)
+
+\begin{equation}
+K_a=\frac{\alpha ^2 c}{1-\alpha}
+(\#eq:aciddissociation)
+\end{equation}
+
+Determine the pH of hydrofluoric acid solutions (p$K_a= 3.1$) when the concentration of acid is:
+    a. 1.00 M
+    a. 2.50 mM
+
+### pH question. {#sec:pH}
+
+HCl fully dissociates in water. If 5 cm^3^ (measured using a glass pipette) of 38% w/w HCl solution ($\rho$ = 1.189 kg dm^−3^) is 'added to 20 cm^3^ water'made up' in a 25 cm^3^ standard flask.
+
+a. What is the pH of the resulting solution?
+a. What mass of NaOH is required to neutralise the resulting solution?
+
+*Hint: w/w means weight-weight, i.e. the number of g in 100 g. In this case 38 g of HCl in 100 g total of mixture.*
+
+*Hint: you will need to think about units and rearranging equations from Week \@ref(ch:Workshop1).*
+
+
+
+## Answers {#sec:Answers2}
+

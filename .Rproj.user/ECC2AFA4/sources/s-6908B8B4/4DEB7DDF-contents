@@ -111,15 +111,15 @@ Answers for these questions are in Section \@ref(subsec:Unitconvans).
 
 ***
 
-- If a box has dimensions 0.234 m x 34.5 cm x 26.8 mm. What is the volume of the box in:
-    - cm^3^?
-    - dm^3^?
-    - m^3^?
-    - Å^3^?
+2. If a box has dimensions 0.234 m x 34.5 cm x 26.8 mm. What is the volume of the box in:
+    a.  cm^3^?
+    a.  dm^3^?
+    a.  m^3^?
+    a.  Å^3^?
     
 ***
 
-The Gibbs free energy of a reaction, $\Delta G$ is given by equation \@ref(eq:gibbs).
+3. The Gibbs free energy of a reaction, $\Delta G$ is given by equation \@ref(eq:gibbs).
 
 \begin{equation}
 \Delta G = \Delta H - T \Delta S
@@ -133,7 +133,7 @@ Determine the value of $\Delta G$ at 40 ºC when the enthalpy of reaction, $\Del
 ### Determining units of variables in equations {#subsec:detunits}
 Answers for these questions are in Section \@ref(subsec:detunitsans).
 
-The ideal gas equation is given in equation \@ref(eq:idealgas).
+1. The ideal gas equation is given in equation \@ref(eq:idealgas).
 
 \begin{equation}
 pV = n\textrm{R}T
@@ -146,13 +146,13 @@ The units of the variables are:
     $n$ (number of moles), mol
     $T$ (absolute temperature), K
 
--  Determine the SI base units of the gas constant, R.
+a.  Determine the SI base units of the gas constant, R.
 
-- Determine the pressure in mmHg of 1.00 mmol of an ideal gas that occupies 1.65 dm^3^ at 25 ºC.
+a. Determine the pressure in mmHg of 1.00 mmol of an ideal gas that occupies 1.65 dm^3^ at 25 ºC.
 
 ***
 
-The famous Einstein equation $E=mc^2$ is more properly written as:
+2. The famous Einstein equation $E=mc^2$ is more properly written as:
 
 \begin{equation*}
 E^2 = p^2 c^2 + m_0^2 c^4
@@ -162,10 +162,10 @@ Determine the units of the variable $p$.
 
 ***
 
-At low temperatures the molar heat capacity of a material $c_{p, m}$ (J K^-1^ mol^-1^) is given by equation \@ref(eq:lowtempheat).
+3. At low temperatures the molar heat capacity of a material $C_{p, m}$ (J K^-1^ mol^-1^) is given by equation \@ref(eq:lowtempheat).
 
 \begin{equation}
-c_{p, m}= a T^3
+C_{p, m}= a T^3
 (\#eq:lowtempheat)
 \end{equation}
 
@@ -173,7 +173,7 @@ Determine the units of the constant, a.
 
 ***
 
-Determine the units of the coulomb constant, $k_e$, in equation \@ref(eq:coulomb), given that r is the separation of two charges, F the force of attraction between the two charges, and $q_x$ is teh charge (in coulombs, C) on each of the particles.
+4. Determine the units of the coulomb constant, $k_e$, in equation \@ref(eq:coulomb), given that r is the separation of two charges, F the force of attraction between the two charges, and $q_x$ is the charge (in coulombs, C) on each of the particles.
 
 \begin{equation}
 F = k_e \frac{q_1 q_2}{r^2}
@@ -190,7 +190,12 @@ F = k_e \frac{q_1 q_2}{r^2}
 1. $r = \sqrt{\frac{q_1 q_2}{4 \pi \varepsilon_0 F }}$
 1. $[A]_0=\frac{[A]}{1-[A]kt}$
 1. $\frac{\Delta H T_2}{\Delta H - R T \ln {x_A}}$
+
+<div style="text-align: center;"><iframe width="847" height="635" src="https://www.youtube.com/embed/WmryM91dcXE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 1. $\alpha = \frac{-K_a \pm \sqrt{K_a^2 + 4 c K_a}}{2c}$
+
+<div style="text-align: center;"><iframe width="847" height="635" src="https://www.youtube.com/embed/F7em5K2b4to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Unit conversion answers {#subsec:Unitconvans}
@@ -198,36 +203,45 @@ F = k_e \frac{q_1 q_2}{r^2}
 1. 
     a. 3.4 × 10^-3^ mm;    3.4 × 10^-6^ m
     a. 0.2704 kg mol^-1^; 449.0 yg
-    a. 23.4 × 10^-3^ mg dm^−3^;    23.4 × 10^-3^ g m^−3^;   and 23.4 × 10^-6^ kg m^−3^
-    a. 17.5 × 10^-6^ Hz
-    a. 0.5796 µm^-1^ and 5.796 × 10^5^ m^-1^
+    
+   <div style="text-align: center;"> <iframe width="847" height="635" src="https://www.youtube.com/embed/IKM6a3VxWKs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    c. 23.4 × 10^-3^ mg dm^−3^;    23.4 × 10^-3^ g m^−3^;   and 23.4 × 10^-6^ kg m^−3^
+    d. 17.5 × 10^-6^ Hz
+    e. 0.5796 µm^-1^ and 5.796 × 10^5^ m^-1^
  
 ***
 
-- 
-    - 2.16 × 10^3^ cm^3^
-    - 2.16 dm^3^
-    - 2.16 × 10^-3^ m^3^
-    - 2.16 × 10^27^ Å^3^
+2. 
+    a. 2.16 × 10^3^ cm^3^
+    a. 2.16 dm^3^
+    a. 2.16 × 10^-3^ m^3^
+    a. 2.16 × 10^27^ Å^3^
     
 ***
 
-0.0 kJ mol^-1^ - please note this value is correct to the appropriate sig figs
+3. -21 kJ mol^-1^ - please note this value is correct to the appropriate sig figs
     
 ### Determining units of variables in equations answers {#subsec:detunitsans}
 
-- kg m^2^ s^-2^ K^-1^ mol^-1^ (this is more ususally written as J K^-1^ mol^-1^)
-- 11.3 mm Hg (1.50 kPa)
+1.
+    a. - kg m^2^ s^-2^ K^-1^ mol^-1^ (this is more ususally written as J K^-1^ mol^-1^)
+    a. - 11.3 mm Hg (1.50 kPa)
 
 *** 
 
-m s^-1^
+2. kg m s^-1^
+
+<div style="text-align: center;"><iframe width="847" height="635" src="https://www.youtube.com/embed/3cuSZZF3Z4Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ***
 
-J K^-4^ mol^-1^
+3. J K^-4^ mol^-1^
+
+<div style="text-align: center;"><iframe width="847" height="635" src="https://www.youtube.com/embed/SECV4uuki3s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ***
 
-kg m^3^ s^-4^ A^-2^ or N m^2^ C^-2^
+4. kg m^3^ s^-4^ A^-2^ or N m^2^ C^-2^
 
+<div style="text-align: center;"><iframe width="847" height="635" src="https://www.youtube.com/embed/DsxrbDyCjTU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

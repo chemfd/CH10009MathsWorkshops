@@ -80,7 +80,7 @@
 
 \title{CH10009 Workshop Questions}
 \author{Fiona Dickinson}
-\date{2020-10-11}
+\date{2020-10-12}
 
 \begin{document}
 \maketitle
@@ -130,6 +130,8 @@ I am using this format as it is an accessible format.
 \hypertarget{version-history}{%
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
+
+Week 2 workshop released 12th October 2020.
 
 Some more video answers for workshop 1 embedded 11th October 2020.
 
@@ -567,6 +569,195 @@ F = k_e \frac{q_1 q_2}{r^2}
 \item
   kg m\textsuperscript{3} s\textsuperscript{-4} A\textsuperscript{-2} or N m\textsuperscript{2} C\textsuperscript{-2}
 \end{enumerate}
+
+\hypertarget{ch:Workshop2}{%
+\chapter{Week 2}\label{ch:Workshop2}}
+
+\hypertarget{sec:Prelim2}{%
+\section{Preliminary infomation}\label{sec:Prelim2}}
+
+\hypertarget{sec:rulespowers}{%
+\subsection{Rules of powers and exponents}\label{sec:rulespowers}}
+
+\begin{equation}
+m^a \times m^b = m^{a+b}
+\label{eq:combpowermult}
+\end{equation}
+
+\begin{equation}
+\frac{p^a}{p^b} = p^{a - b}
+\label{eq:combpowerdiv}
+\end{equation}
+
+\begin{equation}
+\left(q^a\right)^b =  q^{a\times b}
+\label{eq:combpowerraise}
+\end{equation}
+
+\emph{Anything} raised to the power 0 is equal to 1.
+
+\begin{equation*}
+x^0=1
+\end{equation*}
+
+Roots may be expressed as fractional powers:
+
+\begin{equation}
+\sqrt[n]{x}=x^{\frac{1}{n}}
+\label{eq:fracpower}
+\end{equation}
+
+When we see negative powers it is the same as the inverser of the positive power.
+
+\begin{equation}
+x^{-n}=x^{\frac{1}{x^n}}
+\label{eq:negpower}
+\end{equation}
+
+\hypertarget{sec:rulelog}{%
+\subsection{Rules of logs}\label{sec:rulelog}}
+
+Logs are the inverse function of exponents, and can have many bases:
+
+When we use `natural logs' we use the terminology \(\ln\), a natural log is the inverse of `\(e\)'.
+
+\begin{equation}
+x = \ln e^x
+\label{eq:natlog}
+\end{equation}
+
+Other logs are ususally marked with the \emph{base}, however if no base is indicated it should be considered that this is \(\log_{10}\).
+
+\begin{equation}
+x = \log_{10} 10^x
+\label{eq:10log}
+\end{equation}
+
+When combining logs (these rules are the same regardless of base):
+
+\begin{equation}
+\log_x A + \log_x B = \log_x (AB)
+\label{eq:logadd}
+\end{equation}
+
+\begin{equation}
+\log_x A  - \log_x B = \log_x \left(\frac{A}{B}\right)
+\label{eq:logsub}
+\end{equation}
+
+\begin{equation}
+\log_x (A^n)= n \log_x A
+\label{eq:logpower}
+\end{equation}
+
+If we want to change the bases of logs (such as in the Beer-Lambert law):
+
+\begin{equation}
+log_b A = \frac{\log_x A}{\log_x b}
+\label{eq:convpower}
+\end{equation}
+
+\hypertarget{sec:Questions2}{%
+\section{Questions}\label{sec:Questions2}}
+
+\hypertarget{sec:logpractice}{%
+\subsection{Simple log practice}\label{sec:logpractice}}
+
+Evaluate the following expressions:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(\log_{10} 10^6\)
+\item
+  \(\log_{10} 10^{-5}\)
+\item
+  \(\log_{10} (5^4 \times 3^{-2})\)
+\item
+  \(\ln {\pi 6^2}\)
+\item
+  \(e^{\log_e x}=\ln y\)
+\end{enumerate}
+
+\hypertarget{sec:logrearrange}{%
+\subsection{Rearranging equations}\label{sec:logrearrange}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Rearrange the following to make the highlighted term the subject:
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    \(\Delta S = k_B \ln W\), \(W\)
+  \item
+    \(\Delta S = nR \ln \frac{V_f}{V_i}\), \(V_f\)
+  \item
+    \(\nu =\frac{1}{2 \pi} \left(\frac{k}{\mu}\right)^\frac{1}{2}\)
+  \item
+    \(\ln K = \frac{nFE}{RT}\), \(E\)
+  \item
+    \(\ln K'- \ln K = \frac{\Delta H}{R}\left(\frac{1}{T}-\frac{1}{T'}\right)\), \(\Delta H\)
+  \end{enumerate}
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  The integrated rate equation for a first order reaction is \([A]=[A]_0 e^{-kt}\).
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Rearrange this equation in order to make \(k\) the subject.
+  \item
+    What units must k have?
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{sec:pKa}{%
+\subsection{pK\_a question.}\label{sec:pKa}}
+
+The degree of dissociation of an acid, \(\alpha\) is related to the acid dissociation constant, \(K_a\) and the concentration of the acid, c, as shown in equation \eqref{eq:aciddissociation}
+
+\begin{equation}
+K_a=\frac{\alpha ^2 c}{1-\alpha}
+\label{eq:aciddissociation}
+\end{equation}
+
+Determine the pH of hydrofluoric acid solutions (p\(K_a= 3.1\)) when the concentration of acid is:
+a. 1.00 M
+a. 2.50 mM
+
+\hypertarget{sec:pH}{%
+\subsection{pH question.}\label{sec:pH}}
+
+HCl fully dissociates in water. If 5 cm\textsuperscript{3} (measured using a glass pipette) of 38\% w/w HCl solution (\(\rho\) = 1.189 kg dm\textsuperscript{−3}) is `added to 20 cm\textsuperscript{3} water'made up' in a 25 cm\textsuperscript{3} standard flask.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  What is the pH of the resulting solution?
+\item
+  What mass of NaOH is required to neutralise the resulting solution?
+\end{enumerate}
+
+\emph{Hint: w/w means weight-weight, i.e.~the number of g in 100 g. In this case 38 g of HCl in 100 g total of mixture.}
+
+\emph{Hint: you will need to think about units and rearranging equations from Week \ref{ch:Workshop1}.}
+
+\hypertarget{sec:Answers2}{%
+\section{Answers}\label{sec:Answers2}}
 
   \bibliography{book.bib,packages.bib}
 
