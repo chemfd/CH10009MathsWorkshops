@@ -1,0 +1,175 @@
+# Week 3 {#ch:Workshop3}
+
+## Preliminary infomation {#sec:Prelim3}
+
+### Presentation of units on tables and graphs {#subsec:units}
+
+Your tables should have units expressed in the column headers where appropriate, and uncertainties should be expressed in the header if they are constant across the whole range, or in parentheses for each measurement if different.  Units should be expressed as <span style="color: darkcyan;">"Quantity / unit" <span style="color: black;">to allow you to express them as dimensionless quantities in the table or on the axis of your graph (please note brackets are absolutely incorrect).
+
+This is because this is how our governing body (IUPAC) tell us how to do it. See the IUPAC Green Book (2012 edition, page 3).
+
+You can think of the horizontal line below the header as an equals sign, so:
+
+
+Table: (\#tab:acridonequench) The effect of potassium iodide concentration on emission intensity and fluorescence lifetime of acridone in aqueous solution.
+
+
+| [KI] / M | [KNO~2~] / M | Emission intensity / 10^3^ cps | τ / ns |
+|:--------:|:--------:|:--------:|:--------:|
+| 0 | 1.100 | 16.580 | 17.60 |
+| 0.040 | 1.060 | 3.753 | 3.90 |
+| 0.100 | 1.000 | 1.566 | 1.80 |
+| 0.200 | 0.900 | 0.721 | 0.95 |
+| 0.300 | 0.800 | 0.446 | 0.64 |
+| 0.500 | 0.600 | 0.242 | 0.39 |
+| 0.800 | 0.300 | 0.121 | 0.25 |
+
+in the table above the third value down in the first column can be expressed as:
+
+[KI] / M = 0.100
+
+which of course rearranges to:
+
+[KI] = 0.100 M.
+
+If we look at the top value in the third column:
+
+Emission intensity / 10^3^ cps = 16.580
+
+which of course rearranges to:
+
+Emission intensity  = 16.580 × 10^3^ cps
+
+### Plotting of graphs {#subsec:plotting}
+
+When ever we plot a graph we have to determine what we plot on each of the two axes.
+
+The independent variable is the variable we have control over, we plot it (or something related to it) on the x-axis (the horizontal axis).
+
+The dependent variable is the varible we measure, we plot it  (or something related to it) on the y-axis (the vertical axis).
+
+These axis should under most circumstances not contain constants unless those constants are specific to the experiment.
+
+There is no need to start a graph axis at zero - you do not need a 'squiggle' on the axis to show that it is not starting at zero (that is what the numbers on the axis tell you), this squiggle (or more formally an axis break) does have a job when plotting graphs, but usually the use by first year undergraduates is incorrect.
+
+
+When plotting a graph, we want to have broken down the equation we are using to fit the linear relationship:
+
+\begin{equation}
+y = mx+c
+(\#eq:linearplot)
+\end{equation}
+
+We should never force a graph through a particular intercept (c).
+
+It is important when we ever have performed a calculation to determine values to plot on either x or y axis that we have taken account for any multipliers in the header, and that units ar SI (such as tempeature in K!).
+
+A gradient is calculated by determining the change in y divided by the change in x:
+
+$m= \frac{\Delta y}{\Delta x}$
+
+Don't forget units on gradients! The units of a gradient are the units on y divided by the units on x.
+
+### Example of plotting graphs {#subsec:example}
+
+The Stern-Volmer (Equation \@ref(eq:arrhenius)) shows how the lifetime $\tau$ of a dye changes with concentration of a quencher, [Q]. The data in Table \@ref(tab:acridonequench) can be modeled using the Stern-Volmer equation, you will note that this equation uses terms with a subscript 0 ($\tau_0$), when values like this are frequently used in chemistry (and physics).
+
+\begin{equation}
+\frac{\tau_0}{\tau}=1+k[Q]
+(\#eq:sternvolment)
+\end{equation}
+
+where $k = k_q \tau_0$.
+
+These 'subscript 0' values are referencing values when the independant variable is zero, so $\tau_0$ = 17.60 ns.
+
+You will notice that Equation \@ref(eq:arrhenius) is already arranged into $y=mx+c$, where the x variable is [KI] and the y variable is $\frac{\tau_0}{\tau}$. This means that the gradient is k, and the intercept 1.
+
+## Questions {#sec:Questions3}
+
+When plotting graphs feel free to plot either by hand, in python, excel or numbers. The choice is entirely up to you.
+
+### Sketch graphs {#subsec:sketch}
+
+Answers for these questions are in Section \@ref(subsec:sketchans).
+
+For the following equations sketch suitable linear plots indicating values of the intercept and gradient on each sketch.
+
+1. Show how absorption, $A$,  changes with concentration, $c$: $A = \varepsilon c l$
+
+1. Show how pressure, $p$, changes with temperature, $T$: $pV = nRT$
+
+1. Show how pressure, $p$, changes with volume, $V$:  $pV = nRT$
+
+### Second order kinetics {#subsec:2ndkintetics}
+
+Answers for these questions are in Section \@ref(subsec:2ndkinteticsans).
+
+Use the following table of data to plot a graph of $\frac{1}{[A]}$ against t. Find the gradient and intercept.
+
+(Just to note here you are plotting the equation $\frac{1}{[A]}=\frac{1}{[A]_0}+kt$).
+
+| t / s | 10^4^ [A] / mol dm^-3^ |
+|:----:|:----:|
+| 100 | 21.0 |
+| 200 | 12.0 |
+| 300 | 8.4 |
+| 400 | 7.1 |
+| 500 | 5.6 |
+
+
+### Clausius-Clapeyron equation {#subsec:clausius}
+
+Answers for these questions are in Section \@ref(subsec:arrheniusans).
+
+The relationship between the vapour pressure and temperature of diethyl ether (Table \@ref(tab:ether)) can be modeled using the Clausius-Claeyron equation (Equation \@ref(eq:clausius)) to determine the enthalpy of vapourisation $\Delta _{vap}H^\circ$.
+
+\begin{equation}
+\ln p = -\frac{\Delta_{vap}H^\circ}{RT}+C
+(\#eq:clausius)
+\end{equation}
+
+1. Determine $\Delta _{vap}H^\circ$.
+1. Determine the temperature diethyl ether boils at, at 1 atmosphere  (760 mm Hg). *Hint: determine C*
+
+### Arrhenius equation {#subsec:arrhenius}
+
+Answers for these questions are in Section \@ref(subsec:arrheniusans).
+
+The Arrhenius equation (Equation \@ref(eq:arrhenius) shows how the rate of reaction, $k$, depends upon the temperature of the reaction, $T$).
+
+\begin{equation}
+k=Ae^{-\frac{E_a}{RT}}
+(\#eq:arrhenius)
+\end{equation}
+
+For the data shown in Table \@ref(tab:arrhenius) plot an appropriate linear plot in order to determine the activation energy, $E_a$, and the pre-exponential factor, $A$.
+
+Table: (\#tab:arrhenius) The variation of measured rate constant with temperature for an undergraduate's experiment.
+
+| T / ºC | k / 10^5^ s^-1^ |
+|:----:|:----:|
+| 283 | 0.000352 |
+| 356 | 0.0302 |
+| 393 | 0.219 |
+| 427 | 1.16 |
+| 508 | 39.5 |
+
+
+
+## Answers {#sec:Answers3}
+### Sketch graphs {#subsec:sketchans}
+1.
+1.
+1.
+
+### Second order kinetics {#subsec:2ndkinteticsans}
+
+m = 3.19 M^-1^ s^-1^, c = 180 M^-1^ ([A]~0~ = 5.56 mM)
+
+### Clausius-Clapeyron equation {#subsec:clausiusans}
+$\Delta _{vap}H^\circ$ = 19.1 kJ mol^-1^, 39 ºC.
+
+### Arrhenius equation {#subsec:arrheniusans}
+
+m = -22.4 × 10^3^ K, c = 43.7, $E_a$ = 186 kJ mol^-1^, $A$ = 9.7  × 10^18^ s^-1
