@@ -195,7 +195,7 @@ knitr::include_graphics("images/pVsketch.png")
 m = 3.19 M^-1^ s^-1^, c = 180 M^-1^ ([A]~0~ = 5.56 mM)
 
 ### Clausius-Clapeyron equation {#subsec:clausiusans}
-$\Delta _{vap}H^\circ$ = 19.1 kJ mol^-1^, 39 ºC.
+$\Delta _{vap}H^\circ$ = 31.6 kJ mol^-1^, 39 ºC.
 
 ### Arrhenius equation {#subsec:arrheniusans}
 

@@ -117,7 +117,6 @@ Use the following table of data to plot a graph of $\frac{1}{[A]}$ against t. Fi
 | 400 | 7.1 |
 | 500 | 5.6 |
 
-
 ### Clausius-Clapeyron equation {#subsec:clausius}
 
 Answers for these questions are in Section \@ref(subsec:arrheniusans).
@@ -131,6 +130,20 @@ The relationship between the vapour pressure and temperature of diethyl ether (T
 
 1. Determine $\Delta _{vap}H^\circ$.
 1. Determine the temperature diethyl ether boils at, at 1 atmosphere  (760 mm Hg). *Hint: determine C*
+
+Table: (\#tab:ether) The measured vapor pressure of ether (in mm Hg) at sub-zero temperatures.
+
+| $p$ / mm Hg | T / ºC |
+|:----:|:----:|
+| 17 | -38 |
+| 28 | -30 |
+| 40 | -25 |
+| 55 | -20 |
+| 75 | -15 |
+| 97 | -10 |
+| 125 | -5 |
+| 157 | 0 |
+
 
 ### Arrhenius equation {#subsec:arrhenius}
 
@@ -160,16 +173,31 @@ Table: (\#tab:arrhenius) The variation of measured rate constant with temperatur
 ## Answers {#sec:Answers3}
 ### Sketch graphs {#subsec:sketchans}
 1.
-1.
-1.
+
+```{r echo=FALSE, abs, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The Beer-Lambert relationship to show how absorbance, the dependent variable, changes with concentration, the independent variable.'}
+knitr::include_graphics("images/abssketch.png")
+```
+
+2.
+
+```{r echo=FALSE, pT, out.width='30%', fig.show='hold', fig.align='center', fig.cap='A sketch to show how the pressure of an ideal gas, the dependent variable,changes with temperature, the independent variable.'}
+knitr::include_graphics("images/pTsketch.png")
+```
+
+3. 
+
+```{r echo=FALSE, pV, out.width='30%', fig.show='hold', fig.align='center', fig.cap='A sketch to show how the pressure of an ideal gas, the dependent variable,changes with volume, the independent variable - note for a linear relationship we have 1/V on the x-axis.'}
+knitr::include_graphics("images/pVsketch.png")
+```
 
 ### Second order kinetics {#subsec:2ndkinteticsans}
 
 m = 3.19 M^-1^ s^-1^, c = 180 M^-1^ ([A]~0~ = 5.56 mM)
 
 ### Clausius-Clapeyron equation {#subsec:clausiusans}
-$\Delta _{vap}H^\circ$ = 19.1 kJ mol^-1^, 39 ºC.
+$\Delta _{vap}H^\circ$ = 31.6 kJ mol^-1^, 39 ºC.
 
 ### Arrhenius equation {#subsec:arrheniusans}
 
 m = -22.4 × 10^3^ K, c = 43.7, $E_a$ = 186 kJ mol^-1^, $A$ = 9.7  × 10^18^ s^-1
+
