@@ -1,0 +1,125 @@
+# Week 5 {#ch:Workshop5}
+
+## Preliminary infomation {#sec:Prelim5}
+
+A recap of standard differentials...
+
+\begin{equation*}
+\begin{array}{ccc}
+  f(x) \equiv y & & f^{\prime}(x) \equiv \dfrac{\textrm{d}y}{\textrm{d}x}\\
+  \hline
+A & &0 \\
+ Ax^n & &nAx^{n-1} \\
+ \dfrac{A}{x^n} \equiv A x^{-n} & &-nA x^{-n-1} \\
+e^{Ax} & &Ae^{Ax} \\
+A \ln Bx & &\dfrac{A}{x} \\
+\sin Ax & &A\cos Ax \\
+\cos Ax & &-A\sin Ax \\
+\tan Ax & &-A\sec^2 Ax \\
+\\
+Au + Bv & &A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\textrm{d}x} \\
+\end{array}
+\end{equation*}
+
+If differentiating a function of a function we use the 'Chain Rule':
+
+$\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{\textrm{d}y}{\textrm{d}u} \times \dfrac{\textrm{d}u}{\textrm{d}x}$
+
+If differentiate a function times a function we use the 'Product Rule', if :
+
+\begin{equation*}
+y= uv
+\end{equation*}
+
+...where $u$ and $v$ are different functions of $x$. The first derivative of this compound function may be found using the general differential form for products:
+
+\begin{equation}
+\textrm{d}(uv) = v\textrm{d}u + u\textrm{d}v
+(\#eq:productrule)
+\end{equation}
+
+## Partial differentiation
+
+Any good scientist knows that you should only change one variable at a time to understand the effect it has on a system. This is exactly what partial differentiation does, although it recognises that there may be more than one variable in the system...
+
+Partial differentiation uses a different notation to standard differentiation to denote there is more than one variable. Subscritps are used to denote variables which are kept constant.
+
+If y is a function of both x and z, then we can differentiate with respect to either variable, in this case we treat the other variable as a constant and differentiate as we ever have. The notation for differentiating y with respect to z as x is kept constant would be:
+
+\begin{equation*}
+\left(\frac{\partial y}{\partial z}\right)_x
+\end{equation*}
+
+In some circumstances you may wish to differentiate a function first by one variable and then by another, the notation is this case is:
+
+\begin{equation*}
+\left(\frac{\partial^2 y}{\partial x \partial z}\right)
+\end{equation*}
+
+this is implying that the partial derivative of y with respect to x was determined first and then the partial derivate of that first derivative was determined with respect to z. It should not matter in which order you perform these functions, they should both yield the same answer.
+
+## Questions {#sec:Questions5}
+
+### Product rule questions
+Differentiate the following using the product rule:
+
+1. $y = x e^{7x}+ 7xe^x$
+1. $y = 5x \cos (2x)$
+ 
+### More complex differentiation questions
+Differentiate the following (you will need to decide if you need the product rule or the chain rule):
+
+1. $y = x \ln x$
+1. $y = \sin ^7 (5x)+ \cos ^5 (7x)$
+
+### Partial differentiation questions
+
+For the following function determine:
+
+$\left(\frac{\partial y}{\partial z}\right)_x$, $\left(\frac{\partial y}{\partial x}\right)_z$, $\left(\frac{\partial^2 y}{\partial z^2}\right)_x$, $\left(\frac{\partial^2 y}{\partial x^z}\right)_z$, $\left(\frac{\partial^2 y}{\partial x \partial z}\right)$ and $\left(\frac{\partial^2 y}{\partial z \partial x}\right)$
+
+1. $y = x^6z -3x^2z^3+x^2z+6z^6+5$
+1. $y = e^{3x}+ze^{2x}+x^2e^{-z}-z^2$
+1. $y=\frac{\sin (3z)}{x}-\frac{1}{e^{3x}z^2}$
+1. $y=\sin(3z^2+2xz+x^2)$*
+
+*this one is involved - it uses both the chain and the product rule!
+
+## Answers {#sec:Answers5}
+
+### Product rule questions
+1. $\dfrac{\textrm{d}y}{\textrm{d}x}=e^{7x}+7xe^{7x}+ 7e^x+7xe^x$
+
+### More complex differentiation questions
+1. $\dfrac{\textrm{d}y}{\textrm{d}x}=\ln x +1$
+1. $\dfrac{\textrm{d}y}{\textrm{d}x}=35 \cos (5x) \sin^6 (5x) - 35 \sin (7x) \cos^4(7x)$
+
+### Partial differentiation questions
+
+1. $\left(\frac{\partial y}{\partial z}\right)_x= x^6-9x^2z^2+x^2+36z^5$,
+$\left(\frac{\partial y}{\partial x}\right)_z=6x^5z-6xz^3+2xz$, 
+$\left(\frac{\partial^2 y}{\partial z^2}\right)_x=-18X^2z+180z^4$,
+$\left(\frac{\partial^2 y}{\partial x^z}\right)_z=30x^4z-6z^3$,
+$\left(\frac{\partial^2 y}{\partial x \partial z}\right)=6x^5-18xz^2+2x$ and
+$\left(\frac{\partial^2 y}{\partial z \partial x}\right)=6x^5-18xz^2+2x$
+
+1. $\left(\frac{\partial y}{\partial z}\right)_x=e^{2x}-x^2e^{-z}-2z$, 
+$\left(\frac{\partial y}{\partial x}\right)_z=3e^{3x}+2e^{2x}z+2xe^{-z}$,
+$\left(\frac{\partial^2 y}{\partial z^2}\right)_x=x^2e^{-z}-2$,
+$\left(\frac{\partial^2 y}{\partial x^z}\right)_z=9e^{3x}+4e^{2x}z+ 2e^{-z}$,
+$\left(\frac{\partial^2 y}{\partial x \partial z}\right)=2e^{2x}-2xe^{-z}$ and
+$\left(\frac{\partial^2 y}{\partial z \partial x}\right)=2e^{2x}-2xe^{-z}$
+
+1. $\left(\frac{\partial y}{\partial z}\right)_x=\frac{\cos (3z)}{x}+\frac{2}{e^{3x}z^3}$, 
+$\left(\frac{\partial y}{\partial x}\right)_z=-\frac{\sin (3z)}{x^2}+\frac{3}{e^{3x}z^2}$, 
+$\left(\frac{\partial^2 y}{\partial z^2}\right)_x=-9\frac{\sin (3z)}{x}-\frac{6}{e^{3x}z^4}$, 
+$\left(\frac{\partial^2 y}{\partial x^z}\right)_z=\frac{2\sin (3z)}{x^3}-\frac{9}{e^{3x}z^2}$, 
+$\left(\frac{\partial^2 y}{\partial x \partial z}\right)=\frac{-3\cos (3z)}{x^2}-\frac{6}{e^{3x}z^3}$ and 
+$\left(\frac{\partial^2 y}{\partial z \partial x}\right)=\frac{-3\cos (3z)}{x^2}-\frac{6}{e^{3x}z^3}$
+
+1. $\left(\frac{\partial y}{\partial z}\right)_x=(6z+2x)\cos(3z^2+2xz+x^2)$, 
+$\left(\frac{\partial y}{\partial x}\right)_z=(2z+2x)\cos(3z^2+2xz+x^2)$,
+$\left(\frac{\partial^2 y}{\partial z^2}\right)_x=2\cos(3z^2+2xz+x^2)-(2z+2x)^2\sin(3z^2+2xz+x^2)$, 
+$\left(\frac{\partial^2 y}{\partial x^z}\right)_z=6\cos(3z^2+2xz+x^2)-(6z+2x)^2\sin(3z^2+2xz+x^2)$, 
+$\left(\frac{\partial^2 y}{\partial x \partial z}\right)=2\cos(3z^2+2xz+x^2)-(2z+2x)(6z+2x)\sin(3z^2+2xz+x^2)$ and 
+$\left(\frac{\partial^2 y}{\partial z \partial x}\right)=2\cos(3z^2+2xz+x^2)-(2z+2x)(6z+2x)\sin(3z^2+2xz+x^2)$ if you can do this one you can do them all!!!

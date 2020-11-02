@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>CH10009 Workshop Questions</title>
+  <title>Chapter 5 Week 5 | CH10009 Workshop Questions</title>
   <meta name="description" content="Workshop questions for CH10009 Maths" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="CH10009 Workshop Questions" />
+  <meta property="og:title" content="Chapter 5 Week 5 | CH10009 Workshop Questions" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="chemfd/CH10009WorkshopQuestions" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="CH10009 Workshop Questions" />
+  <meta name="twitter:title" content="Chapter 5 Week 5 | CH10009 Workshop Questions" />
   
   <meta name="twitter:description" content="Workshop questions for CH10009 Maths" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="ch-Workshop4.html"/>
 
-<link rel="next" href="ch-Workshop1.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -180,39 +180,129 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">CH10009 Workshop Questions</h1>
-<p class="author"><em>Fiona Dickinson</em></p>
-<p class="date"><em>2020-11-02</em></p>
+<div id="ch:Workshop5" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Week 5</h1>
+<div id="sec:Prelim5" class="section level2">
+<h2><span class="header-section-number">5.1</span> Preliminary infomation</h2>
+<p>A recap of standard differentials…</p>
+<p><span class="math display">\[\begin{equation*}
+\begin{array}{ccc}
+  f(x) \equiv y &amp; &amp; f^{\prime}(x) \equiv \dfrac{\textrm{d}y}{\textrm{d}x}\\
+  \hline
+A &amp; &amp;0 \\
+ Ax^n &amp; &amp;nAx^{n-1} \\
+ \dfrac{A}{x^n} \equiv A x^{-n} &amp; &amp;-nA x^{-n-1} \\
+e^{Ax} &amp; &amp;Ae^{Ax} \\
+A \ln Bx &amp; &amp;\dfrac{A}{x} \\
+\sin Ax &amp; &amp;A\cos Ax \\
+\cos Ax &amp; &amp;-A\sin Ax \\
+\tan Ax &amp; &amp;-A\sec^2 Ax \\
+\\
+Au + Bv &amp; &amp;A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\textrm{d}x} \\
+\end{array}
+\end{equation*}\]</span></p>
+<p>If differentiating a function of a function we use the ‘Chain Rule’:</p>
+<p><span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{\textrm{d}y}{\textrm{d}u} \times \dfrac{\textrm{d}u}{\textrm{d}x}\)</span></p>
+<p>If differentiate a function times a function we use the ‘Product Rule’, if :</p>
+<p><span class="math display">\[\begin{equation*}
+y= uv
+\end{equation*}\]</span></p>
+<p>…where <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span> are different functions of <span class="math inline">\(x\)</span>. The first derivative of this compound function may be found using the general differential form for products:</p>
+<p><span class="math display" id="eq:productrule">\[\begin{equation}
+\textrm{d}(uv) = v\textrm{d}u + u\textrm{d}v
+\tag{5.1}
+\end{equation}\]</span></p>
 </div>
-<div id="welcome" class="section level1 unnumbered">
-<h1>Welcome</h1>
-<p>The notes have been prepared in a package called BookDown for RStudio so that the equations are accessible to screen readers. However, by providing the notes as a .html webpage I can also embed short videos to further describe some of the topics. Further you can download the questions (and later the answers, top left of the screen) in a format that suits you (either pdf or epub) to view offline, or change the way this document appears for ease of reading.</p>
-<p>If you spot any typos or think there are any errors please let me know and I will do my best to fix them.</p>
-<div id="workshops-for-ch10009" class="section level2 unnumbered">
-<h2>Workshops for CH10009</h2>
-<p>The topics for LOILS each week are as follows:</p>
-<ul>
-<li>Week 1: General Q&amp;A</li>
-<li>Week 2: Rearranging equations, units and standard form</li>
-<li>Week 3: Logarithms and exponentials</li>
-<li>Week 4: Tables and graphs</li>
-<li>Week 5: Calculus - differentiation - the basics and the chain rule</li>
-<li>Week 6: Calculus - differentiation - the product rule and partial differentiation</li>
-<li>Week 7: Calculus - integration - the basics and definite integrals</li>
-<li>Week 8: Some more examples of integration and revision</li>
-</ul>
-<p>This ‘book’ will be updated weekly with workshop questions, answers will be provided and some answers will include ‘process’ as well as answer. Please contact me if you need help.</p>
-<p>I am using this format as it is an accessible format.</p>
+<div id="partial-differentiation" class="section level2">
+<h2><span class="header-section-number">5.2</span> Partial differentiation</h2>
+<p>Any good scientist knows that you should only change one variable at a time to understand the effect it has on a system. This is exactly what partial differentiation does, although it recognises that there may be more than one variable in the system…</p>
+<p>Partial differentiation uses a different notation to standard differentiation to denote there is more than one variable. Subscritps are used to denote variables which are kept constant.</p>
+<p>If y is a function of both x and z, then we can differentiate with respect to either variable, in this case we treat the other variable as a constant and differentiate as we ever have. The notation for differentiating y with respect to z as x is kept constant would be:</p>
+<p><span class="math display">\[\begin{equation*}
+\left(\frac{\partial y}{\partial z}\right)_x
+\end{equation*}\]</span></p>
+<p>In some circumstances you may wish to differentiate a function first by one variable and then by another, the notation is this case is:</p>
+<p><span class="math display">\[\begin{equation*}
+\left(\frac{\partial^2 y}{\partial x \partial z}\right)
+\end{equation*}\]</span></p>
+<p>this is implying that the partial derivative of y with respect to x was determined first and then the partial derivate of that first derivative was determined with respect to z. It should not matter in which order you perform these functions, they should both yield the same answer.</p>
 </div>
-<div id="version-history" class="section level2 unnumbered">
-<h2>Version history</h2>
-<p>Week 3 workshop released 19th October 2020</p>
-<p>Week 2 workshop released 12th October 2020.</p>
-<p>Some more video answers for workshop 1 embedded 11th October 2020.</p>
-<p>Video answers for workshop 1 embedded 09th October 2020.</p>
-<p>The initial commit of this book is dated 2nd October 2020.</p>
+<div id="sec:Questions5" class="section level2">
+<h2><span class="header-section-number">5.3</span> Questions</h2>
+<div id="product-rule-questions" class="section level3">
+<h3><span class="header-section-number">5.3.1</span> Product rule questions</h3>
+<p>Differentiate the following using the product rule:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(y = x e^{7x}+ 7xe^x\)</span></li>
+<li><span class="math inline">\(y = 5x \cos (2x)\)</span></li>
+</ol>
+</div>
+<div id="more-complex-differentiation-questions" class="section level3">
+<h3><span class="header-section-number">5.3.2</span> More complex differentiation questions</h3>
+<p>Differentiate the following (you will need to decide if you need the product rule or the chain rule):</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(y = x \ln x\)</span></li>
+<li><span class="math inline">\(y = \sin ^7 (5x)+ \cos ^5 (7x)\)</span></li>
+</ol>
+</div>
+<div id="partial-differentiation-questions" class="section level3">
+<h3><span class="header-section-number">5.3.3</span> Partial differentiation questions</h3>
+<p>For the following function determine:</p>
+<p><span class="math inline">\(\left(\frac{\partial y}{\partial z}\right)_x\)</span>, <span class="math inline">\(\left(\frac{\partial y}{\partial x}\right)_z\)</span>, <span class="math inline">\(\left(\frac{\partial^2 y}{\partial z^2}\right)_x\)</span>, <span class="math inline">\(\left(\frac{\partial^2 y}{\partial x^z}\right)_z\)</span>, <span class="math inline">\(\left(\frac{\partial^2 y}{\partial x \partial z}\right)\)</span> and <span class="math inline">\(\left(\frac{\partial^2 y}{\partial z \partial x}\right)\)</span></p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(y = x^6z -3x^2z^3+x^2z+6z^6+5\)</span></li>
+<li><span class="math inline">\(y = e^{3x}+ze^{2x}+x^2e^{-z}-z^2\)</span></li>
+<li><span class="math inline">\(y=\frac{\sin (3z)}{x}-\frac{1}{e^{3x}z^2}\)</span></li>
+<li><span class="math inline">\(y=\sin(3z^2+2xz+x^2)\)</span>*</li>
+</ol>
+<p>*this one is involved - it uses both the chain and the product rule!</p>
+</div>
+</div>
+<div id="sec:Answers5" class="section level2">
+<h2><span class="header-section-number">5.4</span> Answers</h2>
+<div id="product-rule-questions-1" class="section level3">
+<h3><span class="header-section-number">5.4.1</span> Product rule questions</h3>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x}=e^{7x}+7xe^{7x}+ 7e^x+7xe^x\)</span></li>
+</ol>
+</div>
+<div id="more-complex-differentiation-questions-1" class="section level3">
+<h3><span class="header-section-number">5.4.2</span> More complex differentiation questions</h3>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x}=\ln x +1\)</span></li>
+<li><span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x}=35 \cos (5x) \sin^6 (5x) - 35 \sin (7x) \cos^4(7x)\)</span></li>
+</ol>
+</div>
+<div id="partial-differentiation-questions-1" class="section level3">
+<h3><span class="header-section-number">5.4.3</span> Partial differentiation questions</h3>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(\left(\frac{\partial y}{\partial z}\right)_x= x^6-9x^2z^2+x^2+36z^5\)</span>,
+<span class="math inline">\(\left(\frac{\partial y}{\partial x}\right)_z=6x^5z-6xz^3+2xz\)</span>,
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial z^2}\right)_x=-18X^2z+180z^4\)</span>,
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial x^z}\right)_z=30x^4z-6z^3\)</span>,
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial x \partial z}\right)=6x^5-18xz^2+2x\)</span> and
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial z \partial x}\right)=6x^5-18xz^2+2x\)</span></p></li>
+<li><p><span class="math inline">\(\left(\frac{\partial y}{\partial z}\right)_x=e^{2x}-x^2e^{-z}-2z\)</span>,
+<span class="math inline">\(\left(\frac{\partial y}{\partial x}\right)_z=3e^{3x}+2e^{2x}z+2xe^{-z}\)</span>,
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial z^2}\right)_x=x^2e^{-z}-2\)</span>,
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial x^z}\right)_z=9e^{3x}+4e^{2x}z+ 2e^{-z}\)</span>,
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial x \partial z}\right)=2e^{2x}-2xe^{-z}\)</span> and
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial z \partial x}\right)=2e^{2x}-2xe^{-z}\)</span></p></li>
+<li><p><span class="math inline">\(\left(\frac{\partial y}{\partial z}\right)_x=\frac{\cos (3z)}{x}+\frac{2}{e^{3x}z^3}\)</span>,
+<span class="math inline">\(\left(\frac{\partial y}{\partial x}\right)_z=-\frac{\sin (3z)}{x^2}+\frac{3}{e^{3x}z^2}\)</span>,
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial z^2}\right)_x=-9\frac{\sin (3z)}{x}-\frac{6}{e^{3x}z^4}\)</span>,
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial x^z}\right)_z=\frac{2\sin (3z)}{x^3}-\frac{9}{e^{3x}z^2}\)</span>,
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial x \partial z}\right)=\frac{-3\cos (3z)}{x^2}-\frac{6}{e^{3x}z^3}\)</span> and
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial z \partial x}\right)=\frac{-3\cos (3z)}{x^2}-\frac{6}{e^{3x}z^3}\)</span></p></li>
+<li><p><span class="math inline">\(\left(\frac{\partial y}{\partial z}\right)_x=(6z+2x)\cos(3z^2+2xz+x^2)\)</span>,
+<span class="math inline">\(\left(\frac{\partial y}{\partial x}\right)_z=(2z+2x)\cos(3z^2+2xz+x^2)\)</span>,
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial z^2}\right)_x=2\cos(3z^2+2xz+x^2)-(2z+2x)^2\sin(3z^2+2xz+x^2)\)</span>,
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial x^z}\right)_z=6\cos(3z^2+2xz+x^2)-(6z+2x)^2\sin(3z^2+2xz+x^2)\)</span>,
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial x \partial z}\right)=2\cos(3z^2+2xz+x^2)-(2z+2x)(6z+2x)\sin(3z^2+2xz+x^2)\)</span> and
+<span class="math inline">\(\left(\frac{\partial^2 y}{\partial z \partial x}\right)=2\cos(3z^2+2xz+x^2)-(2z+2x)(6z+2x)\sin(3z^2+2xz+x^2)\)</span> if you can do this one you can do them all!!!</p></li>
+</ol>
 
+</div>
 </div>
 </div>
             </section>
@@ -220,8 +310,8 @@
           </div>
         </div>
       </div>
+<a href="ch-Workshop4.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="ch-Workshop1.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
