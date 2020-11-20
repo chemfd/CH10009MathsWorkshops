@@ -73,4 +73,4 @@ Solve the following differential equations as far as possible:
 1. $\ln a = \frac{bz^3}{3}+D$
 1. $\frac{1}{[A]}=\frac{1}{[A]_0}+ kt$
 1. $\ln \frac{p_1}{p_2}=\frac{\Delta_{p\textrm{vap}}H}{R}{\frac{1}{T_2}-\frac{1}{T_1}}$
-1. $w = -nRT \ln {V_f}{V_i}$
+1. $w = -nRT \ln \frac{V_f}{V_i}$
