@@ -1,10 +1,70 @@
-# Week 1 {#ch:Workshop1}
+# Week 1 - Rearranging equations and units{#ch:Workshop1}
 
 ## Preliminary infomation {#sec:Prelim}
 
+This workshop contains some fundamental materials on both rearranging equations and units. Unfortunately both of these things result in lost marks for a number of candidates either because of carelessness or lack of understanding.
+
+Bad habits in rearranging equations, such as trying to undertake too many steps at once often lead to error, mantras such as 'change the side change the sign' are often an oversimplification and may lead to error.
+
+Values have to have units, without them things make no sense, and in science we cannot assume units on context. Converting between units is equally important and [famously errors can occur](https://www.bbc.co.uk/news/uk-england-tyne-38744307). You should 'work out' your unit in every case, not just assume it is something and writing that down.
+
+In short, show your working clearly, if you do so you *will* make fewer mistakes. Paper doesn't cost much, and if you write on a tablet each new page is free so please space out your work, when learning things annotate your work with useful things (this will help you revise), and make it clear!
+
+### Rearranging equations
+
+'Change the side change the sign' is often running through peoples' heads as they rearrange equations, however it is only of limited utility as it makes no sense when considering logs or exponentials. More correctly we should think about using reciprical functions on both sides of an equation, for example if I multiply both sides of an equation by the same thing it is mathematically equivalent of doing nothing.
+
+This subtle distinction would 'fix' almost all of the common errors seen in chemistry.
+
+If we start with one of the most important equations in chemistry, the Gibbs' equation:
+
+<div class="alert alert-light" role="alert">
+\begin{equation*}
+\Delta G = \Delta H - T \Delta S
+\end{equation*}
+</div>
+
+Here the capital 'delta' ($\Delta$) in each case means 'large change in' and so they cannot be canceled.
+
+If I wanted to rearrange this equation to make $\Delta S$, the entropy change, the subject then:
+
+<div class="alert alert-light" role="alert">
+
+Start by adding $T\Delta S$ to both sides of the equation:
+\begin{equation*}
+\Delta G + T \Delta S= \Delta H - T \Delta S + T \Delta S
+\end{equation*}
+on the right hand side $- T \Delta S + T \Delta S=0$ and so cancel.
+
+
+We can then subtract $\Delta G$ from both sides of the equation:
+\begin{equation*}
+\Delta G + T \Delta S -\Delta G = \Delta H -\Delta G
+\end{equation*}
+now the $\Delta G -\Delta G$ on the left hand side of the equation cancel, leaving us with:
+\begin{equation*}
+T \Delta S = \Delta H -\Delta G
+\end{equation*}
+
+Now to cancel the 'T' on the left hand side we need to divide by '$T$' on both sides:
+
+\begin{equation*}
+\frac{T \Delta S}{T} = \frac{\Delta H -\Delta G}{T}
+\end{equation*}
+
+which leaves us with an equation with $\Delta S$ as the subject:
+\begin{equation*}
+\Delta S = \frac{\Delta H -\Delta G}{T}
+\end{equation*}
+</div>
+
+I recognise as show this is extreamly arduous, however it is changing how we think about the problem which is important.
+
 ### SI base units
 
-The SI system of base units has seven fundamental units from which the others are derived.
+Despite cultural tendancies to hold onto older units (such as pounds & ounces, calories, Calories and miles) in science all units are directly derived from the international standard SI system. 
+
+Althought there have been many versions of metric units over the years it became increasingly important to standardise units. The SI system of base units has seven fundamental units (Table \@ref(tab:SIbase)) from which all other units are derived. Recently there has been interest in finding more fundamental ways to describe each of these units (rather than an actual lump (mass) or bar (length) of platinum) whereby [units are described by relation to physical constants](https://www.npl.co.uk/si-units/the-redefinition-of-the-si-units) (such as the speed of light, or Avagadro's constant which define the meter and mole respectively). 
 
 Table: (\#tab:SIbase) The seven base units from which all others are dervied. 
 
@@ -18,13 +78,25 @@ Table: (\#tab:SIbase) The seven base units from which all others are dervied.
 | mole | mol | N |  amount of substance |
 | candela | cd | J | luminous intensity|
 
+
+
+
+
 ### SI Derived units
 
-Table: (\#tab:SIderive) Some common SI derived units used in chemistry. 
+James Clarke Maxwell developed the field of dimensional analysis. Dimensional analysis shows that units have to be consistent in equations.
+
+To add to values in an equation they must have the same unit - so I can't add kJ mol^-1^ to J K^-1^ mol^-1^, nor can I directly add kJ mol^-1^ to J mol^-1^.
+
+When multiplying or dividing values with units then the units combine (by performing the same operation). Velocity is displacment (in m) divided by time (in s), and so the unit of velocity is m s^-1^.
+
+Some 'combined units' have been given their own unique names (Table \@ref(tab:SIderive)), these often make it easier to use the unit (it is a lot easier to say 'volt' than kg m^2^ s^-3^ A^-1^ each time you need to use it). The case of these units (just as with the SI base units) is important, however it should be noted when writing the unit name, even if they are named for a person, that name begins with a lower case letter.
+
+Table: (\#tab:SIderive) Some common named SI derived units used in chemistry. 
 
 | symbol |  SI derived unit | quantity | SI base units| other SI units |
 |:--------:|:--------:|:--------:|:--------:|:--------:|
-|  Hz| hertz | frequency | s^-1^ ||
+| Hz | hertz | frequency | s^-1^ ||
 | N | newton | force | kg m s^-2^ ||
 | Pa | pascal | pressure | kg m^-1^ s^-2^ | N m^-2^|
 | J | joule | energy | kg m^2^ s^-2^ | N m |
@@ -34,6 +106,10 @@ Table: (\#tab:SIderive) Some common SI derived units used in chemistry.
 | F | farad | electrical capacitance | kg^-1^ m^-2^ s^4^ A^2^ | C V^-1^ |
 | Ω | ohm | electrical resistance | kg m^2^ s^-3^ A^-2^ | V A^-1^ |
 | S | siemens | electrical conductance | kg^-1^ m^-2^ s^3^ A^2^ | A V^-1^ or 1/Ω |
+
+Having said that, Table \@ref(tab:SIderive) contains some common units used in chemistry the units most used in chemistry for concentration, thermodynamics and kinetics are so far not named for anyone and so are usually written in full form. However mol dm^-3^ is often shortend to [M (for molarity)](https://goldbook.iupac.org/terms/view/A00295), this is a unit I use a lot and so in many questions you will see concentrations given as (for example) 0.250 mM or 1.000 M (not the longer 0.250 mmol dm^-3^ or 1.000 mol dm^-3^).
+
+Please note when reporting compound units there should be a space between each unit, so it is J K^-1^ mol^-1^ not JK^-1^mol^-1^.
 
 
 ### Other units and conversion factors
@@ -49,15 +125,22 @@ Table: (\#tab:nonSI) The relationship between some other common units and the SI
 | bar | pressure | 100000 Pa |
 | eV | energy | 1.602176634 × 10^-19^ J |
 | cal | energy | 4.184 J |
+| Cal | energy | 4.184 kJ |
 | Å | length | 1 × 10^-10^ m|
 
 There are myriad other units in use, either with  historical or geographic preference, or just for niche purposes (where would we be without olympic swimming pools or London buses). Examples such as the mile, furlong or beard-second are all units of length.
 
-Further, the unit ºC is formally an SI derived unit. The temperature in Kelvin is:
+Further, the unit ºC is formally an SI derived unit. The temperature in kelvin is:
 
+<div class="alert alert-info" role="alert">
+<span style="color: black;">
 \begin{equation*}
-T (\textrm{K}) = T (\textrm{K}) + 273.15
+T (\textrm{K}) = T (^\circ \textrm{C}) + 273.15
 \end{equation*}
+</span>
+</div>
+
+Just a note to say that this 273.15 K conversion is 'precise' in other words we can consider it to have infinite significant figures, and so if we happen to know temperatures in centigrade to more than two decimal places we do not loose any of these in conversion to kelvin. 
 
 ### SI prefixes and standard form
 
@@ -80,10 +163,108 @@ Table: (\#tab:SIprefix) The more common SI prefixes used in chemistry.
 | | | |
 | k | kilo | 10^3^|
 
+When prefixes are used there is no space between prefix and unit, (so mm (millimeter) not m m (which could be confused for meter meter)). 
+
+There can be some confusion with prefixes and inverse units, for example ns^-1^ is the same unit as 1/ns. This could be more properly written as 10^9^ s^-1^ (and is not in fact 10^-9^ s^-1^).
+
+When there are squares (or cubes) combined with prefixes it is a statement that the prefix is squared (or cubed) as well. So for example 1 cm^2^ is quite literally 1 cm × 1 cm (or 1 × 10^-4^ m^2^).
+
+## Examples
+
+### Conversion of mL to L or cm^3^ to dm^3^
+
+One of the most common conversions undertaken in the physical chemistry lab is conversion of mL to L (or more correctly cm^3^ to dm^3^),  and although most people are happy to know 'you just divide by 1000' most haven't thought 'why', nor does everyone get this unit conversion correct.
+
+Both of these examples are shown in a worked video at teh end of this section, as is a pdf of the handwritten notes from this video.
+
+#### Conversion of mL to L
+
+We can solve this logially, by first having the assertion that 1 mL = 1 × 10^-3^ L. Therefore when I want to convert mL to L I just multiply by 1 × 10^-3 (which is equivalent to dividing by 1000), or more formally:
+
+<div class="alert alert-light" role="alert">
+1 mL = 1 × 10^-3^ L
+
+1 = 1 × 10^-3^ L mL^-1^
+</div>
+
+anything may be multiplied by 1 and there be no change and so if I were to want to convert 27.2 mL to L then:
+
+<div class="alert alert-light" role="alert">
+27.2 mL × 1 × 10^-3^ L mL^-1^
+</div>
 
 
+we can see that the units of mL and mL^-1^ cancel and we are left with just L and so:
 
-## Questions {#sec:Questions}
+<div class="alert alert-light" role="alert">
+27.2 mL = 27.2 × 10^-3^ L
+</div>
+
+Writing this as either 27.2 × 10^-3^ L or 0.0272 L are both equivalent and both valid.
+
+#### Conversion of cm^3^ to dm^3^
+
+It will come as no surprise to know that the same process of either multiplying by 1 × 10^-3^ or dividing by 1000 will correctly do this conversion, however knowing that can help justify the process here.
+
+I am going to start with a similar assertion as above:
+
+<div class="alert alert-light" role="alert">
+1 cm = 1 × 10^-2^ m
+</div>
+
+and so
+
+
+1 cm^3^ = (1 × 10^-2^)^3^ m^3^ = 1 × 10^-6^ m^3^
+</div>
+and equivalently
+
+<div class="alert alert-light" role="alert">
+1 dm = 1 × 10^-1^ m
+</div>
+
+(remember the prefix is raised to the same power as the number) and so:
+
+<div class="alert alert-light" role="alert">
+1 dm^3^ = (1 × 10^-1^)^3^ m^3^ = 1 × 10^-3^ m^3^
+</div>
+
+for each of these I can make statements where 1 equals something...
+
+<div class="alert alert-light" role="alert">
+1  = 1 × 10^-6^ m^3^ cm^-3^
+
+1  = 1 × 10^-3^ m^3^ dm^-3^
+</div>
+
+and I can then combine these into a single statement by dividing one by the other:
+
+<div class="alert alert-light" role="alert">
+1 = 1 × 10^-6^ m^3^ cm^-3^ / 1 × 10^-3^ m^3^ dm^-3^
+</div>
+
+which simplifies (because m^3^ cancels and so do some of the powers of 10) to :
+
+<div class="alert alert-light" role="alert">
+1 = 1 × 10^-3^ dm^3^ cm^-3^
+</div>
+
+again if we take the example of 27.2 cm^3^ (which is the more formal unit of mL) then:
+
+<div class="alert alert-light" role="alert">
+27.2 cm^3^ = 27.2 cm^3^ × 1 × 10^-3^ dm^3^ cm^-3^ = 27.2 × 10^-3^ dm^3^
+</div>
+
+Now I have broken both of these down into multiple steps, and it is good to do this until you become more confident in these conversions, but in time you will be able to streamline this process.
+
+This video shows me working through both of the above problems:
+<div style="text-align: center;"><iframe width="680" height="383" src="https://www.youtube.com/embed/8T3FmZ5oJ-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div style="text-align: left;">
+The 'notes' from this video may be found [here](http://workitoutwithapencil.xyz/wp-content/uploads/2021/07/UnitConversions.pdf).
+
+
+## Questions {#sec:QuestionsUnits}
 
 ### Rearranging equations {#subsec:rearrange}
 
@@ -182,6 +363,7 @@ F = k_e \frac{q_1 q_2}{r^2}
 
 
 ## Answers {#sec:Answers}
+Where available videos of worked examples are shown in hyperlinks with each answer.
 
 ### Rearranging equations answers {#subsec:rearrangeans}
 
@@ -189,26 +371,18 @@ F = k_e \frac{q_1 q_2}{r^2}
 1. $v = \sqrt {\frac{2E}{m}}$
 1. $r = \sqrt{\frac{q_1 q_2}{4 \pi \varepsilon_0 F }}$
 1. $[A]_0=\frac{[A]}{1-[A]kt}$
-1. $\frac{\Delta H T_2}{\Delta H - R T \ln {x_A}}$
+1. $\frac{\Delta H T_2}{\Delta H - R T \ln {x_A}}$ [Worked answer](https://www.youtube.com/embed/WmryM91dcXE)
 
-<div style="text-align: center;"><iframe width="847" height="635" src="https://www.youtube.com/embed/WmryM91dcXE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-1. $\alpha = \frac{-K_a \pm \sqrt{K_a^2 + 4 c K_a}}{2c}$
-
-<div style="text-align: center;"><iframe width="847" height="635" src="https://www.youtube.com/embed/F7em5K2b4to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+1. $\alpha = \frac{-K_a \pm \sqrt{K_a^2 + 4 c K_a}}{2c}$ [Worked answer](https://www.youtube.com/embed/F7em5K2b4to)
 
 ### Unit conversion answers {#subsec:Unitconvans}
 
 1. 
     a. 3.4 × 10^-3^ mm;    3.4 × 10^-6^ m
-    a. 0.2704 kg mol^-1^; 449.0 yg
-    
-   <div style="text-align: center;"> <iframe width="847" height="635" src="https://www.youtube.com/embed/IKM6a3VxWKs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-    c. 23.4 × 10^-3^ mg dm^−3^;    23.4 × 10^-3^ g m^−3^;   and 23.4 × 10^-6^ kg m^−3^
-    d. 17.5 × 10^-6^ Hz
-    e. 0.5796 µm^-1^ and 5.796 × 10^5^ m^-1^
+    a. [0.2704 kg mol^-1^; 449.0 yg](https://www.youtube.com/embed/IKM6a3VxWKs)
+    a. 23.4 × 10^-3^ mg dm^−3^;    23.4 × 10^-3^ g m^−3^;   and 23.4 × 10^-6^ kg m^−3^
+    a. 17.5 × 10^-6^ Hz
+    a. 0.5796 µm^-1^ and 5.796 × 10^5^ m^-1^
  
 ***
 
@@ -221,8 +395,10 @@ F = k_e \frac{q_1 q_2}{r^2}
 ***
 
 3. -21 kJ mol^-1^ - please note this value is correct to the appropriate sig figs
-    
+<div style="text-align: left;">
+
 ### Determining units of variables in equations answers {#subsec:detunitsans}
+<div style="text-align: left;">
 
 1.
     a. - kg m^2^ s^-2^ K^-1^ mol^-1^ (this is more ususally written as J K^-1^ mol^-1^)
@@ -230,18 +406,12 @@ F = k_e \frac{q_1 q_2}{r^2}
 
 *** 
 
-2. kg m s^-1^
-
-<div style="text-align: center;"><iframe width="847" height="635" src="https://www.youtube.com/embed/3cuSZZF3Z4Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+2. [kg m s^-1^](https://www.youtube.com/embed/3cuSZZF3Z4Y)
 
 ***
 
-3. J K^-4^ mol^-1^
-
-<div style="text-align: center;"><iframe width="847" height="635" src="https://www.youtube.com/embed/SECV4uuki3s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+3. [J K^-4^ mol^-1^](https://www.youtube.com/embed/SECV4uuki3s)
 
 ***
 
-4. kg m^3^ s^-4^ A^-2^ or N m^2^ C^-2^
-
-<div style="text-align: center;"><iframe width="847" height="635" src="https://www.youtube.com/embed/DsxrbDyCjTU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+4. [kg m^3^ s^-4^ A^-2^](https://www.youtube.com/embed/DsxrbDyCjTU) or N m^2^ C^-2^
