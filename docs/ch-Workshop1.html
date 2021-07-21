@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2021-07-20" />
+<meta name="date" content="2021-07-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -86,7 +86,8 @@
 <li class="chapter" data-level="1.1.5" data-path="ch-Workshop1.html"><a href="ch-Workshop1.html#si-prefixes-and-standard-form"><i class="fa fa-check"></i><b>1.1.5</b> SI prefixes and standard form</a></li>
 </ul></li>
 <li class="chapter" data-level="1.2" data-path="ch-Workshop1.html"><a href="ch-Workshop1.html#examples"><i class="fa fa-check"></i><b>1.2</b> Examples</a><ul>
-<li class="chapter" data-level="1.2.1" data-path="ch-Workshop1.html"><a href="ch-Workshop1.html#conversion-of-ml-to-l-or-cm3-to-dm3"><i class="fa fa-check"></i><b>1.2.1</b> Conversion of mL to L or cm<sup>3</sup> to dm<sup>3</sup></a></li>
+<li class="chapter" data-level="1.2.1" data-path="ch-Workshop1.html"><a href="ch-Workshop1.html#rearranging-delta-g-delta-h---t-delta-s-to-make-t-the-subject"><i class="fa fa-check"></i><b>1.2.1</b> Rearranging <span class="math inline">\(\Delta G = \Delta H - T \Delta S\)</span> to make <span class="math inline">\(T\)</span> the subject</a></li>
+<li class="chapter" data-level="1.2.2" data-path="ch-Workshop1.html"><a href="ch-Workshop1.html#conversion-of-ml-to-l-or-cm3-to-dm3"><i class="fa fa-check"></i><b>1.2.2</b> Conversion of mL to L or cm<sup>3</sup> to dm<sup>3</sup></a></li>
 </ul></li>
 <li class="chapter" data-level="1.3" data-path="ch-Workshop1.html"><a href="ch-Workshop1.html#sec:QuestionsUnits"><i class="fa fa-check"></i><b>1.3</b> Questions</a><ul>
 <li class="chapter" data-level="1.3.1" data-path="ch-Workshop1.html"><a href="ch-Workshop1.html#subsec:rearrange"><i class="fa fa-check"></i><b>1.3.1</b> Rearranging equations</a></li>
@@ -203,43 +204,12 @@
 <p>This workshop contains some fundamental materials on both rearranging equations and units. Unfortunately both of these things result in lost marks for a number of candidates either because of carelessness or lack of understanding.</p>
 <p>Bad habits in rearranging equations, such as trying to undertake too many steps at once often lead to error, mantras such as ‘change the side change the sign’ are often an oversimplification and may lead to error.</p>
 <p>Values have to have units, without them things make no sense, and in science we cannot assume units on context. Converting between units is equally important and <a href="https://www.bbc.co.uk/news/uk-england-tyne-38744307">famously errors can occur</a>. You should ‘work out’ your unit in every case, not just assume it is something and writing that down.</p>
-<p>In short, show your working clearly, if you do so you <em>will</em> make fewer mistakes. Paper doesn’t cost much, and if you write on a tablet each new page is free so please space out your work, when learning things annotate your work with useful things (this will help you revise), and make it clear!</p>
+<p>In short, show your working clearly, if you do so you <em>will</em> make fewer mistakes. Paper doesn’t cost much, and if you write on a tablet each new page is free so please space out your work, when learning things annotate your work with useful notes to explain what you have done and why (this will help you revise), and make it clear!</p>
 <div id="rearranging-equations" class="section level3">
 <h3><span class="header-section-number">1.1.1</span> Rearranging equations</h3>
 <p>‘Change the side change the sign’ is often running through peoples’ heads as they rearrange equations, however it is only of limited utility as it makes no sense when considering logs or exponentials. More correctly we should think about using reciprical functions on both sides of an equation, for example if I multiply both sides of an equation by the same thing it is mathematically equivalent of doing nothing.</p>
 <p>This subtle distinction would ‘fix’ almost all of the common errors seen in chemistry.</p>
-<p>If we start with one of the most important equations in chemistry, the Gibbs’ equation:</p>
-<div class="alert alert-light" role="alert">
-<p><span class="math display">\[\begin{equation*}
-\Delta G = \Delta H - T \Delta S
-\end{equation*}\]</span></p>
-</div>
-<p>Here the capital ‘delta’ (<span class="math inline">\(\Delta\)</span>) in each case means ‘large change in’ and so they cannot be canceled.</p>
-<p>If I wanted to rearrange this equation to make <span class="math inline">\(\Delta S\)</span>, the entropy change, the subject then:</p>
-<div class="alert alert-light" role="alert">
-<p>Start by adding <span class="math inline">\(T\Delta S\)</span> to both sides of the equation:
-<span class="math display">\[\begin{equation*}
-\Delta G + T \Delta S= \Delta H - T \Delta S + T \Delta S
-\end{equation*}\]</span>
-on the right hand side <span class="math inline">\(- T \Delta S + T \Delta S=0\)</span> and so cancel.</p>
-<p>We can then subtract <span class="math inline">\(\Delta G\)</span> from both sides of the equation:
-<span class="math display">\[\begin{equation*}
-\Delta G + T \Delta S -\Delta G = \Delta H -\Delta G
-\end{equation*}\]</span>
-now the <span class="math inline">\(\Delta G -\Delta G\)</span> on the left hand side of the equation cancel, leaving us with:
-<span class="math display">\[\begin{equation*}
-T \Delta S = \Delta H -\Delta G
-\end{equation*}\]</span></p>
-<p>Now to cancel the ‘T’ on the left hand side we need to divide by ‘<span class="math inline">\(T\)</span>’ on both sides:</p>
-<p><span class="math display">\[\begin{equation*}
-\frac{T \Delta S}{T} = \frac{\Delta H -\Delta G}{T}
-\end{equation*}\]</span></p>
-<p>which leaves us with an equation with <span class="math inline">\(\Delta S\)</span> as the subject:
-<span class="math display">\[\begin{equation*}
-\Delta S = \frac{\Delta H -\Delta G}{T}
-\end{equation*}\]</span></p>
-</div>
-<p>I recognise as show this is extreamly arduous, however it is changing how we think about the problem which is important.</p>
+<p>We will meet rearranging equations again in Week <a href="ch-Workshop2.html#ch:Workshop2">2</a> when we introduce powers, exponents and logs.</p>
 </div>
 <div id="si-base-units" class="section level3">
 <h3><span class="header-section-number">1.1.2</span> SI base units</h3>
@@ -393,6 +363,7 @@ T \Delta S = \Delta H -\Delta G
 </table>
 <p>Having said that, Table <a href="ch-Workshop1.html#tab:SIderive">1.2</a> contains some common units used in chemistry the units most used in chemistry for concentration, thermodynamics and kinetics are so far not named for anyone and so are usually written in full form. However mol dm<sup>-3</sup> is often shortend to <a href="https://goldbook.iupac.org/terms/view/A00295">M (for molarity)</a>, this is a unit I use a lot and so in many questions you will see concentrations given as (for example) 0.250 mM or 1.000 M (not the longer 0.250 mmol dm<sup>-3</sup> or 1.000 mol dm<sup>-3</sup>).</p>
 <p>Please note when reporting compound units there should be a space between each unit, so it is J K<sup>-1</sup> mol<sup>-1</sup> not JK<sup>-1</sup>mol<sup>-1</sup>.</p>
+<p>Using negative powers is also the correct way to report units (for example J / mol is incorrect, J mol<sup>-1</sup> is correct), this is for two reasons, one a solidus (the fancy name for divide sign) is a mathematical operator (and these cannot act on units), secondly there is the potential for confusion with using the / in units (for example J/K/mol is actually more properly written as J K<sup>-1</sup> mol (not J K<sup>-1</sup> mol<sup>-1</sup>)).</p>
 </div>
 <div id="other-units-and-conversion-factors" class="section level3">
 <h3><span class="header-section-number">1.1.4</span> Other units and conversion factors</h3>
@@ -537,12 +508,49 @@ T (\textrm{K}) = T (^\circ \textrm{C}) + 273.15
 </div>
 <div id="examples" class="section level2">
 <h2><span class="header-section-number">1.2</span> Examples</h2>
+<p>Below the accessible typed examples you will find a video summary and handwritten notes from the video for each example.</p>
+<div id="rearranging-delta-g-delta-h---t-delta-s-to-make-t-the-subject" class="section level3">
+<h3><span class="header-section-number">1.2.1</span> Rearranging <span class="math inline">\(\Delta G = \Delta H - T \Delta S\)</span> to make <span class="math inline">\(T\)</span> the subject</h3>
+<p>If we start with one of the most important equations in chemistry, the Gibbs’ equation:</p>
+<div class="alert alert-light" role="alert">
+<p><span class="math display">\[\begin{equation*}
+\Delta G = \Delta H - T \Delta S
+\end{equation*}\]</span></p>
+</div>
+<p>Here the capital ‘delta’ (<span class="math inline">\(\Delta\)</span>) in each case means ‘large change in’ and so they cannot be canceled.</p>
+<p>If I wanted to rearrange this equation to make <span class="math inline">\(\Delta S\)</span>, the entropy change, the subject then:</p>
+<div class="alert alert-light" role="alert">
+<p>Start by adding <span class="math inline">\(T\Delta S\)</span> to both sides of the equation:
+<span class="math display">\[\begin{equation*}
+\Delta G + T \Delta S= \Delta H - T \Delta S + T \Delta S
+\end{equation*}\]</span>
+on the right hand side <span class="math inline">\(- T \Delta S + T \Delta S=0\)</span> and so cancel.</p>
+<p>We can then subtract <span class="math inline">\(\Delta G\)</span> from both sides of the equation:
+<span class="math display">\[\begin{equation*}
+\Delta G + T \Delta S -\Delta G = \Delta H -\Delta G
+\end{equation*}\]</span>
+now the <span class="math inline">\(\Delta G -\Delta G\)</span> on the left hand side of the equation cancel, leaving us with:
+<span class="math display">\[\begin{equation*}
+T \Delta S = \Delta H -\Delta G
+\end{equation*}\]</span></p>
+<p>Now to cancel the ‘T’ on the left hand side we need to divide by ‘<span class="math inline">\(T\)</span>’ on both sides:</p>
+<p><span class="math display">\[\begin{equation*}
+\frac{T \Delta S}{T} = \frac{\Delta H -\Delta G}{T}
+\end{equation*}\]</span></p>
+<p>which leaves us with an equation with <span class="math inline">\(\Delta S\)</span> as the subject:
+<span class="math display">\[\begin{equation*}
+\Delta S = \frac{\Delta H -\Delta G}{T}
+\end{equation*}\]</span></p>
+</div>
+<p>I recognise as show this is extreamly arduous, however it is changing how we think about the problem which is important.</p>
+<p>There is a <a href="https://youtu.be/EKThFzuncTI">video of this</a> as well as a <a href="http://workitoutwithapencil.xyz/wp-content/uploads/2021/07/Rearranging-equations-.pdf">pdf of the notes</a> from the video.</p>
+</div>
 <div id="conversion-of-ml-to-l-or-cm3-to-dm3" class="section level3">
-<h3><span class="header-section-number">1.2.1</span> Conversion of mL to L or cm<sup>3</sup> to dm<sup>3</sup></h3>
+<h3><span class="header-section-number">1.2.2</span> Conversion of mL to L or cm<sup>3</sup> to dm<sup>3</sup></h3>
 <p>One of the most common conversions undertaken in the physical chemistry lab is conversion of mL to L (or more correctly cm<sup>3</sup> to dm<sup>3</sup>), and although most people are happy to know ‘you just divide by 1000’ most haven’t thought ‘why’, nor does everyone get this unit conversion correct.</p>
-<p>Both of these examples are shown in a worked video at teh end of this section, as is a pdf of the handwritten notes from this video.</p>
+<p>Both of these examples are shown in a worked video at the end of this section, as is a pdf of the handwritten notes from this video.</p>
 <div id="conversion-of-ml-to-l" class="section level4">
-<h4><span class="header-section-number">1.2.1.1</span> Conversion of mL to L</h4>
+<h4><span class="header-section-number">1.2.2.1</span> Conversion of mL to L</h4>
 <p>We can solve this logially, by first having the assertion that 1 mL = 1 × 10<sup>-3</sup> L. Therefore when I want to convert mL to L I just multiply by 1 × 10^-3 (which is equivalent to dividing by 1000), or more formally:</p>
 <div class="alert alert-light" role="alert">
 <p>1 mL = 1 × 10<sup>-3</sup> L</p>
@@ -559,7 +567,7 @@ T (\textrm{K}) = T (^\circ \textrm{C}) + 273.15
 <p>Writing this as either 27.2 × 10<sup>-3</sup> L or 0.0272 L are both equivalent and both valid.</p>
 </div>
 <div id="conversion-of-cm3-to-dm3" class="section level4">
-<h4><span class="header-section-number">1.2.1.2</span> Conversion of cm<sup>3</sup> to dm<sup>3</sup></h4>
+<h4><span class="header-section-number">1.2.2.2</span> Conversion of cm<sup>3</sup> to dm<sup>3</sup></h4>
 <p>It will come as no surprise to know that the same process of either multiplying by 1 × 10<sup>-3</sup> or dividing by 1000 will correctly do this conversion, however knowing that can help justify the process here.</p>
 <p>I am going to start with a similar assertion as above:</p>
 <div class="alert alert-light" role="alert">
