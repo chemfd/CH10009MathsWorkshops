@@ -6,6 +6,7 @@ eq:gibbs
 eq:idealgas
 eq:lowtempheat
 eq:coulomb
+eq:powers
 eq:combpowermult
 eq:combpowerdiv
 eq:combpowerraise
@@ -17,6 +18,7 @@ eq:logadd
 eq:logsub
 eq:logpower
 eq:convpower
+eq:bondvib
 eq:aciddissociation
 tab:acridonequench
 eq:linearplot
@@ -41,6 +43,7 @@ rearranging-delta-g-delta-h---t-delta-s-to-make-t-the-subject
 conversion-of-ml-to-l-or-cm3-to-dm3
 conversion-of-ml-to-l
 conversion-of-cm3-to-dm3
+summary-of-concepts-learnt
 sec:QuestionsUnits
 subsec:rearrange
 subsec:Unitconv
@@ -53,6 +56,9 @@ ch:Workshop2
 sec:Prelim2
 sec:rulespowers
 sec:rulelog
+relationship-between-logs-and-exponents
+a-note-on-logs-exponentials-and-units
+sec:examples2
 sec:Questions2
 sec:logpractice
 sec:logrearrange
