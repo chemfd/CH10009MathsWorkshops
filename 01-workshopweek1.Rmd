@@ -272,15 +272,13 @@ Now I have broken both of these down into multiple steps, and it is good to do t
 [This video](https://www.youtube.com/embed/8T3FmZ5oJ-s) shows me working through both of the above problems. The 'notes' from this video may be found [here](http://workitoutwithapencil.xyz/wp-content/uploads/2021/07/UnitConversions.pdf).
 
 ## Summary of concepts learnt
-<div class="alert alert-info" role="alert">
+:::info
 
-- <span style="color: black;">When rearranging equations 'do the same thing to both sides'
-- <span style="color: black;">Units should be appended anywhere required. There should be a space between number and unit and each part of the unit, for example -28.3 J K^-1^ mol^-1^.
-- <span style="color: black;">The unit 'M' is short for mol dm^-3^
-- <span style="color: black;">When units with prefixes are raised to a power, both the unit and prefix is raised to that power, so cm^2^ = (10^-2^)^2^ m^2^ = 10^-4^ m^2^ or ns^-1^ = (10^-9^)^-1^ s^-1^ = 10^9^ s^-1^
-
-</span>
-</div>
+- When rearranging equations 'do the same thing to both sides'
+- Units should be appended anywhere required. There should be a space between number and unit and each part of the unit, for example -28.3 J K^-1^ mol^-1^.
+- The unit 'M' is short for mol dm^-3^
+- When units with prefixes are raised to a power, both the unit and prefix is raised to that power, so cm^2^ = (10^-2^)^2^ m^2^ = 10^-4^ m^2^ or ns^-1^ = (10^-9^)^-1^ s^-1^ = 10^9^ s^-1^
+:::
 
 ## Questions {#sec:QuestionsUnits}
 

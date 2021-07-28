@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2021-07-23" />
+<meta name="date" content="2021-07-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -109,7 +109,12 @@
 <li class="chapter" data-level="2.1.3" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#relationship-between-logs-and-exponents"><i class="fa fa-check"></i><b>2.1.3</b> Relationship between logs and exponents</a></li>
 <li class="chapter" data-level="2.1.4" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#a-note-on-logs-exponentials-and-units"><i class="fa fa-check"></i><b>2.1.4</b> A note on logs, exponentials and units</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#sec:examples2"><i class="fa fa-check"></i><b>2.2</b> Examples</a></li>
+<li class="chapter" data-level="2.2" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#sec:examples2"><i class="fa fa-check"></i><b>2.2</b> Examples</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#determination-of-units-in-equation-with-powers"><i class="fa fa-check"></i><b>2.2.1</b> Determination of units in equation with powers</a></li>
+<li class="chapter" data-level="2.2.2" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#determination-of-units-in-equation-with-exponential"><i class="fa fa-check"></i><b>2.2.2</b> Determination of units in equation with exponential</a></li>
+<li class="chapter" data-level="2.2.3" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#rearranging-equations-with-exponentials."><i class="fa fa-check"></i><b>2.2.3</b> Rearranging equations with exponentials.</a></li>
+<li class="chapter" data-level="2.2.4" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#solving-problems-using-simultaneous-equations."><i class="fa fa-check"></i><b>2.2.4</b> Solving problems using simultaneous equations.</a></li>
+</ul></li>
 <li class="chapter" data-level="2.3" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#sec:Questions2"><i class="fa fa-check"></i><b>2.3</b> Questions</a><ul>
 <li class="chapter" data-level="2.3.1" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#sec:logpractice"><i class="fa fa-check"></i><b>2.3.1</b> Simple log practice</a></li>
 <li class="chapter" data-level="2.3.2" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#sec:logrearrange"><i class="fa fa-check"></i><b>2.3.2</b> Rearranging equations</a></li>
@@ -181,6 +186,9 @@
 <li class="chapter" data-level="6.3.1" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#basic-integration-practice-1"><i class="fa fa-check"></i><b>6.3.1</b> Basic integration practice</a></li>
 <li class="chapter" data-level="6.3.2" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#differential-equations-1"><i class="fa fa-check"></i><b>6.3.2</b> Differential equations</a></li>
 </ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="other-useful-infomation.html"><a href="other-useful-infomation.html"><i class="fa fa-check"></i><b>7</b> Other useful infomation</a><ul>
+<li class="chapter" data-level="7.1" data-path="other-useful-infomation.html"><a href="other-useful-infomation.html#physical-constants"><i class="fa fa-check"></i><b>7.1</b> Physical constants</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -295,14 +303,14 @@ y = mx+c
 </div>
 <div id="subsec:example" class="section level3">
 <h3><span class="header-section-number">3.1.3</span> Example of plotting graphs</h3>
-<p>The Stern-Volmer (Equation <a href="ch-Workshop3.html#eq:arrhenius">(3.4)</a>) shows how the lifetime <span class="math inline">\(\tau\)</span> of a dye changes with concentration of a quencher, [Q]. The data in Table <a href="ch-Workshop3.html#tab:acridonequench">3.1</a> can be modeled using the Stern-Volmer equation, you will note that this equation uses terms with a subscript 0 (<span class="math inline">\(\tau_0\)</span>), when values like this are frequently used in chemistry (and physics).</p>
+<p>The Stern-Volmer (Equation <a href="ch-Workshop2.html#eq:arrhenius">(2.14)</a>) shows how the lifetime <span class="math inline">\(\tau\)</span> of a dye changes with concentration of a quencher, [Q]. The data in Table <a href="ch-Workshop3.html#tab:acridonequench">3.1</a> can be modeled using the Stern-Volmer equation, you will note that this equation uses terms with a subscript 0 (<span class="math inline">\(\tau_0\)</span>), when values like this are frequently used in chemistry (and physics).</p>
 <p><span class="math display" id="eq:sternvolment">\[\begin{equation}
 \frac{\tau_0}{\tau}=1+k[Q]
 \tag{3.2}
 \end{equation}\]</span></p>
 <p>where <span class="math inline">\(k = k_q \tau_0\)</span>.</p>
 <p>These ‘subscript 0’ values are referencing values when the independant variable is zero, so <span class="math inline">\(\tau_0\)</span> = 17.60 ns.</p>
-<p>You will notice that Equation <a href="ch-Workshop3.html#eq:arrhenius">(3.4)</a> is already arranged into <span class="math inline">\(y=mx+c\)</span>, where the x variable is [KI] and the y variable is <span class="math inline">\(\frac{\tau_0}{\tau}\)</span>. This means that the gradient is k, and the intercept 1.</p>
+<p>You will notice that Equation <a href="ch-Workshop2.html#eq:arrhenius">(2.14)</a> is already arranged into <span class="math inline">\(y=mx+c\)</span>, where the x variable is [KI] and the y variable is <span class="math inline">\(\frac{\tau_0}{\tau}\)</span>. This means that the gradient is k, and the intercept 1.</p>
 </div>
 </div>
 <div id="sec:Questions3" class="section level2">
@@ -413,10 +421,10 @@ y = mx+c
 <div id="subsec:arrhenius" class="section level3">
 <h3><span class="header-section-number">3.2.4</span> Arrhenius equation</h3>
 <p>Answers for these questions are in Section <a href="ch-Workshop3.html#subsec:arrheniusans">3.3.4</a>.</p>
-<p>The Arrhenius equation (Equation <a href="ch-Workshop3.html#eq:arrhenius">(3.4)</a> shows how the rate of reaction, <span class="math inline">\(k\)</span>, depends upon the temperature of the reaction, <span class="math inline">\(T\)</span>).</p>
+<p>The Arrhenius equation (Equation <a href="ch-Workshop2.html#eq:arrhenius">(2.14)</a> shows how the rate of reaction, <span class="math inline">\(k\)</span>, depends upon the temperature of the reaction, <span class="math inline">\(T\)</span>).</p>
 <p><span class="math display" id="eq:arrhenius">\[\begin{equation}
 k=Ae^{-\frac{E_a}{RT}}
-\tag{3.4}
+\tag{2.14}
 \end{equation}\]</span></p>
 <p>For the data shown in Table <a href="ch-Workshop3.html#tab:arrhenius">3.3</a> plot an appropriate linear plot in order to determine the activation energy, <span class="math inline">\(E_a\)</span>, and the pre-exponential factor, <span class="math inline">\(A\)</span>.</p>
 <table>

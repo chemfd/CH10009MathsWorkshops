@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2021-07-23" />
+<meta name="date" content="2021-07-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -109,7 +109,12 @@
 <li class="chapter" data-level="2.1.3" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#relationship-between-logs-and-exponents"><i class="fa fa-check"></i><b>2.1.3</b> Relationship between logs and exponents</a></li>
 <li class="chapter" data-level="2.1.4" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#a-note-on-logs-exponentials-and-units"><i class="fa fa-check"></i><b>2.1.4</b> A note on logs, exponentials and units</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#sec:examples2"><i class="fa fa-check"></i><b>2.2</b> Examples</a></li>
+<li class="chapter" data-level="2.2" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#sec:examples2"><i class="fa fa-check"></i><b>2.2</b> Examples</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#determination-of-units-in-equation-with-powers"><i class="fa fa-check"></i><b>2.2.1</b> Determination of units in equation with powers</a></li>
+<li class="chapter" data-level="2.2.2" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#determination-of-units-in-equation-with-exponential"><i class="fa fa-check"></i><b>2.2.2</b> Determination of units in equation with exponential</a></li>
+<li class="chapter" data-level="2.2.3" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#rearranging-equations-with-exponentials."><i class="fa fa-check"></i><b>2.2.3</b> Rearranging equations with exponentials.</a></li>
+<li class="chapter" data-level="2.2.4" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#solving-problems-using-simultaneous-equations."><i class="fa fa-check"></i><b>2.2.4</b> Solving problems using simultaneous equations.</a></li>
+</ul></li>
 <li class="chapter" data-level="2.3" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#sec:Questions2"><i class="fa fa-check"></i><b>2.3</b> Questions</a><ul>
 <li class="chapter" data-level="2.3.1" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#sec:logpractice"><i class="fa fa-check"></i><b>2.3.1</b> Simple log practice</a></li>
 <li class="chapter" data-level="2.3.2" data-path="ch-Workshop2.html"><a href="ch-Workshop2.html#sec:logrearrange"><i class="fa fa-check"></i><b>2.3.2</b> Rearranging equations</a></li>
@@ -182,6 +187,9 @@
 <li class="chapter" data-level="6.3.2" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#differential-equations-1"><i class="fa fa-check"></i><b>6.3.2</b> Differential equations</a></li>
 </ul></li>
 </ul></li>
+<li class="chapter" data-level="7" data-path="other-useful-infomation.html"><a href="other-useful-infomation.html"><i class="fa fa-check"></i><b>7</b> Other useful infomation</a><ul>
+<li class="chapter" data-level="7.1" data-path="other-useful-infomation.html"><a href="other-useful-infomation.html#physical-constants"><i class="fa fa-check"></i><b>7.1</b> Physical constants</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -235,61 +243,55 @@ b^a
 </ul></li>
 </ul>
 <p>When things have a common base then there are ‘rules’ on how to combine powers. We have essentially been using some of these rules already when we have considered units.</p>
-<div class="alert alert-info" role="alert">
-<p><span style="color: black;">When multiplying two things which share a common base, you add the powers:</p>
+<div class="info">
+<p>When multiplying two things which share a common base, you add the powers:</p>
 <p><span class="math display" id="eq:combpowermult">\[\begin{equation}
-\color{black}
-{m^a \times m^b = m^{a+b}}
+m^a \times m^b = m^{a+b}
 \tag{2.2}
 \end{equation}\]</span></p>
 <div style="height: 1px; background-color: #9FC2D3">
 
 </div>
-<p><span style="color: black;">When dividing two things that share a common base, you subtract the denominator power from the numerator power:</p>
+<p>When dividing two things that share a common base, you subtract the denominator power from the numerator power:</p>
 <p><span class="math display" id="eq:combpowerdiv">\[\begin{equation}
-\color{black}
-{\frac{p^a}{p^b} = p^{a - b}}
+\frac{p^a}{p^b} = p^{a - b}
 \tag{2.3}
 \end{equation}\]</span></p>
 <div style="height: 1px; background-color: #9FC2D3">
 
 </div>
-<p><span style="color: black;">When raising something with a power to a further power, then the two powers are multiplied:</p>
+<p>When raising something with a power to a further power, then the two powers are multiplied:</p>
 <p><span class="math display" id="eq:combpowerraise">\[\begin{equation}
-\color{black}
-{\left(q^a\right)^b =  q^{a\times b}}
+\left(q^a\right)^b =  q^{a\times b}
 \tag{2.4}
 \end{equation}\]</span></p>
 </div>
 <p>There are a few other rules to help us understand how to manipulate powers:</p>
-<div class="alert alert-info" role="alert">
-<p><span style="color: black;"><em>Anything</em> raised to the power 0 is equal to 1:</p>
+<div class="info">
+<p><em>Anything</em> raised to the power 0 is equal to 1:</p>
 <p><span class="math display">\[\begin{equation*}
-\color{black}{x^0=1}
+x^0=1
 \end{equation*}\]</span></p>
-<p><span style="color: black;">or:</p>
+<p>or:</p>
 <p><span class="math display">\[\begin{equation*}
-\color{black}{\textrm{e}^0=1}
+\textrm{e}^0=1
 \end{equation*}\]</span></p>
 <div style="height: 1px; background-color: #9FC2D3">
 
 </div>
-<p><span style="color: black;">Roots may be expressed as fractional powers:</p>
+<p>Roots may be expressed as fractional powers:</p>
 <p><span class="math display" id="eq:fracpower">\[\begin{equation}
-\color{black}
-{\sqrt[n]{x}=x^{\frac{1}{n}}}
+\sqrt[n]{x}=x^{\frac{1}{n}}
 \tag{2.5}
 \end{equation}\]</span></p>
 <div style="height: 1px; background-color: #9FC2D3">
 
 </div>
-<p><span style="color: black;">When we see negative powers it is the same as the inverser of the positive power.</p>
+<p>When we see negative powers it is the same as the inverse of the positive power.</p>
 <p><span class="math display" id="eq:negpower">\[\begin{equation}
-\color{black}
-{x^{-n}={\frac{1}{x^n}}}
+x^{-n}={\frac{1}{x^n}}
 \tag{2.6}
-\end{equation}\]</span>
-</span></p>
+\end{equation}\]</span></p>
 </div>
 </div>
 <div id="sec:rulelog" class="section level3">
@@ -297,55 +299,46 @@ b^a
 <p>Logs are the inverse function of exponents, and can have many bases:</p>
 <p>When we use ‘natural logs’ we use the terminology <span class="math inline">\(\ln\)</span>, a natural log is the inverse of ‘<span class="math inline">\(e\)</span>’.</p>
 <p><span class="math display" id="eq:natlog">\[\begin{equation}
-\color{black}
-{x = \ln e^x}
+x = \ln e^x
 \tag{2.7}
 \end{equation}\]</span></p>
 <p>Other logs are ususally marked with the <em>base</em>, however if no base is indicated it should be considered that this is <span class="math inline">\(\log_{10}\)</span>.</p>
 <p><span class="math display" id="eq:10log">\[\begin{equation}
-\color{black}
-{x = \log_{10} 10^x}
+x = \log_{10} 10^x
 \tag{2.8}
 \end{equation}\]</span></p>
 <p>Just as with combining functions with powers there are a number of rules which help us handle and manipulate logs, these rules are the same no matter the base of the log. When combining logs (these rules are the same regardless of base).</p>
-<div class="alert alert-info" role="alert">
-<p><span style="color: black;">
-<span style="color: black;">For adding to logarithms of the same base:</p>
+<div class="info">
+<p>For adding to logarithms of the same base:</p>
 <p><span class="math display" id="eq:logadd">\[\begin{equation}
-\color{black}
-{\log_x A + \log_x B = \log_x (AB)}
+\log_x A + \log_x B = \log_x (AB)
 \tag{2.9}
 \end{equation}\]</span></p>
 <div style="height: 1px; background-color: #9FC2D3">
 
 </div>
-<p><span style="color: black;">When subtracting two logarithms of the same base:</p>
+<p>When subtracting two logarithms of the same base:</p>
 <p><span class="math display" id="eq:logsub">\[\begin{equation}
-\color{black}
-{\log_x A  - \log_x B = \log_x \left(\frac{A}{B}\right)}
+\log_x A  - \log_x B = \log_x \left(\frac{A}{B}\right)
 \tag{2.10}
 \end{equation}\]</span></p>
 <div style="height: 1px; background-color: #9FC2D3">
 
 </div>
-<p><span style="color: black;">When taking a logarithm of something raised to a power:</p>
+<p>When taking a logarithm of something raised to a power:</p>
 <p><span class="math display" id="eq:logpower">\[\begin{equation}
-\color{black}
-{\log_x (A^n)= n \log_x A}
+\log_x (A^n)= n \log_x A
 \tag{2.11}
-\end{equation}\]</span>
-</span></p>
+\end{equation}\]</span></p>
 </div>
 <p>There are occassions where we need to change the base of a log, this for example occurs in the derivation of the Beer-Lambert law where we look at the <span class="math inline">\(\log_{10}\)</span> of the ratio of light intensity, but this comes from a exponential decay of light intensity through the sample <span class="math inline">\(\ln\)</span>.</p>
 <p>If we want to change the bases of logs (such as in the Beer-Lambert law), there is one final rule of logs.</p>
-<div class="alert alert-info" role="alert">
-<p><span style="color: black;">When changing the base of a logarithm:</p>
+<div class="info">
+<p>When changing the base of a logarithm:</p>
 <p><span class="math display" id="eq:convpower">\[\begin{equation}
-\color{black}
-{log_b A = \frac{\log_x A}{\log_x b}}
+log_b A = \frac{\log_x A}{\log_x b}
 \tag{2.12}
-\end{equation}\]</span>
-</span></p>
+\end{equation}\]</span></p>
 </div>
 </div>
 <div id="relationship-between-logs-and-exponents" class="section level3">
@@ -355,17 +348,123 @@ b^a
 </div>
 <div id="a-note-on-logs-exponentials-and-units" class="section level3">
 <h3><span class="header-section-number">2.1.4</span> A note on logs, exponentials and units</h3>
-<p>You cannot take a log of anything with a unit, nor can you take a exponent of anything with a unit, mathematically it makes no sense. However this helps us with our rearrangements</p>
+<p>You cannot take a log of anything with a unit, nor can you take a exponent of anything with a unit, mathematically it makes no sense. However this helps us with our rearrangements, and working out our units.</p>
+<p>For example if determining an equilibrium constant, <span class="math inline">\(K\)</span>, from knowing the Gibbs’ free energy <span class="math inline">\(\Delta G\)</span>:</p>
+<p><span class="math display">\[\begin{equation*}
+\Delta G = -RT \ln K
+\end{equation*}\]</span></p>
+<p>we will want to rearrange this equation to make K the subject.</p>
+<p><span class="math display">\[\begin{equation*}
+K = \textrm{e}^{-\frac{\Delta G}{RT}}
+\end{equation*}\]</span></p>
+<p>I now know that <span class="math inline">\(K\)</span> has no units (this is because it is based on activity, something you will learn in CH10137). I know this because:</p>
+<ul>
+<li>it is only calculated from an exponential function (which has no units) or</li>
+<li>you can’t take the <span class="math inline">\(\ln\)</span> of anything with a unit.</li>
+</ul>
+<p>The consequence of this is that <span class="math inline">\(\Delta G\)</span> and <span class="math inline">\(RT\)</span> <em>must</em> have the same unit.</p>
 </div>
 </div>
 <div id="sec:examples2" class="section level2">
 <h2><span class="header-section-number">2.2</span> Examples</h2>
-<p>The wavenumber of an <em>infra</em>-red vibration within a molecule is linked to the bond strength, <span class="math inline">\(k\)</span> and the reduced mass <span class="math inline">\(\mu\)</span> of the atoms in the bond, Equation <a href="ch-Workshop2.html#eq:bondvib">(2.13)</a>:</p>
-<div class="alert alert-light" role="alert">
+<div id="determination-of-units-in-equation-with-powers" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Determination of units in equation with powers</h3>
+<div class="question">
+<p>The wavenumber of an <em>infra</em>-red vibration within a molecule is linked to the bond strength, <span class="math inline">\(k\)</span> and the reduced mass <span class="math inline">\(\mu\)</span> (kg) of the atoms in the bond, Equation <a href="ch-Workshop2.html#eq:bondvib">(2.13)</a>. Determine the units of the bond strength <span class="math inline">\(k\)</span>.</p>
 <p><span class="math display" id="eq:bondvib">\[\begin{equation}
-\bar{\nu}=\frac{1}{2 \pi }
+\bar{\nu}=\frac{1}{2 \pi c}\sqrt{\frac{k}{\mu}}
 \tag{2.13}
 \end{equation}\]</span></p>
+<p>Other infomation: <span class="math inline">\(\bar{\nu}\)</span> (m<sup>-1</sup>), c (m s<sup>-1</sup>)</p>
+</div>
+<p>First we need to rearrange this equation to make <span class="math inline">\(k\)</span>, the bond strength the subject.</p>
+<p>Since k is in the square root the first step is to rearrange the equation such that the square root and its contents are one one side and everything else is on the other. Therefore if we multiply both sides by <span class="math inline">\(2 \pi c\)</span> then:</p>
+<p><span class="math inline">\(2 \bar{\nu} \pi c = \sqrt{\frac{k}{\mu}}\)</span></p>
+<p>Now we can square both sides to eliminate the square root (recall indicies a square root can be written as ½ and if I square both sides - or raise both sides to the power two, then we multiply the two indicies which leaves 1).</p>
+<p><span class="math inline">\((2 \bar{\nu} \pi c)^2 = \frac{k}{\mu}\)</span></p>
+<p>Please note, this is exactly the same as <span class="math inline">\(4 \bar{\nu}^2 \pi^2 c^2\)</span>.</p>
+<p>Finally we can multiply both sides by <span class="math inline">\(\mu\)</span> to leave k as the subject.</p>
+<p><span class="math inline">\((2 \bar{\nu} \pi c)^2 \mu = k\)</span></p>
+<p>Now we have an equation for <span class="math inline">\(k\)</span> we can substitute in the units for all of the other variables. (Numbers are dimensionless.)</p>
+<p>(m<sup>-1</sup>)<sup>2</sup> (m s<sup>-1</sup>)<sup>2</sup> kg = <span class="math inline">\(k\)</span></p>
+<p>Cancelling:</p>
+<p><span class="math inline">\(k\)</span> = kg s<sup>-2</sup></p>
+<div class="info">
+<p>The unit of bond strength, <span class="math inline">\(k\)</span>,is more usually written as N m<sup>-1</sup>, but this is the same unit we’ve just determined because as we can see in Table <a href="ch-Workshop1.html#tab:SIderive">1.2</a> a N is a kg m s<sup>-2</sup>, so a N m<sup>-1</sup> = kg s<sup>-2</sup>.</p>
+</div>
+<p>A <a href="https://youtu.be/Q5H00hU6-Wk">video of this example</a>, and <a href="http://workitoutwithapencil.xyz/wp-content/uploads/2021/07/Determining-units-of-k.pdf">handwritten notes</a> from the video are available.</p>
+</div>
+<div id="determination-of-units-in-equation-with-exponential" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Determination of units in equation with exponential</h3>
+<div class="question">
+<p>The Arrhenius equation (equation <a href="ch-Workshop2.html#eq:arrhenius">(2.14)</a>) shows how the rate of a reaction, <span class="math inline">\(k\)</span>, depends upon temperature <span class="math inline">\(T\)</span> (in kelvin). The units of <span class="math inline">\(k\)</span> depend upon the order of reaction.</p>
+<p><span class="math display" id="eq:arrhenius">\[\begin{equation}
+k = A e^{-\frac{E_a}{RT}}
+\tag{2.14}
+\end{equation}\]</span></p>
+<p>Determine the units of the pre-exponential factor <span class="math inline">\(A\)</span> and the activation energy <span class="math inline">\(E_a\)</span> if the reaction is first order, and therefore the units of <span class="math inline">\(k\)</span> are s<sup>-1</sup>.</p>
+</div>
+<p>Here we need to remember that we cannot take an exponential of anything with units, nor does an exponential have units once calculated. Therefore the units of <span class="math inline">\(k\)</span> have to be the same as the units of <span class="math inline">\(A\)</span>.</p>
+<ul>
+<li>Units of <span class="math inline">\(A\)</span> = s<sup>-1</sup>.</li>
+</ul>
+<p>We can also say that since the units of <span class="math inline">\(E_a\)</span> have to cancel with the units of RT, then since the units of the gas constant, <span class="math inline">\(R\)</span> are J K<sup>-1</sup> mol<sup>-1</sup>, and the unit of temperature is K, then:</p>
+<ul>
+<li>Units of <span class="math inline">\(E_a\)</span> = J K<sup>-1</sup> mol<sup>-1</sup> × K = J mol<sup>-1</sup></li>
+</ul>
+</div>
+<div id="rearranging-equations-with-exponentials." class="section level3">
+<h3><span class="header-section-number">2.2.3</span> Rearranging equations with exponentials.</h3>
+<div class="question">
+<p>Rearrange the Arrhenius equation (equation <a href="ch-Workshop2.html#eq:arrhenius">(2.14)</a>) to make <span class="math inline">\(E_a\)</span> the subject.</p>
+</div>
+<p>As has been previously mentioned <span class="math inline">\(A\)</span> will have the same unit as <span class="math inline">\(k\)</span>, and since we cannot take the <span class="math inline">\(\ln\)</span> of anything with a unit we need to have some careful rearranging.</p>
+<p>If I start be dividing both sides by <span class="math inline">\(A\)</span>, then:</p>
+<p><span class="math inline">\(\frac{k}{A}=e^{-\frac{E_a}{RT}}\)</span></p>
+<p>Now <span class="math inline">\(\frac{k}{A}\)</span> is dimensionless and I can take the natural logarithm of both sides (as the reciprical function of e):</p>
+<p><span class="math inline">\(\ln\frac{k}{A}=-\frac{E_a}{RT}\)</span></p>
+<p>To get rid of the minus sign (-) I can use the fact that <span class="math inline">\(\ln\frac{k}{A}=-\ln\frac{A}{k}\)</span> (this is an application of rule <a href="ch-Workshop2.html#eq:logpower">(2.11)</a> where n = -1)</p>
+<p><span class="math inline">\(\ln\frac{A}{k}=\frac{E_a}{RT}\)</span></p>
+<p>Now we can multiply both sides by <span class="math inline">\(RT\)</span> to leave <span class="math inline">\(E_a\)</span> as the subject of the equation:</p>
+<p><span class="math inline">\(RT \ln\frac{A}{k}=E_a\)</span></p>
+<p>A <a href="https://youtu.be/55Cqx42kIrY">video of this example</a>, and <a href="http://workitoutwithapencil.xyz/wp-content/uploads/2021/07/Rearranging-the-Arrhenius-equation.pdf">handwritten notes</a> from the video are available.</p>
+</div>
+<div id="solving-problems-using-simultaneous-equations." class="section level3">
+<h3><span class="header-section-number">2.2.4</span> Solving problems using simultaneous equations.</h3>
+<div class="question">
+<p>The reaction between molecular hydrogen and molecular iodine to produce hydrogen iodide occurs with a rate constant, <span class="math inline">\(k\)</span> of 4.45 × 10<sup>-5</sup> dm<sup>3</sup> mol<sup>-1</sup> s<sup>-1</sup> and 1.37 × 10<sup>-4</sup> dm<sup>3</sup> mol<sup>-1</sup> s<sup>-1</sup> at 283 ºC and 302 ºC respectively.</p>
+<p>Using the Arrhenius equation (equation <a href="ch-Workshop2.html#eq:arrhenius">(2.14)</a>), determine the pre-exponential factor, <span class="math inline">\(A\)</span>, and activation energy, <span class="math inline">\(E_a\)</span> for this reaction.</p>
+</div>
+<p>In the Arrhenius equation there are two unknowns, <span class="math inline">\(E_a\)</span> and <span class="math inline">\(A\)</span>. So we need to find a way to determine both of these values. We can do this with simultaneous equations:</p>
+<p>Method for solving problem:</p>
+<ul>
+<li>determine an expression using simultaneous equations which eliminates one of the unknowns</li>
+<li>solve for the remaining variable</li>
+<li>substitute this back into the original equation to determine the remaining unknown</li>
+</ul>
+<p>If we start with equation <a href="ch-Workshop2.html#eq:arrhenius">(2.14)</a>, we can start to rearrange:</p>
+<p><span class="math display">\[\begin{equation*}
+k = A e^{-\frac{E_a}{RT}}
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+\frac{k}{A}=e^{-\frac{E_a}{RT}}
+\end{equation*}\]</span></p>
+<p>Then taking the natural log of both sides:</p>
+<p><span class="math display">\[\begin{equation*}
+\ln \frac{k}{A}= -\frac{E_a}{RT}
+\end{equation*}\]</span></p>
+<p>Now we can use one of our ‘rules of logs’, (equation <a href="ch-Workshop2.html#eq:logsub">(2.10)</a>):</p>
+<p><span class="math display">\[\begin{equation*}
+\ln {k} - \ln {A}= -\frac{E_a}{RT}
+\end{equation*}\]</span></p>
+<p>From here we can set up the simultaneous equations, having two versions of this equation:</p>
+<p><span class="math display">\[\begin{equation*}
+\ln {k_1} - \ln {A}= -\frac{E_a}{RT_1} \tag{Eq1} \\ 
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+\ln {k_2} - \ln {A}= -\frac{E_a}{RT_2} \tag{Eq2}
+\end{equation*}\]</span></p>
+<p>A <a href="https://youtu.be/hrwBXtnWVAA">video solving the simultaneous equation</a> and <a href="https://youtu.be/608WX_mLfBI">determining the preexponential factor</a>, and <a href="http://workitoutwithapencil.xyz/wp-content/uploads/2021/07/Solving-problems-using-simultaneous-equations-2.pdf">handwritten notes</a> from the video are available.</p>
 </div>
 </div>
 <div id="sec:Questions2" class="section level2">
@@ -418,10 +517,10 @@ b^a
 <div id="sec:pKa" class="section level3">
 <h3><span class="header-section-number">2.3.4</span> pK<sub>a</sub> question.</h3>
 <p>Answers for these questions are in Section <a href="ch-Workshop2.html#subsec:pKaans">2.4.4</a></p>
-<p>The degree of dissociation of an acid, <span class="math inline">\(\alpha\)</span> is related to the acid dissociation constant, <span class="math inline">\(K_a\)</span> and the concentration of the acid, c, as shown in equation <a href="ch-Workshop2.html#eq:aciddissociation">(2.14)</a></p>
+<p>The degree of dissociation of an acid, <span class="math inline">\(\alpha\)</span> is related to the acid dissociation constant, <span class="math inline">\(K_a\)</span> and the concentration of the acid, c, as shown in equation <a href="ch-Workshop2.html#eq:aciddissociation">(2.15)</a></p>
 <p><span class="math display" id="eq:aciddissociation">\[\begin{equation}
 K_a=\frac{\alpha ^2 c}{1-\alpha}
-\tag{2.14}
+\tag{2.15}
 \end{equation}\]</span></p>
 <p>Determine the pH of hydrofluoric acid solutions (p<span class="math inline">\(K_a= 3.18\)</span>) when the concentration of acid is:</p>
 <ol style="list-style-type: lower-alpha">
