@@ -334,6 +334,95 @@ From here we can set up the simultaneous equations, having two versions of this 
 \ln {k_2} - \ln {A}= -\frac{E_a}{RT_2} \tag{Eq2}
 \end{equation*}
 
+Now if we have Eq1 - Eq2, then:
+
+\begin{equation*}
+\ln {k_1} - \ln {A} - \ln {k_2} + \ln {A}= -\frac{E_a}{RT_1} + \frac{E_a}{RT_2}
+\end{equation*}
+
+and we can eliminate the $\ln A$ term.
+
+\begin{equation*}
+\ln {k_1} - \ln {k_2} = -\frac{E_a}{RT_1} + \frac{E_a}{RT_2}
+\end{equation*}
+
+From here we can rearrange to make $E_a$ the subject, firstly by separating the common $\frac{E_a}{R}$ term:
+
+\begin{equation*}
+\ln {k_1} - \ln {k_2} = -\frac{E_a}{R} \left(\frac{1}{T_1} + \frac{1}{T_2} \right)
+\end{equation*}
+
+then collating the temperature terms and putting them over a common denominator:
+
+\begin{equation*}
+\ln {k_1} - \ln {k_2} = -\frac{E_a}{R} \left(\frac{T_2-T_1}{T_1 T_2}  \right)
+\end{equation*}
+
+To eliminate the minus sign we can use one of 'rules of logs':
+
+\begin{equation*}
+\ln {k_2} - \ln {k_1} = \frac{E_a}{R} \left(\frac{T_2-T_1}{T_1 T_2}  \right)
+\end{equation*}
+
+and tidy up the logs:
+
+\begin{equation*}
+\ln {\frac{k_2}{k_1}} = \frac{E_a}{R} \left(\frac{T_2-T_1}{T_1 T_2}  \right)
+\end{equation*}
+
+
+Now we can multiply both sides by $R\left(\frac{T_1 T_2}{T_2 - T_1}\right)$ to leave $E_a$ as the subject:
+
+\begin{equation*}
+R\left(\frac{T_1 T_2}{T_2 - T_1}\right)\ln {\frac{k_2}{k_1}} = E_a
+\end{equation*}
+
+Now we can substitute in our known values for $T_1$, $T_2$, $k_1$ and $k_2$. We firstly need to remember that whenever doing any mathematical calculations with temperature they must be in kelvin!
+
+$T_1$ = 283 ºC = 556 K, $k_1$ = 4.45 × 10^-5^ dm^3^ mol^-1^ s^-1^
+$T_2$ = 302 ºC = 575 K, $k_2$ = 1.37 × 10^-4^ dm^3^ mol^-1^ s^-1^
+
+\begin{equation*}
+E_a = 8.31446 \textrm{ J K}^{-1} \textrm{ mol}^{-1}\left(\frac{556\textrm{ K } \times 575\textrm{ K}}{575\textrm{ K } - 556\textrm{ K}}\right)\ln {\frac{1.37 \times 10^{-4} \textrm{ dm}^3 \textrm{ mol}^{-1} \textrm{ s}^{-1}}{4.45 \times 10^{-5} \textrm{ dm}^3 \textrm{ mol}^{-1} \textrm{ s}^{-1}}}
+\end{equation*}
+
+Therefore:
+
+\begin{equation*}
+E_a = 157 \textrm{ kJ mol}^{-1}
+\end{equation*}
+
+Now we have found a value for $E_a$ that leaves us with just one unknown, $A$. We can use either Eq1 or Eq2 to solve for this.
+
+\begin{equation*}
+\ln {k_1} - \ln {A}= -\frac{E_a}{RT_1} 
+\end{equation*}
+
+Rearranging to make $\ln A$ the subject:
+
+\begin{equation*}
+\ln {A}= \ln {k_1} + \frac{E_a}{RT_1} 
+\end{equation*}
+
+Substituting in our known values of $E_a$, $k_1$ and $T_1$:
+
+\begin{equation*}
+\ln {A}= \ln {4.45 \times 10^{-5}} + \frac{157 \times 10^3\textrm{ J mol}^{-1}}{8.31446 \textrm{ J K}^{-1} \textrm{ mol}^{-1} \times 556 \textrm{ K}} 
+\end{equation*}
+
+*A note on units - you will of course note that I have written the value of $k_1$ without units in the above equation, this is because in effect the unit was 'lost' in the rearrangement (you can't take the log of anything with a unit), we do have to remember that $A$ has to have the same unit as $k_1$ in order for this cancelling to occur*
+
+\begin{equation*}
+\ln {A}= 24.0
+\end{equation*}
+
+Therefore:
+
+\begin{equation*}
+A= \textrm{e}^{24.0} = 2.7 \times 10^{10} \textrm{ dm}^3 \textrm{ mol}^{-1} \textrm{ s}^{-1}
+\end{equation*}
+
+*A note on significant figures - remember when taking an exponent you loose 1 sig fig*.
 
 A [video solving the simultaneous equation](https://youtu.be/hrwBXtnWVAA) and [determining the preexponential factor](https://youtu.be/608WX_mLfBI), and [handwritten notes](http://workitoutwithapencil.xyz/wp-content/uploads/2021/07/Solving-problems-using-simultaneous-equations-2.pdf) from the video are available.
 
@@ -412,22 +501,17 @@ a. 2.50 mM
 1. -5
 1. 1.841...
 1. 4.728...
-1. $x =  \ln y$
-
-<iframe width="541" height="406" src="https://www.youtube.com/embed/8ULExqdw4Ko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+1. $x =  \ln y$ [Worked solution](https://www.youtube.com/embed/8ULExqdw4Ko)
 
 ### Rearranging equations answers {#subsec:logrearrangeans}
 
 
 1. Rearrange the following to make the highlighted term the subject:
     a. $W = e^{\frac{\Delta S}{k_B}}$
-    a. $V_f=V_i e^{\frac{\Delta S}{nR}}$
- <iframe width="541" height="406" src="https://www.youtube.com/embed/qRwwTuQ4j8E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
-    a. $\mu=\frac{1}{4 \pi^2}\frac{k}{\nu^2}$
- <iframe width="541" height="406" src="https://www.youtube.com/embed/fBjIQekmxjY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+    a. $V_f=V_i e^{\frac{\Delta S}{nR}}$ [Worked solution](https://www.youtube.com/embed/qRwwTuQ4j8E)
+    a. $\mu=\frac{1}{4 \pi^2}\frac{k}{\nu^2}$ [Worked solution](https://www.youtube.com/embed/fBjIQekmxjY)
     a. $E=\frac{RT}{nF}\ln K$
-    a. $\Delta H = \left(\frac{TT'}{T'-T}\right)R \ln \frac{K'}{K}$
-<iframe width="541" height="406" src="https://www.youtube.com/embed/OEoDryg8rdo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    a. $\Delta H = \left(\frac{TT'}{T'-T}\right)R \ln \frac{K'}{K}$ [Worked solution](https://www.youtube.com/embed/OEoDryg8rdo)
 
 ***
 
@@ -437,16 +521,12 @@ a. 2.50 mM
 ### pH answer {#subsec:pHans}
 
 a. pH -0.394
-a. $m_{\textrm{NaOH}}=2.5$ g
+a. $m_{\textrm{NaOH}}=2.5$ g [Worked solution](https://www.youtube.com/embed/dg0o4N8nTxY)
 
-<iframe width="541" height="406" src="https://www.youtube.com/embed/dg0o4N8nTxY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### pK~a~ answer {#subsec:pKaans}
 
 a. Two roots: 0.025 and -0.026 and we can't have a negative degree of dissociation. 
 pH 1.6
 a. Two roots: 0.40 and -0.66 and we can't have a negative degree of dissociation.
-pH 3.0
-
-
-<iframe width="541" height="406" src="https://www.youtube.com/embed/N9YhoXcQxnI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+pH 3.0 [Worked solution](https://www.youtube.com/embed/N9YhoXcQxnI)
