@@ -1,0 +1,8 @@
+# Open ended questions
+
+The following questions use skills you have learnt in this course. The skills you have learnt are no longer listed to make these more problem solving.
+
+:::question
+Determine the average volume occupied by a single water molecule (in Å^3^) given the density of water is 0.9982071 kg dm^-3^ at 20 ºC.
+:::
+

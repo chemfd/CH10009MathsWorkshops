@@ -426,6 +426,63 @@ A= \textrm{e}^{24.0} = 2.7 \times 10^{10} \textrm{ dm}^3 \textrm{ mol}^{-1} \tex
 
 A [video solving the simultaneous equation](https://youtu.be/hrwBXtnWVAA) and [determining the preexponential factor](https://youtu.be/608WX_mLfBI), and [handwritten notes](http://workitoutwithapencil.xyz/wp-content/uploads/2021/07/Solving-problems-using-simultaneous-equations-2.pdf) from the video are available.
 
+## Summary of concepts learnt {#sec:summary2}
+:::info
+
+Logarithms are the reciprical function of exponents:
+
+\begin{equation*}
+x = \ln \textrm{e}^x
+\end{equation*}
+
+\begin{equation*}
+x = \log 10^x
+\end{equation*}
+
+
+<div style="height: 1px; background-color: #9FC2D3"></div>
+
+Exponentials and logarithms may be combined using the following rules:
+
+\begin{equation}
+m^a \times m^b = m^{a+b}
+(\#eq:combpowermult)
+\end{equation}
+
+\begin{equation}
+\frac{p^a}{p^b} = p^{a - b}
+(\#eq:combpowerdiv)
+\end{equation}
+
+\begin{equation}
+\left(q^a\right)^b =  q^{a\times b}
+(\#eq:combpowerraise)
+\end{equation}
+
+<div style="height: 1px; background-color: #9FC2D3"></div>
+
+\begin{equation}
+\log_x A + \log_x B = \log_x (AB)
+(\#eq:logadd)
+\end{equation}
+
+\begin{equation}
+\log_x A  - \log_x B = \log_x \left(\frac{A}{B}\right)
+(\#eq:logsub)
+\end{equation}
+
+\begin{equation}
+\log_x (A^n)= n \log_x A
+(\#eq:logpower)
+\end{equation}
+
+<div style="height: 1px; background-color: #9FC2D3"></div>
+
+- Anything raised to a power 0 is 1.
+- Roots may be expressed as fractional powers
+- Negative powers indicate one over the equivalent positive power, x^-3^ ≡ 1/x^3^
+
+:::
 
 
 ## Questions {#sec:Questions2}

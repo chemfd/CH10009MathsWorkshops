@@ -64,6 +64,7 @@ determination-of-units-in-equation-with-powers
 determination-of-units-in-equation-with-exponential
 rearranging-equations-with-exponentials.
 solving-problems-using-simultaneous-equations.
+sec:summary2
 sec:Questions2
 sec:logpractice
 sec:logrearrange
@@ -74,7 +75,7 @@ subsec:logpracticeans
 subsec:logrearrangeans
 subsec:pHans
 subsec:pKaans
-ch:Workshop3
+week-3-chworkshop3
 sec:Prelim3
 subsec:units
 subsec:plotting
@@ -120,5 +121,8 @@ differential-equations
 sec:Answers6
 basic-integration-practice-1
 differential-equations-1
+open-ended-questions
 other-useful-infomation
 physical-constants
+molar-masses
+physical-constants-1

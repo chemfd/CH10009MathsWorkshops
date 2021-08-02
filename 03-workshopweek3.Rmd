@@ -1,4 +1,4 @@
-# Week 3 {#ch:Workshop3}
+# Week 3 {# ch:Workshop3}
 
 ## Preliminary infomation {#sec:Prelim3}
 
@@ -71,6 +71,8 @@ $m= \frac{\Delta y}{\Delta x}$
 Don't forget units on gradients! The units of a gradient are the units on y divided by the units on x.
 
 ### Example of plotting graphs {#subsec:example}
+
+<iframe width="680" height="383" src="https://www.youtube.com/embed/EapAXPfZ7o0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The Stern-Volmer (Equation \@ref(eq:arrhenius)) shows how the lifetime $\tau$ of a dye changes with concentration of a quencher, [Q]. The data in Table \@ref(tab:acridonequench) can be modeled using the Stern-Volmer equation, you will note that this equation uses terms with a subscript 0 ($\tau_0$), when values like this are frequently used in chemistry (and physics).
 
