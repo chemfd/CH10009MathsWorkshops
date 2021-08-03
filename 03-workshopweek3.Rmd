@@ -1,4 +1,4 @@
-# Week 3 {# ch:Workshop3}
+# Week 3 {#ch:Workshop3}
 
 ## Preliminary infomation {#sec:Prelim3}
 
@@ -6,7 +6,7 @@
 
 Your tables should have units expressed in the column headers where appropriate, and uncertainties should be expressed in the header if they are constant across the whole range, or in parentheses for each measurement if different.  Units should be expressed as <span style="color: darkcyan;">"Quantity / unit" <span style="color: black;">to allow you to express them as dimensionless quantities in the table or on the axis of your graph (please note brackets are absolutely incorrect).
 
-This is because this is how our governing body (IUPAC) tell us how to do it. See the IUPAC Green Book (2012 edition, page 3).
+This is because this is how our governing body (IUPAC) tell us how to do it. See the [IUPAC Green Book](https://iupac.org/wp-content/uploads/2019/05/IUPAC-GB3-2012-2ndPrinting-PDFsearchable.pdf) (2012 edition, page 3).
 
 You can think of the horizontal line below the header as an equals sign, so:
 
@@ -70,9 +70,27 @@ $m= \frac{\Delta y}{\Delta x}$
 
 Don't forget units on gradients! The units of a gradient are the units on y divided by the units on x.
 
-### Example of plotting graphs {#subsec:example}
+Usually graphs are now drawn on a computer, we teach you how to draw graphs in both Excel (figure \@ref(fig:excel)) in Key Skills, and Python (figure \@ref(fig:python)) in the Comp Chem labs. However it can be useful to be able to quickly draw a graph by hand as well.
+
+:::info
+**Hints and tips for drawing the perfect graph**
+
+- Data points should be plotted as a dot (not a line), and data points should *not* be connected by a line.
+- A trendline should only be fitted if there is a mathematical reason to do so.
+- Graphs should be on a plain background (no gridlines).
+- Axes do not need to start at zero - you do *not* need that funny squiggly line if it doesn't start at zero.
+- Axes should be labeled with value and unit (if required), the unit should appear behing a solidus (/), you should not use brackets.
+- If the numbers plotted are very small or very large (such that there could be confusion over the numbers on the axes) a multiplier should be included in the axes title.
+- If concentration is being plotted you should use square brackets to indicate the concentration of what *e.g.* [azulene] / µM not concentration / µM.
+- A title should normally be included, but this is a placeholder for a figure caption which you will use in later years.
+- The title should include all relevant details about the graph which are not otherwise included, this may be as simple as the question number, or a full description of other experimental conditions.
+:::
+
+## Example of plotting graphs {#subsec:example}
 
 <iframe width="680" height="383" src="https://www.youtube.com/embed/EapAXPfZ7o0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 
 The Stern-Volmer (Equation \@ref(eq:arrhenius)) shows how the lifetime $\tau$ of a dye changes with concentration of a quencher, [Q]. The data in Table \@ref(tab:acridonequench) can be modeled using the Stern-Volmer equation, you will note that this equation uses terms with a subscript 0 ($\tau_0$), when values like this are frequently used in chemistry (and physics).
 
@@ -86,6 +104,17 @@ where $k = k_q \tau_0$.
 These 'subscript 0' values are referencing values when the independant variable is zero, so $\tau_0$ = 17.60 ns.
 
 You will notice that Equation \@ref(eq:arrhenius) is already arranged into $y=mx+c$, where the x variable is [KI] and the y variable is $\frac{\tau_0}{\tau}$. This means that the gradient is k, and the intercept 1.
+
+Figures \@ref(fig:excel) & \@ref(fig:python) show this data plotted in Excel and Python respectively, no title is included because I've got figure captions.
+
+```{r echo=FALSE, excel, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The Stern-Volmer plot from the data above drawn in excel.'}
+knitr::include_graphics("images/graphexcel.png")
+```
+
+```{r echo=FALSE, python, out.width='100%', fig.show='hold', fig.align='center', fig.cap='The Stern-Volmer plot from the data above drawn in python.'}
+knitr::include_graphics("images/graphpython.png")
+```
+
 
 ## Questions {#sec:Questions3}
 
