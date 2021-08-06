@@ -22,3 +22,30 @@ Table: Physical constants used in this work(\#tab:physicalconst)
 | H | 1.00794 |
 | O | 15.9994 |
 
+
+## Maclaurin expansions of common functions {#sec:maclaurin}
+
+### Maclaurin expansion of exponential functions {#subsec:macexp}
+
+The function $e^{ax}$ may be expressed as a series of polynomials:
+
+\begin{equation}
+e^{ax} = \frac{(ax)^0}{0!} + \frac{(ax)^1}{1!} + \frac{(ax)^2}{2!} + \frac{(ax)^3}{3!} + \dots + \frac{(ax)^\infty}{\infty!}
+(\#eq:macexp)
+\end{equation}
+
+The factoral ($!$) notation used in equation \@ref(eq:macexp) is a shorthand way of expressing a series of multiplication. It is each positive integer up to that value multiplied together. For example $5! = 5 \times 4 \times 3\times 2 \times 1$. $0!=1$, why is explained in [this video](https://www.youtube.com/watch?v=Mfk_L4Nx2ZI).
+
+Knowing the Maclaurin expansion for $e^{ax}$ it becomes obvious why the differential of this function $\frac{\textrm{d}}{\textrm{d}x}e^{ax}=ae^{ax}$. See section \@ref(subsec:diffexp).
+
+### Maclaurin expansion of trig functions {#subsec:mactrig}
+
+\begin{equation}
+\sin(bx) = \frac{(bx)^1}{1!} - \frac{(bx)^3}{3!} + \frac{(bx)^5}{5!} - \frac{(bx)^7}{7!}  + \frac{(bx)^9}{9!} - \dots
+(\#eq:macsin)
+\end{equation}
+
+\begin{equation}
+\cos(cx) = \frac{(cx)^0}{0!} - \frac{(cx)^2}{2!} + \frac{(cx)^4}{4!} - \frac{(cx)^6}{6!}  + \frac{(cx)^8}{8!} - \dots
+(\#eq:maccos)
+\end{equation}

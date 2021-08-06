@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2020.8.26)  3 AUG 2021 16:08
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2020.8.26)  6 AUG 2021 17:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1116,10 +1116,11 @@ Missing character: There is no τ in font [lmroman10-regular]:mapping=tex-text;!
 ] [32]
 File: images/graphexcel.png Graphic file (type bmp)
 <images/graphexcel.png>
+[33]
 File: images/graphpython.png Graphic file (type bmp)
 <images/graphpython.png>
-[33] [34]
-Overfull \vbox (6.44455pt too high) has occurred while \output is active []
+[34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [35] [36]
 File: images/abssketch.png Graphic file (type bmp)
@@ -1130,34 +1131,56 @@ File: images/pVsketch.png Graphic file (type bmp)
 <images/pVsketch.png>
 [37] [38]
 Chapter 4.
+File: images/linearplot.png Graphic file (type bmp)
+<images/linearplot.png>
+File: images/linearplot.png Graphic file (type bmp)
+<images/linearplot.png>
 [39
 
-]
+] [40]
+File: images/quadratic.png Graphic file (type bmp)
+<images/quadratic.png>
+[41] [42] [43]
+File: images/trigcyclic.png Graphic file (type bmp)
+<images/trigcyclic.png>
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text;!
+File: images/difftrigcycle.png Graphic file (type bmp)
+<images/difftrigcycle.png>
+[44] [45] [46]
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no ϕ in font [lmroman10-regular]:mapping=tex-text;!
-[40] [41] [42]
+[47] [48]
 Chapter 5.
-[43
-
-] [44] [45] [46]
-Chapter 6.
-[47
-
-] [48]
-Chapter 7.
 [49
 
-] [50
+] [50] [51] [52]
+Chapter 6.
+[53
+
+] [54]
+Chapter 7.
+[55
+
+] [56
 
 ]
 Chapter 8.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[57]
 No file CH10009-Maths.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2402.
-[51]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2402.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2744.
+[58]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2744.
 (./CH10009-Maths.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2402.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2402.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2744.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2744.
 
 LaTeX Warning: There were undefined references.
 
@@ -1166,12 +1189,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 27680 strings out of 492916
- 504552 string characters out of 6133345
- 734488 words of memory out of 5000000
- 31456 multiletter control sequences out of 15000+600000
+ 27733 strings out of 492916
+ 505473 string characters out of 6133345
+ 738288 words of memory out of 5000000
+ 31505 multiletter control sequences out of 15000+600000
  538772 words of font info for 82 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,10n,115p,812b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CH10009-Maths.pdf (51 pages).
+Output written on CH10009-Maths.pdf (58 pages).

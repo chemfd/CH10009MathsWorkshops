@@ -96,7 +96,7 @@ The Stern-Volmer (Equation \@ref(eq:arrhenius)) shows how the lifetime $\tau$ of
 
 \begin{equation}
 \frac{\tau_0}{\tau}=1+k[Q]
-(\#eq:sternvolment)
+(\#eq:sternvolmer)
 \end{equation}
 
 where $k = k_q \tau_0$.
@@ -111,9 +111,27 @@ Figures \@ref(fig:excel) & \@ref(fig:python) show this data plotted in Excel and
 knitr::include_graphics("images/graphexcel.png")
 ```
 
-```{r echo=FALSE, python, out.width='100%', fig.show='hold', fig.align='center', fig.cap='The Stern-Volmer plot from the data above drawn in python.'}
+```{r echo=FALSE, python, out.width='50%', fig.show='hold', fig.align='center', fig.cap='The Stern-Volmer plot from the data above drawn in python.'}
 knitr::include_graphics("images/graphpython.png")
 ```
+
+## Summary of concepts learnt {#sec:summary3}
+
+:::info
+
+- Units and any scaling factors should appear behind a solidus (/) not brackets.
+- Tables with headers work like equations, the horizontal bar works like a equals sign.
+- It should always be clear what is contained in a table - use square brackets for concentrations
+- Equations should be rearranged so they can be plotted in the form $y=mx+c$.
+
+When plotting graphs:
+
+- the dependent variable (the thing you have control of or something related to it) goes on the horizontal $x$-axis.
+- the independent variable (the thing you measure or something related to it) goes on the vertical $y$-axis.
+- when plotting data data points should be used and they should not be connected by lines.
+- a line of best fit should be used when there is a mathematical reason to do so, so if plotting data as $y=mx+c$ a straight line should be fitted.
+- you should never force a line of best fit through a given intercept.
+:::
 
 
 ## Questions {#sec:Questions3}

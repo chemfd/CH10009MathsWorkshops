@@ -80,7 +80,7 @@
 
 \title{CH10009 Workshop Questions}
 \author{Fiona Dickinson}
-\date{2021-08-03}
+\date{2021-08-06}
 
 \begin{document}
 \maketitle
@@ -1520,24 +1520,6 @@ Don't forget units on gradients! The units of a gradient are the units on y divi
 
 Usually graphs are now drawn on a computer, we teach you how to draw graphs in both Excel (figure \ref{fig:excel}) in Key Skills, and Python (figure \ref{fig:python}) in the Comp Chem labs. However it can be useful to be able to quickly draw a graph by hand as well.
 
-\begin{figure}
-
-{\centering \includegraphics[width=0.7\linewidth]{images/graphexcel} 
-
-}
-
-\caption{The Stern-Volmer plot from the data above drawn in excel.}\label{fig:excel}
-\end{figure}
-
-\begin{figure}
-
-{\centering \includegraphics[width=1\linewidth]{images/graphpython} 
-
-}
-
-\caption{The Stern-Volmer plot from the data above drawn in python.}\label{fig:python}
-\end{figure}
-
 \textbf{Hints and tips for drawing the perfect graph}
 
 \begin{itemize}
@@ -1563,13 +1545,13 @@ Usually graphs are now drawn on a computer, we teach you how to draw graphs in b
 \end{itemize}
 
 \hypertarget{subsec:example}{%
-\subsection{Example of plotting graphs}\label{subsec:example}}
+\section{Example of plotting graphs}\label{subsec:example}}
 
 The Stern-Volmer (Equation \eqref{eq:arrhenius}) shows how the lifetime \(\tau\) of a dye changes with concentration of a quencher, {[}Q{]}. The data in Table \ref{tab:acridonequench} can be modeled using the Stern-Volmer equation, you will note that this equation uses terms with a subscript 0 (\(\tau_0\)), when values like this are frequently used in chemistry (and physics).
 
 \begin{equation}
 \frac{\tau_0}{\tau}=1+k[Q]
-\label{eq:sternvolment}
+\label{eq:sternvolmer}
 \end{equation}
 
 where \(k = k_q \tau_0\).
@@ -1577,6 +1559,57 @@ where \(k = k_q \tau_0\).
 These `subscript 0' values are referencing values when the independant variable is zero, so \(\tau_0\) = 17.60 ns.
 
 You will notice that Equation \eqref{eq:arrhenius} is already arranged into \(y=mx+c\), where the x variable is {[}KI{]} and the y variable is \(\frac{\tau_0}{\tau}\). This means that the gradient is k, and the intercept 1.
+
+Figures \ref{fig:excel} \& \ref{fig:python} show this data plotted in Excel and Python respectively, no title is included because I've got figure captions.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/graphexcel} 
+
+}
+
+\caption{The Stern-Volmer plot from the data above drawn in excel.}\label{fig:excel}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/graphpython} 
+
+}
+
+\caption{The Stern-Volmer plot from the data above drawn in python.}\label{fig:python}
+\end{figure}
+
+\hypertarget{sec:summary3}{%
+\section{Summary of concepts learnt}\label{sec:summary3}}
+
+\begin{itemize}
+\tightlist
+\item
+  Units and any scaling factors should appear behind a solidus (/) not brackets.
+\item
+  Tables with headers work like equations, the horizontal bar works like a equals sign.
+\item
+  It should always be clear what is contained in a table - use square brackets for concentrations
+\item
+  Equations should be rearranged so they can be plotted in the form \(y=mx+c\).
+\end{itemize}
+
+When plotting graphs:
+
+\begin{itemize}
+\tightlist
+\item
+  the dependent variable (the thing you have control of or something related to it) goes on the horizontal \(x\)-axis.
+\item
+  the independent variable (the thing you measure or something related to it) goes on the vertical \(y\)-axis.
+\item
+  when plotting data data points should be used and they should not be connected by lines.
+\item
+  a line of best fit should be used when there is a mathematical reason to do so, so if plotting data as \(y=mx+c\) a straight line should be fitted.
+\item
+  you should never force a line of best fit through a given intercept.
+\end{itemize}
 
 \hypertarget{sec:Questions3}{%
 \section{Questions}\label{sec:Questions3}}
@@ -1767,6 +1800,265 @@ m = -22.4 × 10\textsuperscript{3} K, c = 43.7, \(E_a\) = 186 kJ mol\textsupersc
 \hypertarget{sec:Prelim4}{%
 \section{Preliminary infomation}\label{sec:Prelim4}}
 
+Rates of change are important, whether it is the steepness of a hill (the rate of change of elevation with horizontal distance travelled), speed (rate of change of distance with time) or the rate of reaction (change in concentration of a reactant with respect to time). Differentiation is a mathematical method for determining the rate of change of one variable with another.
+
+Some functions are `linear' (figure \ref{fig:linear}), and the rate of change of the function is the gradient, \(\frac{\Delta y}{\Delta x}\). So if we look at figure \ref{fig:linear} the change of distance (\(\Delta y\)) with respect to time (\(\Delta x\)) is just the gradient, but not all functions are linear, and so not all gradients are constant, therefore not all rates of change are constant.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/linearplot} 
+
+}
+
+\caption{A linear plot with time on the x-axis and distance on the y axis, the gradient of the line is the velocity, the rate of change of distance with respect to time.}\label{fig:linear}
+\end{figure}
+
+Many chemical reactions show a curved decay of concentration of reactant with time (figure \ref{fig:expplot}). In this case the gradient of the line depends on where you measure it.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/linearplot} 
+
+}
+
+\caption{An exponential decay plot with time on the x-axis and concentration of a reactant A on the y axis, the gradient is the rate of reaction and the rate of reaction varies with how far the reaction has proceeded.}\label{fig:expplot}
+\end{figure}
+
+Differentiation is a mathematical way of determining what this gradient is at any given point.
+
+\hypertarget{subsec:whatisdiff}{%
+\subsection{What is differentiation}\label{subsec:whatisdiff}}
+
+If we look at figure \ref{fig:linear} the line fits the equation \(y = mx+c\). The gradient of that line, \(m\), is given by the change in y divided by the change in x:
+
+\begin{equation*}
+m = \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}
+\end{equation*}
+
+For each of the two points used to determine the gradient we may write an equation defining that point:
+
+\begin{equation*}
+y_1 = mx_1 + c\\
+y_2 = mx_2 + c
+\end{equation*}
+
+and \(x_2 = x_1+\Delta x\)
+
+and so we can express \(y_2\) as:
+
+\begin{equation*}
+y_2 = m(x_1+ \Delta x) + c
+\end{equation*}
+
+The gradient of this line is:
+
+\begin{equation*}
+ \frac{\Delta y}{\Delta x} = = \frac{y_2-y_1}{x_2-x_1}=\frac{(m(x_1+ \Delta x) + c) - (mx_1 + c)}{\Delta x} = m\frac{\Delta x}{\Delta x}=m
+\end{equation*}
+
+This is the least surprising result (and a relatively large amount of work) that you will likely see, but this principle can be used to show \emph{what} differentiation is.
+
+We can now show this same idea for a more complicated function, for example a quadratic.
+
+\hypertarget{showing-why-the-differential-of-a-quadratic-is-a-linear-function-of-x}{%
+\subsection{Showing why the differential of a quadratic is a linear function of x}\label{showing-why-the-differential-of-a-quadratic-is-a-linear-function-of-x}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/quadratic} 
+
+}
+
+\caption{Left: a harmonic oscillator model showing quadratic behaviour. Right: a zoomed in section of this model, showing different values of the gradient for different values of Δx, the smaller the value of Δx the better approximation to the gradient.}\label{fig:quad}
+\end{figure}
+
+Figure \ref{fig:quad} shows a harmonic oscilator which is a quadratic function of the form \(y=ax^2+bx+c\). The image shows that the gradient of the point at the bottom of the curve may be approximated by different gradient triangles, the smaller the triangle the better the approximation to the curve, and therefore the better the approximation of the gradient at that point. As these triangles get smaller they better approach the gradient of the tangent to the line.
+
+We can determine the gradient of of any point \((x_0, y_0)\), by using a second point \((x_1, y_1)\) as we did in section \ref{subsec:whatisdiff}.
+
+If a quadratic has the general form \(y=ax^2+bx+c\), then we can write the equations for the points \((x_0, y_0)\) and \((x_1, y_1)\).
+
+\begin{equation*}
+y_0 = ax_0^2+bx_0+c\\
+y_1 = ax_1^2+bx_1+c
+\end{equation*}
+
+and we know that \(x_1=x_0+\Delta x\), so we can rewrite the equation for \(y_1\):
+
+\begin{equation*}
+y_0 = ax_0^2+bx_0+c\\
+y_1 = a(x_0+\Delta x)^2+b(x_0+\Delta x)+c
+\end{equation*}
+
+However as this gradient triangle reduces in size we can use a lower case delta (\(\delta\)) to indicate just a very small change in the x \& y values.
+
+\begin{equation*}
+y_0 = ax_0^2+bx_0+c\\
+y_1 = a(x_0+\delta x)^2+b(x_0+\delta x)+c
+\end{equation*}
+
+The gradient of this line is given by:
+
+\begin{equation*}
+\frac{\delta y}{\delta x} = \frac{y_1-y_0}{x_1-x_0} = \frac{(a(x_0+\delta x)^2+b(x_0+\delta x)+c)-(ax_0^2+bx_0+c)}{\delta x}
+\end{equation*}
+
+Simplifying:
+
+\begin{equation*}
+\frac{\delta y}{\delta x} = \frac{2ax_0 \delta x +2a \delta x^2+b\delta x}{\delta x}
+\end{equation*}
+
+With cancelling:
+
+\begin{equation*}
+\frac{\delta y}{\delta x} = 2ax_0+2a \delta x+b
+\end{equation*}
+
+As the size of the gradient triangle reduces (or more formally as \(\delta x \rightarrow 0\)) then the term with the remaining \(\delta x\) tends to zero. When we do this we use the terminology \(\frac{\textrm{d}y}{\textrm{d}x}\) to denote that we have reduced the size of this step to zero (an entirely mathematical concept). The formal notation of this is: \(\frac{\textrm{d}y}{\textrm{d}x}=\lim\limits_{x \to 0}\frac{\delta y}{\delta x}\), our differential \(\frac{\textrm{d}y}{\textrm{d}x}\) is what we get when we reduce the size of our step between our two values used to determine the gradient to zero.
+
+So:
+\begin{equation*}
+\frac{\textrm{d}}{\textrm{d}x} ax^2+bx+c = 2ax+b
+\end{equation*}
+
+This is differentiation, and instead of going through this process with every possible function we can learn the rules of differentiation so that we can quickly get to the result of most functions that we can think of.
+
+\hypertarget{notation-of-differentiation}{%
+\subsection{Notation of differentiation}\label{notation-of-differentiation}}
+
+There are a couple of different ways of noting differentials, I tend to use a mixture of two methods. There are two different methods of reporting functions firstly where \(y\) is a function of \(x\) (\emph{e.g.} \(y = ax^2+bx+c\)) where the differential notation \(\frac{\textrm{d}y}{\textrm{d}x}\) tends to be used, secondly where we have a function of \(x\) (\emph{e.g.} \(f(x) = ax^2+bx+c\)) where the differential notation \(f'(x)\) tends to be used.
+
+We can also differentiate functions more than once, if we differentiate a function twice with respect to \(x\) we can use either the notation \(\frac{\textrm{d}^2y}{\textrm{d}x^2}\) or \(f''(x)\).
+
+The reasons why we may wish to differentiate a function twice are explained in section \ref{subsec:turningpoints}
+
+\hypertarget{subsec:diffconst}{%
+\subsection{Differentiating constants}\label{subsec:diffconst}}
+
+Graphically we can imagine a constant as a horizontal line on a graph, no matter the value of x, a constant is just that a constant, and therefore it should come as no surprise that the differential of a constant, \(c\) is 0. Formally:
+
+\begin{equation}
+y = c\\
+\frac{\textrm{d}y}{\textrm{d}x}=0
+\label{eq:diffconst}
+\end{equation}
+
+Recall that anything raised to the power 0 is one, so if we differentiate anything raised to the power zero we get 0.
+
+\hypertarget{subsec:diffpolynomial}{%
+\subsection{Differentiating polynomials}\label{subsec:diffpolynomial}}
+
+When differentiating polynomials the rule is always the same for all numerica powers except \(x^0\) (a constant). In this case we multiply our variable by the old power, and deduct one from the starting power. So, if \(a\) and \(b\) are constants:
+
+\begin{equation}
+y = ax^b\\
+\frac{\textrm{d}y}{\textrm{d}x}=abx^{b-1}\\
+\textrm{when } x \neq 0
+\label{eq:diffpoly}
+\end{equation}
+
+This is true for positive intergers:
+
+\(y = 3x^3\)
+\(\frac{\textrm{d}y}{\textrm{d}x} = 9x^2\)
+
+Negative integers (recall that negative powers are a way of expressing 1 over positive powers):
+\(y = ax^{-3}\)
+\(\frac{\textrm{d}y}{\textrm{d}x} = -3ax^{-4}\)
+
+and fractions:
+\(y = 2x^{\frac{1}{2}}\)
+\(\frac{\textrm{d}y}{\textrm{d}x} = x^{-\frac{1}{2}}\)
+
+Note in each case we have reduced the power by one, and multiplied the whole term by the old power.
+
+\hypertarget{subsec:diffexp}{%
+\subsection{Differentiating exponentials}\label{subsec:diffexp}}
+
+\begin{equation}
+y = be^{ax}\\
+\frac{\textrm{d}y}{\textrm{d}x}=abe^{ax}
+\label{eq:diffexp}
+\end{equation}
+
+Exponential functions may be expressed as a polynomial series (Section \ref{subsec:macexp}), this explains the result, but as chemists only the result of the differentiation is usually important.
+
+For example if \(y=e^{-2x}\), then:
+
+\begin{equation*}
+y = be^{ax}\\
+\frac{\textrm{d}y}{\textrm{d}x}=-2e^{-2x}\\
+\textrm{and:}\\
+\frac{\textrm{d}^2y}{\textrm{d}x^2}=4e^{-2x}
+\end{equation*}
+
+\emph{Note how the power in an exponential function does not change.}
+
+\hypertarget{subsec:difflogs}{%
+\subsection{\texorpdfstring{Differentiating natural logs (\(\ln\))}{Differentiating natural logs (\textbackslash ln)}}\label{subsec:difflogs}}
+
+We cannot directly differentiate any logs other than natural logs (\(\ln\)). We can use one of our rules of logs (equation \eqref{eq:convpower}) to convert the log to any other base to a natural log. However, natural logs describe behaviours found naturally in nature, such as chemical reactions and so it is rare to have to differentiate any other logs.
+
+\begin{equation}
+y = \ln {ax}\\
+\frac{\textrm{d}y}{\textrm{d}x}=\frac{1}{x}
+\label{eq:diffln}
+\end{equation}
+
+It may at first seem surprising that the constant \(a\) in equation \eqref{eq:diffln} disappears in the differential, however, if we think about our rules of logs (equation \eqref{eq:logadd}), then \(y=\ln {ax}\) may be rewritten as \(y = \ln a +\ln x\) and of course \(\ln a\) is a constant and so differentiates to 0 as shown in \eqref{eq:diffconst}.
+
+\hypertarget{subsec:difftrig}{%
+\subsection{Differentiating trig functions}\label{subsec:difftrig}}
+
+If we look at how how the trig functions \(\sin\) and \(\cos\) vary (figure \ref{fig:trigcyclic}), we can see that when \(\sin x\) has a maximum value (at \(\frac{\pi}{2}\)) the gradient at that point is 0. We can also see that the value of \(\cos x\) at \(\frac{\pi}{2}\), this isn't coincidence, the functions \(\sin\) and \(\cos\) are intrinsically linked
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/trigcyclic} 
+
+}
+
+\caption{A plot of sin (x) (solid line) and cos (x) (dashed line) showing the repeating nature of the functions over 2π. We can note that when sin (x) reaches a maximum at π/2 and a minimum at 3π/2 (and the gradient is zero) then cos (x) is 0.}\label{fig:trigcyclic}
+\end{figure}
+
+In fact if we differentiate \(\sin x\) with respect to \(x\) we get \(\cos x\). You can see this if you look at the Maclaurin expansion for \(\sin\) (equation \eqref{eq:macsin}) and \(\cos\) (equation \eqref{eq:maccos}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/difftrigcycle} 
+
+}
+
+\caption{The cycle of differentiation which links sin (x) and cos (x). sin (x) differentiates to cos (x), cos (x) differentiates to -sin (x), -sin (x) differentiates to -cos (x) and -cos (x) differentiates to sin x.}\label{fig:difftrig}
+\end{figure}
+
+\begin{equation}
+\begin{array}{ccc}
+  f(x) \equiv y & & f^{\prime}(x) \equiv \dfrac{\textrm{d}y}{\textrm{d}x}\\
+  \hline
+\sin Ax & &A\cos Ax \\
+\cos Ax & &-A\sin Ax \\
+-\sin Ax & &-A\cos Ax \\
+-\cos Ax & &A\sin Ax \\
+\\
+\end{array}
+\end{equation}
+
+The differential of \(\tan x\) is not shown, it is shown later in section \ref{subsec:chainrule}, but it is a result that is rarely needed in chemistry.
+
+\hypertarget{subsec:chainrule}{%
+\subsection{Using the chain rule}\label{subsec:chainrule}}
+
+\hypertarget{subsec:turningpoints}{%
+\subsection{Determining turning points}\label{subsec:turningpoints}}
+
+\hypertarget{examples-1}{%
+\section{Examples}\label{examples-1}}
+
+\hypertarget{summary-of-concepts-learnt-1}{%
+\section{Summary of concepts learnt}\label{summary-of-concepts-learnt-1}}
+
 \begin{equation*}
 \begin{array}{ccc}
   f(x) \equiv y & & f^{\prime}(x) \equiv \dfrac{\textrm{d}y}{\textrm{d}x}\\
@@ -1786,7 +2078,9 @@ Au + Bv & &A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\textrm{d}x}
 
 Chain Rule:
 
-\(\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{\textrm{d}y}{\textrm{d}u} \times \dfrac{\textrm{d}u}{\textrm{d}x}\)
+\begin{equation*}
+\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{\textrm{d}y}{\textrm{d}u} \times \dfrac{\textrm{d}u}{\textrm{d}x}
+\end{equation*}
 
 \hypertarget{sec:Questions4}{%
 \section{Questions}\label{sec:Questions4}}
@@ -2350,12 +2644,30 @@ Solve the following differential equations as far as possible:
   \(w = -nRT \ln \frac{V_f}{V_i}\)
 \end{enumerate}
 
-\hypertarget{open-ended-questions}{%
-\chapter{Open ended questions}\label{open-ended-questions}}
+\hypertarget{ch:questions}{%
+\chapter{Miscellaneous questions}\label{ch:questions}}
 
 The following questions use skills you have learnt in this course. The skills you have learnt are no longer listed to make these more problem solving.
 
-Determine the average volume occupied by a single water molecule (in Å\textsuperscript{3}) given the density of water is 0.9982071 kg dm\textsuperscript{-3} at 20 ºC.
+\hypertarget{questions}{%
+\section{Questions}\label{questions}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Determine the average volume occupied by a single water molecule (in Å\textsuperscript{3}) given the density of water is 0.9982071 kg dm\textsuperscript{-3} at 20 ºC.
+\end{enumerate}
+
+\hypertarget{answers}{%
+\section{Answers}\label{answers}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  29.9688 Å\textsuperscript{3}
+\end{enumerate}
 
 \hypertarget{other-useful-infomation}{%
 \chapter{Other useful infomation}\label{other-useful-infomation}}
@@ -2396,6 +2708,36 @@ H & 1.00794\tabularnewline
 O & 15.9994\tabularnewline
 \bottomrule
 \end{longtable}
+
+\hypertarget{sec:maclaurin}{%
+\section{Maclaurin expansions of common functions}\label{sec:maclaurin}}
+
+\hypertarget{subsec:macexp}{%
+\subsection{Maclaurin expansion of exponential functions}\label{subsec:macexp}}
+
+The function \(e^{ax}\) may be expressed as a series of polynomials:
+
+\begin{equation}
+e^{ax} = \frac{(ax)^0}{0!} + \frac{(ax)^1}{1!} + \frac{(ax)^2}{2!} + \frac{(ax)^3}{3!} + \dots + \frac{(ax)^\infty}{\infty!}
+\label{eq:macexp}
+\end{equation}
+
+The factoral (\(!\)) notation used in equation \eqref{eq:macexp} is a shorthand way of expressing a series of multiplication. It is each positive integer up to that value multiplied together. For example \(5! = 5 \times 4 \times 3\times 2 \times 1\). \(0!=1\), why is explained in \href{https://www.youtube.com/watch?v=Mfk_L4Nx2ZI}{this video}.
+
+Knowing the Maclaurin expansion for \(e^{ax}\) it becomes obvious why the differential of this function \(\frac{\textrm{d}}{\textrm{d}x}e^{ax}=ae^{ax}\). See section \ref{subsec:diffexp}.
+
+\hypertarget{subsec:mactrig}{%
+\subsection{Maclaurin expansion of trig functions}\label{subsec:mactrig}}
+
+\begin{equation}
+\sin(bx) = \frac{(bx)^1}{1!} - \frac{(bx)^3}{3!} + \frac{(bx)^5}{5!} - \frac{(bx)^7}{7!}  + \frac{(bx)^9}{9!} - \dots
+\label{eq:macsin}
+\end{equation}
+
+\begin{equation}
+\cos(cx) = \frac{(cx)^0}{0!} - \frac{(cx)^2}{2!} + \frac{(cx)^4}{4!} - \frac{(cx)^6}{6!}  + \frac{(cx)^8}{8!} - \dots
+\label{eq:maccos}
+\end{equation}
 
   \bibliography{book.bib,packages.bib}
 

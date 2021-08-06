@@ -113,3 +113,23 @@ div.question {
     background-size: 70px;
     background-repeat: no-repeat;
 }
+
+div.thing {
+    margin-top: 1rem;
+    position: relative;
+    padding: .75rem 1.25rem;
+    padding-left: 100px;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #000000;
+    background-color: #ffe5ec;
+    border-color: #ffc2d1;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #ffc2d1;
+    background-image: url("images/booksmall.png");
+    background-position: 15px top;
+    background-size: 70px;
+    background-repeat: no-repeat;
+}
