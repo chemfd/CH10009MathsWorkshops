@@ -20,9 +20,13 @@ Au + Bv & &A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\textrm{d}x}
 \end{array}
 \end{equation*}
 
+### The Chain Rule {#subsec:chainrule}
+
 If differentiating a function of a function we use the 'Chain Rule':
 
 $\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{\textrm{d}y}{\textrm{d}u} \times \dfrac{\textrm{d}u}{\textrm{d}x}$
+
+### The Product Rule {#subsec:productrule}
 
 If differentiate a function times a function we use the 'Product Rule', if :
 
@@ -37,7 +41,7 @@ y= uv
 (\#eq:productrule)
 \end{equation}
 
-## Partial differentiation
+### Partial differentiation {#subsec:partial}
 
 Any good scientist knows that you should only change one variable at a time to understand the effect it has on a system. This is exactly what partial differentiation does, although it recognises that there may be more than one variable in the system...
 
