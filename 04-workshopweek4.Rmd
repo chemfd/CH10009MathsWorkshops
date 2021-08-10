@@ -357,10 +357,9 @@ Therefore, putting each of these terms together: $\frac{\textrm{d}a}{\textrm{d}b
 :::question
 The Lennard-Jones potential (figure \@ref(fig:lennardjones)) describes the potential between two molecules, of which there is an equilibrium separation ($r_{eq}$) at the minimum of the function.
 
-```{r echo=FALSE, lennardjones, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The Lennard-Jones potential.'}
+```{r echo=FALSE, lennardjones, out.width='40%', fig.show='hold', fig.align='center', fig.cap='The Lennard-Jones potential.'}
 knitr::include_graphics("images/lennardjones.png")
 ```
-
 
 :::
 
