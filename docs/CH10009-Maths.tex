@@ -80,7 +80,7 @@
 
 \title{CH10009 Workshop Questions}
 \author{Fiona Dickinson}
-\date{2021-08-09}
+\date{2021-08-10}
 
 \begin{document}
 \maketitle
@@ -2088,7 +2088,7 @@ Our second method for determining the nature of a turning point is by determinin
 If the second derivative is:
 \begin{equation*}
 \begin{array}{ccc}
-  f'(x) \equiv \tfrac{\textrm{d}y}{\textrm{d}x} & & type of turning point\\
+  f'(x) \equiv \frac{\textrm{d}y}{\textrm{d}x} & & type of turning point\\
   \hline
 \textrm{negative}  & & \textrm{maximum}\\
 \textrm{positive} & & \textrm{minimum}\\
@@ -2110,8 +2110,73 @@ If we use the same example as above:
 
 This second derivative is postive, and therefore we know that the turning point is a minimum.
 
+\hypertarget{differentiating-functions-with-more-than-one-term}{%
+\subsection{Differentiating functions with more than one term}\label{differentiating-functions-with-more-than-one-term}}
+
+When differentiating functions with more than one term, we can just differentiate each term in turn. This is only true for when functions are added or subtracted. There are different rules for when two terms are multiplied by each other (the product rule - section \ref{subsec:productrule}) or when we have a function of a function (the chain rule \ref{subsec:chainrule}).
+
+I have previously used differentiating \(y= \ln ax\) with respect to \(x\) as an example, and said that we can use our rules of logs to rearrange this to two terms, \(y= \ln a + \ln x\), when we differentiate this function we differentiate each term in tern.
+
+Differentiating \(y=\ln a\), \(a\) is a constant, and so \(\frac{\textrm{d}y}{\textrm{d}x}=0\).
+
+Differentiating \(y = \ln x\), \(\frac{\textrm{d}y}{\textrm{d}x}=\frac{1}{x}\).
+
+Putting all of this together, \(\frac{\textrm{d}y}{\textrm{d}x}=0+ \frac{1}{x}= \frac{1}{x}\), the result I shared in section \ref{subsec:difflogs}.
+
+Formally where \(y\) is a function of \(u\) \& \(v\), with each terms \(u(x)\) and \(v(x)\) being separate functions of \(x\), \(y = Au(x) + Bv(x)\), then \(\frac{\textrm{d}y}{\textrm{d}x}=A\frac{\textrm{d}u(x)}{\textrm{d}x} + B\frac{\textrm{d}v(x)}{\textrm{d}x}\).
+
 \hypertarget{examples-1}{%
 \section{Examples}\label{examples-1}}
+
+During these examples (and during the questions below) a range of variables have been used because it is rare to meet examples in chemistry using \(x\) and \(y\). The principles are all the same, you are differentiating a dependent variable with respect to an independent variable.
+
+\hypertarget{subsec:exdiffconsts}{%
+\subsection{Differentiating constants}\label{subsec:exdiffconsts}}
+
+Anything which isn't the variable we are differentitating with respect to may be considered a constant.
+
+Determine \(\frac{\textrm{d}a}{\textrm{d}b}\) of the following function:
+
+\begin{equation*}
+a = 4x^3 + 3x^2 + 2x + 1
+\end{equation*}
+
+Since none of these terms contain the variable \(b\), these are all constants when differentiating this function with respect to \(b\).
+
+Therefore \(\frac{\textrm{d}a}{\textrm{d}b}=0\)
+
+\hypertarget{subsec:exdiffpoly}{%
+\subsection{Differentiating polynomials}\label{subsec:exdiffpoly}}
+
+Determine \(\frac{\textrm{d}a}{\textrm{d}b}\) of the following function:
+
+\begin{equation*}
+a = 4b^3 + 3b^2 - 2b + 1
+\end{equation*}
+
+We can differentiate each of these terms in turn:
+
+\(\frac{\textrm{d}}{\textrm{d}b}4b^3 = 3 \times 4b^{3-1}= 12b^2\)
+
+\(\frac{\textrm{d}}{\textrm{d}b}3b^2 = 2 \times 3b^{2-1}= 6b\)
+
+\(\frac{\textrm{d}}{\textrm{d}b}(-2b) = 1 \times -2b^{1-1}= -2b^0 = -2\)
+
+\(\frac{\textrm{d}}{\textrm{d}b}1 = 0\)
+
+Therefore, putting each of these terms together: \(\frac{\textrm{d}a}{\textrm{d}b}=12b^2+6b-2\)
+
+\hypertarget{subsec:exdiffexp}{%
+\subsection{Differentiating exponentials}\label{subsec:exdiffexp}}
+
+\hypertarget{subsec:exdifflogs}{%
+\subsection{Differentiating logs}\label{subsec:exdifflogs}}
+
+\hypertarget{subsec:exdifftrig}{%
+\subsection{Differentiating trig functions}\label{subsec:exdifftrig}}
+
+\hypertarget{subsec:exturningpoints}{%
+\subsection{Determining turning points}\label{subsec:exturningpoints}}
 
 \hypertarget{summary-of-concepts-learnt-1}{%
 \section{Summary of concepts learnt}\label{summary-of-concepts-learnt-1}}
@@ -2129,14 +2194,8 @@ A \ln Bx & &\dfrac{A}{x} \\
 \cos Ax & &-A\sin Ax \\
 \tan Ax & &-A\sec^2 Ax \\
 \\
-Au + Bv & &A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\textrm{d}x} \\
+Au(x) + Bv(x) & &A\dfrac{\textrm{d}u(x)}{\textrm{d}x} + B\dfrac{\textrm{d}v(x)}{\textrm{d}x} \\
 \end{array}
-\end{equation*}
-
-Chain Rule:
-
-\begin{equation*}
-\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{\textrm{d}y}{\textrm{d}u} \times \dfrac{\textrm{d}u}{\textrm{d}x}
 \end{equation*}
 
 \hypertarget{sec:Questions4}{%
@@ -2200,24 +2259,6 @@ Find the turning points \((x,y)\) for the following functions:
   \(y = 12x^5 - 45x^4 + 40x^3\)
 \end{enumerate}
 
-\hypertarget{chain-rule}{%
-\subsection{Chain rule}\label{chain-rule}}
-
-Find the turning points \((x,y)\) for the following functions:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  \(y = sin^2(x)\)
-\item
-  \(y = sin(e^{4x})\)
-\item
-  \(y = e^{(7x^2 + 2x)}\)
-\item
-  \(y = (x-1)^9\)
-\end{enumerate}
-
 \hypertarget{applied-questions}{%
 \subsection{Applied questions}\label{applied-questions}}
 
@@ -2259,7 +2300,7 @@ determine expressions for how the intensity varies with:
   distance from scatterer, r
 \end{enumerate}
 
-\emph{formally these are partial derivatives and we will learn about them next week}
+\emph{formally these are partial derivatives and we will learn about them next week in section \ref{subsec:partial}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -2326,22 +2367,6 @@ determine expressions for how the intensity varies with:
   (1,5)max, (2,4)min
 \item
   (0,0) POI(+/+), (1,7)max, (2, −16)min
-\end{enumerate}
-
-\hypertarget{chain-rule-1}{%
-\subsection{Chain rule}\label{chain-rule-1}}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  \(\dfrac{\textrm{d}y}{\textrm{d}x}= 2 \sin x \cos x\)
-\item
-  \(\dfrac{\textrm{d}y}{\textrm{d}x}=4e^{4x}\cos (e^{4x})\)
-\item
-  \(\dfrac{\textrm{d}y}{\textrm{d}x}= (14x+2)e^{(7x^2 + 2x)}\)
-\item
-  \(\dfrac{\textrm{d}y}{\textrm{d}x}= 9 (x-1)^8\)
 \end{enumerate}
 
 \hypertarget{applied-questions-1}{%
@@ -2455,6 +2480,24 @@ this is implying that the partial derivative of y with respect to x was determin
 \hypertarget{sec:Questions5}{%
 \section{Questions}\label{sec:Questions5}}
 
+\hypertarget{chain-rule}{%
+\subsection{Chain rule}\label{chain-rule}}
+
+Find the turning points \((x,y)\) for the following functions:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(y = sin^2(x)\)
+\item
+  \(y = sin(e^{4x})\)
+\item
+  \(y = e^{(7x^2 + 2x)}\)
+\item
+  \(y = (x-1)^9\)
+\end{enumerate}
+
 \hypertarget{product-rule-questions}{%
 \subsection{Product rule questions}\label{product-rule-questions}}
 
@@ -2515,6 +2558,22 @@ For the following function determine:
 
 \hypertarget{sec:Answers5}{%
 \section{Answers}\label{sec:Answers5}}
+
+\hypertarget{chain-rule-1}{%
+\subsection{Chain rule}\label{chain-rule-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(\dfrac{\textrm{d}y}{\textrm{d}x}= 2 \sin x \cos x\)
+\item
+  \(\dfrac{\textrm{d}y}{\textrm{d}x}=4e^{4x}\cos (e^{4x})\)
+\item
+  \(\dfrac{\textrm{d}y}{\textrm{d}x}= (14x+2)e^{(7x^2 + 2x)}\)
+\item
+  \(\dfrac{\textrm{d}y}{\textrm{d}x}= 9 (x-1)^8\)
+\end{enumerate}
 
 \hypertarget{product-rule-questions-1}{%
 \subsection{Product rule questions}\label{product-rule-questions-1}}

@@ -63,6 +63,15 @@ this is implying that the partial derivative of y with respect to x was determin
 
 ## Questions {#sec:Questions5}
 
+### Chain rule
+
+Find the turning points $(x,y)$ for the following functions:
+
+1. $y = sin^2(x)$
+1. $y = sin(e^{4x})$
+1. $y = e^{(7x^2 + 2x)}$
+1. $y = (x-1)^9$
+
 ### Product rule questions
 Differentiate the following using the product rule:
 
@@ -93,6 +102,13 @@ $\left(\frac{\partial y}{\partial z}\right)_x$, $\left(\frac{\partial y}{\partia
 *this one is involved - it uses both the chain and the product rule!
 
 ## Answers {#sec:Answers5}
+
+### Chain rule
+
+1. $\dfrac{\textrm{d}y}{\textrm{d}x}= 2 \sin x \cos x$
+1. $\dfrac{\textrm{d}y}{\textrm{d}x}=4e^{4x}\cos (e^{4x})$
+1. $\dfrac{\textrm{d}y}{\textrm{d}x}= (14x+2)e^{(7x^2 + 2x)}$
+1. $\dfrac{\textrm{d}y}{\textrm{d}x}= 9 (x-1)^8$
 
 ### Product rule questions
 1. $\dfrac{\textrm{d}y}{\textrm{d}x}=e^{7x}+7xe^{7x}+ 7e^x+7xe^x$

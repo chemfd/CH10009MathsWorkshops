@@ -1599,7 +1599,7 @@ Our second method for determining the nature of a turning point is by determinin
 If the second derivative is:
 \begin{equation*}
 \begin{array}{ccc}
-  f'(x) \equiv \tfrac{\textrm{d}y}{\textrm{d}x} & & type of turning point\\
+  f'(x) \equiv \frac{\textrm{d}y}{\textrm{d}x} & & type of turning point\\
   \hline
 \textrm{negative}  & & \textrm{maximum}\\
 \textrm{positive} & & \textrm{minimum}\\
@@ -1624,7 +1624,81 @@ This second derivative is postive, and therefore we know that the turning point 
 
 ### Differentiating functions with more than one term
 
+When differentiating functions with more than one term, we can just differentiate each term in turn. This is only true for when functions are added or subtracted. There are different rules for when two terms are multiplied by each other (the product rule - section \@ref(subsec:productrule)) or when we have a function of a function (the chain rule \@ref(subsec:chainrule)).
+
+I have previously used differentiating $y= \ln ax$ with respect to $x$ as an example, and said that we can use our rules of logs to rearrange this to two terms, $y= \ln a + \ln x$, when we differentiate this function we differentiate each term in tern.
+
+Differentiating $y=\ln a$, $a$ is a constant, and so $\frac{\textrm{d}y}{\textrm{d}x}=0$.
+
+Differentiating $y = \ln x$, $\frac{\textrm{d}y}{\textrm{d}x}=\frac{1}{x}$.
+
+Putting all of this together, $\frac{\textrm{d}y}{\textrm{d}x}=0+ \frac{1}{x}= \frac{1}{x}$, the result I shared in section \@ref(subsec:difflogs).
+
+Formally where $y$ is a function of $u$ & $v$, with each terms $u(x)$ and $v(x)$ being separate functions of $x$, $y = Au(x) + Bv(x)$, then $\frac{\textrm{d}y}{\textrm{d}x}=A\frac{\textrm{d}u(x)}{\textrm{d}x} + B\frac{\textrm{d}v(x)}{\textrm{d}x}$.
+
 ## Examples
+
+During these examples (and during the questions below) a range of variables have been used because it is rare to meet examples in chemistry using $x$ and $y$. The principles are all the same, you are differentiating a dependent variable with respect to an independent variable.
+
+### Differentiating constants {#subsec:exdiffconsts}
+
+Anything which isn't the variable we are differentitating with respect to may be considered a constant.
+
+:::question
+Determine $\frac{\textrm{d}a}{\textrm{d}b}$ of the following function:
+
+\begin{equation*}
+a = 4x^3 + 3x^2 + 2x + 1
+\end{equation*}
+:::
+
+Since none of these terms contain the variable $b$, these are all constants when differentiating this function with respect to $b$.
+
+Therefore $\frac{\textrm{d}a}{\textrm{d}b}=0$
+
+### Differentiating polynomials {#subsec:exdiffpoly}
+
+:::question
+Determine $\frac{\textrm{d}a}{\textrm{d}b}$ of the following function:
+
+\begin{equation*}
+a = 4b^3 + 3b^2 - 2b + 1
+\end{equation*}
+:::
+
+We can differentiate each of these terms in turn:
+
+$\frac{\textrm{d}}{\textrm{d}b}4b^3 = 3 \times 4b^{3-1}= 12b^2$
+
+$\frac{\textrm{d}}{\textrm{d}b}3b^2 = 2 \times 3b^{2-1}= 6b$
+
+$\frac{\textrm{d}}{\textrm{d}b}(-2b) = 1 \times -2b^{1-1}= -2b^0 = -2$
+
+$\frac{\textrm{d}}{\textrm{d}b}1 = 0$
+
+Therefore, putting each of these terms together: $\frac{\textrm{d}a}{\textrm{d}b}=12b^2+6b-2$
+
+:::question
+
+:::
+
+### Differentiating exponentials {#subsec:exdiffexp}
+
+### Differentiating logs {#subsec:exdifflogs}
+
+### Differentiating trig functions {#subsec:exdifftrig}
+
+### Determining turning points {#subsec:exturningpoints}
+
+:::question
+The Lennard-Jones potential (figure \@ref(fig:lennardjones)) describes the potential between two molecules, of which there is an equilibrium separation ($r_{eq}$) at the minimum of the function.
+
+```{r echo=FALSE, lennardjones, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The Lennard-Jones potential.'}
+knitr::include_graphics("images/lennardjones.png")
+```
+
+
+:::
 
 ## Summary of concepts learnt
 :::info
@@ -1641,16 +1715,8 @@ A \ln Bx & &\dfrac{A}{x} \\
 \cos Ax & &-A\sin Ax \\
 \tan Ax & &-A\sec^2 Ax \\
 \\
-Au + Bv & &A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\textrm{d}x} \\
+Au(x) + Bv(x) & &A\dfrac{\textrm{d}u(x)}{\textrm{d}x} + B\dfrac{\textrm{d}v(x)}{\textrm{d}x} \\
 \end{array}
-\end{equation*}
-
-<div style="height: 1px; background-color: #9FC2D3"></div>
-
-Chain Rule:
-
-\begin{equation*}
-\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{\textrm{d}y}{\textrm{d}u} \times \dfrac{\textrm{d}u}{\textrm{d}x}
 \end{equation*}
 :::
 
@@ -1680,14 +1746,7 @@ Find the turning points $(x,y)$ for the following functions:
 1. $y = 2x^3 - 9x^2 + 12x$
 1. $y = 12x^5 - 45x^4 + 40x^3$
 
-### Chain rule
 
-Find the turning points $(x,y)$ for the following functions:
-
-1. $y = sin^2(x)$
-1. $y = sin(e^{4x})$
-1. $y = e^{(7x^2 + 2x)}$
-1. $y = (x-1)^9$
 
 ### Applied questions
 
@@ -1712,7 +1771,7 @@ a. wavelength, λ
 a. angle, ϕ
 a. distance from scatterer, r
 
-*formally these are partial derivatives and we will learn about them next week*
+*formally these are partial derivatives and we will learn about them next week in section \@ref(subsec:partial)*
 
 3. The radius of a spherical balloon is increasing at a rate of 0.2 m s^−1^. Find the rate of increase of (a) the volume and (b) the surface area of the balloon at the instant when the radius is 1.6 m.
 
@@ -1739,12 +1798,6 @@ a. $5e^{-5x}-5e^{5x}$
 1. (1,5)max, (2,4)min
 1. (0,0) POI(+/+), (1,7)max, (2, −16)min
 
-### Chain rule
-
-1. $\dfrac{\textrm{d}y}{\textrm{d}x}= 2 \sin x \cos x$
-1. $\dfrac{\textrm{d}y}{\textrm{d}x}=4e^{4x}\cos (e^{4x})$
-1. $\dfrac{\textrm{d}y}{\textrm{d}x}= (14x+2)e^{(7x^2 + 2x)}$
-1. $\dfrac{\textrm{d}y}{\textrm{d}x}= 9 (x-1)^8$
 
 ### Applied questions
 
@@ -1832,6 +1885,15 @@ this is implying that the partial derivative of y with respect to x was determin
 
 ## Questions {#sec:Questions5}
 
+### Chain rule
+
+Find the turning points $(x,y)$ for the following functions:
+
+1. $y = sin^2(x)$
+1. $y = sin(e^{4x})$
+1. $y = e^{(7x^2 + 2x)}$
+1. $y = (x-1)^9$
+
 ### Product rule questions
 Differentiate the following using the product rule:
 
@@ -1862,6 +1924,13 @@ $\left(\frac{\partial y}{\partial z}\right)_x$, $\left(\frac{\partial y}{\partia
 *this one is involved - it uses both the chain and the product rule!
 
 ## Answers {#sec:Answers5}
+
+### Chain rule
+
+1. $\dfrac{\textrm{d}y}{\textrm{d}x}= 2 \sin x \cos x$
+1. $\dfrac{\textrm{d}y}{\textrm{d}x}=4e^{4x}\cos (e^{4x})$
+1. $\dfrac{\textrm{d}y}{\textrm{d}x}= (14x+2)e^{(7x^2 + 2x)}$
+1. $\dfrac{\textrm{d}y}{\textrm{d}x}= 9 (x-1)^8$
 
 ### Product rule questions
 1. $\dfrac{\textrm{d}y}{\textrm{d}x}=e^{7x}+7xe^{7x}+ 7e^x+7xe^x$
