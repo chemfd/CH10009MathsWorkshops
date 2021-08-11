@@ -80,7 +80,7 @@
 
 \title{CH10009 Workshop Questions}
 \author{Fiona Dickinson}
-\date{2021-08-10}
+\date{2021-08-11}
 
 \begin{document}
 \maketitle
@@ -2166,6 +2166,48 @@ We can differentiate each of these terms in turn:
 
 Therefore, putting each of these terms together: \(\frac{\textrm{d}a}{\textrm{d}b}=12b^2+6b-2\)
 
+When ions travel in solution their conductivity is given by an equation that contains a temperature dependent constant, \(b\), given by:
+
+\begin{equation*}
+b=\frac{qz^3 \varepsilon F}{24 \pi \varepsilon_0 RT} \left( \frac{2}{ \epsilon RT} \right)^\frac{1}{2}
+\end{equation*}
+
+where \(z\), is the charge on the ion, \(T\) the absolute temperature and all other values are constants.
+
+Determine an expression which shows how \(b\) changes with temperature \(T\).
+
+The approach we need to use is:
+
+\begin{itemize}
+\tightlist
+\item
+  multiply out the bracket to give an expression for \(b\) with only one \(T\) term.\textbackslash{}
+\item
+  determine an expression for \(\tfrac{db}{dT}\).
+\end{itemize}
+
+To simplify the equation I am going to combine my constants into a two single terms, \(c = \frac{qz^3\varepsilon F}{24 \pi \varepsilon_0 R}\) and \(d= \left( \frac{2}{ \epsilon R} \right)^\frac{1}{2}\).
+
+So my expression simplifies to:
+
+\begin{equation*}
+b=\frac{c}{T} d\left( \frac{1}{T} \right)^\frac{1}{2}
+\end{equation*}
+
+rearranging slightly:
+
+\begin{equation*}
+b=cT^{-1}dT^{-\frac{1}{2}}
+\end{equation*}
+
+Combining the \(T\)s into a single expression:
+
+\begin{equation*}
+b=cdT^{-\frac{3}{2}}
+\end{equation*}
+
+\emph{Note: we could use the product rule (section \ref{subsec:productrule}) to solve this without determining a single expression for T, but this is more complicated.}
+
 \hypertarget{subsec:exdiffexp}{%
 \subsection{Differentiating exponentials}\label{subsec:exdiffexp}}
 
@@ -2182,12 +2224,80 @@ The Lennard-Jones potential (figure \ref{fig:lennardjones}) describes the potent
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.4\linewidth]{images/lennardjones} 
+{\centering \includegraphics[width=0.7\linewidth]{images/lennardjones} 
 
 }
 
-\caption{The Lennard-Jones potential.}\label{fig:lennardjones}
+\caption{The Lennard-Jones potential which shows the potential energy between two particles as a function of intermolecular distance. The minimum of this function represents the point at which the force between the two molecules is 0, or that they are in equilibrium.}\label{fig:lennardjones}
 \end{figure}
+
+Whilst this equation appears in many forms (principally with how the constants \(A\) and \(B\) are represented) the actual function of this line is given by a polynomial (equation \eqref{eq:lennardjones}).
+
+\begin{equation}
+V_{LJ}=-\frac{A}{r^6}+\frac{B}{r^{12}}
+\label{eq:lennardjones}
+\end{equation}
+
+Determine an expression for this equilibrium separation of molecules.
+
+We are told that the equilibrium occurs at the minimum of this function, therefore if we differentiate the potential with respect to the distance, and set this equal to 0 (which occurs at a turning point), then we should be able to solve for the equilibrium separation.
+
+\begin{equation*}
+V_{LJ}=-\frac{A}{r^6}+\frac{B}{r^{12}}
+\end{equation*}
+
+Which for clarity we can rewrite as:
+
+\begin{equation*}
+V_{LJ}=-Ar^{-6}+Br^{-12}
+\end{equation*}
+
+Differentiating with respect to \(r\) (recall our rule for polynomials is take one off the power and multiply the term by the old power):
+
+\begin{equation*}
+\frac{\textrm{d}V_{LJ}}{\textrm{d}r}= -(-6)Ar^{-7}+(-12)Br^{-13}\\
+\frac{\textrm{d}V_{LJ}}{\textrm{d}r}= 6Ar^{-7}-12Br^{-13}
+\end{equation*}
+
+At the turning point \(\tfrac{\textrm{d}V_{LJ}}{\textrm{d}r}=0\) and \(r=r_{eq}\):
+
+\begin{equation*}
+0= 6Ar_{eq}^{-7}-12Br_{eq}^{-13}
+\end{equation*}
+
+Multiplying both sides by \(\frac{r^7}{6}\):
+
+\begin{equation*}
+0= Ar_{eq}^{-7+7}-2Br_{eq}^{-13+7}=A-2Br_{eq}^{-6}
+\end{equation*}
+
+Adding \(2Br_{eq}^{-6}\) to both sides:
+
+\begin{equation*}
+2Br_{eq}^{-6}= A
+\end{equation*}
+
+We can rewrite \(r_{eq}^{-6}\) as \(\tfrac{1}{r_{eq}^6}\):
+
+\begin{equation*}
+\frac{2B}{r_{eq}^{6}}= A
+\end{equation*}
+
+Rearranging:
+
+\begin{equation*}
+\frac{2B}{A}= r_{eq}^{6}
+\end{equation*}
+
+Finally we can take the sixth root (which can be expressed as \(^{\tfrac{1}{6}}\)):
+
+\begin{equation*}
+r_{eq} = \left( \frac{2B}{A} \right)^{\frac{1}{6}}
+\end{equation*}
+
+A \href{https://youtu.be/KSfeRXO3i_o}{video} and \href{http://workitoutwithapencil.xyz/wp-content/uploads/2021/08/Lennard-Jones-equilibrium-separation.pdf}{handwritten notes} for working through this problem are available.
+
+Differentiating potential energy with respect to distance gives the force. We can check this with units, energy has the unit J (kg m\textsuperscript{2} s\textsuperscript{-2}), force has the unit N (kg m s\textsuperscript{-2}).
 
 \hypertarget{summary-of-concepts-learnt-1}{%
 \section{Summary of concepts learnt}\label{summary-of-concepts-learnt-1}}

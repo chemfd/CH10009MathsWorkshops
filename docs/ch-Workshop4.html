@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2021-08-10" />
+<meta name="date" content="2021-08-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -520,8 +520,33 @@ a = 4b^3 + 3b^2 - 2b + 1
 <p><span class="math inline">\(\frac{\textrm{d}}{\textrm{d}b}1 = 0\)</span></p>
 <p>Therefore, putting each of these terms together: <span class="math inline">\(\frac{\textrm{d}a}{\textrm{d}b}=12b^2+6b-2\)</span></p>
 <div class="question">
-
+<p>When ions travel in solution their conductivity is given by an equation that contains a temperature dependent constant, <span class="math inline">\(b\)</span>, given by:</p>
+<p><span class="math display">\[\begin{equation*}
+b=\frac{qz^3 \varepsilon F}{24 \pi \varepsilon_0 RT} \left( \frac{2}{ \epsilon RT} \right)^\frac{1}{2}
+\end{equation*}\]</span></p>
+<p>where <span class="math inline">\(z\)</span>, is the charge on the ion, <span class="math inline">\(T\)</span> the absolute temperature and all other values are constants.</p>
+<p>Determine an expression which shows how <span class="math inline">\(b\)</span> changes with temperature <span class="math inline">\(T\)</span>.</p>
+<!-- Dickinson & McKinley, Exercise 7.15.6 -->
 </div>
+<p>The approach we need to use is:</p>
+<ul>
+<li>multiply out the bracket to give an expression for <span class="math inline">\(b\)</span> with only one <span class="math inline">\(T\)</span> term.\</li>
+<li>determine an expression for <span class="math inline">\(\tfrac{db}{dT}\)</span>.</li>
+</ul>
+<p>To simplify the equation I am going to combine my constants into a two single terms, <span class="math inline">\(c = \frac{qz^3\varepsilon F}{24 \pi \varepsilon_0 R}\)</span> and <span class="math inline">\(d= \left( \frac{2}{ \epsilon R} \right)^\frac{1}{2}\)</span>.</p>
+<p>So my expression simplifies to:</p>
+<p><span class="math display">\[\begin{equation*}
+b=\frac{c}{T} d\left( \frac{1}{T} \right)^\frac{1}{2}
+\end{equation*}\]</span></p>
+<p>rearranging slightly:</p>
+<p><span class="math display">\[\begin{equation*}
+b=cT^{-1}dT^{-\frac{1}{2}}
+\end{equation*}\]</span></p>
+<p>Combining the <span class="math inline">\(T\)</span>s into a single expression:</p>
+<p><span class="math display">\[\begin{equation*}
+b=cdT^{-\frac{3}{2}}
+\end{equation*}\]</span></p>
+<p><em>Note: we could use the product rule (section <a href="ch-Workshop5.html#subsec:productrule">5.1.2</a>) to solve this without determining a single expression for T, but this is more complicated.</em></p>
 </div>
 <div id="subsec:exdiffexp" class="section level3">
 <h3><span class="header-section-number">4.2.3</span> Differentiating exponentials</h3>
@@ -537,11 +562,58 @@ a = 4b^3 + 3b^2 - 2b + 1
 <div class="question">
 <p>The Lennard-Jones potential (figure <a href="ch-Workshop4.html#fig:lennardjones">4.7</a>) describes the potential between two molecules, of which there is an equilibrium separation (<span class="math inline">\(r_{eq}\)</span>) at the minimum of the function.</p>
 <div class="figure" style="text-align: center"><span id="fig:lennardjones"></span>
-<img src="images/lennardjones.png" alt="The Lennard-Jones potential." width="40%" />
+<img src="images/lennardjones.png" alt="The Lennard-Jones potential which shows the potential energy between two particles as a function of intermolecular distance. The minimum of this function represents the point at which the force between the two molecules is 0, or that they are in equilibrium." width="70%" />
 <p class="caption">
-Figure 4.7: The Lennard-Jones potential.
+Figure 4.7: The Lennard-Jones potential which shows the potential energy between two particles as a function of intermolecular distance. The minimum of this function represents the point at which the force between the two molecules is 0, or that they are in equilibrium.
 </p>
 </div>
+<p>Whilst this equation appears in many forms (principally with how the constants <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are represented) the actual function of this line is given by a polynomial (equation <a href="ch-Workshop4.html#eq:lennardjones">(4.5)</a>).</p>
+<p><span class="math display" id="eq:lennardjones">\[\begin{equation}
+V_{LJ}=-\frac{A}{r^6}+\frac{B}{r^{12}}
+\tag{4.5}
+\end{equation}\]</span></p>
+<p>Determine an expression for this equilibrium separation of molecules.</p>
+</div>
+<p>We are told that the equilibrium occurs at the minimum of this function, therefore if we differentiate the potential with respect to the distance, and set this equal to 0 (which occurs at a turning point), then we should be able to solve for the equilibrium separation.</p>
+<p><span class="math display">\[\begin{equation*}
+V_{LJ}=-\frac{A}{r^6}+\frac{B}{r^{12}}
+\end{equation*}\]</span></p>
+<p>Which for clarity we can rewrite as:</p>
+<p><span class="math display">\[\begin{equation*}
+V_{LJ}=-Ar^{-6}+Br^{-12}
+\end{equation*}\]</span></p>
+<p>Differentiating with respect to <span class="math inline">\(r\)</span> (recall our rule for polynomials is take one off the power and multiply the term by the old power):</p>
+<p><span class="math display">\[\begin{equation*}
+\frac{\textrm{d}V_{LJ}}{\textrm{d}r}= -(-6)Ar^{-7}+(-12)Br^{-13}\\
+\frac{\textrm{d}V_{LJ}}{\textrm{d}r}= 6Ar^{-7}-12Br^{-13}
+\end{equation*}\]</span></p>
+<p>At the turning point <span class="math inline">\(\tfrac{\textrm{d}V_{LJ}}{\textrm{d}r}=0\)</span> and <span class="math inline">\(r=r_{eq}\)</span>:</p>
+<p><span class="math display">\[\begin{equation*}
+0= 6Ar_{eq}^{-7}-12Br_{eq}^{-13}
+\end{equation*}\]</span></p>
+<p>Multiplying both sides by <span class="math inline">\(\frac{r^7}{6}\)</span>:</p>
+<p><span class="math display">\[\begin{equation*}
+0= Ar_{eq}^{-7+7}-2Br_{eq}^{-13+7}=A-2Br_{eq}^{-6}
+\end{equation*}\]</span></p>
+<p>Adding <span class="math inline">\(2Br_{eq}^{-6}\)</span> to both sides:</p>
+<p><span class="math display">\[\begin{equation*}
+2Br_{eq}^{-6}= A
+\end{equation*}\]</span></p>
+<p>We can rewrite <span class="math inline">\(r_{eq}^{-6}\)</span> as <span class="math inline">\(\tfrac{1}{r_{eq}^6}\)</span>:</p>
+<p><span class="math display">\[\begin{equation*}
+\frac{2B}{r_{eq}^{6}}= A
+\end{equation*}\]</span></p>
+<p>Rearranging:</p>
+<p><span class="math display">\[\begin{equation*}
+\frac{2B}{A}= r_{eq}^{6}
+\end{equation*}\]</span></p>
+<p>Finally we can take the sixth root (which can be expressed as <span class="math inline">\(^{\tfrac{1}{6}}\)</span>):</p>
+<p><span class="math display">\[\begin{equation*}
+r_{eq} = \left( \frac{2B}{A} \right)^{\frac{1}{6}}
+\end{equation*}\]</span></p>
+<p>A <a href="https://youtu.be/KSfeRXO3i_o">video</a> and <a href="http://workitoutwithapencil.xyz/wp-content/uploads/2021/08/Lennard-Jones-equilibrium-separation.pdf">handwritten notes</a> for working through this problem are available.</p>
+<div class="info">
+<p>Differentiating potential energy with respect to distance gives the force. We can check this with units, energy has the unit J (kg m<sup>2</sup> s<sup>-2</sup>), force has the unit N (kg m s<sup>-2</sup>).</p>
 </div>
 </div>
 </div>

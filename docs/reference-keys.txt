@@ -43,6 +43,7 @@ fig:trigcyclic
 fig:difftrig
 fig:turningpoints
 fig:lennardjones
+eq:lennardjones
 eq:productrule
 tab:physicalconst
 eq:macexp
