@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2021-08-11" />
+<meta name="date" content="2021-08-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -522,7 +522,7 @@ a = 4b^3 + 3b^2 - 2b + 1
 <div class="question">
 <p>When ions travel in solution their conductivity is given by an equation that contains a temperature dependent constant, <span class="math inline">\(b\)</span>, given by:</p>
 <p><span class="math display">\[\begin{equation*}
-b=\frac{qz^3 \varepsilon F}{24 \pi \varepsilon_0 RT} \left( \frac{2}{ \epsilon RT} \right)^\frac{1}{2}
+b=\frac{qz^3 \varepsilon F}{24 \pi \varepsilon_0 RT} \left( \frac{2}{ \varepsilon RT} \right)^\frac{1}{2}
 \end{equation*}\]</span></p>
 <p>where <span class="math inline">\(z\)</span>, is the charge on the ion, <span class="math inline">\(T\)</span> the absolute temperature and all other values are constants.</p>
 <p>Determine an expression which shows how <span class="math inline">\(b\)</span> changes with temperature <span class="math inline">\(T\)</span>.</p>
@@ -531,9 +531,9 @@ b=\frac{qz^3 \varepsilon F}{24 \pi \varepsilon_0 RT} \left( \frac{2}{ \epsilon R
 <p>The approach we need to use is:</p>
 <ul>
 <li>multiply out the bracket to give an expression for <span class="math inline">\(b\)</span> with only one <span class="math inline">\(T\)</span> term.\</li>
-<li>determine an expression for <span class="math inline">\(\tfrac{db}{dT}\)</span>.</li>
+<li>determine an expression for <span class="math inline">\(\tfrac{\textrm{d}b}{\textrm{d}T}\)</span>.</li>
 </ul>
-<p>To simplify the equation I am going to combine my constants into a two single terms, <span class="math inline">\(c = \frac{qz^3\varepsilon F}{24 \pi \varepsilon_0 R}\)</span> and <span class="math inline">\(d= \left( \frac{2}{ \epsilon R} \right)^\frac{1}{2}\)</span>.</p>
+<p>To simplify the equation I am going to combine my constants into a two single terms, <span class="math inline">\(c = \frac{qz^3\varepsilon F}{24 \pi \varepsilon_0 R}\)</span> and <span class="math inline">\(d= \left( \frac{2}{ \varepsilon R} \right)^\frac{1}{2}\)</span>.</p>
 <p>So my expression simplifies to:</p>
 <p><span class="math display">\[\begin{equation*}
 b=\frac{c}{T} d\left( \frac{1}{T} \right)^\frac{1}{2}
@@ -546,16 +546,58 @@ b=cT^{-1}dT^{-\frac{1}{2}}
 <p><span class="math display">\[\begin{equation*}
 b=cdT^{-\frac{3}{2}}
 \end{equation*}\]</span></p>
+<p>Now we can replace our temporary constant names:</p>
+<p><span class="math display">\[\begin{equation*}
+b=\frac{qz^3\varepsilon F}{24 \pi \varepsilon_0 R}\left( \frac{2}{ \varepsilon R} \right)^\frac{1}{2}T^{-\frac{3}{2}}
+\end{equation*}\]</span></p>
+<p>There are different ways that this can be expressed, and some people may wish to combine the <span class="math inline">\(R\)</span> into a single term:</p>
+<p><span class="math display">\[\begin{equation*}
+b=\frac{qz^3\varepsilon F}{24 \pi \varepsilon_0}\left( \frac{2}{ \varepsilon R^3} \right)^\frac{1}{2}T^{-\frac{3}{2}}
+\end{equation*}\]</span></p>
+<p>Now to differentiate the function, I will use the simplified form <span class="math inline">\(b=cdT^{-\frac{3}{2}}\)</span>, and substitute in the constants <span class="math inline">\(c\)</span> &amp; <span class="math inline">\(d\)</span> at the end.</p>
+<p>Using our rule for differentiating polynomials:</p>
+<p><span class="math display">\[\begin{equation*}
+\tfrac{\textrm{d}b}{\textrm{d}T}=-\frac{3}{2}cdT^{-\frac{5}{2}}
+\end{equation*}\]</span></p>
+<p>Substituting in the constants:</p>
+<p><span class="math display">\[\begin{equation*}
+\tfrac{\textrm{d}b}{\textrm{d}T}=-\frac{3}{2}\frac{qz^3\varepsilon F}{24 \pi \varepsilon_0R}\left( \frac{2}{ \varepsilon R} \right)^{\frac{1}{2}}T^{-\frac{5}{2}}
+\end{equation*}\]</span></p>
+<p>And tidying up:</p>
+<p><span class="math display">\[\begin{equation*}
+\frac{\textrm{d}b}{\textrm{d}T}=-\frac{qz^3\varepsilon F}{16 \pi \varepsilon_0}\left( \frac{2}{ \varepsilon R^3} \right)^{\frac{1}{2}}T^{-\frac{5}{2}}
+\end{equation*}\]</span></p>
+<p>A <a href="https://youtu.be/h5FCt75G-Us">video</a> and handwritten notes]() of this worked solution are available.</p>
 <p><em>Note: we could use the product rule (section <a href="ch-Workshop5.html#subsec:productrule">5.1.2</a>) to solve this without determining a single expression for T, but this is more complicated.</em></p>
 </div>
 <div id="subsec:exdiffexp" class="section level3">
 <h3><span class="header-section-number">4.2.3</span> Differentiating exponentials</h3>
+<div class="question">
+<p>Determine the momentum, <span class="math inline">\(p_x\)</span>, of a wave-particle whose wave function is given by:</p>
+<p><span class="math display">\[\begin{equation*}
+\Psi = A e^{\frac{2 \pi i x}{\lambda}} e^{-2 \pi i \nu t}
+\end{equation*}\]</span></p>
+<p>by differentiating the function with respect to x and multiplying the result by the constant <span class="math inline">\(-\frac{ih}{2 \pi}\)</span>.</p>
+</div>
+<p>We are told in the question that <span class="math inline">\(p_x=-\frac{ih}{2 \pi}\frac{\textrm{d}\Psi}{\textrm{d}x}\)</span>.</p>
+<p>Everything other than <span class="math inline">\(x\)</span> in this equation is a constant, and therefore this is just the equivalent (with a few extra terms) of differentiating <span class="math inline">\(y = ae^bx\)</span>.</p>
+<p><span class="math display">\[\begin{equation*}
+\frac{\textrm{d}\Psi}{\textrm{d}x} = A \frac{2 \pi i}{\lambda}e^{\frac{2 \pi i x}{\lambda}} e^{-2 \pi i \nu t}
+\end{equation*}\]</span></p>
+<p>Now to determine <span class="math inline">\(p_x\)</span>:</p>
+<p><span class="math display">\[\begin{equation*}
+p_x=-\frac{ih}{2 \pi}\frac{\textrm{d}\Psi}{\textrm{d}x}
+\end{equation*}\]</span></p>
+<p><em>Formally t is also a variable and this should be treated with partial derivatives, but the answer will still be the same.</em></p>
 </div>
 <div id="subsec:exdifflogs" class="section level3">
 <h3><span class="header-section-number">4.2.4</span> Differentiating logs</h3>
 </div>
 <div id="subsec:exdifftrig" class="section level3">
 <h3><span class="header-section-number">4.2.5</span> Differentiating trig functions</h3>
+<div class="question">
+
+</div>
 </div>
 <div id="subsec:exturningpoints" class="section level3">
 <h3><span class="header-section-number">4.2.6</span> Determining turning points</h3>

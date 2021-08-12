@@ -346,7 +346,7 @@ Therefore, putting each of these terms together: $\frac{\textrm{d}a}{\textrm{d}b
 When ions travel in solution their conductivity is given by an equation that contains a temperature dependent constant, $b$, given by:
 
 \begin{equation*}
-b=\frac{qz^3 \varepsilon F}{24 \pi \varepsilon_0 RT} \left( \frac{2}{ \epsilon RT} \right)^\frac{1}{2}
+b=\frac{qz^3 \varepsilon F}{24 \pi \varepsilon_0 RT} \left( \frac{2}{ \varepsilon RT} \right)^\frac{1}{2}
 \end{equation*}
 
 where $z$, is the charge on the ion, $T$ the absolute temperature and all other values are constants.
@@ -359,9 +359,9 @@ Determine an expression which shows how $b$ changes with temperature $T$.
 The approach we need to use is:
 
 - multiply out the bracket to give an expression for $b$ with only one $T$ term.\\
-- determine an expression for $\tfrac{db}{dT}$.
+- determine an expression for $\tfrac{\textrm{d}b}{\textrm{d}T}$.
 
-To simplify the equation I am going to combine my constants into a two single terms, $c = \frac{qz^3\varepsilon F}{24 \pi \varepsilon_0 R}$ and $d= \left( \frac{2}{ \epsilon R} \right)^\frac{1}{2}$.
+To simplify the equation I am going to combine my constants into a two single terms, $c = \frac{qz^3\varepsilon F}{24 \pi \varepsilon_0 R}$ and $d= \left( \frac{2}{ \varepsilon R} \right)^\frac{1}{2}$.
 
 So my expression simplifies to:
 
@@ -381,14 +381,77 @@ Combining the $T$s into a single expression:
 b=cdT^{-\frac{3}{2}}
 \end{equation*}
 
+Now we can replace our temporary constant names:
+
+\begin{equation*}
+b=\frac{qz^3\varepsilon F}{24 \pi \varepsilon_0 R}\left( \frac{2}{ \varepsilon R} \right)^\frac{1}{2}T^{-\frac{3}{2}}
+\end{equation*}
+
+There are different ways that this can be expressed, and some people may wish to combine the $R$ into a single term:
+
+\begin{equation*}
+b=\frac{qz^3\varepsilon F}{24 \pi \varepsilon_0}\left( \frac{2}{ \varepsilon R^3} \right)^\frac{1}{2}T^{-\frac{3}{2}}
+\end{equation*}
+
+Now to differentiate the function, I will use the simplified form $b=cdT^{-\frac{3}{2}}$, and substitute in the constants $c$ & $d$ at the end.
+
+Using our rule for differentiating polynomials:
+
+\begin{equation*}
+\tfrac{\textrm{d}b}{\textrm{d}T}=-\frac{3}{2}cdT^{-\frac{5}{2}}
+\end{equation*}
+
+Substituting in the constants:
+
+\begin{equation*}
+\tfrac{\textrm{d}b}{\textrm{d}T}=-\frac{3}{2}\frac{qz^3\varepsilon F}{24 \pi \varepsilon_0R}\left( \frac{2}{ \varepsilon R} \right)^{\frac{1}{2}}T^{-\frac{5}{2}}
+\end{equation*}
+
+And tidying up:
+
+\begin{equation*}
+\frac{\textrm{d}b}{\textrm{d}T}=-\frac{qz^3\varepsilon F}{16 \pi \varepsilon_0}\left( \frac{2}{ \varepsilon R^3} \right)^{\frac{1}{2}}T^{-\frac{5}{2}}
+\end{equation*}
+
+A [video](https://youtu.be/h5FCt75G-Us) and handwritten notes]() of this worked solution are available.
 	
 *Note: we could use the product rule (section \@ref(subsec:productrule)) to solve this without determining a single expression for T, but this is more complicated.*
 	
 ### Differentiating exponentials {#subsec:exdiffexp}
 
+:::question
+Determine the momentum, $p_x$,  of a wave-particle whose wave function is given by:
+
+\begin{equation*}
+\Psi = A e^{\frac{2 \pi i x}{\lambda}} e^{-2 \pi i \nu t}
+\end{equation*}
+
+by differentiating the function with respect to x and multiplying the result by the constant $-\frac{ih}{2 \pi}$.
+:::
+
+We are told in the question that $p_x=-\frac{ih}{2 \pi}\frac{\textrm{d}\Psi}{\textrm{d}x}$.
+
+Everything other than $x$ in this equation is a constant, and therefore this is just the equivalent (with a few extra terms) of differentiating $y = ae^bx$.
+
+\begin{equation*}
+\frac{\textrm{d}\Psi}{\textrm{d}x} = A \frac{2 \pi i}{\lambda}e^{\frac{2 \pi i x}{\lambda}} e^{-2 \pi i \nu t}
+\end{equation*}
+
+Now to determine $p_x$:
+
+\begin{equation*}
+p_x=-\frac{ih}{2 \pi}\frac{\textrm{d}\Psi}{\textrm{d}x}
+\end{equation*}
+
+*Formally t is also a variable and this should be treated with partial derivatives, but the answer will still be the same.*
+
 ### Differentiating logs {#subsec:exdifflogs}
 
 ### Differentiating trig functions {#subsec:exdifftrig}
+
+:::question
+
+:::
 
 ### Determining turning points {#subsec:exturningpoints}
 
