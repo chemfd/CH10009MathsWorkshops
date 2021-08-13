@@ -80,7 +80,7 @@
 
 \title{CH10009 Workshop Questions}
 \author{Fiona Dickinson}
-\date{2021-08-12}
+\date{2021-08-13}
 
 \begin{document}
 \maketitle
@@ -2223,13 +2223,13 @@ Now to differentiate the function, I will use the simplified form \(b=cdT^{-\fra
 Using our rule for differentiating polynomials:
 
 \begin{equation*}
-\tfrac{\textrm{d}b}{\textrm{d}T}=-\frac{3}{2}cdT^{-\frac{5}{2}}
+\frac{\textrm{d}b}{\textrm{d}T}=-\frac{3}{2}cdT^{-\frac{5}{2}}
 \end{equation*}
 
 Substituting in the constants:
 
 \begin{equation*}
-\tfrac{\textrm{d}b}{\textrm{d}T}=-\frac{3}{2}\frac{qz^3\varepsilon F}{24 \pi \varepsilon_0R}\left( \frac{2}{ \varepsilon R} \right)^{\frac{1}{2}}T^{-\frac{5}{2}}
+\frac{\textrm{d}b}{\textrm{d}T}=-\frac{3}{2}\frac{qz^3\varepsilon F}{24 \pi \varepsilon_0R}\left( \frac{2}{ \varepsilon R} \right)^{\frac{1}{2}}T^{-\frac{5}{2}}
 \end{equation*}
 
 And tidying up:
@@ -2238,7 +2238,7 @@ And tidying up:
 \frac{\textrm{d}b}{\textrm{d}T}=-\frac{qz^3\varepsilon F}{16 \pi \varepsilon_0}\left( \frac{2}{ \varepsilon R^3} \right)^{\frac{1}{2}}T^{-\frac{5}{2}}
 \end{equation*}
 
-A \href{https://youtu.be/h5FCt75G-Us}{video} and handwritten notes{]}() of this worked solution are available.
+A \href{https://youtu.be/h5FCt75G-Us}{video} and handwritten notes{]}(\url{http://workitoutwithapencil.xyz/wp-content/uploads/2021/08/Ex7.15.6-Determining-temp-dependence-of-b.pdf}) of this worked solution are available.
 
 \emph{Note: we could use the product rule (section \ref{subsec:productrule}) to solve this without determining a single expression for T, but this is more complicated.}
 
@@ -2267,13 +2267,63 @@ Now to determine \(p_x\):
 p_x=-\frac{ih}{2 \pi}\frac{\textrm{d}\Psi}{\textrm{d}x}
 \end{equation*}
 
-\emph{Formally t is also a variable and this should be treated with partial derivatives, but the answer will still be the same.}
+Therefore:
+
+\begin{equation*}
+p_x=-\frac{ih}{2 \pi}A \frac{2 \pi i}{\lambda}e^{\frac{2 \pi i x}{\lambda}} e^{-2 \pi i \nu t}
+\end{equation*}
+
+This can be tidied up slightly, and because \(\Psi = A e^{\frac{2 \pi i x}{\lambda}} e^{-2 \pi i \nu t}\), we can substitute this back into the equation:
+
+\begin{equation*}
+p_x=-\frac{i^2h}{\lambda} \Psi
+\end{equation*}
+
+\emph{Note: \(i^2=-1\), whilst this result isn't necessary for what we have learnt here when you do Quantum Mechanics later in the course you will need this, this means that we can simplify this still further to be: \(p_x=\frac{h}{\lambda} \Psi\)}
+
+A \href{https://youtu.be/sMHjcbsNsv8}{video} and \href{http://workitoutwithapencil.xyz/wp-content/uploads/2021/08/Ex7.15.5-Determining-momentum-of-a-wave-particle.pdf}{handwritten notes} working through this problem are available.
+
+\emph{Note: this is actually a simplification for the context of a maths problem, ultimately the \(\Psi\) cancels as the `momentum operator', has to operate on the \(\Psi\) term.}
+
+\emph{Note: formally \(t\) is also a variable and this should be treated with partial derivatives, but the answer will still be the same.}
 
 \hypertarget{subsec:exdifflogs}{%
 \subsection{Differentiating logs}\label{subsec:exdifflogs}}
 
+Determine the rate of change of \(w\) with respect to \(V\) given that:
+
+\begin{equation*}
+w=-nRT \ln V
+\end{equation*}
+
+In this case we are asked to determine \(\tfrac{\textrm{d}w}{\textrm{d}V}\), the fact that this question does not involve \(x\) \& \(y\) doesn't matter the principles are all the same:
+
+So following our rule of logs for differentiating:
+
+\begin{equation*}
+\frac{\textrm{d}w}{\textrm{d}V}= -nRT \times \frac{1}{V}
+\end{equation*}
+
 \hypertarget{subsec:exdifftrig}{%
 \subsection{Differentiating trig functions}\label{subsec:exdifftrig}}
+
+Differentiate the following function with respect to \(\theta\):
+
+\begin{equation*}
+a= b^2 + \frac{c}{\theta}+ \cos^2 \phi + \cos r\theta
+\end{equation*}
+
+Anything which isn't a \(\theta\) may be considered a constant, and so, differentiating each term in turn:
+
+\begin{equation*}
+\frac{\textrm{d}a}{\textrm{d}\theta}= - \frac{c}{\theta^2}+ -a\sin r\theta
+\end{equation*}
+
+The first and third terms only contain constants and so both differentiate to zero.
+
+The second term follows our rules for differentiating polynomials (take one from the power and multiply by the old power), so \(\tfrac{\textrm{d}a}{\textrm{d}\theta}\) of the second term is \(- \frac{c}{\theta^2}\).
+
+The final term follows our rules for differentiating trig functions where the differential of \(\cos ax\) is \(-a \sin ax\), and so in our case \(\tfrac{\textrm{d}a}{\textrm{d}\theta}\) of the final term is \(-a\sin r\theta\).
 
 \hypertarget{subsec:exturningpoints}{%
 \subsection{Determining turning points}\label{subsec:exturningpoints}}
