@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2021-08-13" />
+<meta name="date" content="2021-09-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -567,7 +567,7 @@ b=\frac{qz^3\varepsilon F}{24 \pi \varepsilon_0}\left( \frac{2}{ \varepsilon R^3
 <p><span class="math display">\[\begin{equation*}
 \frac{\textrm{d}b}{\textrm{d}T}=-\frac{qz^3\varepsilon F}{16 \pi \varepsilon_0}\left( \frac{2}{ \varepsilon R^3} \right)^{\frac{1}{2}}T^{-\frac{5}{2}}
 \end{equation*}\]</span></p>
-<p>A <a href="https://youtu.be/h5FCt75G-Us">video</a> and handwritten notes](<a href="http://workitoutwithapencil.xyz/wp-content/uploads/2021/08/Ex7.15.6-Determining-temp-dependence-of-b.pdf" class="uri">http://workitoutwithapencil.xyz/wp-content/uploads/2021/08/Ex7.15.6-Determining-temp-dependence-of-b.pdf</a>) of this worked solution are available.</p>
+<p>A <a href="https://youtu.be/h5FCt75G-Us">video</a> and <a href="http://workitoutwithapencil.xyz/wp-content/uploads/2021/08/Ex7.15.6-Determining-temp-dependence-of-b.pdf">handwritten notes</a> of this worked solution are available.</p>
 <p><em>Note: we could use the product rule (section <a href="ch-Workshop5.html#subsec:productrule">5.1.2</a>) to solve this without determining a single expression for T, but this is more complicated.</em></p>
 </div>
 <div id="subsec:exdiffexp" class="section level3">
@@ -737,7 +737,7 @@ Au(x) + Bv(x) &amp; &amp;A\dfrac{\textrm{d}u(x)}{\textrm{d}x} + B\dfrac{\textrm{
 </div>
 <div id="turning-points" class="section level3">
 <h3><span class="header-section-number">4.4.2</span> Turning points</h3>
-<p>Find the turning points <span class="math inline">\((x,y)\)</span> for the following functions:</p>
+<p>Find the turning points <span class="math inline">\((x,y)\)</span> and determine their ‘type’ for the following functions:</p>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\(y = 2x^3 - 9x^2 + 12x\)</span></li>
 <li><span class="math inline">\(y = 12x^5 - 45x^4 + 40x^3\)</span></li>
@@ -756,13 +756,13 @@ V = \frac{\mu_1 \mu_2}{4 \pi \varepsilon_0 r^3}
 <li>Light is scattered as it passes though solutions containing small particles with an intensity I, given by the following expression:</li>
 </ol>
 <p><span class="math display">\[\begin{equation*}
-I = I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^2})(\sin \phi)^2
+I = I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^2}(\sin \phi)^2
 \end{equation*}\]</span></p>
 <p>determine expressions for how the intensity varies with:</p>
 <ol style="list-style-type: lower-alpha">
 <li>wavelength, λ</li>
-<li>angle, ϕ</li>
 <li>distance from scatterer, r</li>
+<li>angle, ϕ</li>
 </ol>
 <p><em>formally these are partial derivatives and we will learn about them next week in section <a href="ch-Workshop5.html#subsec:partial">5.1.3</a></em></p>
 <ol start="3" style="list-style-type: decimal">
@@ -799,30 +799,22 @@ I = I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^2})(\sin \phi)^2
 <li>(1,5)max, (2,4)min</li>
 <li>(0,0) POI(+/+), (1,7)max, (2, −16)min</li>
 </ol>
+<p><em>Note the coordinates are given (x,y).</em></p>
 </div>
 <div id="applied-questions-1" class="section level3">
 <h3><span class="header-section-number">4.5.3</span> Applied questions</h3>
 <ol style="list-style-type: decimal">
-<li><p><span class="math display">\[\begin{equation*}
-V = \frac{-3 \mu_1 \mu_2}{4 \pi \varepsilon_0 r^4}
-\end{equation*}\]</span></p></li>
-<li><ul>
-<li></li>
-</ul></li>
+<li><p><span class="math inline">\(V = \frac{-3 \mu_1 \mu_2}{4 \pi \varepsilon_0 r^4}\)</span></p></li>
+<li><ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(\dfrac{\textrm{d}I}{\textrm{d}\lambda}= -4I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^5 r^2}(\sin \phi)^2\)</span></li>
+</ol></li>
 </ol>
 <ol style="list-style-type: lower-alpha">
-<li><span class="math display">\[\begin{equation*}
-\dfrac{\textrm{d}I}{\textrm{d}\lambda}= -4I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^5 r^2}(\sin \phi)^2
-\end{equation*}\]</span></li>
-<li><span class="math display">\[\begin{equation*}
-\dfrac{\textrm{d}I}{\textrm{d}\phi}= 2I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^2}(\sin \phi)(\cos \phi)
-\end{equation*}\]</span></li>
-<li><span class="math display">\[\begin{equation*}
-\dfrac{\textrm{d}I}{\textrm{d}r}= -2I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^3}(\sin \phi)^2
-\end{equation*}\]</span></li>
+<li><span class="math inline">\(\dfrac{\textrm{d}I}{\textrm{d}r}= -2I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^3}(\sin \phi)^2\)</span></li>
+<li><span class="math inline">\(\dfrac{\textrm{d}I}{\textrm{d}\phi}= 2I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^2}(\sin \phi)(\cos \phi)\)</span></li>
 </ol>
 <ol start="3" style="list-style-type: decimal">
-<li><span class="math inline">\(\dfrac{\textrm{d}V}{\textrm{d}t}= 0.8 \pi r^2\)</span>, <span class="math inline">\(\dfrac{\textrm{d}SA}{\textrm{d}t}=1.6 \pi r\)</span></li>
+<li><span class="math inline">\(\dfrac{\textrm{d}V}{\textrm{d}t}= 0.8 \pi r^2= 6\)</span> m<sup>3</sup> s<sup>-1</sup>, <span class="math inline">\(\dfrac{\textrm{d}SA}{\textrm{d}t}=1.6 \pi r = 8 \times 10^1\)</span> m<sup>2</sup> s<sup>-1</sup></li>
 </ol>
 
 </div>

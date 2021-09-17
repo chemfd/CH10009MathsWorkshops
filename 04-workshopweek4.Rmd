@@ -413,7 +413,7 @@ And tidying up:
 \frac{\textrm{d}b}{\textrm{d}T}=-\frac{qz^3\varepsilon F}{16 \pi \varepsilon_0}\left( \frac{2}{ \varepsilon R^3} \right)^{\frac{1}{2}}T^{-\frac{5}{2}}
 \end{equation*}
 
-A [video](https://youtu.be/h5FCt75G-Us) and handwritten notes](http://workitoutwithapencil.xyz/wp-content/uploads/2021/08/Ex7.15.6-Determining-temp-dependence-of-b.pdf) of this worked solution are available.
+A [video](https://youtu.be/h5FCt75G-Us) and [handwritten notes](http://workitoutwithapencil.xyz/wp-content/uploads/2021/08/Ex7.15.6-Determining-temp-dependence-of-b.pdf) of this worked solution are available.
 	
 *Note: we could use the product rule (section \@ref(subsec:productrule)) to solve this without determining a single expression for T, but this is more complicated.*
 	
@@ -625,7 +625,7 @@ a. $y = -e^{-5x}-e^{5x}$
 
 ### Turning points
 
-Find the turning points $(x,y)$ for the following functions:
+Find the turning points $(x,y)$ and determine their 'type' for the following functions:
 
 1. $y = 2x^3 - 9x^2 + 12x$
 1. $y = 12x^5 - 45x^4 + 40x^3$
@@ -645,15 +645,15 @@ determine $\dfrac{\textrm{d}V}{\textrm{d}r}$
 2. Light is scattered as it passes though solutions containing small particles with an intensity I, given by the following expression:
 
 \begin{equation*}
-I = I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^2})(\sin \phi)^2
+I = I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^2}(\sin \phi)^2
 \end{equation*}
 
 
 determine expressions for how the intensity varies with:
 
 a. wavelength, λ
-a. angle, ϕ
 a. distance from scatterer, r
+a. angle, ϕ
 
 *formally these are partial derivatives and we will learn about them next week in section \@ref(subsec:partial)*
 
@@ -682,22 +682,14 @@ a. $5e^{-5x}-5e^{5x}$
 1. (1,5)max, (2,4)min
 1. (0,0) POI(+/+), (1,7)max, (2, −16)min
 
+*Note the coordinates are given (x,y).*
 
 ### Applied questions
 
-1. \begin{equation*}
-V = \frac{-3 \mu_1 \mu_2}{4 \pi \varepsilon_0 r^4}
-\end{equation*}
+1. $V = \frac{-3 \mu_1 \mu_2}{4 \pi \varepsilon_0 r^4}$
 
-2. -
-a. \begin{equation*}
-\dfrac{\textrm{d}I}{\textrm{d}\lambda}= -4I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^5 r^2}(\sin \phi)^2
-\end{equation*}
-a. \begin{equation*}
-\dfrac{\textrm{d}I}{\textrm{d}\phi}= 2I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^2}(\sin \phi)(\cos \phi)
-\end{equation*}
-a. \begin{equation*}
-\dfrac{\textrm{d}I}{\textrm{d}r}= -2I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^3}(\sin \phi)^2
-\end{equation*}
+2. a. $\dfrac{\textrm{d}I}{\textrm{d}\lambda}= -4I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^5 r^2}(\sin \phi)^2$
+a. $\dfrac{\textrm{d}I}{\textrm{d}r}= -2I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^3}(\sin \phi)^2$
+a. $\dfrac{\textrm{d}I}{\textrm{d}\phi}= 2I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^2}(\sin \phi)(\cos \phi)$
 
-3. $\dfrac{\textrm{d}V}{\textrm{d}t}= 0.8 \pi r^2$, $\dfrac{\textrm{d}SA}{\textrm{d}t}=1.6 \pi r$
+3. $\dfrac{\textrm{d}V}{\textrm{d}t}= 0.8 \pi r^2= 6$ m^3^ s^-1^,   $\dfrac{\textrm{d}SA}{\textrm{d}t}=1.6 \pi r = 8 \times 10^1$ m^2^ s^-1^
