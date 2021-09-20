@@ -2,8 +2,12 @@
 
 ## Preliminary infomation {#sec:Prelim5}
 
-A recap of standard differentials...
+Some functions are more difficult to determine their 'rate of change' than those listed in Chapter \@ref(ch:Workshop4), and so we can use new 'rules' to help us determine this. This difficulty may arrise because the function is a 'compound' function (such as the Maxwell-Boltzmann distribution), or because the function has more than one variable (the Master equation in thermodynamics has both pressure and temperature as active variables).
 
+In this workshop we will recap the standard differentials previously studied, and expand on this so that we can determine, gradients, rates and turning points for more complicated functions.
+
+A recap of standard differentials...
+:::info
 \begin{equation*}
 \begin{array}{ccc}
   f(x) \equiv y & & f^{\prime}(x) \equiv \dfrac{\textrm{d}y}{\textrm{d}x}\\
@@ -19,12 +23,46 @@ A \ln Bx & &\dfrac{A}{x} \\
 Au + Bv & &A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\textrm{d}x} \\
 \end{array}
 \end{equation*}
+:::
+
+
+Now we can apply these rules to more complicated functions.
 
 ### The Chain Rule {#subsec:chainrule}
 
 If differentiating a function of a function we use the 'Chain Rule':
 
 $\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{\textrm{d}y}{\textrm{d}u} \times \dfrac{\textrm{d}u}{\textrm{d}x}$
+
+When we use the term 'function of a function' we are referring to nested functions, these can be difficult to spot at first, but with practice we can identify part of our function to express as a variable $u$, and have a second function acting on $u$.
+
+An example of a nested function can be a natural log. I have previously used one of our 'rules of logs' to show the differentiation of the function $y = \ln ax$ (Section \@ref(subsec:difflogs)), but we can use the chain rule to do the same thing.
+
+:::thing
+If $y = \ln {ax}$, let $u=ax$, so we can express our log as $y = \ln u$.
+
+Applying the chain rule, we need to determine $\dfrac{\textrm{d}y}{\textrm{d}u}$ and $\dfrac{\textrm{d}u}{\textrm{d}x}$.
+
+$y = \ln u$ then $\dfrac{\textrm{d}y}{\textrm{d}u} = \dfrac{1}{u}$.
+
+$u=ax$ then $\dfrac{\textrm{d}u}{\textrm{d}x}=a$.
+
+Applying the chain rule, then $\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{1}{u} \times a$.
+
+Substituting $u = ax$, then $\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{1}{ax} \times a$, and cancelling the $a$s. 
+
+$\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{1}{x}$, the same result as in Section \@ref(subsec:difflogs).
+:::
+
+Another example of a nested function is $y=\cos x^2$, in this case we can say $u=x^2$, so our original function becomes $y=\cos u$.
+
+If we now differentiate $y$ with respect to $u$, and $u$, with respect to $x$ we have all of the infomation we need to use the chain rule.
+
+$\dfrac{\textrm{d}y}{\textrm{d}u} = -\sin u$ and $\dfrac{\textrm{d}u}{\textrm{d}x}=2x$.
+
+Therefore $\dfrac{\textrm{d}y}{\textrm{d}x} = -\sin u \times 2x$, and so with a little bit of substitution for $u$ and tidying up:
+
+$\dfrac{\textrm{d}y}{\textrm{d}x} = -2x\sin x^2$
 
 ### The Product Rule {#subsec:productrule}
 
@@ -101,6 +139,15 @@ $\left(\frac{\partial y}{\partial z}\right)_x$, $\left(\frac{\partial y}{\partia
 
 *this one is involved - it uses both the chain and the product rule!
 
+### Applied questions
+1. The radius of a spherical balloon is increasing at a rate of 0.2 m s^−1^. Find the rate of increase of (a) the volume and (b) the surface area of the balloon at the instant when the radius is 1.6 m.
+
+1. Determine an expression for the equilibrium separation, $r_{\textrm{eq}}$ of two atoms in a bond using the Morse potential:
+
+\begin{equation*}
+V_{\textrm{Morse}}= D(1-e^{-a(r-r_0)})^2
+\end{equation*}
+
 ## Answers {#sec:Answers5}
 
 ### Chain rule
@@ -151,3 +198,16 @@ $\left(\frac{\partial^2 y}{\partial z^2}\right)_x=2\cos(3z^2+2xz+x^2)-(2z+2x)^2\
 $\left(\frac{\partial^2 y}{\partial x^z}\right)_z=6\cos(3z^2+2xz+x^2)-(6z+2x)^2\sin(3z^2+2xz+x^2)$, 
 $\left(\frac{\partial^2 y}{\partial x \partial z}\right)=2\cos(3z^2+2xz+x^2)-(2z+2x)(6z+2x)\sin(3z^2+2xz+x^2)$ and 
 $\left(\frac{\partial^2 y}{\partial z \partial x}\right)=2\cos(3z^2+2xz+x^2)-(2z+2x)(6z+2x)\sin(3z^2+2xz+x^2)$ if you can do this one you can do them all!!!
+
+### Applied Questions
+
+1. $\dfrac{\textrm{d}V}{\textrm{d}t}= 0.8 \pi r^2= 6$ m^3^ s^-1^,   $\dfrac{\textrm{d}SA}{\textrm{d}t}=1.6 \pi r = 8 \times 10^1$ m^2^ s^-1^
+
+:::warning
+Since there is just one significant figure in the question the answers should only be reported to one significant figure.
+
+This means that for the value of '80' we need to use standard form as any number we share is deemed to be significant.
+
+:::
+
+1. $r_{eq}=r_0$

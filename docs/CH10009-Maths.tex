@@ -50,7 +50,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx,grffile}
+\usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -75,6 +75,9 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
@@ -1737,6 +1740,7 @@ T / ºC & k / 10\textsuperscript{5} s\textsuperscript{-1}\tabularnewline
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
+\tightlist
 \item
 \end{enumerate}
 
@@ -1752,6 +1756,7 @@ T / ºC & k / 10\textsuperscript{5} s\textsuperscript{-1}\tabularnewline
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
+\tightlist
 \item
 \end{enumerate}
 
@@ -1767,6 +1772,7 @@ T / ºC & k / 10\textsuperscript{5} s\textsuperscript{-1}\tabularnewline
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
+\tightlist
 \item
 \end{enumerate}
 
@@ -2526,18 +2532,10 @@ determine expressions for how the intensity varies with:
 \item
   distance from scatterer, r
 \item
-  angle, ϕ
+  angle, ϕ (you won't be able to do this until Chapter \ref{ch:Workshop5})
 \end{enumerate}
 
 \emph{formally these are partial derivatives and we will learn about them next week in section \ref{subsec:partial}}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  The radius of a spherical balloon is increasing at a rate of 0.2 m s\textsuperscript{−1}. Find the rate of increase of (a) the volume and (b) the surface area of the balloon at the instant when the radius is 1.6 m.
-\end{enumerate}
 
 \hypertarget{sec:Answers4}{%
 \section{Answers}\label{sec:Answers4}}
@@ -2608,29 +2606,17 @@ determine expressions for how the intensity varies with:
 \item
   \(V = \frac{-3 \mu_1 \mu_2}{4 \pi \varepsilon_0 r^4}\)
 \item
-  \begin{enumerate}
-  \def\labelenumii{\alph{enumii}.}
-  \tightlist
-  \item
-    \(\dfrac{\textrm{d}I}{\textrm{d}\lambda}= -4I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^5 r^2}(\sin \phi)^2\)
-  \end{enumerate}
 \end{enumerate}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
 \tightlist
 \item
+  \(\dfrac{\textrm{d}I}{\textrm{d}\lambda}= -4I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^5 r^2}(\sin \phi)^2\)
+\item
   \(\dfrac{\textrm{d}I}{\textrm{d}r}= -2I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^3}(\sin \phi)^2\)
 \item
   \(\dfrac{\textrm{d}I}{\textrm{d}\phi}= 2I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^2}(\sin \phi)(\cos \phi)\)
-\end{enumerate}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  \(\dfrac{\textrm{d}V}{\textrm{d}t}= 0.8 \pi r^2= 6\) m\textsuperscript{3} s\textsuperscript{-1}, \(\dfrac{\textrm{d}SA}{\textrm{d}t}=1.6 \pi r = 8 \times 10^1\) m\textsuperscript{2} s\textsuperscript{-1}
 \end{enumerate}
 
 \hypertarget{ch:Workshop5}{%
@@ -2639,8 +2625,12 @@ determine expressions for how the intensity varies with:
 \hypertarget{sec:Prelim5}{%
 \section{Preliminary infomation}\label{sec:Prelim5}}
 
-A recap of standard differentials\ldots{}
+Some functions are more difficult to determine their `rate of change' than those listed in Chapter \ref{ch:Workshop4}, and so we can use new `rules' to help us determine this. This difficulty may arrise because the function is a `compound' function (such as the Maxwell-Boltzmann distribution), or because the function has more than one variable (the Master equation in thermodynamics has both pressure and temperature as active variables).
 
+In this workshop we will recap the standard differentials previously studied, and expand on this so that we can determine, gradients, rates and turning points for more complicated functions.
+
+A recap of standard differentials\ldots{}
+:::info
 \begin{equation*}
 \begin{array}{ccc}
   f(x) \equiv y & & f^{\prime}(x) \equiv \dfrac{\textrm{d}y}{\textrm{d}x}\\
@@ -2656,6 +2646,9 @@ A \ln Bx & &\dfrac{A}{x} \\
 Au + Bv & &A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\textrm{d}x} \\
 \end{array}
 \end{equation*}
+:::
+
+Now we can apply these rules to more complicated functions.
 
 \hypertarget{subsec:chainrule}{%
 \subsection{The Chain Rule}\label{subsec:chainrule}}
@@ -2663,6 +2656,34 @@ Au + Bv & &A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\textrm{d}x}
 If differentiating a function of a function we use the `Chain Rule':
 
 \(\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{\textrm{d}y}{\textrm{d}u} \times \dfrac{\textrm{d}u}{\textrm{d}x}\)
+
+When we use the term `function of a function' we are referring to nested functions, these can be difficult to spot at first, but with practice we can identify part of our function to express as a variable \(u\), and have a second function acting on \(u\).
+
+An example of a nested function can be a natural log. I have previously used one of our `rules of logs' to show the differentiation of the function \(y = \ln ax\) (Section \ref{subsec:difflogs}), but we can use the chain rule to do the same thing.
+
+If \(y = \ln {ax}\), let \(u=ax\), so we can express our log as \(y = \ln u\).
+
+Applying the chain rule, we need to determine \(\dfrac{\textrm{d}y}{\textrm{d}u}\) and \(\dfrac{\textrm{d}u}{\textrm{d}x}\).
+
+\(y = \ln u\) then \(\dfrac{\textrm{d}y}{\textrm{d}u} = \dfrac{1}{u}\).
+
+\(u=ax\) then \(\dfrac{\textrm{d}u}{\textrm{d}x}=a\).
+
+Applying the chain rule, then \(\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{1}{u} \times a\).
+
+Substituting \(u = ax\), then \(\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{1}{ax} \times a\), and cancelling the \(a\)s.
+
+\(\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{1}{x}\), the same result as in Section \ref{subsec:difflogs}.
+
+Another example of a nested function is \(y=\cos x^2\), in this case we can say \(u=x^2\), so our original function becomes \(y=\cos u\).
+
+If we now differentiate \(y\) with respect to \(u\), and \(u\), with respect to \(x\) we have all of the infomation we need to use the chain rule.
+
+\(\dfrac{\textrm{d}y}{\textrm{d}u} = -\sin u\) and \(\dfrac{\textrm{d}u}{\textrm{d}x}=2x\).
+
+Therefore \(\dfrac{\textrm{d}y}{\textrm{d}x} = -\sin u \times 2x\), and so with a little bit of substitution for \(u\) and tidying up:
+
+\(\dfrac{\textrm{d}y}{\textrm{d}x} = -2x\sin x^2\)
 
 \hypertarget{subsec:productrule}{%
 \subsection{The Product Rule}\label{subsec:productrule}}
@@ -2780,6 +2801,21 @@ For the following function determine:
 
 *this one is involved - it uses both the chain and the product rule!
 
+\hypertarget{applied-questions-2}{%
+\subsection{Applied questions}\label{applied-questions-2}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  The radius of a spherical balloon is increasing at a rate of 0.2 m s\textsuperscript{−1}. Find the rate of increase of (a) the volume and (b) the surface area of the balloon at the instant when the radius is 1.6 m.
+\item
+  Determine an expression for the equilibrium separation, \(r_{\textrm{eq}}\) of two atoms in a bond using the Morse potential:
+\end{enumerate}
+
+\begin{equation*}
+V_{\textrm{Morse}}= D(1-e^{-a(r-b)})^2
+\end{equation*}
+
 \hypertarget{sec:Answers5}{%
 \section{Answers}\label{sec:Answers5}}
 
@@ -2864,6 +2900,27 @@ For the following function determine:
   \(\left(\frac{\partial^2 y}{\partial x^z}\right)_z=6\cos(3z^2+2xz+x^2)-(6z+2x)^2\sin(3z^2+2xz+x^2)\),
   \(\left(\frac{\partial^2 y}{\partial x \partial z}\right)=2\cos(3z^2+2xz+x^2)-(2z+2x)(6z+2x)\sin(3z^2+2xz+x^2)\) and
   \(\left(\frac{\partial^2 y}{\partial z \partial x}\right)=2\cos(3z^2+2xz+x^2)-(2z+2x)(6z+2x)\sin(3z^2+2xz+x^2)\) if you can do this one you can do them all!!!
+\end{enumerate}
+
+\hypertarget{applied-questions-3}{%
+\subsection{Applied Questions}\label{applied-questions-3}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(\dfrac{\textrm{d}V}{\textrm{d}t}= 0.8 \pi r^2= 6\) m\textsuperscript{3} s\textsuperscript{-1}, \(\dfrac{\textrm{d}SA}{\textrm{d}t}=1.6 \pi r = 8 \times 10^1\) m\textsuperscript{2} s\textsuperscript{-1}
+\end{enumerate}
+
+Since there is just one significant figure in the question the answers should only be reported to one significant figure.
+
+This means that for the value of `80' we need to use standard form as any number we share is deemed to be significant.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \(r_{eq}=b\)
 \end{enumerate}
 
 \hypertarget{ch:Workshop6}{%

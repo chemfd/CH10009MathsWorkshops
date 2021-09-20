@@ -148,11 +148,13 @@ chain-rule
 product-rule-questions
 more-complex-differentiation-questions
 partial-differentiation-questions
+applied-questions-2
 sec:Answers5
 chain-rule-1
 product-rule-questions-1
 more-complex-differentiation-questions-1
 partial-differentiation-questions-1
+applied-questions-3
 ch:Workshop6
 sec:Prelim6
 sec:Questions6

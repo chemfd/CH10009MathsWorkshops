@@ -41,6 +41,8 @@ If you spot any errors or areas of lack of clarity, please message me in Teams o
 
 ## Version history {-}
 
+Version 1.2 in progress September 2021.
+
 Version 1.1 in progress July 2021.
 
 Version 1.0 complete December 2020.

@@ -653,11 +653,11 @@ determine expressions for how the intensity varies with:
 
 a. wavelength, λ
 a. distance from scatterer, r
-a. angle, ϕ
+a. angle, ϕ (you won't be able to do this until Chapter \@ref(ch:Workshop5))
 
 *formally these are partial derivatives and we will learn about them next week in section \@ref(subsec:partial)*
 
-3. The radius of a spherical balloon is increasing at a rate of 0.2 m s^−1^. Find the rate of increase of (a) the volume and (b) the surface area of the balloon at the instant when the radius is 1.6 m.
+
 
 ## Answers {#sec:Answers4}
 
@@ -688,8 +688,9 @@ a. $5e^{-5x}-5e^{5x}$
 
 1. $V = \frac{-3 \mu_1 \mu_2}{4 \pi \varepsilon_0 r^4}$
 
-2. a. $\dfrac{\textrm{d}I}{\textrm{d}\lambda}= -4I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^5 r^2}(\sin \phi)^2$
+2. 
+a. $\dfrac{\textrm{d}I}{\textrm{d}\lambda}= -4I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^5 r^2}(\sin \phi)^2$
 a. $\dfrac{\textrm{d}I}{\textrm{d}r}= -2I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^3}(\sin \phi)^2$
 a. $\dfrac{\textrm{d}I}{\textrm{d}\phi}= 2I_0 \frac{\pi \alpha ^2}{\varepsilon _r^2 \lambda^4 r^2}(\sin \phi)(\cos \phi)$
 
-3. $\dfrac{\textrm{d}V}{\textrm{d}t}= 0.8 \pi r^2= 6$ m^3^ s^-1^,   $\dfrac{\textrm{d}SA}{\textrm{d}t}=1.6 \pi r = 8 \times 10^1$ m^2^ s^-1^
+
