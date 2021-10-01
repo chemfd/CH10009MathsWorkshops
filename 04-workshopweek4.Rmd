@@ -358,7 +358,8 @@ Determine an expression which shows how $b$ changes with temperature $T$.
 
 The approach we need to use is:
 
-- multiply out the bracket to give an expression for $b$ with only one $T$ term.\\
+- multiply out the bracket to give an expression for $b$ with only one $T$ term.
+
 - determine an expression for $\tfrac{\textrm{d}b}{\textrm{d}T}$.
 
 To simplify the equation I am going to combine my constants into a two single terms, $c = \frac{qz^3\varepsilon F}{24 \pi \varepsilon_0 R}$ and $d= \left( \frac{2}{ \varepsilon R} \right)^\frac{1}{2}$.

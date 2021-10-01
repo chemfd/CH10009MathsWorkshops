@@ -23,6 +23,10 @@ The recommended text for this course is ['Introduction to Contextual Maths in Ch
 
 ## Workshops for CH10009 {-}
 
+The course moves at quite a pace, this is in part because parts of the maths are needed very quickly in your physical chemistry studies. If you feel you aren't keeping up please **ask for help from me**! I at the very least can point you in the direction of something, or can help you with your difficulties.
+
+The whole point of this course is to make you comfortable with maths in a chemistry setting. 
+
 The topics for workshops each week are as follows:
 
 - Week \@ref(ch:Workshop1): Rearranging equations, units and standard form

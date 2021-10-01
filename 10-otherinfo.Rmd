@@ -4,7 +4,7 @@
 Table: Physical constants used in this work(\#tab:physicalconst)
 
 | | |
-|:---:|:---:|
+|:---:|:---|
 | $R$ | 8.31446261815324 J K^-1^ mol^-1^ |
 | $N_A$ | 6.02214076 × 10^23^ mol^-1^ |
 | $c$ | 299792458 m s^-1^ |

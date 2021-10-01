@@ -50,7 +50,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx}
+\usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -75,15 +75,12 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{CH10009 Workshop Questions}
 \author{Fiona Dickinson}
-\date{2021-09-17}
+\date{2021-10-01}
 
 \begin{document}
 \maketitle
@@ -139,6 +136,8 @@ Loading\ldots{}
 \hypertarget{version-history}{%
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
+
+Version 1.2 in progress September 2021.
 
 Version 1.1 in progress July 2021.
 
@@ -1740,7 +1739,6 @@ T / ºC & k / 10\textsuperscript{5} s\textsuperscript{-1}\tabularnewline
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\tightlist
 \item
 \end{enumerate}
 
@@ -1756,7 +1754,6 @@ T / ºC & k / 10\textsuperscript{5} s\textsuperscript{-1}\tabularnewline
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
-\tightlist
 \item
 \end{enumerate}
 
@@ -1772,7 +1769,6 @@ T / ºC & k / 10\textsuperscript{5} s\textsuperscript{-1}\tabularnewline
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
-\tightlist
 \item
 \end{enumerate}
 
@@ -2813,7 +2809,7 @@ For the following function determine:
 \end{enumerate}
 
 \begin{equation*}
-V_{\textrm{Morse}}= D(1-e^{-a(r-b)})^2
+V_{\textrm{Morse}}= D(1-e^{-a(r-r_0)})^2
 \end{equation*}
 
 \hypertarget{sec:Answers5}{%
@@ -2920,7 +2916,7 @@ This means that for the value of `80' we need to use standard form as any number
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \(r_{eq}=b\)
+  \(r_{eq}=r_0\)
 \end{enumerate}
 
 \hypertarget{ch:Workshop6}{%
