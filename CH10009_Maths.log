@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.16)  13 OCT 2021 23:06
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.7.16)  13 OCT 2021 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**CH10009-Maths.tex
-(./CH10009-Maths.tex
+**CH10009_Maths.tex
+(./CH10009_Maths.tex
 LaTeX2e <2018-12-01>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
@@ -671,7 +671,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip61
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count296
-) (./CH10009-Maths.aux
+) (./CH10009_Maths.aux
 
 LaTeX Warning: Label `eq:combpowermult' multiply defined.
 
@@ -697,7 +697,7 @@ LaTeX Warning: Label `eq:arrhenius' multiply defined.
 LaTeX Warning: Label `tab:physicalconst' multiply defined.
 
 )
-\openout1 = `CH10009-Maths.aux'.
+\openout1 = `CH10009_Maths.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
@@ -1045,7 +1045,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 ] [2
 
-] (./CH10009-Maths.toc
+] (./CH10009_Maths.toc
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 7.0pt on input line 2.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -1064,7 +1064,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 2.
 [3])
 \tf@toc=\write3
-\openout3 = `CH10009-Maths.toc'.
+\openout3 = `CH10009_Maths.toc'.
 
 [4] [5
 
@@ -1177,11 +1177,11 @@ Chapter 8.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [67]
-No file CH10009-Maths.bbl.
+No file CH10009_Maths.bbl.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3154.
 [68]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 3154.
-(./CH10009-Maths.aux)
+(./CH10009_Maths.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3154.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3154.
 
@@ -1200,4 +1200,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  58i,10n,115p,812b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CH10009-Maths.pdf (68 pages).
+Output written on CH10009_Maths.pdf (68 pages).
