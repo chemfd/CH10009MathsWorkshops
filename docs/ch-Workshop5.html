@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 5 Week 5 | CH10009 Workshop Questions</title>
   <meta name="description" content="Workshop questions for CH10009 Maths" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 5 Week 5 | CH10009 Workshop Questions" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2021-10-13" />
+<meta name="date" content="2021-10-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="ch-Workshop4.html"/>
 <link rel="next" href="ch-Workshop6.html"/>
-<script src="libs/header-attrs-2.4/header-attrs.js"></script>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,6 +50,9 @@
 
 
 
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
@@ -280,9 +283,9 @@
 <h2><span class="header-section-number">5.1</span> Preliminary infomation</h2>
 <p>Some functions are more difficult to determine their ‘rate of change’ than those listed in Chapter <a href="ch-Workshop4.html#ch:Workshop4">4</a>, and so we can use new ‘rules’ to help us determine this. This difficulty may arrise because the function is a ‘compound’ function (such as the Maxwell-Boltzmann distribution), or because the function has more than one variable (the Master equation in thermodynamics has both pressure and temperature as active variables).</p>
 <p>In this workshop we will recap the standard differentials previously studied, and expand on this so that we can determine, gradients, rates and turning points for more complicated functions.</p>
-<p>A recap of standard differentials…
-:::info
-<span class="math display">\[\begin{equation*}
+<p>A recap of standard differentials…</p>
+<div class="info">
+<p><span class="math display">\[\begin{equation*}
 \begin{array}{ccc}
   f(x) \equiv y &amp; &amp; f^{\prime}(x) \equiv \dfrac{\textrm{d}y}{\textrm{d}x}\\
   \hline
@@ -296,13 +299,16 @@ A \ln Bx &amp; &amp;\dfrac{A}{x} \\
 \tan Ax &amp; &amp;-A\sec^2 Ax \\
 Au + Bv &amp; &amp;A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\textrm{d}x} \\
 \end{array}
-\end{equation*}\]</span>
-:::</p>
+\end{equation*}\]</span></p>
+</div>
 <p>Now we can apply these rules to more complicated functions.</p>
 <div id="subsec:chainrule" class="section level3" number="5.1.1">
 <h3><span class="header-section-number">5.1.1</span> The Chain Rule</h3>
 <p>If differentiating a function of a function we use the ‘Chain Rule’:</p>
-<p><span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{\textrm{d}y}{\textrm{d}u} \times \dfrac{\textrm{d}u}{\textrm{d}x}\)</span></p>
+<p><span class="math display" id="eq:chainrule">\[\begin{equation}
+\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{\textrm{d}y}{\textrm{d}u} \times \dfrac{\textrm{d}u}{\textrm{d}x}
+\tag{5.1}
+\end{equation}\]</span></p>
 <p>When we use the term ‘function of a function’ we are referring to nested functions, these can be difficult to spot at first, but with practice we can identify part of our function to express as a variable <span class="math inline">\(u\)</span>, and have a second function acting on <span class="math inline">\(u\)</span>.</p>
 <p>An example of a nested function can be a natural log. I have previously used one of our ‘rules of logs’ to show the differentiation of the function <span class="math inline">\(y = \ln ax\)</span> (Section <a href="ch-Workshop4.html#subsec:difflogs">4.1.7</a>), but we can use the chain rule to do the same thing.</p>
 <div class="thing">
@@ -314,23 +320,70 @@ Au + Bv &amp; &amp;A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\tex
 <p>Substituting <span class="math inline">\(u = ax\)</span>, then <span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{1}{ax} \times a\)</span>, and cancelling the <span class="math inline">\(a\)</span>s.</p>
 <p><span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{1}{x}\)</span>, the same result as in Section <a href="ch-Workshop4.html#subsec:difflogs">4.1.7</a>.</p>
 </div>
-<p>Another example of a nested function is <span class="math inline">\(y=\cos x^2\)</span>, in this case we can say <span class="math inline">\(u=x^2\)</span>, so our original function becomes <span class="math inline">\(y=\cos u\)</span>.</p>
+<div class="thing">
+<p>If we want to differentiate the function <span class="math inline">\(y=\cos ^2 x\)</span> we first have to understand the notation of the function, and recognise how we can simplify this function.</p>
+<p>The notation <span class="math inline">\(\cos ^2 x\)</span> is just saying ‘cos x, squared’ or <span class="math inline">\((\cos x)^2\)</span>.</p>
+<p>Recognising this helps us to identify that we can simplify <span class="math inline">\(y=\cos ^2 x\)</span> to <span class="math inline">\(y=u^2\)</span>, by using <span class="math inline">\(u=\cos x\)</span>.</p>
+<p>Knowing the chain rule, we need to determine <span class="math inline">\(\dfrac{\textrm{d}u}{\textrm{d}x}\)</span> and <span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}u}\)</span>.</p>
+<p>If <span class="math inline">\(u=\cos x\)</span>, then <span class="math inline">\(\dfrac{\textrm{d}u}{\textrm{d}x} = -sin x\)</span></p>
+<p>and <span class="math inline">\(y=u^2\)</span>, <span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}u}=2u\)</span></p>
+<p>Combining this: <span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x} = 2u \times -\sin x\)</span></p>
+<p>and substituting <span class="math inline">\(u\)</span> back in, <span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x} = 2\cos x \times -\sin x\)</span></p>
+<p>and tidying up, we can say <span class="math inline">\(\dfrac{\textrm{d}}{\textrm{d}x}\cos ^2 x\)</span> is</p>
+<p><span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x} = -2\sin x\cos x\)</span></p>
+</div>
+<p>Another example of a nested function is <span class="math inline">\(y=\cos x^2\)</span>.</p>
+<div class="thing">
+<p>In the case of <span class="math inline">\(y=\cos x^2\)</span> we can say <span class="math inline">\(u=x^2\)</span>, so our original function becomes <span class="math inline">\(y=\cos u\)</span>.</p>
 <p>If we now differentiate <span class="math inline">\(y\)</span> with respect to <span class="math inline">\(u\)</span>, and <span class="math inline">\(u\)</span>, with respect to <span class="math inline">\(x\)</span> we have all of the infomation we need to use the chain rule.</p>
 <p><span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}u} = -\sin u\)</span> and <span class="math inline">\(\dfrac{\textrm{d}u}{\textrm{d}x}=2x\)</span>.</p>
 <p>Therefore <span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x} = -\sin u \times 2x\)</span>, and so with a little bit of substitution for <span class="math inline">\(u\)</span> and tidying up:</p>
 <p><span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x} = -2x\sin x^2\)</span></p>
 </div>
+</div>
 <div id="subsec:productrule" class="section level3" number="5.1.2">
 <h3><span class="header-section-number">5.1.2</span> The Product Rule</h3>
-<p>If differentiate a function times a function we use the ‘Product Rule’, if :</p>
+<p>If differentiate a function times a function we use the ‘Product Rule,’ if :</p>
 <p><span class="math display">\[\begin{equation*}
 y= uv
 \end{equation*}\]</span></p>
-<p>…where <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span> are different functions of <span class="math inline">\(x\)</span>. The first derivative of this compound function may be found using the general differential form for products:</p>
+<p>…where <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span> are different functions of <span class="math inline">\(x\)</span> (<span class="math inline">\(u(x)\)</span> and <span class="math inline">\(v(x)\)</span>). The first derivative of this compound function may be found using the general differential form for products:</p>
 <p><span class="math display" id="eq:productrule">\[\begin{equation}
-\textrm{d}(uv) = v\textrm{d}u + u\textrm{d}v
-\tag{5.1}
+\dfrac{\textrm{d}(uv)}{\textrm{d}x} = v(x)\dfrac{\textrm{d}u(x)}{\textrm{d}x} + u(x)\dfrac{\textrm{d}v(x)}{\textrm{d}x}
+\tag{5.2}
 \end{equation}\]</span></p>
+<p>In effect we are taking each of the two separate parts of the function, keeping one part the same and differentiating the other, then doing the same things in reverse. It makes more sense when you see it in action, but the product rule works when we have products (functions that are multiplied by each other).</p>
+<p>In these notes I will often use the short hand <span class="math inline">\(\textrm{d}u\)</span> to stand for <span class="math inline">\(\dfrac{\textrm{d}u(x)}{\textrm{d}x}\)</span> and <span class="math inline">\(\textrm{d}v\)</span> to stand for <span class="math inline">\(\dfrac{\textrm{d}v(x)}{\textrm{d}x}\)</span>.</p>
+<div class="thing">
+<p>If we consider <span class="math inline">\(y=xe^x\)</span> we have a function which is a product of two separate functions of <span class="math inline">\(x\)</span> (the two ‘sub-functions’ are multiplied by each other), then we can say:</p>
+<p><span class="math inline">\(u= x\)</span> and <span class="math inline">\(v=e^x\)</span></p>
+<p>then applying the product rule for the function <span class="math inline">\(y=uv\)</span> where <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span> are both functions of <span class="math inline">\(x\)</span>, <span class="math inline">\(\textrm{d}(uv) = v\textrm{d}u + u\textrm{d}v\)</span>, we need to determine the differentials of the functions <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span> with respect to <span class="math inline">\(x\)</span>.</p>
+<p><span class="math inline">\(\textrm{d}u=1\)</span> and <span class="math inline">\(\textrm{d}v=e^x\)</span></p>
+<p>then combining everything together:</p>
+<p><span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x}=x e^x + 1 \times e^x\)</span> or <span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x}=x e^x + e^x\)</span></p>
+</div>
+<p>We can also use the product rule if we have two terms divided by each other such as <span class="math inline">\(y=\frac{\sin x}{x}\)</span>, because we can express this as a <em>product</em> by rearranging the equation slightly to <span class="math inline">\(y=x^{-1}\sin x\)</span>.</p>
+<div class="thing">
+<p>If we want to differentiate <span class="math inline">\(y=\frac{\sin x}{x}\)</span> we can use the product rule if we rearrange this as a product of two functions.</p>
+<p><span class="math inline">\(y=x^{-1}\sin x\)</span></p>
+<p>We can say <span class="math inline">\(u=x^{-1}\)</span> and <span class="math inline">\(v=\sin x\)</span></p>
+<p>We then have to determine the differentials with respect to <span class="math inline">\(x\)</span>.</p>
+<p><span class="math inline">\(\textrm{d}u=-x^{-2}\)</span> and <span class="math inline">\(\textrm{d}v=\cos x\)</span></p>
+<p>Consequently, combining everything using the product rule:</p>
+<p><span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x}=x^{-1}\cos x - x^{-2}\sin x\)</span></p>
+<p>or rearranging this back into the original fractions:</p>
+<p><span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x}=\dfrac{\cos x}{x}-\dfrac{\sin x}{x^2}\)</span></p>
+</div>
+<p>Previously in section <a href="ch-Workshop5.html#subsec:chainrule">5.1.1</a> we differentiated <span class="math inline">\(y=\cos ^2 x\)</span> using the chain rule, but we can also use the product rule.</p>
+<div class="thing">
+<p>If <span class="math inline">\(y=\cos^2 x\)</span>, we can also think of this as a product, <span class="math inline">\(y= \cos x \cos x\)</span>.</p>
+<p>In this case: <span class="math inline">\(u= \cos x\)</span> and <span class="math inline">\(v=\cos x\)</span> also.</p>
+<p>Following the product rule we need to determine <span class="math inline">\(\textrm{d}u\)</span> and <span class="math inline">\(\textrm{d}v\)</span>.</p>
+<p><span class="math inline">\(\textrm{d}u = \textrm{d}v = -\sin x\)</span></p>
+<p>Putting it all together:</p>
+<p><span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x}= \cos x \times -\sin x + \cos x \times -\sin x\)</span>, which rearranges and simplifies to:</p>
+<p><span class="math inline">\(\dfrac{\textrm{d}y}{\textrm{d}x}= -2\sin x\cos x\)</span></p>
+</div>
 </div>
 <div id="subsec:partial" class="section level3" number="5.1.3">
 <h3><span class="header-section-number">5.1.3</span> Partial differentiation</h3>
@@ -505,6 +558,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
