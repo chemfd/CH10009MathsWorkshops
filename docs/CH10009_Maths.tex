@@ -84,7 +84,7 @@
 
 \title{CH10009 Workshop Questions}
 \author{Fiona Dickinson}
-\date{2021-10-24}
+\date{2021-10-27}
 
 \begin{document}
 \maketitle
@@ -2805,6 +2805,49 @@ In some circumstances you may wish to differentiate a function first by one vari
 \end{equation*}
 
 this is implying that the partial derivative of y with respect to x was determined first and then the partial derivate of that first derivative was determined with respect to z. It should not matter in which order you perform these functions, they should both yield the same answer.
+
+The notation \(\left(\frac{\partial^2 y}{\partial x ^2}\right)_z\) would imply you differentiate \(y\) with respect to \(x\) twice, whilst keeping the variable \(z\) constant.
+
+Partial derivatives are essential in science as they represent the scientific method, we look at how one variable affects another whilst keeping all of the other variables constant.
+
+In thermodynamics we see many of our variables be functions of both pressure and temperature, and so partial derivatives are used.
+
+We can consider and equation you are already familiar with which has multiple variables, the ideal gas law.
+
+\begin{equation}
+pV = nRT
+\label{eq:idealgas}
+\end{equation}
+
+and we can investigate how each of the terms are inter-related, since \(p\), \(V\), \(n\) \& \(T\) are all variables. \emph{I am aware this is the exact opposite of how the ideal gas law was constructed but it works as an example.}
+
+We can determine an expression for how the pressure, \(p\), of a gas varies with temperature, \(T\), by differentiating an expression with \(p\) as teh subject with respect to \(T\), whilst keeping \(n\) \& \(V\) as constants.
+
+Rearranging equation \eqref{eq:idealgas} to make \(p\) the subject:
+
+\begin{equation*}
+p = \frac{nRT}{V}
+\end{equation*}
+
+and then differentiating \(p\) with respect to \(T\) (whilst keeping \(n\) and \(V\) constant):
+
+\begin{equation*}
+\left(\frac{\partial p}{\partial T}\right)_{n,V}=\frac{nR}{V}
+\end{equation*}
+
+this says that pressure and temperature are directly proportional with a constant of proportionality \(\frac{nR}{V}\), or thinking of it another way in a plot of \(p\) against \(T\) the gradient of the line will be \(\frac{nR}{V}\).
+
+This is Gay-Lussac's law, and is one of the relationships that went into building the ideal gas law.
+
+We can determine the other relationships that went into building the ideal gas law, by differentiating the function in different ways.
+
+If we make \(p\) the subject and differentiating with respect to \(V\) we get the expression \(\left(\frac{\partial p}{\partial V}\right)_{n,T}=-\frac{nRT}{V^2}\), this is an expression of Boyle's law.
+
+We can make \(V\) the subject and differentiating with respect to \(T\) we get the expression \(\left(\frac{\partial V}{\partial T}\right)_{n,p}=\frac{nR}{p}\), or the volume is directly proportional to the temperature (Charles' law) with a constant of proportionality \(\frac{nR}{p}\).
+
+The final relationship that makes the ideal gas law is Avagadro's law, which shows how the volume, \(V\), is related to the number of moles of a gas, \(n\). If we make \(V\) the subject and differentiate with respect to \(n\), we get the expression \(\left(\frac{\partial V}{\partial n}\right)_{p,T}=\frac{RT}{p}\). The variables are directly proportional, or the gradient of a plot with \(V\) on the \(y\) axis and \(n\) on the \(x\) axis would be \(\frac{RT}{p}\).
+
+This shows the importance of recognizing that when a function depends upon multiple variables we have to recognise this when doing differentiation, but that the actual process of differentiation is identical to when there is just one variable.
 
 \hypertarget{sec:Questions5}{%
 \section{Questions}\label{sec:Questions5}}
