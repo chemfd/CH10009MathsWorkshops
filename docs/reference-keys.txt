@@ -46,6 +46,8 @@ fig:lennardjones
 eq:lennardjones
 eq:chainrule
 eq:productrule
+fig:integral
+eq:intpoly
 tab:physicalconst
 eq:macexp
 eq:macsin
@@ -158,6 +160,8 @@ partial-differentiation-questions-1
 applied-questions-3
 ch:Workshop6
 sec:Prelim6
+subsec:integratingpolynomials
+subsec:integratingexponentials
 sec:Questions6
 basic-integration-practice
 differential-equations

@@ -309,15 +309,15 @@ V_{\textrm{Morse}}= D(1-e^{-a(r-r_0)})^2
 
 1. $\left(\frac{\partial y}{\partial z}\right)_x= x^6-9x^2z^2+x^2+36z^5$,
 $\left(\frac{\partial y}{\partial x}\right)_z=6x^5z-6xz^3+2xz$, 
-$\left(\frac{\partial^2 y}{\partial z^2}\right)_x=-18X^2z+180z^4$,
-$\left(\frac{\partial^2 y}{\partial x^z}\right)_z=30x^4z-6z^3$,
+$\left(\frac{\partial^2 y}{\partial z^2}\right)_x=-18x^2z+180z^4$,
+$\left(\frac{\partial^2 y}{\partial x^z}\right)_z=30x^4z-6z^3+2z$,
 $\left(\frac{\partial^2 y}{\partial x \partial z}\right)=6x^5-18xz^2+2x$ and
 $\left(\frac{\partial^2 y}{\partial z \partial x}\right)=6x^5-18xz^2+2x$
 
 1. $\left(\frac{\partial y}{\partial z}\right)_x=e^{2x}-x^2e^{-z}-2z$, 
 $\left(\frac{\partial y}{\partial x}\right)_z=3e^{3x}+2e^{2x}z+2xe^{-z}$,
 $\left(\frac{\partial^2 y}{\partial z^2}\right)_x=x^2e^{-z}-2$,
-$\left(\frac{\partial^2 y}{\partial x^z}\right)_z=9e^{3x}+4e^{2x}z+ 2e^{-z}$,
+$\left(\frac{\partial^2 y}{\partial x^2}\right)_z=9e^{3x}+4e^{2x}z+ 2e^{-z}$,
 $\left(\frac{\partial^2 y}{\partial x \partial z}\right)=2e^{2x}-2xe^{-z}$ and
 $\left(\frac{\partial^2 y}{\partial z \partial x}\right)=2e^{2x}-2xe^{-z}$
 

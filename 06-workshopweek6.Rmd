@@ -1,9 +1,93 @@
-# Week 6 {#ch:Workshop6}
+# Week 6 - Integration {#ch:Workshop6}
 
 ## Preliminary infomation {#sec:Prelim6}
 
-Standard anti derivatives (or integrals...)
+When introducing rearranging of equations in Chapters \@ref(ch:Workshop1) and \@ref(ch:Workshop2) we introduce the idea of inverse functions, and every function has an inverse. With differentiation the inverse process is integration, and as such if we differentiate a function, and then integrate the answer, we should end up with our original function again. Or if we integrate a function, then differentiate the answer we should again end up with our original function.
 
+Our integral can also be thought of as a mechanism of determining the area under a line in a plot, (or between the function and the $x$-axis). There are a number of cases whereby determining the area under a line can give us more infomation about the system. For example the area under a '$pV$' plot is work done in changing the volume ((Section)Figure \@ref(fig:integral), see CH10137 thermodynamics).
+
+```{r echo=FALSE, integral, out.width='50%', fig.show='hold', fig.align='center', fig.cap='Integration can be used to determine the area under a line in a plot. In the case of a pressure-volume plot the area under the plot is the work done in the expansion between the initial and final volume.'}
+knitr::include_graphics("images/integral.png")
+```
+
+If we aren't considering the area under the line between -∞ & ∞ we need to define the points on the $x$ axis of interest, these are often referred to as 'initial' and 'final'. In this case we call it a 'definite integral'. We can see an example of these in Section \@ref(subsec:definite).
+
+
+Just like with integration we have a set of standard results, these are the integrals or anti-derivatives:
+
+### Integrating polynomials {#subsec:integratingpolynomials}
+
+If we recall Section \@ref(subsec:diffpolynomial), we saw that when we differentiated a polynomial we reduced the power by one and multiplied by the old power.
+
+\begin{equation*}
+y = ax^b\\
+\frac{\textrm{d}y}{\textrm{d}x}=abx^{b-1}\\
+\textrm{when } x \neq 0
+\end{equation*}
+
+To 'undo' this result we need to add one to the power and divide by the new power.
+
+\begin{equation*}
+\frac{\textrm{d}y}{\textrm{d}x}=abx^{b-1}\\
+y = ax^b\\
+\textrm{when } x \neq -1
+\end{equation*}
+
+However, if we had a slightly different function that we have differentiated, where $c$ is a constant:
+
+\begin{equation*}
+y = ax^b+ c\\
+\frac{\textrm{d}y}{\textrm{d}x}=abx^{b-1}\\
+\textrm{when } x \neq 0
+\end{equation*}
+
+but when we 'undo' this we have nothing to tell us that there used to be a constant there and so whenever we determine integrals (or anti-derivatives) we have to add a constant of integration, $+C$. So, to get back to our 'original function':
+
+\begin{equation*}
+\frac{\textrm{d}y}{\textrm{d}x}=abx^{b-1}\\
+y = ax^b+C\\
+\textrm{when } x \neq -1
+\end{equation*}
+
+
+
+Instead of just thinking about this as undoing the differential we can instead use our 'integral notation'. Integrals are represented by the sign $\int$, but we also need to know what we are integrating with respect to, and so at the end of our integration statement we use '$\textrm{d}x$' to define what we are integrating with respect to, in this case $x$.
+
+:::dodo
+\begin{equation}
+\int ax^b \textrm{d}x = \frac{a}{b+1}x^{b+1}+C
+(\#eq:intpoly)
+\end{equation}
+
+:::
+
+### Integrating exponentials {#subsec:integratingexponentials}
+
+Again if we think about integration as an anti-derivative, we can start by looking back on the result when we differentiated exponential functions in Section \@ref(subsec:diffexp).
+
+\begin{equation*}
+y = be^{ax}\\
+\frac{\textrm{d}y}{\textrm{d}x}=abe^{ax}
+\end{equation*}
+
+and so, integrating:
+
+\begin{equation*}
+\frac{\textrm{d}y}{\textrm{d}x}=abe^{ax}\\
+y = be^{ax}+C
+\end{equation*}
+
+This again makes sense if we look at the Maclaurin expansion of an exponential function Section \@ref(sec:maclaurin).
+
+:::dodo
+\begin{equation}
+\int ae^{bx} \textrm{d}x = \frac{a}{b}e^{bx}+C
+(\#eq:intpoly)
+\end{equation}
+
+:::
+
+:::info
 \begin{equation*}
 \begin{array}{cccc}
 f^{\prime}(x) \equiv y & & f(x) \equiv \int y ~\textrm{d}x & \textrm{Conditions}\\
@@ -29,7 +113,7 @@ v(x) \frac{\textrm{d}u(x)}{\textrm{d}x} && u(x)v(x) - \int u(x)\frac{\textrm{d}v
 Au + Bv & &A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\textrm{d}x} \\
 \end{array}
 \end{equation*}
-
+:::
 
 ## Questions {#sec:Questions6}
 

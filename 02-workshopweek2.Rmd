@@ -327,11 +327,11 @@ Now we can use one of our 'rules of logs', (equation \@ref(eq:logsub)):
 From here we can set up the simultaneous equations, having two versions of this equation:
 
 \begin{equation*}
-\ln {k_1} - \ln {A}= -\frac{E_a}{RT_1} \tag{Eq1} \\ 
+\ln {k_1} - \ln {A}= -\frac{E_a}{RT_1}
 \end{equation*}
 
 \begin{equation*}
-\ln {k_2} - \ln {A}= -\frac{E_a}{RT_2} \tag{Eq2}
+\ln {k_2} - \ln {A}= -\frac{E_a}{RT_2} 
 \end{equation*}
 
 Now if we have Eq1 - Eq2, then:

@@ -84,7 +84,7 @@
 
 \title{CH10009 Workshop Questions}
 \author{Fiona Dickinson}
-\date{2021-10-27}
+\date{2021-11-06}
 
 \begin{document}
 \maketitle
@@ -1092,11 +1092,11 @@ Now we can use one of our `rules of logs', (equation \eqref{eq:logsub}):
 From here we can set up the simultaneous equations, having two versions of this equation:
 
 \begin{equation*}
-\ln {k_1} - \ln {A}= -\frac{E_a}{RT_1} \tag{Eq1} \\ 
+\ln {k_1} - \ln {A}= -\frac{E_a}{RT_1}
 \end{equation*}
 
 \begin{equation*}
-\ln {k_2} - \ln {A}= -\frac{E_a}{RT_2} \tag{Eq2}
+\ln {k_2} - \ln {A}= -\frac{E_a}{RT_2} 
 \end{equation*}
 
 Now if we have Eq1 - Eq2, then:
@@ -3002,15 +3002,15 @@ V_{\textrm{Morse}}= D(1-e^{-a(r-r_0)})^2
 \item
   \(\left(\frac{\partial y}{\partial z}\right)_x= x^6-9x^2z^2+x^2+36z^5\),
   \(\left(\frac{\partial y}{\partial x}\right)_z=6x^5z-6xz^3+2xz\),
-  \(\left(\frac{\partial^2 y}{\partial z^2}\right)_x=-18X^2z+180z^4\),
-  \(\left(\frac{\partial^2 y}{\partial x^z}\right)_z=30x^4z-6z^3\),
+  \(\left(\frac{\partial^2 y}{\partial z^2}\right)_x=-18x^2z+180z^4\),
+  \(\left(\frac{\partial^2 y}{\partial x^z}\right)_z=30x^4z-6z^3+2z\),
   \(\left(\frac{\partial^2 y}{\partial x \partial z}\right)=6x^5-18xz^2+2x\) and
   \(\left(\frac{\partial^2 y}{\partial z \partial x}\right)=6x^5-18xz^2+2x\)
 \item
   \(\left(\frac{\partial y}{\partial z}\right)_x=e^{2x}-x^2e^{-z}-2z\),
   \(\left(\frac{\partial y}{\partial x}\right)_z=3e^{3x}+2e^{2x}z+2xe^{-z}\),
   \(\left(\frac{\partial^2 y}{\partial z^2}\right)_x=x^2e^{-z}-2\),
-  \(\left(\frac{\partial^2 y}{\partial x^z}\right)_z=9e^{3x}+4e^{2x}z+ 2e^{-z}\),
+  \(\left(\frac{\partial^2 y}{\partial x^2}\right)_z=9e^{3x}+4e^{2x}z+ 2e^{-z}\),
   \(\left(\frac{\partial^2 y}{\partial x \partial z}\right)=2e^{2x}-2xe^{-z}\) and
   \(\left(\frac{\partial^2 y}{\partial z \partial x}\right)=2e^{2x}-2xe^{-z}\)
 \item
@@ -3051,12 +3051,93 @@ This means that for the value of `80' we need to use standard form as any number
 \end{enumerate}
 
 \hypertarget{ch:Workshop6}{%
-\chapter{Week 6}\label{ch:Workshop6}}
+\chapter{Week 6 - Integration}\label{ch:Workshop6}}
 
 \hypertarget{sec:Prelim6}{%
 \section{Preliminary infomation}\label{sec:Prelim6}}
 
-Standard anti derivatives (or integrals\ldots)
+When introducing rearranging of equations in Chapters \ref{ch:Workshop1} and \ref{ch:Workshop2} we introduce the idea of inverse functions, and every function has an inverse. With differentiation the inverse process is integration, and as such if we differentiate a function, and then integrate the answer, we should end up with our original function again. Or if we integrate a function, then differentiate the answer we should again end up with our original function.
+
+Our integral can also be thought of as a mechanism of determining the area under a line in a plot, (or between the function and the \(x\)-axis). There are a number of cases whereby determining the area under a line can give us more infomation about the system. For example the area under a `\(pV\)' plot is work done in changing the volume ((Section)Figure \ref{fig:integral}, see CH10137 thermodynamics).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/integral} 
+
+}
+
+\caption{Integration can be used to determine the area under a line in a plot. In the case of a pressure-volume plot the area under the plot is the work done in the expansion between the initial and final volume.}\label{fig:integral}
+\end{figure}
+
+If we aren't considering the area under the line between -∞ \& ∞ we need to define the points on the \(x\) axis of interest, these are often referred to as `initial' and `final'. In this case we call it a `definite integral'. We can see an example of these in Section \ref{subsec:definite}.
+
+Just like with integration we have a set of standard results, these are the integrals or anti-derivatives:
+
+\hypertarget{subsec:integratingpolynomials}{%
+\subsection{Integrating polynomials}\label{subsec:integratingpolynomials}}
+
+If we recall Section \ref{subsec:diffpolynomial}, we saw that when we differentiated a polynomial we reduced the power by one and multiplied by the old power.
+
+\begin{equation*}
+y = ax^b\\
+\frac{\textrm{d}y}{\textrm{d}x}=abx^{b-1}\\
+\textrm{when } x \neq 0
+\end{equation*}
+
+To `undo' this result we need to add one to the power and divide by the new power.
+
+\begin{equation*}
+\frac{\textrm{d}y}{\textrm{d}x}=abx^{b-1}\\
+y = ax^b\\
+\textrm{when } x \neq -1
+\end{equation*}
+
+However, if we had a slightly different function that we have differentiated, where \(c\) is a constant:
+
+\begin{equation*}
+y = ax^b+ c\\
+\frac{\textrm{d}y}{\textrm{d}x}=abx^{b-1}\\
+\textrm{when } x \neq 0
+\end{equation*}
+
+but when we `undo' this we have nothing to tell us that there used to be a constant there and so whenever we determine integrals (or anti-derivatives) we have to add a constant of integration, \(+C\). So, to get back to our `original function':
+
+\begin{equation*}
+\frac{\textrm{d}y}{\textrm{d}x}=abx^{b-1}\\
+y = ax^b+C\\
+\textrm{when } x \neq -1
+\end{equation*}
+
+Instead of just thinking about this as undoing the differential we can instead use our `integral notation'. Integrals are represented by the sign \(\int\), but we also need to know what we are integrating with respect to, and so at the end of our integration statement we use `\(\textrm{d}x\)' to define what we are integrating with respect to, in this case \(x\).
+
+\begin{equation}
+\int ax^b \textrm{d}x = \frac{a}{b+1}x^{b+1}+C
+\label{eq:intpoly}
+\end{equation}
+
+\hypertarget{subsec:integratingexponentials}{%
+\subsection{Integrating exponentials}\label{subsec:integratingexponentials}}
+
+Again if we think about integration as an anti-derivative, we can start by looking back on the result when we differentiated exponential functions in Section \ref{subsec:diffexp}.
+
+\begin{equation*}
+y = be^{ax}\\
+\frac{\textrm{d}y}{\textrm{d}x}=abe^{ax}
+\end{equation*}
+
+and so, integrating:
+
+\begin{equation*}
+\frac{\textrm{d}y}{\textrm{d}x}=abe^{ax}\\
+y = be^{ax}+C
+\end{equation*}
+
+This again makes sense if we look at the Maclaurin expansion of an exponential function Section \ref{sec:maclaurin}.
+
+\begin{equation}
+\int ae^{bx} \textrm{d}x = \frac{a}{b}e^{bx}+C
+\label{eq:intpoly}
+\end{equation}
 
 \begin{equation*}
 \begin{array}{cccc}

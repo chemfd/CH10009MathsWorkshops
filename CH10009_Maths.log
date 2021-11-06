@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.13)  27 OCT 2021 23:20
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.13)  6 NOV 2021 01:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -459,6 +459,9 @@ LaTeX Warning: Label `eq:arrhenius' multiply defined.
 
 
 LaTeX Warning: Label `eq:idealgas' multiply defined.
+
+
+LaTeX Warning: Label `eq:intpoly' multiply defined.
 
 
 LaTeX Warning: Label `tab:physicalconst' multiply defined.
@@ -940,25 +943,31 @@ Chapter 5.
 
 ]
 Chapter 6.
-[67] [68]
-Chapter 7.
-[69
+File: images/integral.png Graphic file (type bmp)
+<images/integral.png>
 
-] [70
+LaTeX Warning: Reference `subsec:definite' on page 67 undefined on input line 3
+072.
+
+[67] [68] [69] [70]
+Chapter 7.
+[71
+
+] [72
 
 ]
 Chapter 8.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[71]
+[73]
 No file CH10009_Maths.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3280.
-[72]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3280.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3361.
+[74]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3361.
 (./CH10009_Maths.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3280.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3280.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3361.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3361.
 
 LaTeX Warning: There were undefined references.
 
@@ -967,12 +976,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19039 strings out of 479418
- 337674 string characters out of 5884585
- 797307 words of memory out of 5000000
- 36253 multiletter control sequences out of 15000+600000
+ 19055 strings out of 479418
+ 337988 string characters out of 5884585
+ 796722 words of memory out of 5000000
+ 36268 multiletter control sequences out of 15000+600000
  538837 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,10n,118p,812b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CH10009_Maths.pdf (72 pages).
+Output written on CH10009_Maths.pdf (74 pages).
