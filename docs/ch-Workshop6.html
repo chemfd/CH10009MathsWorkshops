@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2021-11-06" />
+<meta name="date" content="2021-11-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -233,16 +233,21 @@
 <ul>
 <li class="chapter" data-level="6.1.1" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#subsec:integratingpolynomials"><i class="fa fa-check"></i><b>6.1.1</b> Integrating polynomials</a></li>
 <li class="chapter" data-level="6.1.2" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#subsec:integratingexponentials"><i class="fa fa-check"></i><b>6.1.2</b> Integrating exponentials</a></li>
+<li class="chapter" data-level="6.1.3" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#subsec:integrating1x"><i class="fa fa-check"></i><b>6.1.3</b> Integrating 1/x</a></li>
+<li class="chapter" data-level="6.1.4" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#subsec:"><i class="fa fa-check"></i><b>6.1.4</b> Intergrating trig functions</a></li>
+<li class="chapter" data-level="6.1.5" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#subsec:diffequations"><i class="fa fa-check"></i><b>6.1.5</b> Differential equaitons</a></li>
+<li class="chapter" data-level="6.1.6" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#subsec:defint"><i class="fa fa-check"></i><b>6.1.6</b> Definite Integration</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#sec:Questions6"><i class="fa fa-check"></i><b>6.2</b> Questions</a>
+<li class="chapter" data-level="6.2" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#summary-of-concepts-learnt-2"><i class="fa fa-check"></i><b>6.2</b> Summary of concepts learnt</a></li>
+<li class="chapter" data-level="6.3" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#sec:Questions6"><i class="fa fa-check"></i><b>6.3</b> Questions</a>
 <ul>
-<li class="chapter" data-level="6.2.1" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#basic-integration-practice"><i class="fa fa-check"></i><b>6.2.1</b> Basic integration practice</a></li>
-<li class="chapter" data-level="6.2.2" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#differential-equations"><i class="fa fa-check"></i><b>6.2.2</b> Differential equations</a></li>
+<li class="chapter" data-level="6.3.1" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#basic-integration-practice"><i class="fa fa-check"></i><b>6.3.1</b> Basic integration practice</a></li>
+<li class="chapter" data-level="6.3.2" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#differential-equations"><i class="fa fa-check"></i><b>6.3.2</b> Differential equations</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#sec:Answers6"><i class="fa fa-check"></i><b>6.3</b> Answers</a>
+<li class="chapter" data-level="6.4" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#sec:Answers6"><i class="fa fa-check"></i><b>6.4</b> Answers</a>
 <ul>
-<li class="chapter" data-level="6.3.1" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#basic-integration-practice-1"><i class="fa fa-check"></i><b>6.3.1</b> Basic integration practice</a></li>
-<li class="chapter" data-level="6.3.2" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#differential-equations-1"><i class="fa fa-check"></i><b>6.3.2</b> Differential equations</a></li>
+<li class="chapter" data-level="6.4.1" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#basic-integration-practice-1"><i class="fa fa-check"></i><b>6.4.1</b> Basic integration practice</a></li>
+<li class="chapter" data-level="6.4.2" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#differential-equations-1"><i class="fa fa-check"></i><b>6.4.2</b> Differential equations</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="ch-questions.html"><a href="ch-questions.html"><i class="fa fa-check"></i><b>7</b> Miscellaneous questions</a>
@@ -325,9 +330,11 @@ y = ax^b+C\\
 <div class="dodo">
 <p><span class="math display" id="eq:intpoly">\[\begin{equation}
 \int ax^b \textrm{d}x = \frac{a}{b+1}x^{b+1}+C
+\textrm{when } x \neq -1
 \tag{6.1}
 \end{equation}\]</span></p>
 </div>
+<p>You will notice the caveat ‘when <span class="math inline">\(x \neq -1\)</span>’ integrating polynomials of any other power works, positive, negative, fractional, but if you recall when we never have a polynomial function which differentiates to have a power of <span class="math inline">\(-1\)</span>. We show the integration of <span class="math inline">\(x^{-1}\)</span> in Section <a href="ch-Workshop6.html#subsec:integrating1x">6.1.3</a>.</p>
 </div>
 <div id="subsec:integratingexponentials" class="section level3" number="6.1.2">
 <h3><span class="header-section-number">6.1.2</span> Integrating exponentials</h3>
@@ -348,6 +355,55 @@ y = be^{ax}+C
 \tag{6.1}
 \end{equation}\]</span></p>
 </div>
+</div>
+<div id="subsec:integrating1x" class="section level3" number="6.1.3">
+<h3><span class="header-section-number">6.1.3</span> Integrating 1/x</h3>
+<p>In Section <a href="ch-Workshop6.html#subsec:integratingpolynomials">6.1.1</a> we saw that we could integrate functions of x raised to any numerical power other than <span class="math inline">\(x^{-1}\)</span>. This is because no polynomial differentiates to give a result of <span class="math inline">\(\tfrac{1}{x}\)</span>.</p>
+<p>However, if we recall Section <a href="ch-Workshop4.html#subsec:difflogs">4.1.7</a>, we saw that the differential of <span class="math inline">\(\ln ax\)</span> with respect to <span class="math inline">\(x\)</span> is <span class="math inline">\(\tfrac{1}{x}\)</span>. Applying the reciprical approach of differentiation being the reverse function of integration, then:</p>
+<div class="dodo">
+<p><span class="math display" id="eq:intln">\[\begin{equation}
+\int \frac{1}{x} \textrm{d}x = \ln x + C
+\tag{6.2}
+\end{equation}\]</span></p>
+</div>
+<p>because of our rules of logs we can express this in a slightly different way <span class="math inline">\(\int \frac{1}{x} \textrm{d}x = \ln ax\)</span> where <span class="math inline">\(\ln a = C\)</span>.</p>
+<p>A lot of functions in chemistry end up with us needing to integrate <span class="math inline">\(\tfrac{1}{x}\)</span>, you will see some of these in your thermodynamics course, and again in kinetics.</p>
+</div>
+<div id="subsec:" class="section level3" number="6.1.4">
+<h3><span class="header-section-number">6.1.4</span> Intergrating trig functions</h3>
+<p>Again if we recall Section <a href="ch-Workshop4.html#subsec:difftrig">4.1.8</a> we saw the pattern for differentiating trig functions, and as our approach has been before we can approach integration as ‘undoing’ any differentiation we have done. So we can produce a ‘reverse cycle’ for integration of the trig functions <span class="math inline">\(\sin\)</span> and <span class="math inline">\(\cos\)</span>, Figure <a href="ch-Workshop6.html#fig:trigint">6.2</a>.</p>
+<div class="figure" style="text-align: center"><span id="fig:trigint"></span>
+<img src="images/trigint.png" alt="The cycle of differentiation which links sin (x) and cos (x). sin (x) differentiates to cos (x), cos (x) differentiates to -sin (x), -sin (x) differentiates to -cos (x) and -cos (x) differentiates to sin x." width="60%" />
+<p class="caption">
+Figure 6.2: The cycle of differentiation which links sin (x) and cos (x). sin (x) differentiates to cos (x), cos (x) differentiates to -sin (x), -sin (x) differentiates to -cos (x) and -cos (x) differentiates to sin x.
+</p>
+</div>
+<p>Formalising this (don’t forget the constant of integration!):</p>
+<div class="dodo">
+<p><span class="math display" id="eq:intsin">\[\begin{equation}
+\int \sin ax \textrm{d}x = -\frac{1}{a} \cos x + C
+\tag{6.3}
+\end{equation}\]</span></p>
+<p><span class="math display" id="eq:intsin">\[\begin{equation}
+\int \cos ax \textrm{d}x = \frac{1}{a} \sin x + C
+\tag{6.3}
+\end{equation}\]</span></p>
+</div>
+</div>
+<div id="subsec:diffequations" class="section level3" number="6.1.5">
+<h3><span class="header-section-number">6.1.5</span> Differential equaitons</h3>
+<p>In chemistry many examples of fuctions exist as differential equations, or equations that exist in a form that looks like <span class="math inline">\(\tfrac{\textrm{d}y}{\textrm{d}x}=\)</span> something. Usually to solve these we can just determine the ‘anti-derivative.’</p>
+</div>
+<div id="subsec:defint" class="section level3" number="6.1.6">
+<h3><span class="header-section-number">6.1.6</span> Definite Integration</h3>
+<p>If we use integration in chemistry we usually have some limits on when things make chemical sense, for example there is no chemical sense in things happening before a reaction begins, or at temperatures below absolute zero.</p>
+<p>To do this we can use ‘limits’ on our integrals, by only integrating (or determining the area) between an upper and lower limit (like in Figure <a href="ch-Workshop6.html#fig:integral">6.1</a>) we can ensure that the answer always makes chemical sense.</p>
+<p>For example in Figure <a href="ch-Workshop6.html#fig:integral">6.1</a>, the work done by an expanding gas is given by the area underneath the pressure-volume curve between the initial (<span class="math inline">\(V_i\)</span>) and final (<span class="math inline">\(V_f\)</span>) volumes. This is <span class="math inline">\(\int p \textrm{d}V\)</span>. The relationship between pressure and volume is described by <span class="math inline">\(p=\tfrac{nRT}{V}\)</span> (the ideal gas law).</p>
+<p>To determine the definite integral we can integrate as normal and then substitute in the values of volume at the final and inital values.</p>
+</div>
+</div>
+<div id="summary-of-concepts-learnt-2" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Summary of concepts learnt</h2>
 <div class="info">
 <p><span class="math display">\[\begin{equation*}
 \begin{array}{cccc}
@@ -376,11 +432,10 @@ Au + Bv &amp; &amp;A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\tex
 \end{equation*}\]</span></p>
 </div>
 </div>
-</div>
-<div id="sec:Questions6" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> Questions</h2>
-<div id="basic-integration-practice" class="section level3" number="6.2.1">
-<h3><span class="header-section-number">6.2.1</span> Basic integration practice</h3>
+<div id="sec:Questions6" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Questions</h2>
+<div id="basic-integration-practice" class="section level3" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> Basic integration practice</h3>
 <p>Integrate the following with respect to the variable specified:</p>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\(f&#39;(x) = \frac{a}{x}\)</span>; x</li>
@@ -393,8 +448,8 @@ Au + Bv &amp; &amp;A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\tex
 <li><span class="math inline">\(f&#39;(t) = -e^{-kt}\)</span>, t</li>
 </ol>
 </div>
-<div id="differential-equations" class="section level3" number="6.2.2">
-<h3><span class="header-section-number">6.2.2</span> Differential equations</h3>
+<div id="differential-equations" class="section level3" number="6.3.2">
+<h3><span class="header-section-number">6.3.2</span> Differential equations</h3>
 <p>Solve the following differential equations as far as possible:</p>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\(\frac{\textrm{d}\ln a}{\textrm{d}z}= bz^2\)</span></li>
@@ -404,10 +459,10 @@ Au + Bv &amp; &amp;A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\tex
 </ol>
 </div>
 </div>
-<div id="sec:Answers6" class="section level2" number="6.3">
-<h2><span class="header-section-number">6.3</span> Answers</h2>
-<div id="basic-integration-practice-1" class="section level3" number="6.3.1">
-<h3><span class="header-section-number">6.3.1</span> Basic integration practice</h3>
+<div id="sec:Answers6" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Answers</h2>
+<div id="basic-integration-practice-1" class="section level3" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> Basic integration practice</h3>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\(f (x) = a \ln x + C\)</span></li>
 <li><span class="math inline">\(f(x) = \frac{2}{5} x^{\frac{5}{2}}+ \frac{x^{\frac{3}{2}}}{3}+4x^{\frac{1}{2}}+C\)</span></li>
@@ -419,8 +474,8 @@ Au + Bv &amp; &amp;A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\tex
 <li><span class="math inline">\(f(t) = \frac{e^{-kt}}{k}\)</span></li>
 </ol>
 </div>
-<div id="differential-equations-1" class="section level3" number="6.3.2">
-<h3><span class="header-section-number">6.3.2</span> Differential equations</h3>
+<div id="differential-equations-1" class="section level3" number="6.4.2">
+<h3><span class="header-section-number">6.4.2</span> Differential equations</h3>
 <ol style="list-style-type: decimal">
 <li><span class="math inline">\(\ln a = \frac{bz^3}{3}+D\)</span></li>
 <li><span class="math inline">\(\frac{1}{[A]}=\frac{1}{[A]_0}+ kt\)</span></li>

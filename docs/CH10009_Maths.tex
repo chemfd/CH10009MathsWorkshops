@@ -84,7 +84,7 @@
 
 \title{CH10009 Workshop Questions}
 \author{Fiona Dickinson}
-\date{2021-11-06}
+\date{2021-11-07}
 
 \begin{document}
 \maketitle
@@ -1868,7 +1868,7 @@ y_2 = m(x_1+ \Delta x) + c
 The gradient of this line is:
 
 \begin{equation*}
- \frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}=\frac{(m(x_1+ \Delta x) + c) - (mx_1 + c)}{\Delta x} = m\frac{\Delta x}{\Delta x}=m
+\frac{\Delta y}{\Delta x} = \frac{y_2-y_1}{x_2-x_1}=\frac{(m(x_1+ \Delta x) + c) - (mx_1 + c)}{\Delta x} = m\frac{\Delta x}{\Delta x}=m
 \end{equation*}
 
 This is the least surprising result (and a relatively large amount of work) that you will likely see, but this principle can be used to show \emph{what} differentiation is.
@@ -3112,8 +3112,11 @@ Instead of just thinking about this as undoing the differential we can instead u
 
 \begin{equation}
 \int ax^b \textrm{d}x = \frac{a}{b+1}x^{b+1}+C
+\textrm{when } x \neq -1
 \label{eq:intpoly}
 \end{equation}
+
+You will notice the caveat `when \(x \neq -1\)' integrating polynomials of any other power works, positive, negative, fractional, but if you recall when we never have a polynomial function which differentiates to have a power of \(-1\). We show the integration of \(x^{-1}\) in Section \ref{subsec:integrating1x}.
 
 \hypertarget{subsec:integratingexponentials}{%
 \subsection{Integrating exponentials}\label{subsec:integratingexponentials}}
@@ -3138,6 +3141,67 @@ This again makes sense if we look at the Maclaurin expansion of an exponential f
 \int ae^{bx} \textrm{d}x = \frac{a}{b}e^{bx}+C
 \label{eq:intpoly}
 \end{equation}
+
+\hypertarget{subsec:integrating1x}{%
+\subsection{Integrating 1/x}\label{subsec:integrating1x}}
+
+In Section \ref{subsec:integratingpolynomials} we saw that we could integrate functions of x raised to any numerical power other than \(x^{-1}\). This is because no polynomial differentiates to give a result of \(\tfrac{1}{x}\).
+
+However, if we recall Section \ref{subsec:difflogs}, we saw that the differential of \(\ln ax\) with respect to \(x\) is \(\tfrac{1}{x}\). Applying the reciprical approach of differentiation being the reverse function of integration, then:
+
+\begin{equation}
+\int \frac{1}{x} \textrm{d}x = \ln x + C
+\label{eq:intln}
+\end{equation}
+
+because of our rules of logs we can express this in a slightly different way \(\int \frac{1}{x} \textrm{d}x = \ln ax\) where \(\ln a = C\).
+
+A lot of functions in chemistry end up with us needing to integrate \(\tfrac{1}{x}\), you will see some of these in your thermodynamics course, and again in kinetics.
+
+\hypertarget{subsec:}{%
+\subsection{Intergrating trig functions}\label{subsec:}}
+
+Again if we recall Section \ref{subsec:difftrig} we saw the pattern for differentiating trig functions, and as our approach has been before we can approach integration as `undoing' any differentiation we have done. So we can produce a `reverse cycle' for integration of the trig functions \(\sin\) and \(\cos\), Figure \ref{fig:trigint}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/trigint} 
+
+}
+
+\caption{The cycle of differentiation which links sin (x) and cos (x). sin (x) differentiates to cos (x), cos (x) differentiates to -sin (x), -sin (x) differentiates to -cos (x) and -cos (x) differentiates to sin x.}\label{fig:trigint}
+\end{figure}
+
+Formalising this (don't forget the constant of integration!):
+
+\begin{equation}
+\int \sin ax \textrm{d}x = -\frac{1}{a} \cos x + C
+\label{eq:intsin}
+\end{equation}
+
+\begin{equation}
+\int \cos ax \textrm{d}x = \frac{1}{a} \sin x + C
+\label{eq:intsin}
+\end{equation}
+
+\hypertarget{subsec:diffequations}{%
+\subsection{Differential equaitons}\label{subsec:diffequations}}
+
+In chemistry many examples of fuctions exist as differential equations, or equations that exist in a form that looks like \(\tfrac{\textrm{d}y}{\textrm{d}x}=\) something. Usually to solve these we can just determine the `anti-derivative'.
+
+\hypertarget{subsec:defint}{%
+\subsection{Definite Integration}\label{subsec:defint}}
+
+If we use integration in chemistry we usually have some limits on when things make chemical sense, for example there is no chemical sense in things happening before a reaction begins, or at temperatures below absolute zero.
+
+To do this we can use `limits' on our integrals, by only integrating (or determining the area) between an upper and lower limit (like in Figure \ref{fig:integral}) we can ensure that the answer always makes chemical sense.
+
+For example in Figure \ref{fig:integral}, the work done by an expanding gas is given by the area underneath the pressure-volume curve between the initial (\(V_i\)) and final (\(V_f\)) volumes. This is \(\int p \textrm{d}V\). The relationship between pressure and volume is described by \(p=\tfrac{nRT}{V}\) (the ideal gas law).
+
+To determine the definite integral we can integrate as normal and then substitute in the values of volume at the final and inital values.
+
+\hypertarget{summary-of-concepts-learnt-2}{%
+\section{Summary of concepts learnt}\label{summary-of-concepts-learnt-2}}
 
 \begin{equation*}
 \begin{array}{cccc}

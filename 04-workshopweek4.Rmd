@@ -208,6 +208,8 @@ In fact if we differentiate $\sin x$ with respect to $x$ we get $\cos x$. You ca
 ```{r echo=FALSE, difftrig, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The cycle of differentiation which links sin (x) and cos (x). sin (x) differentiates to cos (x), cos (x) differentiates to -sin (x), -sin (x) differentiates to -cos (x) and -cos (x) differentiates to sin x.'}
 knitr::include_graphics("images/difftrigcycle.png")
 ```
+
+
 \begin{equation}
 \begin{array}{ccc}
   f(x) \equiv y & & f^{\prime}(x) \equiv \dfrac{\textrm{d}y}{\textrm{d}x}\\

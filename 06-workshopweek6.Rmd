@@ -56,10 +56,14 @@ Instead of just thinking about this as undoing the differential we can instead u
 :::dodo
 \begin{equation}
 \int ax^b \textrm{d}x = \frac{a}{b+1}x^{b+1}+C
+\textrm{when } x \neq -1
 (\#eq:intpoly)
 \end{equation}
 
 :::
+
+You will notice the caveat 'when $x \neq -1$' integrating polynomials of any other power works, positive, negative, fractional, but if you recall when we never have a polynomial function which differentiates to have a power of $-1$. We show the integration of $x^{-1}$ in Section \@ref(subsec:integrating1x).
+
 
 ### Integrating exponentials {#subsec:integratingexponentials}
 
@@ -87,6 +91,68 @@ This again makes sense if we look at the Maclaurin expansion of an exponential f
 
 :::
 
+### Integrating 1/x {#subsec:integrating1x}
+
+In Section \@ref(subsec:integratingpolynomials) we saw that we could integrate functions of x raised to any numerical power other than $x^{-1}$. This is because no polynomial differentiates to give a result of $\tfrac{1}{x}$.
+
+However, if we recall Section \@ref(subsec:difflogs), we saw that the differential of $\ln ax$ with respect to $x$ is $\tfrac{1}{x}$. Applying the reciprical approach of differentiation being the reverse function of integration, then:
+
+:::dodo
+\begin{equation}
+\int \frac{1}{x} \textrm{d}x = \ln x + C
+(\#eq:intln)
+\end{equation}
+
+:::
+
+because of our rules of logs we can express this in a slightly different way $\int \frac{1}{x} \textrm{d}x = \ln ax$ where $\ln a = C$.
+
+A lot of functions in chemistry end up with us needing to integrate $\tfrac{1}{x}$, you will see some of these in your thermodynamics course, and again in kinetics.
+
+### Intergrating trig functions {#subsec:}
+
+Again if we recall Section \@ref(subsec:difftrig) we saw the pattern for differentiating trig functions, and as our approach has been before we can approach integration as 'undoing' any differentiation we have done. So we can produce a 'reverse cycle' for integration of the trig functions $\sin$ and $\cos$, Figure \@ref(fig:trigint).
+
+```{r echo=FALSE, trigint, out.width='60%', fig.show='hold', fig.align='center', fig.cap='The cycle of differentiation which links sin (x) and cos (x). sin (x) differentiates to cos (x), cos (x) differentiates to -sin (x), -sin (x) differentiates to -cos (x) and -cos (x) differentiates to sin x.'}
+knitr::include_graphics("images/trigint.png")
+```
+
+Formalising this (don't forget the constant of integration!):
+
+:::dodo
+\begin{equation}
+\int \sin ax \textrm{d}x = -\frac{1}{a} \cos x + C
+(\#eq:intsin)
+\end{equation}
+
+
+\begin{equation}
+\int \cos ax \textrm{d}x = \frac{1}{a} \sin x + C
+(\#eq:intsin)
+\end{equation}
+
+:::
+
+### Differential equaitons {#subsec:diffequations}
+
+In chemistry many examples of fuctions exist as differential equations, or equations that exist in a form that looks like $\tfrac{\textrm{d}y}{\textrm{d}x}=$ something. Usually to solve these we can just determine the 'anti-derivative'.
+
+
+###  Definite Integration {#subsec:defint}
+
+If we use integration in chemistry we usually have some limits on when things make chemical sense, for example there is no chemical sense in things happening before a reaction begins, or at temperatures below absolute zero.
+
+To do this we can use 'limits' on our integrals, by only integrating (or determining the area) between an upper and lower limit (like in Figure \@ref(fig:integral)) we can ensure that the answer always makes chemical sense.
+
+For example in Figure \@ref(fig:integral), the work done by an expanding gas is given by the area underneath the pressure-volume curve between the initial ($V_i$) and final ($V_f$) volumes. This is $\int p \textrm{d}V$. The relationship between pressure and volume is described by $p=\tfrac{nRT}{V}$ (the ideal gas law).
+
+To determine the definite integral we can integrate as normal and then substitute in the values of volume at the final and inital values.
+
+
+
+
+## Summary of concepts learnt
+ 
 :::info
 \begin{equation*}
 \begin{array}{cccc}

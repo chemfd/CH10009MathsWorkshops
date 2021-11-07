@@ -48,6 +48,9 @@ eq:chainrule
 eq:productrule
 fig:integral
 eq:intpoly
+eq:intln
+fig:trigint
+eq:intsin
 tab:physicalconst
 eq:macexp
 eq:macsin
@@ -162,6 +165,11 @@ ch:Workshop6
 sec:Prelim6
 subsec:integratingpolynomials
 subsec:integratingexponentials
+subsec:integrating1x
+subsec:
+subsec:diffequations
+subsec:defint
+summary-of-concepts-learnt-2
 sec:Questions6
 basic-integration-practice
 differential-equations
