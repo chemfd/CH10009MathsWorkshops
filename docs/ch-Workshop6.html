@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2021-11-07" />
+<meta name="date" content="2021-11-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -236,7 +236,7 @@
 <li class="chapter" data-level="6.1.3" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#subsec:integrating1x"><i class="fa fa-check"></i><b>6.1.3</b> Integrating 1/x</a></li>
 <li class="chapter" data-level="6.1.4" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#subsec:"><i class="fa fa-check"></i><b>6.1.4</b> Intergrating trig functions</a></li>
 <li class="chapter" data-level="6.1.5" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#subsec:diffequations"><i class="fa fa-check"></i><b>6.1.5</b> Differential equaitons</a></li>
-<li class="chapter" data-level="6.1.6" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#subsec:defint"><i class="fa fa-check"></i><b>6.1.6</b> Definite Integration</a></li>
+<li class="chapter" data-level="6.1.6" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#subsec:definite"><i class="fa fa-check"></i><b>6.1.6</b> Definite Integration</a></li>
 </ul></li>
 <li class="chapter" data-level="6.2" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#summary-of-concepts-learnt-2"><i class="fa fa-check"></i><b>6.2</b> Summary of concepts learnt</a></li>
 <li class="chapter" data-level="6.3" data-path="ch-Workshop6.html"><a href="ch-Workshop6.html#sec:Questions6"><i class="fa fa-check"></i><b>6.3</b> Questions</a>
@@ -298,7 +298,7 @@
 Figure 6.1: Integration can be used to determine the area under a line in a plot. In the case of a pressure-volume plot the area under the plot is the work done in the expansion between the initial and final volume.
 </p>
 </div>
-<p>If we aren’t considering the area under the line between -∞ &amp; ∞ we need to define the points on the <span class="math inline">\(x\)</span> axis of interest, these are often referred to as ‘initial’ and ‘final.’ In this case we call it a ‘definite integral.’ We can see an example of these in Section <a href="#subsec:definite"><strong>??</strong></a>.</p>
+<p>If we aren’t considering the area under the line between -∞ &amp; ∞ we need to define the points on the <span class="math inline">\(x\)</span> axis of interest, these are often referred to as ‘initial’ and ‘final.’ In this case we call it a ‘definite integral.’ We can see an example of these in Section <a href="ch-Workshop6.html#subsec:definite">6.1.6</a>.</p>
 <p>Just like with integration we have a set of standard results, these are the integrals or anti-derivatives:</p>
 <div id="subsec:integratingpolynomials" class="section level3" number="6.1.1">
 <h3><span class="header-section-number">6.1.1</span> Integrating polynomials</h3>
@@ -381,25 +381,49 @@ Figure 6.2: The cycle of differentiation which links sin (x) and cos (x). sin (x
 <p>Formalising this (don’t forget the constant of integration!):</p>
 <div class="dodo">
 <p><span class="math display" id="eq:intsin">\[\begin{equation}
-\int \sin ax \textrm{d}x = -\frac{1}{a} \cos x + C
+\int \sin ax \textrm{d}x = -\frac{1}{a} \cos ax + C
 \tag{6.3}
 \end{equation}\]</span></p>
 <p><span class="math display" id="eq:intsin">\[\begin{equation}
-\int \cos ax \textrm{d}x = \frac{1}{a} \sin x + C
+\int \cos ax \textrm{d}x = \frac{1}{a} \sin ax + C
 \tag{6.3}
 \end{equation}\]</span></p>
 </div>
 </div>
 <div id="subsec:diffequations" class="section level3" number="6.1.5">
 <h3><span class="header-section-number">6.1.5</span> Differential equaitons</h3>
-<p>In chemistry many examples of fuctions exist as differential equations, or equations that exist in a form that looks like <span class="math inline">\(\tfrac{\textrm{d}y}{\textrm{d}x}=\)</span> something. Usually to solve these we can just determine the ‘anti-derivative.’</p>
+<p>In chemistry many examples of fuctions exist as differential equations, or equations that exist in a form that looks like <span class="math inline">\(\tfrac{\textrm{d}y}{\textrm{d}x}=\)</span> something. Usually to solve these we can just determine the ‘anti-derivative,’ then solve for our constant of integration.</p>
 </div>
-<div id="subsec:defint" class="section level3" number="6.1.6">
+<div id="subsec:definite" class="section level3" number="6.1.6">
 <h3><span class="header-section-number">6.1.6</span> Definite Integration</h3>
-<p>If we use integration in chemistry we usually have some limits on when things make chemical sense, for example there is no chemical sense in things happening before a reaction begins, or at temperatures below absolute zero.</p>
+<p>Many of the equations we use in chemistry are derived from solving differential equations, where we have a relationship for the ‘rate of change’ of something. If we use integration in chemistry we usually have some limits on when things make chemical sense, for example there is no chemical sense in things happening before a reaction begins, or at temperatures below absolute zero.</p>
 <p>To do this we can use ‘limits’ on our integrals, by only integrating (or determining the area) between an upper and lower limit (like in Figure <a href="ch-Workshop6.html#fig:integral">6.1</a>) we can ensure that the answer always makes chemical sense.</p>
 <p>For example in Figure <a href="ch-Workshop6.html#fig:integral">6.1</a>, the work done by an expanding gas is given by the area underneath the pressure-volume curve between the initial (<span class="math inline">\(V_i\)</span>) and final (<span class="math inline">\(V_f\)</span>) volumes. This is <span class="math inline">\(\int p \textrm{d}V\)</span>. The relationship between pressure and volume is described by <span class="math inline">\(p=\tfrac{nRT}{V}\)</span> (the ideal gas law).</p>
-<p>To determine the definite integral we can integrate as normal and then substitute in the values of volume at the final and inital values.</p>
+<p>To determine the definite integral we can integrate as normal and then substitute in the values of volume at the final and initial values. The notation used in definite integrals has the limits of this integration given at the upper and lower bounds of the integral sign.</p>
+<p><span class="math display">\[\begin{equation*}
+w= - \int_{V_i}^{V_f} p \textrm{d}V = - \int_{V_i}^{V_f} \frac{nRT}{V} \textrm{d}V = -nRT \int_{V_i}^{V_f} \frac{1}{V} \textrm{d}V
+\end{equation*}\]</span></p>
+<p>We can integrate this as we have previously in Section <a href="ch-Workshop6.html#subsec:integrating1x">6.1.3</a>:</p>
+<p><span class="math display">\[\begin{equation*}
+w = -[nRT \ln V + C]_{V_i}^{V_f}
+\end{equation*}\]</span></p>
+<p>The notation of the limits is still in place (as super- and sub- scripts on the square brackets), these values may now be substituted in tern into the above equation, following the same rules as we do in chemistry ‘final - inital’ (or more formally top limit minus bottom limit).</p>
+<p><span class="math display">\[\begin{equation*}
+w = (-nRT \ln V_f + C) - (-nRT \ln V_i + C)
+\end{equation*}\]</span></p>
+<p>We can now tidy this up, and we notice that the constant of integration dissapears (for one of the terms it will always be postive and for the other always negative).</p>
+<p><span class="math display">\[\begin{equation*}
+w = -nRT (\ln V_f - \ln V_i)
+\end{equation*}\]</span></p>
+<p>and then using one of our ‘rules of logs’ from Section <a href="ch-Workshop2.html#sec:rulelog">2.1.2</a></p>
+<p><span class="math display">\[\begin{equation*}
+w = -nRT \frac{\ln V_f}{\ln V_i}
+\end{equation*}\]</span></p>
+<div class="thing">
+<p>When using differentiation we integrate as normal, but we do not need a constant of integration.</p>
+<p>After we have integrated we substitute in the limits, with the value of the upper limit substituted in minus the value of the lower limit substituted in.</p>
+<p>It may be that we have the define limits ourselves, such as ‘final &amp; initial’ or ‘value at time = 0 &amp; value at time = t.’</p>
+</div>
 </div>
 </div>
 <div id="summary-of-concepts-learnt-2" class="section level2" number="6.2">

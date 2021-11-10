@@ -121,33 +121,68 @@ Formalising this (don't forget the constant of integration!):
 
 :::dodo
 \begin{equation}
-\int \sin ax \textrm{d}x = -\frac{1}{a} \cos x + C
+\int \sin ax \textrm{d}x = -\frac{1}{a} \cos ax + C
 (\#eq:intsin)
 \end{equation}
 
 
 \begin{equation}
-\int \cos ax \textrm{d}x = \frac{1}{a} \sin x + C
+\int \cos ax \textrm{d}x = \frac{1}{a} \sin ax + C
 (\#eq:intsin)
 \end{equation}
 
 :::
 
-### Differential equaitons {#subsec:diffequations}
+### Differential equations {#subsec:diffequations}
 
-In chemistry many examples of fuctions exist as differential equations, or equations that exist in a form that looks like $\tfrac{\textrm{d}y}{\textrm{d}x}=$ something. Usually to solve these we can just determine the 'anti-derivative'.
+In chemistry many examples of fuctions exist as differential equations, or equations that exist in a form that looks like $\tfrac{\textrm{d}y}{\textrm{d}x}=$ something. Usually to solve these we can just determine the 'anti-derivative', then solve for our constant of integration.
 
 
-###  Definite Integration {#subsec:defint}
+###  Definite Integration {#subsec:definite}
 
-If we use integration in chemistry we usually have some limits on when things make chemical sense, for example there is no chemical sense in things happening before a reaction begins, or at temperatures below absolute zero.
+Many of the equations we use in chemistry are derived from solving differential equations, where we have a relationship for the 'rate of change' of something. If we use integration in chemistry we usually have some limits on when things make chemical sense, for example there is no chemical sense in things happening before a reaction begins, or at temperatures below absolute zero. 
 
 To do this we can use 'limits' on our integrals, by only integrating (or determining the area) between an upper and lower limit (like in Figure \@ref(fig:integral)) we can ensure that the answer always makes chemical sense.
 
 For example in Figure \@ref(fig:integral), the work done by an expanding gas is given by the area underneath the pressure-volume curve between the initial ($V_i$) and final ($V_f$) volumes. This is $\int p \textrm{d}V$. The relationship between pressure and volume is described by $p=\tfrac{nRT}{V}$ (the ideal gas law).
 
-To determine the definite integral we can integrate as normal and then substitute in the values of volume at the final and inital values.
+To determine the definite integral we can integrate as normal and then substitute in the values of volume at the final and initial values. The notation used in definite integrals has the limits of this integration given at the upper and lower bounds of the integral sign.
 
+\begin{equation*}
+w= - \int_{V_i}^{V_f} p \textrm{d}V = - \int_{V_i}^{V_f} \frac{nRT}{V} \textrm{d}V = -nRT \int_{V_i}^{V_f} \frac{1}{V} \textrm{d}V
+\end{equation*}
+
+We can integrate this as we have previously in Section \@ref(subsec:integrating1x):
+
+\begin{equation*}
+w = -[nRT \ln V + C]_{V_i}^{V_f}
+\end{equation*}
+
+The notation of the limits is still in place (as super- and sub- scripts on the square brackets), these values may now be substituted in tern into the above equation, following the same rules as we do in chemistry 'final - inital' (or more formally top limit minus bottom limit).
+
+\begin{equation*}
+w = (-nRT \ln V_f + C) - (-nRT \ln V_i + C)
+\end{equation*}
+
+We can now tidy this up, and we notice that the constant of integration dissapears (for one of the terms it will always be postive and for the other always negative).
+
+\begin{equation*}
+w = -nRT (\ln V_f - \ln V_i)
+\end{equation*}
+
+and then using one of our 'rules of logs' from Section \@ref(sec:rulelog)
+
+\begin{equation*}
+w = -nRT \frac{\ln V_f}{\ln V_i}
+\end{equation*}
+
+:::thing
+When using differentiation we integrate as normal, but we do not need a constant of integration.
+
+After we have integrated we substitute in the limits, with the value of the upper limit substituted in minus the value of the lower limit substituted in.
+
+It may be that we have the define limits ourselves, such as 'final & initial' or 'value at time = 0 & value at time = t'.
+:::
 
 
 
