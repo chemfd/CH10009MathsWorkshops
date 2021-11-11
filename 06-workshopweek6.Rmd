@@ -216,6 +216,65 @@ Au + Bv & &A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\textrm{d}x}
 \end{equation*}
 :::
 
+## Examples
+
+### Integrated equation for second order kinetics
+
+:::question
+Second order uni-molecular reactions are those that follow the differential rate equation:
+
+\begin{equation*}
+\frac{\textrm{d}[A]}{\textrm{d}t} = - k [A]^2
+\end{equation*}
+
+
+where $k$ is the rate constant for the reaction and $[A]$ the concentration of the reagent A.
+
+Determine an integrated form of the rate equation, and sketch a graph suitable to determine the rate constant, $k$.
+:::
+
+In this case we need to start by gathering all of the $[A]$s on one side (including the $\textrm{d}[A]$) and all of the $t$s on the other, including the $\textrm{d}t$.
+
+\begin{equation*}
+\frac{1}{[A]^2} \textrm[d}[A]= - k \textrm{d}t
+\end{equation*}
+
+*This step is a little spurious in pure mathematical terms but gets us to where we need to be, and is fixed just below.*
+
+\begin{equation*}
+\int \frac{1}{[A]^2} \textrm[d}[A]= \int - k \textrm{d}t
+\end{equation*}
+
+If values are constants we can remove those from the integral.
+
+\begin{equation*}
+\int \frac{1}{[A]^2} \textrm[d}[A]=  - k \int \textrm{d}t
+\end{equation*}
+
+Now we need to definte our limits for this definite integral:
+
+- when $t = 0$, $[A] = [A]_0$ (this is the lower limit)
+- when $t = t$, $[A] = [A]$ (this is the upper limit)
+
+and apply them to our integral:
+
+\begin{equation*}
+\int_{[A]_0}^{[A]} \frac{1}{[A]^2} \textrm[d}[A]=  - k \int_0^t \textrm{d}t
+\end{equation*}
+
+Now everything is in place for us to determine our integrals (we need to do both of them).
+
+Starting with the '$\textrm{d}t$' integral.
+
+\begin{equation*}
+- k \int_0^t \textrm{d}t\\
+\\
+[-kt]_0^t
+\end{equation*}
+
+
+
+
 ## Questions {#sec:Questions6}
 
 ### Basic integration practice

@@ -170,6 +170,8 @@ subsec:
 subsec:diffequations
 subsec:definite
 summary-of-concepts-learnt-2
+examples-2
+integrated-equation-for-second-order-kinetics
 sec:Questions6
 basic-integration-practice
 differential-equations
