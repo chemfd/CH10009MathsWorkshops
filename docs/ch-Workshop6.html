@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2021-11-11" />
+<meta name="date" content="2021-11-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -473,6 +473,75 @@ Au + Bv &amp; &amp;A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\tex
 <p>Determine an integrated form of the rate equation, and sketch a graph suitable to determine the rate constant, <span class="math inline">\(k\)</span>.</p>
 </div>
 <p>In this case we need to start by gathering all of the <span class="math inline">\([A]\)</span>s on one side (including the <span class="math inline">\(\textrm{d}[A]\)</span>) and all of the <span class="math inline">\(t\)</span>s on the other, including the <span class="math inline">\(\textrm{d}t\)</span>.</p>
+<p><span class="math display">\[\begin{equation*}
+\frac{1}{[A]^2} \textrm{d}[A]= - k \textrm{d}t
+\end{equation*}\]</span></p>
+<p><em>This step is a little spurious in pure mathematical terms but gets us to where we need to be, and is fixed just below.</em></p>
+<p><span class="math display">\[\begin{equation*}
+\int \frac{1}{[A]^2} \textrm{d}[A]= \int - k \textrm{d}t
+\end{equation*}\]</span></p>
+<p>If values are constants we can remove those from the integral.</p>
+<p><span class="math display">\[\begin{equation*}
+\int \frac{1}{[A]^2} \textrm{d}[A]=  - k \int \textrm{d}t
+\end{equation*}\]</span></p>
+<p>Now we need to <em>define</em> our limits for this definite integral:</p>
+<ul>
+<li>when <span class="math inline">\(t = 0\)</span>, <span class="math inline">\([A] = [A]_0\)</span> (this is the lower limit)</li>
+<li>when <span class="math inline">\(t = t\)</span>, <span class="math inline">\([A] = [A]\)</span> (this is the upper limit)</li>
+</ul>
+<div class="thing">
+<p>It is ‘normal’ in chemistry (although often confusing), for our variable in integration and our limit to have the same symbol, in this case <span class="math inline">\(t\)</span> &amp; <span class="math inline">\(t\)</span> and <span class="math inline">\([A]\)</span> &amp; <span class="math inline">\([A]\)</span>, if it makes it easier for you to think of it rename the variables in the integration.</p>
+</div>
+<p>and apply them to our integral:</p>
+<p><span class="math display">\[\begin{equation*}
+\int _{[A]_0} ^{[A]} \frac{1}{[A]^2} \textrm{d}[A]=  - k \int _0 ^t \textrm{d}t
+\end{equation*}\]</span></p>
+<p>Now everything is in place for us to determine our integrals (we need to do both of them).</p>
+<p>Starting with the ‘<span class="math inline">\(\textrm{d}t\)</span>’ integral.</p>
+<p><span class="math display">\[\begin{equation*}
+- k \int _0 ^t \textrm{d}t
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+[-kt]_0^t
+\end{equation*}\]</span></p>
+<p>The notation with the limits in the square brackets says: “subsitute in each in turn, then take the bottom term away from the top,” so:</p>
+<p><span class="math display">\[\begin{equation*}
+-kt - (-k*0)\\
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+-kt
+\end{equation*}\]</span></p>
+<p>Now if move onto the ‘<span class="math inline">\(\textrm{d}[A]\)</span>’ integral:</p>
+<p><span class="math display">\[\begin{equation*}
+\int_{[A]_0}^{[A]} \frac{1}{[A]^2} \textrm{d}[A]\\
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+\int_{[A]_0}^{[A]} [A]^{-2}\textrm{d}[A]\\
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+\left[-[A]^{-1} \right] _{[A]_0}^{[A]}\\
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+\left[-\frac{1}{[A]} \right] _{[A]_0}^{[A]}\\
+\end{equation*}\]</span></p>
+<p>and substituting in the values:</p>
+<p><span class="math display">\[\begin{equation*}
+\left(-\frac{1}{[A]}--\frac{1}{[A]_0} \right)\\
+\end{equation*}\]</span></p>
+<p><span class="math display">\[\begin{equation*}
+\left(-\frac{1}{[A]}+\frac{1}{[A]_0} \right)\\
+\end{equation*}\]</span></p>
+<p>Combining everything together:</p>
+<p><span class="math display">\[\begin{equation*}
+\left(-\frac{1}{[A]}+\frac{1}{[A]_0} \right) = -kt
+\end{equation*}\]</span></p>
+<p>And rearranging to the form <span class="math inline">\(y = mx + c\)</span>:</p>
+<p><span class="math display">\[\begin{equation*}
+\frac{1}{[A]}=\frac{1}{[A]_0} + kt
+\end{equation*}\]</span></p>
+<div class="thing">
+<p>An alternate way of doing this is to integrate without the limits and ‘solve’ for the constant of integration using the limits “when <span class="math inline">\(t = 0\)</span>, <span class="math inline">\([A] = [A]_0\)</span>.”</p>
+</div>
 </div>
 </div>
 <div id="sec:Questions6" class="section level2" number="6.4">

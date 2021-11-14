@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.13)  11 NOV 2021 00:01
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.13)  14 NOV 2021 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -951,25 +951,25 @@ File: images/integral.png Graphic file (type bmp)
 [67] [68]
 File: images/trigint.png Graphic file (type bmp)
 <images/trigint.png>
-[69] [70] [71] [72] [73] [74
+[69] [70] [71] [72] [73] [74] [75] [76
 
 ]
 Chapter 7.
-[75] [76
+[77] [78
 
 ]
 Chapter 8.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[77]
+[79]
 No file CH10009_Maths.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3477.
-[78]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3477.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3575.
+[80]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3575.
 (./CH10009_Maths.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3477.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3477.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3575.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3575.
 
 LaTeX Warning: There were undefined references.
 
@@ -986,4 +986,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  58i,10n,118p,812b,478s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CH10009_Maths.pdf (78 pages).
+Output written on CH10009_Maths.pdf (80 pages).

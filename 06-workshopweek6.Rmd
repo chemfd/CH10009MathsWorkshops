@@ -236,30 +236,34 @@ Determine an integrated form of the rate equation, and sketch a graph suitable t
 In this case we need to start by gathering all of the $[A]$s on one side (including the $\textrm{d}[A]$) and all of the $t$s on the other, including the $\textrm{d}t$.
 
 \begin{equation*}
-\frac{1}{[A]^2} \textrm[d}[A]= - k \textrm{d}t
+\frac{1}{[A]^2} \textrm{d}[A]= - k \textrm{d}t
 \end{equation*}
 
 *This step is a little spurious in pure mathematical terms but gets us to where we need to be, and is fixed just below.*
 
 \begin{equation*}
-\int \frac{1}{[A]^2} \textrm[d}[A]= \int - k \textrm{d}t
+\int \frac{1}{[A]^2} \textrm{d}[A]= \int - k \textrm{d}t
 \end{equation*}
 
 If values are constants we can remove those from the integral.
 
 \begin{equation*}
-\int \frac{1}{[A]^2} \textrm[d}[A]=  - k \int \textrm{d}t
+\int \frac{1}{[A]^2} \textrm{d}[A]=  - k \int \textrm{d}t
 \end{equation*}
 
-Now we need to definte our limits for this definite integral:
+Now we need to *define* our limits for this definite integral:
 
 - when $t = 0$, $[A] = [A]_0$ (this is the lower limit)
 - when $t = t$, $[A] = [A]$ (this is the upper limit)
 
+:::thing
+It is 'normal' in chemistry (although often confusing), for our variable in integration and our limit to have the same symbol, in this case $t$ & $t$ and $[A]$ & $[A]$, if it makes it easier for you to think of it rename the variables in the integration.
+:::
+
 and apply them to our integral:
 
 \begin{equation*}
-\int_{[A]_0}^{[A]} \frac{1}{[A]^2} \textrm[d}[A]=  - k \int_0^t \textrm{d}t
+\int _{[A]_0} ^{[A]} \frac{1}{[A]^2} \textrm{d}[A]=  - k \int _0 ^t \textrm{d}t
 \end{equation*}
 
 Now everything is in place for us to determine our integrals (we need to do both of them).
@@ -267,10 +271,67 @@ Now everything is in place for us to determine our integrals (we need to do both
 Starting with the '$\textrm{d}t$' integral.
 
 \begin{equation*}
-- k \int_0^t \textrm{d}t\\
-\\
+- k \int _0 ^t \textrm{d}t
+\end{equation*}
+
+\begin{equation*}
 [-kt]_0^t
 \end{equation*}
+
+The notation with the limits in the square brackets says: "subsitute in each in turn, then take the bottom term away from the top", so:
+
+\begin{equation*}
+-kt - (-k*0)\\
+\end{equation*}
+
+\begin{equation*}
+-kt
+\end{equation*}
+
+Now if move onto the '$\textrm{d}[A]$' integral:
+
+\begin{equation*}
+\int_{[A]_0}^{[A]} \frac{1}{[A]^2} \textrm{d}[A]\\
+\end{equation*}
+
+\begin{equation*}
+\int_{[A]_0}^{[A]} [A]^{-2}\textrm{d}[A]\\
+\end{equation*}
+
+\begin{equation*}
+\left[-[A]^{-1} \right] _{[A]_0}^{[A]}\\
+\end{equation*}
+
+\begin{equation*}
+\left[-\frac{1}{[A]} \right] _{[A]_0}^{[A]}\\
+\end{equation*}
+
+and substituting in the values:
+
+\begin{equation*}
+\left(-\frac{1}{[A]}--\frac{1}{[A]_0} \right)\\
+\end{equation*}
+
+\begin{equation*}
+\left(-\frac{1}{[A]}+\frac{1}{[A]_0} \right)\\
+\end{equation*}
+
+Combining everything together:
+
+\begin{equation*}
+\left(-\frac{1}{[A]}+\frac{1}{[A]_0} \right) = -kt
+\end{equation*}
+
+And rearranging to the form $y = mx + c$:
+
+
+\begin{equation*}
+\frac{1}{[A]}=\frac{1}{[A]_0} + kt
+\end{equation*}
+
+:::thing
+An alternate way of doing this is to integrate without the limits and 'solve' for the constant of integration using the limits "when $t = 0$, $[A] = [A]_0$".
+:::
 
 
 
