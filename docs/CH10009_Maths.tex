@@ -4,8 +4,8 @@
 %
 \documentclass[
 ]{book}
-\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
+\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
@@ -41,8 +41,7 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs,array}
-\usepackage{calc} % for calculating minipage widths
+\usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -51,7 +50,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx}
+\usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -76,15 +75,12 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{CH10009 Workshop Questions}
 \author{Fiona Dickinson}
-\date{2021-11-14}
+\date{2021-11-18}
 
 \begin{document}
 \maketitle
@@ -132,7 +128,7 @@ The topics for workshops each week are as follows:
 \item
   Week \ref{ch:Workshop7}: Real, imagininary and complex numbers
 \item
-  Week \ref{ch:Workshop8}: Some more examples of integration and revision
+  Week \ref{ch:questions}: Some more revision questions
 \end{itemize}
 
 \hypertarget{report-errors}{%
@@ -188,20 +184,20 @@ Althought there have been many versions of metric units over the years it became
 \begin{longtable}[]{@{}cccc@{}}
 \caption{\label{tab:SIbase} The seven base units from which all others are dervied.}\tabularnewline
 \toprule
-SI base unit & symbol & quantity symbol (dimension) & quantity \\
+SI base unit & symbol & quantity symbol (dimension) & quantity\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-SI base unit & symbol & quantity symbol (dimension) & quantity \\
+SI base unit & symbol & quantity symbol (dimension) & quantity\tabularnewline
 \midrule
 \endhead
-kilogram & kg & M & mass \\
-metre & m & L & length \\
-second & s & T & time \\
-ampere & A & I & electric current \\
-kelvin & K & Θ & temperature \\
-mole & mol & N & amount of substance \\
-candela & cd & J & luminous intensity \\
+kilogram & kg & M & mass\tabularnewline
+metre & m & L & length\tabularnewline
+second & s & T & time\tabularnewline
+ampere & A & I & electric current\tabularnewline
+kelvin & K & Θ & temperature\tabularnewline
+mole & mol & N & amount of substance\tabularnewline
+candela & cd & J & luminous intensity\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -219,23 +215,23 @@ Some `combined units' have been given their own unique names (Table \ref{tab:SId
 \begin{longtable}[]{@{}ccccc@{}}
 \caption{\label{tab:SIderive} Some common named SI derived units used in chemistry.}\tabularnewline
 \toprule
-symbol & SI derived unit & quantity & SI base units & other SI units \\
+symbol & SI derived unit & quantity & SI base units & other SI units\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-symbol & SI derived unit & quantity & SI base units & other SI units \\
+symbol & SI derived unit & quantity & SI base units & other SI units\tabularnewline
 \midrule
 \endhead
-Hz & hertz & frequency & s\textsuperscript{-1} & \\
-N & newton & force & kg m s\textsuperscript{-2} & \\
-Pa & pascal & pressure & kg m\textsuperscript{-1} s\textsuperscript{-2} & N m\textsuperscript{-2} \\
-J & joule & energy & kg m\textsuperscript{2} s\textsuperscript{-2} & N m \\
-W & watt & power & kg m\textsuperscript{2} s\textsuperscript{-3} & J s\textsuperscript{-1} \\
-C & coulomb & electrical charge & A s & \\
-V & volt & electrical potential & kg m\textsuperscript{2} s\textsuperscript{-3} A\textsuperscript{-1} & J C\textsuperscript{-1} \\
-F & farad & electrical capacitance & kg\textsuperscript{-1} m\textsuperscript{-2} s\textsuperscript{4} A\textsuperscript{2} & C V\textsuperscript{-1} \\
-Ω & ohm & electrical resistance & kg m\textsuperscript{2} s\textsuperscript{-3} A\textsuperscript{-2} & V A\textsuperscript{-1} \\
-S & siemens & electrical conductance & kg\textsuperscript{-1} m\textsuperscript{-2} s\textsuperscript{3} A\textsuperscript{2} & A V\textsuperscript{-1} or 1/Ω \\
+Hz & hertz & frequency & s\textsuperscript{-1} &\tabularnewline
+N & newton & force & kg m s\textsuperscript{-2} &\tabularnewline
+Pa & pascal & pressure & kg m\textsuperscript{-1} s\textsuperscript{-2} & N m\textsuperscript{-2}\tabularnewline
+J & joule & energy & kg m\textsuperscript{2} s\textsuperscript{-2} & N m\tabularnewline
+W & watt & power & kg m\textsuperscript{2} s\textsuperscript{-3} & J s\textsuperscript{-1}\tabularnewline
+C & coulomb & electrical charge & A s &\tabularnewline
+V & volt & electrical potential & kg m\textsuperscript{2} s\textsuperscript{-3} A\textsuperscript{-1} & J C\textsuperscript{-1}\tabularnewline
+F & farad & electrical capacitance & kg\textsuperscript{-1} m\textsuperscript{-2} s\textsuperscript{4} A\textsuperscript{2} & C V\textsuperscript{-1}\tabularnewline
+Ω & ohm & electrical resistance & kg m\textsuperscript{2} s\textsuperscript{-3} A\textsuperscript{-2} & V A\textsuperscript{-1}\tabularnewline
+S & siemens & electrical conductance & kg\textsuperscript{-1} m\textsuperscript{-2} s\textsuperscript{3} A\textsuperscript{2} & A V\textsuperscript{-1} or 1/Ω\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -253,20 +249,20 @@ There are a number of non-SI base or derived units which are in common usage whi
 \begin{longtable}[]{@{}ccc@{}}
 \caption{\label{tab:nonSI} The relationship between some other common units and the SI system.}\tabularnewline
 \toprule
-unit & quantity & SI equivalant \\
+unit & quantity & SI equivalant\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-unit & quantity & SI equivalant \\
+unit & quantity & SI equivalant\tabularnewline
 \midrule
 \endhead
-torr (or mm Hg) & pressure & \(\frac{101325}{760}\) Pa \\
-atm & pressure & 101325 Pa \\
-bar & pressure & 100000 Pa \\
-eV & energy & 1.602176634 × 10\textsuperscript{-19} J \\
-cal & energy & 4.184 J \\
-Cal & energy & 4.184 kJ \\
-Å & length & 1 × 10\textsuperscript{-10} m \\
+torr (or mm Hg) & pressure & \(\frac{101325}{760}\) Pa\tabularnewline
+atm & pressure & 101325 Pa\tabularnewline
+bar & pressure & 100000 Pa\tabularnewline
+eV & energy & 1.602176634 × 10\textsuperscript{-19} J\tabularnewline
+cal & energy & 4.184 J\tabularnewline
+Cal & energy & 4.184 kJ\tabularnewline
+Å & length & 1 × 10\textsuperscript{-10} m\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -290,25 +286,25 @@ In general lower case prefixes are used for negative powers and upper case prefi
 \begin{longtable}[]{@{}ccc@{}}
 \caption{\label{tab:SIprefix} The more common SI prefixes used in chemistry.}\tabularnewline
 \toprule
-SI prefix & SI prefix `name' & standard form multiplier \\
+SI prefix & SI prefix `name' & standard form multiplier\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-SI prefix & SI prefix `name' & standard form multiplier \\
+SI prefix & SI prefix `name' & standard form multiplier\tabularnewline
 \midrule
 \endhead
-y & yocto & 10\textsuperscript{-24} \\
-z & zepto & 10\textsuperscript{-21} \\
-a & atto & 10\textsuperscript{-18} \\
-f & femto & 10\textsuperscript{-15} \\
-p & pico & 10\textsuperscript{-12} \\
-n & nano & 10\textsuperscript{-9} \\
-μ & micro & 10\textsuperscript{-6} \\
-m & milli & 10\textsuperscript{-3} \\
-c & centi & 10\textsuperscript{-2} \\
-d & deci & 10\textsuperscript{-1} \\
-& & \\
-k & kilo & 10\textsuperscript{3} \\
+y & yocto & 10\textsuperscript{-24}\tabularnewline
+z & zepto & 10\textsuperscript{-21}\tabularnewline
+a & atto & 10\textsuperscript{-18}\tabularnewline
+f & femto & 10\textsuperscript{-15}\tabularnewline
+p & pico & 10\textsuperscript{-12}\tabularnewline
+n & nano & 10\textsuperscript{-9}\tabularnewline
+μ & micro & 10\textsuperscript{-6}\tabularnewline
+m & milli & 10\textsuperscript{-3}\tabularnewline
+c & centi & 10\textsuperscript{-2}\tabularnewline
+d & deci & 10\textsuperscript{-1}\tabularnewline
+& &\tabularnewline
+k & kilo & 10\textsuperscript{3}\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1467,20 +1463,20 @@ You can think of the horizontal line below the header as an equals sign, so:
 \begin{longtable}[]{@{}cccc@{}}
 \caption{\label{tab:acridonequench} The effect of potassium iodide concentration on emission intensity and fluorescence lifetime of acridone in aqueous solution.}\tabularnewline
 \toprule
-{[}KI{]} / M & {[}KNO\textsubscript{2}{]} / M & Emission intensity / 10\textsuperscript{3} cps & τ / ns \\
+{[}KI{]} / M & {[}KNO\textsubscript{2}{]} / M & Emission intensity / 10\textsuperscript{3} cps & τ / ns\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-{[}KI{]} / M & {[}KNO\textsubscript{2}{]} / M & Emission intensity / 10\textsuperscript{3} cps & τ / ns \\
+{[}KI{]} / M & {[}KNO\textsubscript{2}{]} / M & Emission intensity / 10\textsuperscript{3} cps & τ / ns\tabularnewline
 \midrule
 \endhead
-0 & 1.100 & 16.580 & 17.60 \\
-0.040 & 1.060 & 3.753 & 3.90 \\
-0.100 & 1.000 & 1.566 & 1.80 \\
-0.200 & 0.900 & 0.721 & 0.95 \\
-0.300 & 0.800 & 0.446 & 0.64 \\
-0.500 & 0.600 & 0.242 & 0.39 \\
-0.800 & 0.300 & 0.121 & 0.25 \\
+0 & 1.100 & 16.580 & 17.60\tabularnewline
+0.040 & 1.060 & 3.753 & 3.90\tabularnewline
+0.100 & 1.000 & 1.566 & 1.80\tabularnewline
+0.200 & 0.900 & 0.721 & 0.95\tabularnewline
+0.300 & 0.800 & 0.446 & 0.64\tabularnewline
+0.500 & 0.600 & 0.242 & 0.39\tabularnewline
+0.800 & 0.300 & 0.121 & 0.25\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1656,14 +1652,14 @@ Use the following table of data to plot a graph of \(\frac{1}{[A]}\) against t. 
 
 \begin{longtable}[]{@{}cc@{}}
 \toprule
-t / s & 10\textsuperscript{4} {[}A{]} / mol dm\textsuperscript{-3} \\
+t / s & 10\textsuperscript{4} {[}A{]} / mol dm\textsuperscript{-3}\tabularnewline
 \midrule
 \endhead
-100 & 21.0 \\
-200 & 12.0 \\
-300 & 8.4 \\
-400 & 7.1 \\
-500 & 5.6 \\
+100 & 21.0\tabularnewline
+200 & 12.0\tabularnewline
+300 & 8.4\tabularnewline
+400 & 7.1\tabularnewline
+500 & 5.6\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1691,21 +1687,21 @@ The relationship between the vapour pressure and temperature of diethyl ether (T
 \begin{longtable}[]{@{}cc@{}}
 \caption{\label{tab:ether} The measured vapor pressure of ether (in mm Hg) at sub-zero temperatures.}\tabularnewline
 \toprule
-\(p\) / mm Hg & T / ºC \\
+\(p\) / mm Hg & T / ºC\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-\(p\) / mm Hg & T / ºC \\
+\(p\) / mm Hg & T / ºC\tabularnewline
 \midrule
 \endhead
-17 & -38 \\
-28 & -30 \\
-40 & -25 \\
-55 & -20 \\
-75 & -15 \\
-97 & -10 \\
-125 & -5 \\
-157 & 0 \\
+17 & -38\tabularnewline
+28 & -30\tabularnewline
+40 & -25\tabularnewline
+55 & -20\tabularnewline
+75 & -15\tabularnewline
+97 & -10\tabularnewline
+125 & -5\tabularnewline
+157 & 0\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1726,18 +1722,18 @@ For the data shown in Table \ref{tab:arrhenius} plot an appropriate linear plot 
 \begin{longtable}[]{@{}cc@{}}
 \caption{\label{tab:arrhenius} The variation of measured rate constant with temperature for an undergraduate's experiment.}\tabularnewline
 \toprule
-T / ºC & k / 10\textsuperscript{5} s\textsuperscript{-1} \\
+T / ºC & k / 10\textsuperscript{5} s\textsuperscript{-1}\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-T / ºC & k / 10\textsuperscript{5} s\textsuperscript{-1} \\
+T / ºC & k / 10\textsuperscript{5} s\textsuperscript{-1}\tabularnewline
 \midrule
 \endhead
-283 & 0.000352 \\
-356 & 0.0302 \\
-393 & 0.219 \\
-427 & 1.16 \\
-508 & 39.5 \\
+283 & 0.000352\tabularnewline
+356 & 0.0302\tabularnewline
+393 & 0.219\tabularnewline
+427 & 1.16\tabularnewline
+508 & 39.5\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1749,7 +1745,6 @@ T / ºC & k / 10\textsuperscript{5} s\textsuperscript{-1} \\
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\tightlist
 \item
 \end{enumerate}
 
@@ -1765,7 +1760,6 @@ T / ºC & k / 10\textsuperscript{5} s\textsuperscript{-1} \\
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
-\tightlist
 \item
 \end{enumerate}
 
@@ -1781,7 +1775,6 @@ T / ºC & k / 10\textsuperscript{5} s\textsuperscript{-1} \\
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
-\tightlist
 \item
 \end{enumerate}
 
@@ -3469,6 +3462,170 @@ Solve the following differential equations as far as possible:
   \(w = -nRT \ln \frac{V_f}{V_i}\)
 \end{enumerate}
 
+\hypertarget{ch:Workshop7}{%
+\chapter{Week 7 - Complex \& Imaginary Numbers}\label{ch:Workshop7}}
+
+\hypertarget{sec:Prelim7}{%
+\section{Preliminary infomation}\label{sec:Prelim7}}
+
+Occassionally in chemistry we want a simple way to report a value which has two (orthogonal) components. Whilst there are many ways of doing this \emph{complex} numbers are normally used as they are the simplest way of handling two orthogonal values\footnote{Orthogonal is a fancy mathematical way of saying two values are always at right angles to each other, such as the axes on a graph, movement along one of these axes is independent of the other axes}.
+
+A complex number (\(\mathbb{C}\)) (normally represented by a \(z\)) is made up of a \emph{real} (\(\mathbb{R}\)) and an \emph{imaginary} component (\(\mathbb{I}\)).
+
+All of the examples used here are `pure maths' rather than applied chemistry because you will not need to use complex numbers in chemistry until second year when you do dynamic electrochemistry and quantum mechanics.
+
+\hypertarget{imaginary-numbers}{%
+\subsection{Imaginary numbers}\label{imaginary-numbers}}
+
+An imaginary number is every bit as valid as the `real' numbers we have previously come to know and love, and their mathematics works in much the same way. To denote an imaginary number we use the symbol \(i\). 2\(i\) is twice as big as \(i\) the same way that 2 is twice as big as 1.
+
+Our definition of \(i\) comes from our inability to find the square root of a negative number using only `real' numbers:
+
+\begin{equation}
+\pm i = \sqrt{-1}
+\label{eq:imaginary}
+\end{equation}
+
+so this follows that \(i^2 = -1\) and \(i^4 = 1\).
+
+\hypertarget{subsec:complex}{%
+\subsection{Complex numbers}\label{subsec:complex}}
+
+Complex numbers are what we get when we have a real and an imaginary component of a value. For example \(1 + i\). We can work with complex numbers by treating the real and imaginary components as being independent (orthogonal) and so they just add or subtract onto their own terms.
+
+If we want to add the complex number \(2 + 3i\) to the real number \(-7\), then we can `add' the real terms and `add' the imaginary terms to get our result, \(-5+3i\).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+If we want to add the complex number \(2 + 3i\) to the imaginary number \(-2i\), then we can `add' the real terms and `add' the imaginary terms to get our result, \(2+i\).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+If we want to add the complex number \(2 + 3i\) to the complex number \(-1+i\), then we can `add' the real terms and `add' the imaginary terms to get our result, \(1+4i\).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+If we multiply a complex number \(2 + 3i\) by a real number \(3\), we then just multiply the real and imaginary term in tern, and our result is \(6+ 9i\).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+If we multiply a complex number \(2 + 3i\) by a imaginary number \(3i\), we then just multiply the real and imaginary term in tern, and our result is \(6i-9\).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+If we multiply a complex number \(2 + 3i\) by a complex number \(2+3i\) then we can treat them as two brackets, and multiply out as we would otherwise:
+
+\(4 + 6 i + 6i + 9i^2\) = \(4 + 6 i + 6i - 9\) = \(-5+ 12i\)
+
+We can now look back on quadratic equations which didn't appear to have roots (because they don't cross the \(x\)-axis) and realise that they actually have complex roots.
+
+\hypertarget{complex-conjugates}{%
+\subsection{Complex conjugates}\label{complex-conjugates}}
+
+When dividing values by complex numbers we can use a \emph{complex conjugate} to simplify the process.
+
+So, for example, if we were asked to simplify:
+
+\(z = \frac{1}{2+3i}\)
+
+We could use the complex conjugate of the complex number in the demoninator of this fraction (and any division can be represented as a fraction).
+
+The complex conjugate is when you use the same values but change the summation term between the real and imaginary parts to the opposite sign.
+
+So the complex conjugate of \(2+3i\) is \(2-3i\).
+
+We can now `muliply top and bottom' by the complex conjugate (which is just like multiplying by 1).
+
+\(z = \frac{1}{2+3i}\times \frac{2-3i}{2-3i}\)
+
+Now when we multiply out the bottom term any remaining imaginary terms disappear!
+
+\(z = \frac{2-3i}{4-6i+6i+9} = \frac{2-3i}{13}\)
+
+\hypertarget{argand-diagrams}{%
+\subsection{Argand diagrams}\label{argand-diagrams}}
+
+Argand diagrams are graphical representations of complex numbers using the idea that axes on a graph are orthogonal and so this is a natural way to express complex numbers.
+
+The horizontal (noramally \(x\)-axis) is called the `real' axis, and the vertical (normally \(y\)-axis) is called the `imaginary' axis. From this we can express any complex number.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/argand} 
+
+}
+
+\caption{An Argand diagram may be used to represent complex numbers, in this case 3+4i and 3-4i. The real axis is the x-axis and the imaginary axis is the y-axis, and we can think of the complex number as representing coordinates along these axes.}\label{fig:argand}
+\end{figure}
+
+\hypertarget{eulers-representation}{%
+\subsection{Euler's representation}\label{eulers-representation}}
+
+Visualising a complex number on an Argand diagram (figure \ref{fig:argand}) gives us an alternative method of representing complex numbers, as we may use the distance from the origin (or modulus, \(|z|\)) and angle from the real axis (\(\theta\)).
+
+The angle is determined as a clockwise rotation from the positive real axis.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/argandangle} 
+
+}
+
+\caption{The graphical representation of an Argand diagram allows us another way of representing a complex number, as the modulus and angle from the real axis (in a counter-clockwise direction) of the line from the origin to the complex number.}\label{fig:argandangle}
+\end{figure}
+
+Pythagoras' theorem may be used to determine the modulus, and the angle determined from triganometry.
+
+However this means we can express both the real (\(\mathbb{R}\)) and imaginary (\(\mathbb{I}\)) components in relation to this modulus and angle.
+
+For the complex number \(a+bi\), then:
+
+\begin{equation*}
+|z| = \sqrt{a^2+b^2}
+\end{equation*}
+
+and the angle, \(\theta\), may be represented as either the \(\sin\) or \(\cos\) (we could use \(\tan\), but we don't\ldots{} why makes more sense when you read on)
+
+\begin{equation*}
+\theta =  \sin^{-1} \left(\frac{a}{|z|}\right)
+\end{equation*}
+
+or
+
+\begin{equation*}
+\theta =  \cos^{-1} \left(\frac{b}{|z|}\right)
+\end{equation*}
+
+This means that we can express \(a\) and \(b\) in terms of the modulus \(|z|\) and angle \(\theta\).
+
+\begin{equation*}
+a = |z| \cos \theta
+\end{equation*}
+
+and
+
+\begin{equation*}
+a = |z| \cos \theta
+\end{equation*}
+
+and so we can express our complex number \(z\) as:
+
+\begin{equation*}
+z = a+bi = |z| (\cos \theta + i \sin \theta)
+\end{equation*}
+
+\hypertarget{demoivres-theorem}{%
+\subsection{DeMoivre's theorem}\label{demoivres-theorem}}
+
+\hypertarget{sec:Summary7}{%
+\section{Summary of key concepts}\label{sec:Summary7}}
+
+\hypertarget{sec:questions7}{%
+\section{Questions}\label{sec:questions7}}
+
+\hypertarget{sec:answers7}{%
+\section{Answers}\label{sec:answers7}}
+
 \hypertarget{ch:questions}{%
 \chapter{Miscellaneous questions}\label{ch:questions}}
 
@@ -3503,17 +3660,11 @@ The following questions use skills you have learnt in this course. The skills yo
 \begin{longtable}[]{@{}cl@{}}
 \caption{Physical constants used in this work\label{tab:physicalconst}}\tabularnewline
 \toprule
-& \\
-\midrule
-\endfirsthead
-\toprule
-& \\
-\midrule
 \endhead
-\(R\) & 8.31446261815324 J K\textsuperscript{-1} mol\textsuperscript{-1} \\
-\(N_A\) & 6.02214076 × 10\textsuperscript{23} mol\textsuperscript{-1} \\
-\(c\) & 299792458 m s\textsuperscript{-1} \\
-\(e\) & 1.60217653(14) × 10\textsuperscript{-19} C \\
+\(R\) & 8.31446261815324 J K\textsuperscript{-1} mol\textsuperscript{-1}\tabularnewline
+\(N_A\) & 6.02214076 × 10\textsuperscript{23} mol\textsuperscript{-1}\tabularnewline
+\(c\) & 299792458 m s\textsuperscript{-1}\tabularnewline
+\(e\) & 1.60217653(14) × 10\textsuperscript{-19} C\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -3528,15 +3679,15 @@ The numbers in brackets refer to the error in the previous digits
 \begin{longtable}[]{@{}cc@{}}
 \caption{Physical constants used in this work\label{tab:physicalconst}}\tabularnewline
 \toprule
-Element or isotope & g mol\textsuperscript{-1} \\
+Element or isotope & g mol\textsuperscript{-1}\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-Element or isotope & g mol\textsuperscript{-1} \\
+Element or isotope & g mol\textsuperscript{-1}\tabularnewline
 \midrule
 \endhead
-H & 1.00794 \\
-O & 15.9994 \\
+H & 1.00794\tabularnewline
+O & 15.9994\tabularnewline
 \bottomrule
 \end{longtable}
 

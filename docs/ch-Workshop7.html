@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 Week 6 - Integration | CH10009 Workshop Questions</title>
+  <title>Chapter 7 Week 7 - Complex &amp; Imaginary Numbers | CH10009 Workshop Questions</title>
   <meta name="description" content="Workshop questions for CH10009 Maths" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 Week 6 - Integration | CH10009 Workshop Questions" />
+  <meta property="og:title" content="Chapter 7 Week 7 - Complex &amp; Imaginary Numbers | CH10009 Workshop Questions" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="chemfd/CH10009WorkshopQuestions" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Week 6 - Integration | CH10009 Workshop Questions" />
+  <meta name="twitter:title" content="Chapter 7 Week 7 - Complex &amp; Imaginary Numbers | CH10009 Workshop Questions" />
   
   <meta name="twitter:description" content="Workshop questions for CH10009 Maths" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="ch-Workshop5.html"/>
-<link rel="next" href="ch-Workshop7.html"/>
+<link rel="prev" href="ch-Workshop6.html"/>
+<link rel="next" href="ch-questions.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -271,321 +271,133 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ch:Workshop6" class="section level1">
-<h1><span class="header-section-number">Chapter 6</span> Week 6 - Integration</h1>
-<div id="sec:Prelim6" class="section level2">
-<h2><span class="header-section-number">6.1</span> Preliminary infomation</h2>
-<p>When introducing rearranging of equations in Chapters <a href="ch-Workshop1.html#ch:Workshop1">1</a> and <a href="ch-Workshop2.html#ch:Workshop2">2</a> we introduce the idea of inverse functions, and every function has an inverse. With differentiation the inverse process is integration, and as such if we differentiate a function, and then integrate the answer, we should end up with our original function again. Or if we integrate a function, then differentiate the answer we should again end up with our original function.</p>
-<p>Our integral can also be thought of as a mechanism of determining the area under a line in a plot, (or between the function and the <span class="math inline">\(x\)</span>-axis). There are a number of cases whereby determining the area under a line can give us more infomation about the system. For example the area under a ‘<span class="math inline">\(pV\)</span>’ plot is work done in changing the volume ((Section)Figure <a href="ch-Workshop6.html#fig:integral">6.1</a>, see CH10137 thermodynamics).</p>
-<div class="figure" style="text-align: center"><span id="fig:integral"></span>
-<img src="images/integral.png" alt="Integration can be used to determine the area under a line in a plot. In the case of a pressure-volume plot the area under the plot is the work done in the expansion between the initial and final volume." width="50%" />
-<p class="caption">
-Figure 6.1: Integration can be used to determine the area under a line in a plot. In the case of a pressure-volume plot the area under the plot is the work done in the expansion between the initial and final volume.
-</p>
-</div>
-<p>If we aren’t considering the area under the line between -∞ &amp; ∞ we need to define the points on the <span class="math inline">\(x\)</span> axis of interest, these are often referred to as ‘initial’ and ‘final’. In this case we call it a ‘definite integral’. We can see an example of these in Section <a href="ch-Workshop6.html#subsec:definite">6.1.6</a>.</p>
-<p>Just like with integration we have a set of standard results, these are the integrals or anti-derivatives:</p>
-<div id="subsec:integratingpolynomials" class="section level3">
-<h3><span class="header-section-number">6.1.1</span> Integrating polynomials</h3>
-<p>If we recall Section <a href="ch-Workshop4.html#subsec:diffpolynomial">4.1.5</a>, we saw that when we differentiated a polynomial we reduced the power by one and multiplied by the old power.</p>
-<p><span class="math display">\[\begin{equation*}
-y = ax^b\\
-\frac{\textrm{d}y}{\textrm{d}x}=abx^{b-1}\\
-\textrm{when } x \neq 0
-\end{equation*}\]</span></p>
-<p>To ‘undo’ this result we need to add one to the power and divide by the new power.</p>
-<p><span class="math display">\[\begin{equation*}
-\frac{\textrm{d}y}{\textrm{d}x}=abx^{b-1}\\
-y = ax^b\\
-\textrm{when } x \neq -1
-\end{equation*}\]</span></p>
-<p>However, if we had a slightly different function that we have differentiated, where <span class="math inline">\(c\)</span> is a constant:</p>
-<p><span class="math display">\[\begin{equation*}
-y = ax^b+ c\\
-\frac{\textrm{d}y}{\textrm{d}x}=abx^{b-1}\\
-\textrm{when } x \neq 0
-\end{equation*}\]</span></p>
-<p>but when we ‘undo’ this we have nothing to tell us that there used to be a constant there and so whenever we determine integrals (or anti-derivatives) we have to add a constant of integration, <span class="math inline">\(+C\)</span>. So, to get back to our ‘original function’:</p>
-<p><span class="math display">\[\begin{equation*}
-\frac{\textrm{d}y}{\textrm{d}x}=abx^{b-1}\\
-y = ax^b+C\\
-\textrm{when } x \neq -1
-\end{equation*}\]</span></p>
-<p>Instead of just thinking about this as undoing the differential we can instead use our ‘integral notation’. Integrals are represented by the sign <span class="math inline">\(\int\)</span>, but we also need to know what we are integrating with respect to, and so at the end of our integration statement we use ‘<span class="math inline">\(\textrm{d}x\)</span>’ to define what we are integrating with respect to, in this case <span class="math inline">\(x\)</span>.</p>
+<div id="ch:Workshop7" class="section level1">
+<h1><span class="header-section-number">Chapter 7</span> Week 7 - Complex &amp; Imaginary Numbers</h1>
+<div id="sec:Prelim7" class="section level2">
+<h2><span class="header-section-number">7.1</span> Preliminary infomation</h2>
+<p>Occassionally in chemistry we want a simple way to report a value which has two (orthogonal) components. Whilst there are many ways of doing this <em>complex</em> numbers are normally used as they are the simplest way of handling two orthogonal values<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p>A complex number (<span class="math inline">\(\mathbb{C}\)</span>) (normally represented by a <span class="math inline">\(z\)</span>) is made up of a <em>real</em> (<span class="math inline">\(\mathbb{R}\)</span>) and an <em>imaginary</em> component (<span class="math inline">\(\mathbb{I}\)</span>).</p>
+<p>All of the examples used here are ‘pure maths’ rather than applied chemistry because you will not need to use complex numbers in chemistry until second year when you do dynamic electrochemistry and quantum mechanics.</p>
+<div id="imaginary-numbers" class="section level3">
+<h3><span class="header-section-number">7.1.1</span> Imaginary numbers</h3>
+<p>An imaginary number is every bit as valid as the ‘real’ numbers we have previously come to know and love, and their mathematics works in much the same way. To denote an imaginary number we use the symbol <span class="math inline">\(i\)</span>. 2<span class="math inline">\(i\)</span> is twice as big as <span class="math inline">\(i\)</span> the same way that 2 is twice as big as 1.</p>
+<p>Our definition of <span class="math inline">\(i\)</span> comes from our inability to find the square root of a negative number using only ‘real’ numbers:</p>
 <div class="dodo">
-<p><span class="math display" id="eq:intpoly">\[\begin{equation}
-\int ax^b \textrm{d}x = \frac{a}{b+1}x^{b+1}+C
-\textrm{when } x \neq -1
-\tag{6.1}
+<p><span class="math display" id="eq:imaginary">\[\begin{equation}
+\pm i = \sqrt{-1}
+\tag{7.1}
 \end{equation}\]</span></p>
 </div>
-<p>You will notice the caveat ‘when <span class="math inline">\(x \neq -1\)</span>’ integrating polynomials of any other power works, positive, negative, fractional, but if you recall when we never have a polynomial function which differentiates to have a power of <span class="math inline">\(-1\)</span>. We show the integration of <span class="math inline">\(x^{-1}\)</span> in Section <a href="ch-Workshop6.html#subsec:integrating1x">6.1.3</a>.</p>
+<p>so this follows that <span class="math inline">\(i^2 = -1\)</span> and <span class="math inline">\(i^4 = 1\)</span>.</p>
 </div>
-<div id="subsec:integratingexponentials" class="section level3">
-<h3><span class="header-section-number">6.1.2</span> Integrating exponentials</h3>
-<p>Again if we think about integration as an anti-derivative, we can start by looking back on the result when we differentiated exponential functions in Section <a href="ch-Workshop4.html#subsec:diffexp">4.1.6</a>.</p>
-<p><span class="math display">\[\begin{equation*}
-y = be^{ax}\\
-\frac{\textrm{d}y}{\textrm{d}x}=abe^{ax}
-\end{equation*}\]</span></p>
-<p>and so, integrating:</p>
-<p><span class="math display">\[\begin{equation*}
-\frac{\textrm{d}y}{\textrm{d}x}=abe^{ax}\\
-y = be^{ax}+C
-\end{equation*}\]</span></p>
-<p>This again makes sense if we look at the Maclaurin expansion of an exponential function Section <a href="other-useful-infomation.html#sec:maclaurin">9.4</a>.</p>
-<div class="dodo">
-<p><span class="math display" id="eq:intpoly">\[\begin{equation}
-\int ae^{bx} \textrm{d}x = \frac{a}{b}e^{bx}+C
-\tag{6.1}
-\end{equation}\]</span></p>
-</div>
-</div>
-<div id="subsec:integrating1x" class="section level3">
-<h3><span class="header-section-number">6.1.3</span> Integrating 1/x</h3>
-<p>In Section <a href="ch-Workshop6.html#subsec:integratingpolynomials">6.1.1</a> we saw that we could integrate functions of x raised to any numerical power other than <span class="math inline">\(x^{-1}\)</span>. This is because no polynomial differentiates to give a result of <span class="math inline">\(\tfrac{1}{x}\)</span>.</p>
-<p>However, if we recall Section <a href="ch-Workshop4.html#subsec:difflogs">4.1.7</a>, we saw that the differential of <span class="math inline">\(\ln ax\)</span> with respect to <span class="math inline">\(x\)</span> is <span class="math inline">\(\tfrac{1}{x}\)</span>. Applying the reciprical approach of differentiation being the reverse function of integration, then:</p>
-<div class="dodo">
-<p><span class="math display" id="eq:intln">\[\begin{equation}
-\int \frac{1}{x} \textrm{d}x = \ln x + C
-\tag{6.2}
-\end{equation}\]</span></p>
-</div>
-<p>because of our rules of logs we can express this in a slightly different way <span class="math inline">\(\int \frac{1}{x} \textrm{d}x = \ln ax\)</span> where <span class="math inline">\(\ln a = C\)</span>.</p>
-<p>A lot of functions in chemistry end up with us needing to integrate <span class="math inline">\(\tfrac{1}{x}\)</span>, you will see some of these in your thermodynamics course, and again in kinetics.</p>
-</div>
-<div id="subsec:" class="section level3">
-<h3><span class="header-section-number">6.1.4</span> Intergrating trig functions</h3>
-<p>Again if we recall Section <a href="ch-Workshop4.html#subsec:difftrig">4.1.8</a> we saw the pattern for differentiating trig functions, and as our approach has been before we can approach integration as ‘undoing’ any differentiation we have done. So we can produce a ‘reverse cycle’ for integration of the trig functions <span class="math inline">\(\sin\)</span> and <span class="math inline">\(\cos\)</span>, Figure <a href="ch-Workshop6.html#fig:trigint">6.2</a>.</p>
-<div class="figure" style="text-align: center"><span id="fig:trigint"></span>
-<img src="images/trigint.png" alt="The cycle of differentiation which links sin (x) and cos (x). sin (x) differentiates to cos (x), cos (x) differentiates to -sin (x), -sin (x) differentiates to -cos (x) and -cos (x) differentiates to sin x." width="60%" />
-<p class="caption">
-Figure 6.2: The cycle of differentiation which links sin (x) and cos (x). sin (x) differentiates to cos (x), cos (x) differentiates to -sin (x), -sin (x) differentiates to -cos (x) and -cos (x) differentiates to sin x.
-</p>
-</div>
-<p>Formalising this (don’t forget the constant of integration!):</p>
-<div class="dodo">
-<p><span class="math display" id="eq:intsin">\[\begin{equation}
-\int \sin ax \textrm{d}x = -\frac{1}{a} \cos ax + C
-\tag{6.3}
-\end{equation}\]</span></p>
-<p><span class="math display" id="eq:intsin">\[\begin{equation}
-\int \cos ax \textrm{d}x = \frac{1}{a} \sin ax + C
-\tag{6.3}
-\end{equation}\]</span></p>
-</div>
-</div>
-<div id="subsec:diffequations" class="section level3">
-<h3><span class="header-section-number">6.1.5</span> Differential equations</h3>
-<p>In chemistry many examples of fuctions exist as differential equations, or equations that exist in a form that looks like <span class="math inline">\(\tfrac{\textrm{d}y}{\textrm{d}x}=\)</span> something. Usually to solve these we can just determine the ‘anti-derivative’, then solve for our constant of integration.</p>
-</div>
-<div id="subsec:definite" class="section level3">
-<h3><span class="header-section-number">6.1.6</span> Definite Integration</h3>
-<p>Many of the equations we use in chemistry are derived from solving differential equations, where we have a relationship for the ‘rate of change’ of something. If we use integration in chemistry we usually have some limits on when things make chemical sense, for example there is no chemical sense in things happening before a reaction begins, or at temperatures below absolute zero.</p>
-<p>To do this we can use ‘limits’ on our integrals, by only integrating (or determining the area) between an upper and lower limit (like in Figure <a href="ch-Workshop6.html#fig:integral">6.1</a>) we can ensure that the answer always makes chemical sense.</p>
-<p>For example in Figure <a href="ch-Workshop6.html#fig:integral">6.1</a>, the work done by an expanding gas is given by the area underneath the pressure-volume curve between the initial (<span class="math inline">\(V_i\)</span>) and final (<span class="math inline">\(V_f\)</span>) volumes. This is <span class="math inline">\(\int p \textrm{d}V\)</span>. The relationship between pressure and volume is described by <span class="math inline">\(p=\tfrac{nRT}{V}\)</span> (the ideal gas law).</p>
-<p>To determine the definite integral we can integrate as normal and then substitute in the values of volume at the final and initial values. The notation used in definite integrals has the limits of this integration given at the upper and lower bounds of the integral sign.</p>
-<p><span class="math display">\[\begin{equation*}
-w= - \int_{V_i}^{V_f} p \textrm{d}V = - \int_{V_i}^{V_f} \frac{nRT}{V} \textrm{d}V = -nRT \int_{V_i}^{V_f} \frac{1}{V} \textrm{d}V
-\end{equation*}\]</span></p>
-<p>We can integrate this as we have previously in Section <a href="ch-Workshop6.html#subsec:integrating1x">6.1.3</a>:</p>
-<p><span class="math display">\[\begin{equation*}
-w = -[nRT \ln V + C]_{V_i}^{V_f}
-\end{equation*}\]</span></p>
-<p>The notation of the limits is still in place (as super- and sub- scripts on the square brackets), these values may now be substituted in tern into the above equation, following the same rules as we do in chemistry ‘final - inital’ (or more formally top limit minus bottom limit).</p>
-<p><span class="math display">\[\begin{equation*}
-w = (-nRT \ln V_f + C) - (-nRT \ln V_i + C)
-\end{equation*}\]</span></p>
-<p>We can now tidy this up, and we notice that the constant of integration dissapears (for one of the terms it will always be postive and for the other always negative).</p>
-<p><span class="math display">\[\begin{equation*}
-w = -nRT (\ln V_f - \ln V_i)
-\end{equation*}\]</span></p>
-<p>and then using one of our ‘rules of logs’ from Section <a href="ch-Workshop2.html#sec:rulelog">2.1.2</a></p>
-<p><span class="math display">\[\begin{equation*}
-w = -nRT \frac{\ln V_f}{\ln V_i}
-\end{equation*}\]</span></p>
-<div class="thing">
-<p>When using differentiation we integrate as normal, but we do not need a constant of integration.</p>
-<p>After we have integrated we substitute in the limits, with the value of the upper limit substituted in minus the value of the lower limit substituted in.</p>
-<p>It may be that we have the define limits ourselves, such as ‘final &amp; initial’ or ‘value at time = 0 &amp; value at time = t’.</p>
-</div>
-</div>
-</div>
-<div id="summary-of-concepts-learnt-2" class="section level2">
-<h2><span class="header-section-number">6.2</span> Summary of concepts learnt</h2>
+<div id="subsec:complex" class="section level3">
+<h3><span class="header-section-number">7.1.2</span> Complex numbers</h3>
+<p>Complex numbers are what we get when we have a real and an imaginary component of a value. For example <span class="math inline">\(1 + i\)</span>. We can work with complex numbers by treating the real and imaginary components as being independent (orthogonal) and so they just add or subtract onto their own terms.</p>
 <div class="info">
+<p>If we want to add the complex number <span class="math inline">\(2 + 3i\)</span> to the real number <span class="math inline">\(-7\)</span>, then we can ‘add’ the real terms and ‘add’ the imaginary terms to get our result, <span class="math inline">\(-5+3i\)</span>.</p>
+<hr />
+<p>If we want to add the complex number <span class="math inline">\(2 + 3i\)</span> to the imaginary number <span class="math inline">\(-2i\)</span>, then we can ‘add’ the real terms and ‘add’ the imaginary terms to get our result, <span class="math inline">\(2+i\)</span>.</p>
+<hr />
+<p>If we want to add the complex number <span class="math inline">\(2 + 3i\)</span> to the complex number <span class="math inline">\(-1+i\)</span>, then we can ‘add’ the real terms and ‘add’ the imaginary terms to get our result, <span class="math inline">\(1+4i\)</span>.</p>
+<hr />
+<p>If we multiply a complex number <span class="math inline">\(2 + 3i\)</span> by a real number <span class="math inline">\(3\)</span>, we then just multiply the real and imaginary term in tern, and our result is <span class="math inline">\(6+ 9i\)</span>.</p>
+<hr />
+<p>If we multiply a complex number <span class="math inline">\(2 + 3i\)</span> by a imaginary number <span class="math inline">\(3i\)</span>, we then just multiply the real and imaginary term in tern, and our result is <span class="math inline">\(6i-9\)</span>.</p>
+<hr />
+<p>If we multiply a complex number <span class="math inline">\(2 + 3i\)</span> by a complex number <span class="math inline">\(2+3i\)</span> then we can treat them as two brackets, and multiply out as we would otherwise:</p>
+<p><span class="math inline">\(4 + 6 i + 6i + 9i^2\)</span> = <span class="math inline">\(4 + 6 i + 6i - 9\)</span> = <span class="math inline">\(-5+ 12i\)</span></p>
+</div>
+<p>We can now look back on quadratic equations which didn’t appear to have roots (because they don’t cross the <span class="math inline">\(x\)</span>-axis) and realise that they actually have complex roots.</p>
+</div>
+<div id="complex-conjugates" class="section level3">
+<h3><span class="header-section-number">7.1.3</span> Complex conjugates</h3>
+<p>When dividing values by complex numbers we can use a <em>complex conjugate</em> to simplify the process.</p>
+<p>So, for example, if we were asked to simplify:</p>
+<p><span class="math inline">\(z = \frac{1}{2+3i}\)</span></p>
+<p>We could use the complex conjugate of the complex number in the demoninator of this fraction (and any division can be represented as a fraction).</p>
+<p>The complex conjugate is when you use the same values but change the summation term between the real and imaginary parts to the opposite sign.</p>
+<p>So the complex conjugate of <span class="math inline">\(2+3i\)</span> is <span class="math inline">\(2-3i\)</span>.</p>
+<p>We can now ‘muliply top and bottom’ by the complex conjugate (which is just like multiplying by 1).</p>
+<p><span class="math inline">\(z = \frac{1}{2+3i}\times \frac{2-3i}{2-3i}\)</span></p>
+<p>Now when we multiply out the bottom term any remaining imaginary terms disappear!</p>
+<p><span class="math inline">\(z = \frac{2-3i}{4-6i+6i+9} = \frac{2-3i}{13}\)</span></p>
+</div>
+<div id="argand-diagrams" class="section level3">
+<h3><span class="header-section-number">7.1.4</span> Argand diagrams</h3>
+<p>Argand diagrams are graphical representations of complex numbers using the idea that axes on a graph are orthogonal and so this is a natural way to express complex numbers.</p>
+<p>The horizontal (noramally <span class="math inline">\(x\)</span>-axis) is called the ‘real’ axis, and the vertical (normally <span class="math inline">\(y\)</span>-axis) is called the ‘imaginary’ axis. From this we can express any complex number.</p>
+<div class="figure" style="text-align: center"><span id="fig:argand"></span>
+<img src="images/argand.png" alt="An Argand diagram may be used to represent complex numbers, in this case 3+4i and 3-4i. The real axis is the x-axis and the imaginary axis is the y-axis, and we can think of the complex number as representing coordinates along these axes." width="50%" />
+<p class="caption">
+Figure 7.1: An Argand diagram may be used to represent complex numbers, in this case 3+4i and 3-4i. The real axis is the x-axis and the imaginary axis is the y-axis, and we can think of the complex number as representing coordinates along these axes.
+</p>
+</div>
+</div>
+<div id="eulers-representation" class="section level3">
+<h3><span class="header-section-number">7.1.5</span> Euler’s representation</h3>
+<p>Visualising a complex number on an Argand diagram (figure <a href="ch-Workshop7.html#fig:argand">7.1</a>) gives us an alternative method of representing complex numbers, as we may use the distance from the origin (or modulus, <span class="math inline">\(|z|\)</span>) and angle from the real axis (<span class="math inline">\(\theta\)</span>).</p>
+<p>The angle is determined as a clockwise rotation from the positive real axis.</p>
+<div class="figure" style="text-align: center"><span id="fig:argandangle"></span>
+<img src="images/argandangle.png" alt="The graphical representation of an Argand diagram allows us another way of representing a complex number, as the modulus and angle from the real axis (in a counter-clockwise direction) of the line from the origin to the complex number." width="50%" />
+<p class="caption">
+Figure 7.2: The graphical representation of an Argand diagram allows us another way of representing a complex number, as the modulus and angle from the real axis (in a counter-clockwise direction) of the line from the origin to the complex number.
+</p>
+</div>
+<p>Pythagoras’ theorem may be used to determine the modulus, and the angle determined from triganometry.</p>
+<p>However this means we can express both the real (<span class="math inline">\(\mathbb{R}\)</span>) and imaginary (<span class="math inline">\(\mathbb{I}\)</span>) components in relation to this modulus and angle.</p>
+<p>For the complex number <span class="math inline">\(a+bi\)</span>, then:</p>
 <p><span class="math display">\[\begin{equation*}
-\begin{array}{cccc}
-f^{\prime}(x) \equiv y &amp; &amp; f(x) \equiv \int y ~\textrm{d}x &amp; \textrm{Conditions}\\
-  \hline
-  \hline
-A &amp; &amp; x + C \\ 
-Ax^n &amp; &amp; \dfrac{A}{n+1}x^{n+1}+ C &amp; x \neq -1\\ 
-\dfrac{A}{x} \equiv A x^{-1} &amp; &amp;  A \ln x + C\\  
-\dfrac{A}{Bx+ d} &amp; &amp; \dfrac{A}{B} \ln(Bx + d) +C\\ 
-e^{Ax} &amp; &amp;\frac{1}{A} e^{Ax} + C\\
-A^x &amp;&amp; \frac{A^x}{\ln A} +C\\
-A \ln x &amp; &amp; A \left( x \ln x - x \right)+ C\\
+|z| = \sqrt{a^2+b^2}
+\end{equation*}\]</span></p>
+<p>and the angle, <span class="math inline">\(\theta\)</span>, may be represented as either the <span class="math inline">\(\sin\)</span> or <span class="math inline">\(\cos\)</span> (we could use <span class="math inline">\(\tan\)</span>, but we don’t… why makes more sense when you read on)</p>
+<p><span class="math display">\[\begin{equation*}
+\theta =  \sin^{-1} \left(\frac{a}{|z|}\right)
+\end{equation*}\]</span></p>
+<p>or</p>
+<p><span class="math display">\[\begin{equation*}
+\theta =  \cos^{-1} \left(\frac{b}{|z|}\right)
+\end{equation*}\]</span></p>
+<p>This means that we can express <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> in terms of the modulus <span class="math inline">\(|z|\)</span> and angle <span class="math inline">\(\theta\)</span>.</p>
+<p><span class="math display">\[\begin{equation*}
+a = |z| \cos \theta
+\end{equation*}\]</span></p>
+<p>and</p>
+<p><span class="math display">\[\begin{equation*}
+a = |z| \cos \theta
+\end{equation*}\]</span></p>
+<p>and so we can express our complex number <span class="math inline">\(z\)</span> as:</p>
+<p><span class="math display">\[\begin{equation*}
+z = a+bi = |z| (\cos \theta + i \sin \theta)
+\end{equation*}\]</span></p>
+</div>
+<div id="demoivres-theorem" class="section level3">
+<h3><span class="header-section-number">7.1.6</span> DeMoivre’s theorem</h3>
+</div>
+</div>
+<div id="sec:Summary7" class="section level2">
+<h2><span class="header-section-number">7.2</span> Summary of key concepts</h2>
+</div>
+<div id="sec:questions7" class="section level2">
+<h2><span class="header-section-number">7.3</span> Questions</h2>
+</div>
+<div id="sec:answers7" class="section level2">
+<h2><span class="header-section-number">7.4</span> Answers</h2>
 
-\sin Ax &amp; &amp;-\frac{1}{A}\cos Ax + C\\ 
-\cos Ax &amp; &amp;\frac{1}{A}\sin Ax + C\\
-\tan Ax &amp; &amp;-\frac{1}{A}\ln(\cos Ax) + C \equiv \frac{1}{A}\ln(\sec Ax) + C &amp; -\frac{\pi}{2} &lt; x &lt; \frac{\pi}{2}\\
-
-\frac{A}{x^2 + B^2} &amp;&amp; \frac{A}{B}\tan^{-1}\left(\frac{x}{B}\right) + C &amp;B&gt;0\\
-Ax^2 e^{Bx} &amp;&amp; A\left(\frac{x^2}{B} - \frac{2x}{B^2} + \frac{2}{B^3} \right)e^{Bx} +C\\
-
-v(x) \frac{\textrm{d}u(x)}{\textrm{d}x} &amp;&amp; u(x)v(x) - \int u(x)\frac{\textrm{d}v(x)}{\textrm{d}x} +C &amp; \textrm{Integration by Parts}\\
-
-Au + Bv &amp; &amp;A\dfrac{\textrm{d}u}{\textrm{d}x} + B\dfrac{\textrm{d}v}{\textrm{d}x} \\
-\end{array}
-\end{equation*}\]</span></p>
 </div>
 </div>
-<div id="examples-2" class="section level2">
-<h2><span class="header-section-number">6.3</span> Examples</h2>
-<div id="integrated-equation-for-second-order-kinetics" class="section level3">
-<h3><span class="header-section-number">6.3.1</span> Integrated equation for second order kinetics</h3>
-<div class="question">
-<p>Second order uni-molecular reactions are those that follow the differential rate equation:</p>
-<p><span class="math display">\[\begin{equation*}
-\frac{\textrm{d}[A]}{\textrm{d}t} = - k [A]^2
-\end{equation*}\]</span></p>
-<p>where <span class="math inline">\(k\)</span> is the rate constant for the reaction and <span class="math inline">\([A]\)</span> the concentration of the reagent A.</p>
-<p>Determine an integrated form of the rate equation, and sketch a graph suitable to determine the rate constant, <span class="math inline">\(k\)</span>.</p>
-</div>
-<p>In this case we need to start by gathering all of the <span class="math inline">\([A]\)</span>s on one side (including the <span class="math inline">\(\textrm{d}[A]\)</span>) and all of the <span class="math inline">\(t\)</span>s on the other, including the <span class="math inline">\(\textrm{d}t\)</span>.</p>
-<p><span class="math display">\[\begin{equation*}
-\frac{1}{[A]^2} \textrm{d}[A]= - k \textrm{d}t
-\end{equation*}\]</span></p>
-<p><em>This step is a little spurious in pure mathematical terms but gets us to where we need to be, and is fixed just below.</em></p>
-<p><span class="math display">\[\begin{equation*}
-\int \frac{1}{[A]^2} \textrm{d}[A]= \int - k \textrm{d}t
-\end{equation*}\]</span></p>
-<p>If values are constants we can remove those from the integral.</p>
-<p><span class="math display">\[\begin{equation*}
-\int \frac{1}{[A]^2} \textrm{d}[A]=  - k \int \textrm{d}t
-\end{equation*}\]</span></p>
-<p>Now we need to <em>define</em> our limits for this definite integral:</p>
-<ul>
-<li>when <span class="math inline">\(t = 0\)</span>, <span class="math inline">\([A] = [A]_0\)</span> (this is the lower limit)</li>
-<li>when <span class="math inline">\(t = t\)</span>, <span class="math inline">\([A] = [A]\)</span> (this is the upper limit)</li>
-</ul>
-<div class="thing">
-<p>It is ‘normal’ in chemistry (although often confusing), for our variable in integration and our limit to have the same symbol, in this case <span class="math inline">\(t\)</span> &amp; <span class="math inline">\(t\)</span> and <span class="math inline">\([A]\)</span> &amp; <span class="math inline">\([A]\)</span>, if it makes it easier for you to think of it rename the variables in the integration.</p>
-</div>
-<p>and apply them to our integral:</p>
-<p><span class="math display">\[\begin{equation*}
-\int _{[A]_0} ^{[A]} \frac{1}{[A]^2} \textrm{d}[A]=  - k \int _0 ^t \textrm{d}t
-\end{equation*}\]</span></p>
-<p>Now everything is in place for us to determine our integrals (we need to do both of them).</p>
-<p>Starting with the ‘<span class="math inline">\(\textrm{d}t\)</span>’ integral.</p>
-<p><span class="math display">\[\begin{equation*}
-- k \int _0 ^t \textrm{d}t
-\end{equation*}\]</span></p>
-<p><span class="math display">\[\begin{equation*}
-[-kt]_0^t
-\end{equation*}\]</span></p>
-<p>The notation with the limits in the square brackets says: “subsitute in each in turn, then take the bottom term away from the top”, so:</p>
-<p><span class="math display">\[\begin{equation*}
--kt - (-k*0)\\
-\end{equation*}\]</span></p>
-<p><span class="math display">\[\begin{equation*}
--kt
-\end{equation*}\]</span></p>
-<p>Now if move onto the ‘<span class="math inline">\(\textrm{d}[A]\)</span>’ integral:</p>
-<p><span class="math display">\[\begin{equation*}
-\int_{[A]_0}^{[A]} \frac{1}{[A]^2} \textrm{d}[A]\\
-\end{equation*}\]</span></p>
-<p><span class="math display">\[\begin{equation*}
-\int_{[A]_0}^{[A]} [A]^{-2}\textrm{d}[A]\\
-\end{equation*}\]</span></p>
-<p><span class="math display">\[\begin{equation*}
-\left[-[A]^{-1} \right] _{[A]_0}^{[A]}\\
-\end{equation*}\]</span></p>
-<p><span class="math display">\[\begin{equation*}
-\left[-\frac{1}{[A]} \right] _{[A]_0}^{[A]}\\
-\end{equation*}\]</span></p>
-<p>and substituting in the values:</p>
-<p><span class="math display">\[\begin{equation*}
-\left(-\frac{1}{[A]}--\frac{1}{[A]_0} \right)\\
-\end{equation*}\]</span></p>
-<p><span class="math display">\[\begin{equation*}
-\left(-\frac{1}{[A]}+\frac{1}{[A]_0} \right)\\
-\end{equation*}\]</span></p>
-<p>Combining everything together:</p>
-<p><span class="math display">\[\begin{equation*}
-\left(-\frac{1}{[A]}+\frac{1}{[A]_0} \right) = -kt
-\end{equation*}\]</span></p>
-<p>And rearranging to the form <span class="math inline">\(y = mx + c\)</span>:</p>
-<p><span class="math display">\[\begin{equation*}
-\frac{1}{[A]}=\frac{1}{[A]_0} + kt
-\end{equation*}\]</span></p>
-<div class="thing">
-<p>An alternate way of doing this is to integrate without the limits and ‘solve’ for the constant of integration using the limits “when <span class="math inline">\(t = 0\)</span>, <span class="math inline">\([A] = [A]_0\)</span>”.</p>
-</div>
-</div>
-</div>
-<div id="sec:Questions6" class="section level2">
-<h2><span class="header-section-number">6.4</span> Questions</h2>
-<div id="basic-integration-practice" class="section level3">
-<h3><span class="header-section-number">6.4.1</span> Basic integration practice</h3>
-<p>Integrate the following with respect to the variable specified:</p>
-<ol style="list-style-type: decimal">
-<li><span class="math inline">\(f&#39;(x) = \frac{a}{x}\)</span>; x</li>
-<li><span class="math inline">\(f&#39;(x) = x^\frac{3}{2}+ \frac{x^\frac{1}{2}}{2} - 2x^{-\frac{1}{2}}\)</span>, x</li>
-<li><span class="math inline">\(f&#39;(b) = \sin (ab)\)</span>; b</li>
-<li><span class="math inline">\(f&#39;(T) = a + bT + \frac{c}{T}\)</span>; T</li>
-<li><span class="math inline">\(f&#39;(t) = k\)</span>; t</li>
-<li><span class="math inline">\(f&#39;([A]) = \frac{1}{[A]}\)</span>, [A]</li>
-<li><span class="math inline">\(f&#39;([A]) = \frac{1}{[A]^2}\)</span>, [A]</li>
-<li><span class="math inline">\(f&#39;(t) = -e^{-kt}\)</span>, t</li>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Orthogonal is a fancy mathematical way of saying two values are always at right angles to each other, such as the axes on a graph, movement along one of these axes is independent of the other axes<a href="ch-Workshop7.html#fnref1" class="footnote-back">↩︎</a></p></li>
 </ol>
-</div>
-<div id="differential-equations" class="section level3">
-<h3><span class="header-section-number">6.4.2</span> Differential equations</h3>
-<p>Solve the following differential equations as far as possible:</p>
-<ol style="list-style-type: decimal">
-<li><span class="math inline">\(\frac{\textrm{d}\ln a}{\textrm{d}z}= bz^2\)</span></li>
-<li><span class="math inline">\(\frac{\textrm{d}[A]}{\textrm{d}t} = -k[A]^2\)</span>, when t= 0, [A] = [A]<sub>0</sub></li>
-<li><span class="math inline">\(\frac{\textrm{d}p}{\textrm{d}T}=\frac{p\Delta_{\textrm{vap}}H}{RT^2}\)</span>; when T = T<sub>1</sub>, p = p<sub>1</sub> and when when T = T<sub>2</sub>, p = p<sub>2</sub></li>
-<li><span class="math inline">\(\frac{\textrm{d}w}{\textrm{d}V}= -\frac{nRT}{V}\)</span>, when V = V<sub>i</sub>, w = 0 and when V = V<sub>f</sub>, w = w</li>
-</ol>
-</div>
-</div>
-<div id="sec:Answers6" class="section level2">
-<h2><span class="header-section-number">6.5</span> Answers</h2>
-<div id="basic-integration-practice-1" class="section level3">
-<h3><span class="header-section-number">6.5.1</span> Basic integration practice</h3>
-<ol style="list-style-type: decimal">
-<li><span class="math inline">\(f (x) = a \ln x + C\)</span></li>
-<li><span class="math inline">\(f(x) = \frac{2}{5} x^{\frac{5}{2}}+ \frac{x^{\frac{3}{2}}}{3}+4x^{\frac{1}{2}}+C\)</span></li>
-<li><span class="math inline">\(f(b) =-\frac{1}{a}\cos (ab) + C\)</span></li>
-<li><span class="math inline">\(f(T) = aT + \frac{bT^2}{2} + c\ln T + C\)</span></li>
-<li><span class="math inline">\(f(t) = kt +C\)</span></li>
-<li><span class="math inline">\(f([A])= \ln [A] + C\)</span></li>
-<li><span class="math inline">\(f([A])=-\frac{1}{[A]}+ C\)</span></li>
-<li><span class="math inline">\(f(t) = \frac{e^{-kt}}{k}\)</span></li>
-</ol>
-</div>
-<div id="differential-equations-1" class="section level3">
-<h3><span class="header-section-number">6.5.2</span> Differential equations</h3>
-<ol style="list-style-type: decimal">
-<li><span class="math inline">\(\ln a = \frac{bz^3}{3}+D\)</span></li>
-<li><span class="math inline">\(\frac{1}{[A]}=\frac{1}{[A]_0}+ kt\)</span></li>
-<li><span class="math inline">\(\ln \frac{p_1}{p_2}=\frac{\Delta_{\textrm{vap}}H}{R}\left({\frac{1}{T_2}-\frac{1}{T_1}}\right)\)</span></li>
-<li><span class="math inline">\(w = -nRT \ln \frac{V_f}{V_i}\)</span></li>
-</ol>
-
-</div>
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="ch-Workshop5.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ch-Workshop7.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ch-Workshop6.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ch-questions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

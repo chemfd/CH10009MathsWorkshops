@@ -36,7 +36,7 @@ The topics for workshops each week are as follows:
 - Week \@ref(ch:Workshop5): Calculus - differentiation - the product rule and partial differentiation
 - Week \@ref(ch:Workshop6): Calculus - integration - the basics and definite integrals
 - Week \@ref(ch:Workshop7): Real, imagininary and complex numbers
-- Week \@ref(ch:Workshop8): Some more examples of integration and revision
+- Week \@ref(ch:questions): Some more revision questions
 
 ## Report errors {-}
 

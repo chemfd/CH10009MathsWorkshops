@@ -1,0 +1,177 @@
+# Week 7 - Complex & Imaginary Numbers {#ch:Workshop7}
+
+## Preliminary infomation {#sec:Prelim7}
+
+Occassionally in chemistry we want a simple way to report a value which has two (orthogonal) components. Whilst there are many ways of doing this *complex* numbers are normally used as they are the simplest way of handling two orthogonal values^[Orthogonal is a fancy mathematical way of saying two values are always at right angles to each other, such as the axes on a graph, movement along one of these axes is independent of the other axes].
+
+A complex number ($\mathbb{C}$) (normally represented by a $z$) is made up of a *real* ($\mathbb{R}$) and an *imaginary* component ($\mathbb{I}$).
+
+All of the examples used here are 'pure maths' rather than applied chemistry because you will not need to use complex numbers in chemistry until second year when you do dynamic electrochemistry and quantum mechanics.
+
+
+### Imaginary numbers
+
+An imaginary number is every bit as valid as the 'real' numbers we have previously come to know and love, and their mathematics works in much the same way. To denote an imaginary number we use the symbol $i$. 2$i$ is twice as big as $i$ the same way that 2 is twice as big as 1.
+
+Our definition of $i$ comes from our inability to find the square root of a negative number using only 'real' numbers:
+
+:::dodo
+\begin{equation}
+\pm i = \sqrt{-1}
+(\#eq:imaginary)
+\end{equation}
+:::
+
+so this follows that $i^2 = -1$ and $i^4 = 1$.
+
+### Complex numbers {#subsec:complex}
+
+Complex numbers are what we get when we have a real and an imaginary component of a value. For example $1 + i$. We can work with complex numbers by treating the real and imaginary components as being independent (orthogonal) and so they just add or subtract onto their own terms.
+
+Complex numbers are usually represented by the letter $z$, and their real component by $a$ and imaginary component $b$, such that
+
+:::dodo
+Complex numbers are given the form:
+
+\begin{equation}
+z=a+bi
+(\#eq:complex)
+\end{equation}
+:::
+
+:::info
+If we want to add the complex number $2 + 3i$ to the real number $-7$, then we can 'add' the real terms and 'add' the imaginary terms to get our result, $-5+3i$.
+
+---
+
+If we want to add the complex number $2 + 3i$ to the imaginary number $-2i$, then we can 'add' the real terms and 'add' the imaginary terms to get our result, $2+i$.
+
+---
+
+If we want to add the complex number $2 + 3i$ to the complex number $-1+i$, then we can 'add' the real terms and 'add' the imaginary terms to get our result, $1+4i$.
+
+---
+
+If we multiply a complex number $2 + 3i$ by a real number $3$, we then just multiply the real and imaginary term in tern, and our result is $6+ 9i$.
+
+***
+
+If we multiply a complex number $2 + 3i$ by a imaginary number $3i$, we then just multiply the real and imaginary term in tern, and our result is $6i-9$.
+
+***
+
+If we multiply a complex number $2 + 3i$ by a complex number $2+3i$ then we can treat them as two brackets, and multiply out as we would otherwise: 
+
+$4 + 6 i  + 6i + 9i^2$ = $4 + 6 i  + 6i - 9$ = $-5+ 12i$
+:::
+
+We can now look back on quadratic equations which didn't appear to have roots (because they don't cross the $x$-axis) and realise that they actually have complex roots.
+
+### Complex conjugates
+
+When dividing values by complex numbers we can use a *complex conjugate* to simplify the process.
+
+So, for example, if we were asked to simplify:
+
+$z = \frac{1}{2+3i}$
+
+We could use the complex conjugate of the complex number in the demoninator of this fraction (and any division can be represented as a fraction).
+
+The complex conjugate is when you use the same values but change the summation term between the real and imaginary parts to the opposite sign.
+
+So the complex conjugate of $2+3i$ is $2-3i$.
+
+We can now 'muliply top and bottom' by the complex conjugate (which is just like multiplying by 1).
+
+$z = \frac{1}{2+3i}\times \frac{2-3i}{2-3i}$
+
+Now when we multiply out the bottom term any remaining imaginary terms disappear!
+
+$z = \frac{2-3i}{4-6i+6i+9} = \frac{2-3i}{13}$
+
+### Argand diagrams
+
+Argand diagrams are graphical representations of complex numbers using the idea that axes on a graph are orthogonal and so this is a natural way to express complex numbers.
+
+The horizontal (noramally $x$-axis) is called the 'real' axis, and the vertical (normally $y$-axis) is called the 'imaginary' axis. From this we can express any complex number.
+
+```{r echo=FALSE, argand, out.width='50%', fig.show='hold', fig.align='center', fig.cap='An Argand diagram may be used to represent complex numbers, in this case 3+4i and 3-4i. The real axis is the x-axis and the imaginary axis is the y-axis, and we can think of the complex number as representing coordinates along these axes.'}
+knitr::include_graphics("images/argand.png")
+```
+
+
+### Euler's representation 
+
+Visualising a complex number on an Argand diagram (figure \@ref(fig:argand)) gives us an alternative method of representing complex numbers, as we may use the distance from the origin (or modulus, $|z|$) and angle from the real axis ($\theta$).
+
+The angle is determined as a clockwise rotation from the positive real axis.
+
+```{r echo=FALSE, argandangle, out.width='50%', fig.show='hold', fig.align='center', fig.cap='The graphical representation of an Argand diagram allows us another way of representing a complex number, as the modulus and angle from the real axis (in a counter-clockwise direction) of the line from the origin to the complex number.'}
+knitr::include_graphics("images/argandangle.png")
+```
+ 
+Pythagoras' theorem may be used to determine the modulus, and the angle determined from triganometry.
+
+However this means we can express both the real ($\mathbb{R}$) and imaginary ($\mathbb{I}$) components in relation to this modulus and angle.
+
+For the complex number $a+bi$, then:
+
+\begin{equation*}
+|z| = \sqrt{a^2+b^2}
+\end{equation*}
+
+and the angle, $\theta$, may be represented as either the $\sin$ or $\cos$ (we could use $\tan$, but we don't... why makes more sense when you read on)
+
+\begin{equation*}
+\theta =  \sin^{-1} \left(\frac{a}{|z|}\right)
+\end{equation*}
+
+or 
+
+\begin{equation*}
+\theta =  \cos^{-1} \left(\frac{b}{|z|}\right)
+\end{equation*}
+
+This means that we can express $a$ and $b$ in terms of the modulus $|z|$ and angle $\theta$.
+
+\begin{equation*}
+a = |z| \cos \theta
+\end{equation*}
+
+and
+
+\begin{equation*}
+a = |z| \cos \theta
+\end{equation*}
+
+and so we can express our complex number $z$ as:
+
+\begin{equation*}
+z = a+bi = |z| (\cos \theta + i \sin \theta)
+\end{equation*}
+
+You can use Macclaurian expansion (section \@ref(sec:maclaurin)) to show that $e^{i\theta} = \cos \theta + i \sin \theta$. However all we care about is the result.
+
+:::dodo
+Euler's representation of a complex number links trigonometric terms and Euler's number $e$.
+
+\begin{equation}
+z=|z| (\cos \theta + i \sin \theta)
+(\#eq:complextrig)
+\end{equation}
+
+\begin{equation}
+z = |z| e^{i\theta}
+(\#eq:complexeuler)
+\end{equation}
+:::
+
+### DeMoivre's theorem
+
+
+
+## Summary of key concepts {#sec:Summary7}
+
+## Questions {#sec:questions7}
+
+## Answers {#sec:answers7}
