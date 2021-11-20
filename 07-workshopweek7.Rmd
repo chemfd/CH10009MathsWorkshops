@@ -2,7 +2,7 @@
 
 ## Preliminary infomation {#sec:Prelim7}
 
-Occassionally in chemistry we want a simple way to report a value which has two (orthogonal) components. Whilst there are many ways of doing this *complex* numbers are normally used as they are the simplest way of handling two orthogonal values^[Orthogonal is a fancy mathematical way of saying two values are always at right angles to each other, such as the axes on a graph, movement along one of these axes is independent of the other axes].
+Occassionally in chemistry we want a simple way to report a value which has two (orthogonal) components. Whilst there are many ways of doing this *complex* numbers are normally used as they are the simplest way of handling two orthogonal values^[Orthogonal is a fancy mathematical way of saying two values are always at right angles to each other, such as the axes on a graph, movement along one of these axes is independent of the other axis].
 
 A complex number ($\mathbb{C}$) (normally represented by a $z$) is made up of a *real* ($\mathbb{R}$) and an *imaginary* component ($\mathbb{I}$).
 
@@ -120,16 +120,20 @@ For the complex number $a+bi$, then:
 |z| = \sqrt{a^2+b^2}
 \end{equation*}
 
-and the angle, $\theta$, may be represented as either the $\sin$ or $\cos$ (we could use $\tan$, but we don't... why makes more sense when you read on)
+and the angle, $\theta$, may be represented as either the $\sin$ or $\cos$ (we could use $\tan$, but we don't... why makes more sense when you read on)...
+
+:::dont
+Whenever determining angles here we should be using radians not degrees.
+:::
 
 \begin{equation*}
-\theta =  \sin^{-1} \left(\frac{a}{|z|}\right)
+\theta =  \sin^{-1} \left(\frac{b}{|z|}\right)
 \end{equation*}
 
 or 
 
 \begin{equation*}
-\theta =  \cos^{-1} \left(\frac{b}{|z|}\right)
+\theta =  \cos^{-1} \left(\frac{a}{|z|}\right)
 \end{equation*}
 
 This means that we can express $a$ and $b$ in terms of the modulus $|z|$ and angle $\theta$.
@@ -146,9 +150,10 @@ a = |z| \cos \theta
 
 and so we can express our complex number $z$ as:
 
-\begin{equation*}
+\begin{equation}
 z = a+bi = |z| (\cos \theta + i \sin \theta)
-\end{equation*}
+(\#eq:Euler)
+\end{equation}
 
 You can use Macclaurian expansion (section \@ref(sec:maclaurin)) to show that $e^{i\theta} = \cos \theta + i \sin \theta$. However all we care about is the result.
 
@@ -168,9 +173,67 @@ z = |z| e^{i\theta}
 
 ### DeMoivre's theorem
 
+DeMoivre's theorem is used to simply determine the value of a complex number raised to a power. For example, if we consider $(2+ i)^8$, then we could attempt to multiply out the bracket, but this is a time consuming and sometimes error inducing process. However if we use the Euler representation of a complex number then raising the complex number to a power becomes much more simple.
 
+DeMoivre's theorem states:
+
+:::dodo
+\begin{equation}
+z^n = |z|^n e^{in\theta}
+(\#eq:demoivre)
+\end{equation}
+:::
+
+So for our example of $(2+ i)^9$:
+
+First we need to determine the modulus ($\sqrt{1^2+2^2}$), then the angle to the positive real axis ($\theta =  \sin^{-1} \left(\frac{1}{\sqrt{5}}\right) \simeq 0.464$).
+
+Using DeMoivre's theorem:
+
+$(2+ i)^8 = |\sqrt{5}|^8e^{8i\times 0.464}$
+
+$(2+ i)^8 = 5^4e^{3.709i}$
+
+Now we can convert it back into 'standard' complex number notation:
+
+\begin{equation*}
+z = a+bi = 625 (\cos 3.709 + i \sin 3.709)
+\end{equation*}
+
+\begin{equation*}
+z = a+bi = 625 (-\frac{527}{625} - \frac{336}{625}i)
+\end{equation*}
+
+\begin{equation*}
+z = -527-336i
+\end{equation*}
+
+We can 'check' this by multiplying out our brackets!
 
 ## Summary of key concepts {#sec:Summary7}
+
+:::info
+
+You can use the 'complex' mode on your calculator to return values with i in.
+
+An imaginary number is given to us by:
+\begin{equation*}
+\pm i = \sqrt{-1}
+\end{equation*}
+
+Complex numbers are represented by 'standard' or Euler notation:
+
+\begin{equation*}
+z=a+bi=|z| (\cos \theta + i \sin \theta)
+\end{equation*}
+
+We can use DeMoivre's theorem to determine complex numbers raised to particular powers:
+
+\begin{equation*}
+z^n = |z|^n e^{in\theta}
+\end{equation*}
+
+:::
 
 ## Questions {#sec:questions7}
 

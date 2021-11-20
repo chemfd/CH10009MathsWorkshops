@@ -52,8 +52,13 @@ eq:intln
 fig:trigint
 eq:intsin
 eq:imaginary
+eq:complex
 fig:argand
 fig:argandangle
+eq:Euler
+eq:complextrig
+eq:complexeuler
+eq:demoivre
 tab:physicalconst
 eq:macexp
 eq:macsin
