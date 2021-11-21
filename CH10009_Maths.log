@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.13)  20 NOV 2021 23:57
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2021.3.13)  21 NOV 2021 23:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -966,21 +966,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [87]
 No file CH10009_Maths.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3819.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3875.
 [88]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3819.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3875.
 (./CH10009_Maths.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3819.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3819.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3875.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3875.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19121 strings out of 479418
- 339098 string characters out of 5884585
- 799827 words of memory out of 5000000
- 36331 multiletter control sequences out of 15000+600000
+ 19129 strings out of 479418
+ 339342 string characters out of 5884585
+ 800325 words of memory out of 5000000
+ 36339 multiletter control sequences out of 15000+600000
  538837 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,10n,118p,812b,478s stack positions out of 5000i,500n,10000p,200000b,80000s

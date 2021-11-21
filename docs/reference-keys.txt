@@ -196,7 +196,15 @@ eulers-representation
 demoivres-theorem
 sec:Summary7
 sec:questions7
+complex-number-calculations
+determining-exponential-form
+complex-number-calculations-of-powers
+applied-questions-4
 sec:answers7
+complex-number-calculations-1
+determining-exponential-form-1
+complex-number-calculations-of-powers-1
+applied-questions-5
 ch:questions
 questions
 answers

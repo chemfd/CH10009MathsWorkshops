@@ -77,7 +77,7 @@ $z = \frac{1}{2+3i}$
 
 We could use the complex conjugate of the complex number in the demoninator of this fraction (and any division can be represented as a fraction).
 
-The complex conjugate is when you use the same values but change the summation term between the real and imaginary parts to the opposite sign.
+The complex conjugate is when you use the same values but change the summation term between the real and imaginary parts to the opposite sign. The complex conjugate of the complex number $z$ is given the symbol $z*$.
 
 So the complex conjugate of $2+3i$ is $2-3i$.
 
@@ -237,4 +237,50 @@ z^n = |z|^n e^{in\theta}
 
 ## Questions {#sec:questions7}
 
+### Complex number calculations
+
+$a=1+2i$, $b=3-4i$, $c=7i$, $d = -3+6i$
+
+Determine the results of each of the following complex number calculations:
+
+
+### Determining exponential form
+
+- $z = 1-3i$
+- $z = 3+4i$
+- $z = -1-1i$
+- $z = -1+4i$
+- $z = -4+3i$
+
+### Complex number calculations of powers
+
+
+
+### Applied questions
+
+
+
+
+
 ## Answers {#sec:answers7}
+
+
+### Complex number calculations
+
+
+
+
+### Determining exponential form
+
+- $z = 3.16e^{-1.25i}$
+- $z = 5e^{0.93i}$
+- $z = 1.41e^{0.79i}$
+- $z = 4.12e^{-1.33i}$
+- $z = 5e^{-0.64i}$
+
+### Complex number calculations of powers
+
+
+
+### Applied questions
+
