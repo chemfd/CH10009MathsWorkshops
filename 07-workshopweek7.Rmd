@@ -239,9 +239,22 @@ z^n = |z|^n e^{in\theta}
 
 ### Complex number calculations
 
-$a=1+2i$, $b=3-4i$, $c=7i$, $d = -3+6i$
+$a=1+2i$, $b=3-4i$, $c=7i$, $d = -3+6i$ $e = -1-i$
 
 Determine the results of each of the following complex number calculations:
+
+- $a+b$
+- $a+ c$
+- $d-e$
+- $c-b$
+- $a \times e$
+- $b \times d$
+- $c \times a$
+- $b \times c$
+- $\frac{a}{b}$
+- $\frac{b}{c}$
+- $\frac{c}{d}$
+- $\frac{d}{e}$
 
 
 ### Determining exponential form
@@ -254,9 +267,16 @@ Determine the results of each of the following complex number calculations:
 
 ### Complex number calculations of powers
 
-
-
-### Applied questions
+- $z = (-4+9i)^{9}$
+- $z = (-9+9i)^{23}$
+- $z = (2-6i)^{13}$
+- $z = (4+1i)^{5}$
+- $z = (8+7i)^{-3}$
+- $z = (3+8i)^{-7}$
+- $z = (8-8i)^{-2}$
+- $z = (-6-2i)^{-7}$
+- $z = (-7-4i)^{0}$
+- $z = (-7-6i)^{-5}$
 
 
 
@@ -267,8 +287,18 @@ Determine the results of each of the following complex number calculations:
 
 ### Complex number calculations
 
-
-
+- $4-2i$
+- $1+9i$
+- $-2+7i$
+- $-3+11i$
+- $1-3i$
+- $15 + 30i$
+- $-14+7i$
+- $28+21i$
+- $\frac{-5+10i}{25}$
+- $\frac{4+3i}{7}$
+- $\frac{42-21i}{45}$
+- $\frac{-3-9i}{2}$
 
 ### Determining exponential form
 
@@ -280,7 +310,16 @@ Determine the results of each of the following complex number calculations:
 
 ### Complex number calculations of powers
 
+- $z = (2.24e^{1.11i})^9 \equiv(1.40E+03)e^{9.99i}$
+- $z = (1.41e^{-0.79i})^23 \equiv(2.90E+03)e^{-18.17i}$
+- $z = (5e^{0.93i})^13 \equiv(1.22E+09)e^{12.09i}$
+- $z = (2.06e^{-0.24i})^5 \equiv(3.72E+01)e^{-1.2i}$
+- $z = (3.16e^{-0.32i})^-3 \equiv(3.16E-02)e^{0.96i}$
+- $z = (2.83e^{0.79i})^-7 \equiv(6.91E-04)e^{-5.53i}$
+- $z = (9.43e^{-2.58i})^-2 \equiv(1.12E-02)e^{5.16i}$
+- $z = (9.06e^{-1.68i})^-7 \equiv(2.00E-07)e^{11.76i}$
+- $z = (5e^{-2.21i})^0 \equiv(1.00E+00)e^{0i}$
+- $z = (13.45e^{0.84i})^-5 \equiv(2.27E-06)e^{-4.2i}$
 
 
-### Applied questions
 
