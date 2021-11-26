@@ -296,7 +296,7 @@ Determine the results of each of the following complex number calculations:
 - $-14+7i$
 - $28+21i$
 - $\frac{-5+10i}{25}$
-- $\frac{4+3i}{7}$
+- $\frac{-4-3i}{7}$
 - $\frac{42-21i}{45}$
 - $\frac{-3-9i}{2}$
 
