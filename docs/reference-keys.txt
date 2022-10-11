@@ -63,7 +63,7 @@ tab:physicalconst
 eq:macexp
 eq:macsin
 eq:maccos
-ch:Workshop1
+ch-Workshop1
 sec:Prelim
 rearranging-equations
 si-base-units
@@ -84,7 +84,7 @@ sec:Answers
 subsec:rearrangeans
 subsec:Unitconvans
 subsec:detunitsans
-ch:Workshop2
+ch-Workshop2
 sec:Prelim2
 sec:rulespowers
 sec:rulelog
@@ -106,7 +106,7 @@ subsec:logpracticeans
 subsec:logrearrangeans
 subsec:pHans
 subsec:pKaans
-ch:Workshop3
+ch-Workshop3
 sec:Prelim3
 subsec:units
 subsec:plotting
@@ -122,7 +122,7 @@ subsec:sketchans
 subsec:2ndkinteticsans
 subsec:clausiusans
 subsec:arrheniusans
-ch:Workshop4
+ch-Workshop4
 sec:Prelim4
 subsec:whatisdiff
 showing-why-the-differential-of-a-quadratic-is-a-linear-function-of-x
@@ -152,7 +152,7 @@ sec:Answers4
 simple-differentiation-1
 turning-points-1
 applied-questions-1
-ch:Workshop5
+ch-Workshop5
 sec:Prelim5
 subsec:chainrule
 subsec:productrule
@@ -169,7 +169,7 @@ product-rule-questions-1
 more-complex-differentiation-questions-1
 partial-differentiation-questions-1
 applied-questions-3
-ch:Workshop6
+ch-Workshop6
 sec:Prelim6
 subsec:integratingpolynomials
 subsec:integratingexponentials
@@ -186,7 +186,7 @@ differential-equations
 sec:Answers6
 basic-integration-practice-1
 differential-equations-1
-ch:Workshop7
+ch-Workshop7
 sec:Prelim7
 imaginary-numbers
 subsec:complex
@@ -203,10 +203,10 @@ sec:answers7
 complex-number-calculations-1
 determining-exponential-form-1
 complex-number-calculations-of-powers-1
-ch:questions
+ch-questions
 questions
 answers
-other-useful-infomation
+ch-other
 physical-constants
 molar-masses
 physical-constants-1

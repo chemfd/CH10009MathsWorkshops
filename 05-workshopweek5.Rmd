@@ -1,8 +1,8 @@
-# Week 5 {#ch:Workshop5}
+# Week 5 {#ch-Workshop5}
 
 ## Preliminary infomation {#sec:Prelim5}
 
-Some functions are more difficult to determine their 'rate of change' than those listed in Chapter \@ref(ch:Workshop4), and so we can use new 'rules' to help us determine this. This difficulty may arrise because the function is a 'compound' function (such as the Maxwell-Boltzmann distribution), or because the function has more than one variable (the Master equation in thermodynamics has both pressure and temperature as active variables).
+Some functions are more difficult to determine their 'rate of change' than those listed in Chapter \@ref(ch-Workshop4), and so we can use new 'rules' to help us determine this. This difficulty may arrise because the function is a 'compound' function (such as the Maxwell-Boltzmann distribution), or because the function has more than one variable (the Master equation in thermodynamics has both pressure and temperature as active variables).
 
 In this workshop we will recap the standard differentials previously studied, and expand on this so that we can determine, gradients, rates and turning points for more complicated functions.
 

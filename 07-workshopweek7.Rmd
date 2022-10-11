@@ -1,4 +1,4 @@
-# Week 7 - Complex & Imaginary Numbers {#ch:Workshop7}
+# Week 7 - Complex & Imaginary Numbers {#ch-Workshop7}
 
 ## Preliminary infomation {#sec:Prelim7}
 

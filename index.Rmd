@@ -29,14 +29,14 @@ The whole point of this course is to make you comfortable with maths in a chemis
 
 The topics for workshops each week are as follows:
 
-- Week \@ref(ch:Workshop1): Rearranging equations, units and standard form
-- Week \@ref(ch:Workshop2): Logarithms and exponentials
-- Week \@ref(ch:Workshop3): Tables and graphs
-- Week \@ref(ch:Workshop4): Calculus - differentiation - the basics and the chain rule
-- Week \@ref(ch:Workshop5): Calculus - differentiation - the product rule and partial differentiation
-- Week \@ref(ch:Workshop6): Calculus - integration - the basics and definite integrals
-- Week \@ref(ch:Workshop7): Real, imagininary and complex numbers
-- Week \@ref(ch:questions): Some more revision questions
+- Week \@ref(ch-Workshop1): Rearranging equations, units and standard form
+- Week \@ref(ch-Workshop2): Logarithms and exponentials
+- Week \@ref(ch-Workshop3): Tables and graphs
+- Week \@ref(ch-Workshop4): Calculus - differentiation - the basics and the chain rule
+- Week \@ref(ch-Workshop5): Calculus - differentiation - the product rule and partial differentiation
+- Week \@ref(ch-Workshop6): Calculus - integration - the basics and definite integrals
+- Week \@ref(ch-Workshop7): Real, imagininary and complex numbers
+- Week \@ref(ch-questions): Some more revision questions
 
 ## Report errors {-}
 
@@ -45,6 +45,8 @@ If you spot any errors or areas of lack of clarity, please message me in Teams o
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc83b-C0FsgDr5eQxvT-2NWwEtvOEwYU1WbLE4j53wWfUDIXQ/viewform?embedded=true" width="640" height="1242" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 ## Version history {-}
+
+Version 1.3 in progress October 2022.
 
 Version 1.2 in progress September 2021.
 

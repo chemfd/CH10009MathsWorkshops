@@ -1,4 +1,4 @@
-# Miscellaneous questions {#ch:questions}
+# Miscellaneous questions {#ch-questions}
 
 The following questions use skills you have learnt in this course. The skills you have learnt are no longer listed to make these more problem solving.
 

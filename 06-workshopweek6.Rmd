@@ -1,8 +1,8 @@
-# Week 6 - Integration {#ch:Workshop6}
+# Week 6 - Integration {#ch-Workshop6}
 
 ## Preliminary infomation {#sec:Prelim6}
 
-When introducing rearranging of equations in Chapters \@ref(ch:Workshop1) and \@ref(ch:Workshop2) we introduce the idea of inverse functions, and every function has an inverse. With differentiation the inverse process is integration, and as such if we differentiate a function, and then integrate the answer, we should end up with our original function again. Or if we integrate a function, then differentiate the answer we should again end up with our original function.
+When introducing rearranging of equations in Chapters \@ref(ch-Workshop1) and \@ref(ch-Workshop2) we introduce the idea of inverse functions, and every function has an inverse. With differentiation the inverse process is integration, and as such if we differentiate a function, and then integrate the answer, we should end up with our original function again. Or if we integrate a function, then differentiate the answer we should again end up with our original function.
 
 Our integral can also be thought of as a mechanism of determining the area under a line in a plot, (or between the function and the $x$-axis). There are a number of cases whereby determining the area under a line can give us more infomation about the system. For example the area under a '$pV$' plot is work done in changing the volume ((Section)Figure \@ref(fig:integral), see CH10137 thermodynamics).
 

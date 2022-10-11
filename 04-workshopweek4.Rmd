@@ -1,4 +1,4 @@
-# Week 4 {#ch:Workshop4}
+# Week 4 {#ch-Workshop4}
 
 ## Preliminary infomation {#sec:Prelim4}
 
@@ -656,7 +656,7 @@ determine expressions for how the intensity varies with:
 
 a. wavelength, λ
 a. distance from scatterer, r
-a. angle, ϕ (you won't be able to do this until Chapter \@ref(ch:Workshop5))
+a. angle, ϕ (you won't be able to do this until Chapter \@ref(ch-Workshop5))
 
 *formally these are partial derivatives and we will learn about them next week in section \@ref(subsec:partial)*
 

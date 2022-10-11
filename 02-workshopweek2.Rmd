@@ -1,4 +1,4 @@
-# Week 2 {#ch:Workshop2}
+# Week 2 {#ch-Workshop2}
 
 ## Preliminary infomation {#sec:Prelim2}
 
@@ -163,7 +163,7 @@ log_b A = \frac{\log_x A}{\log_x b}
 
 As we have seen previously every function has an inverse function, a function that we can use to 'undo' an action. For addition this inverse function is subtraction, for multiplication, division. In the case of exponents the inverse function is a logarithm (to the same base), and reciprically, the inverse function of a log is an exponential.
 
-We will use this later in the course when we look at generating linear $y=mx+c$ plots (Week \@ref(ch:Workshop3)), because exponetial functions are curved when plotted, and so many graphs which are plotted in chemistry have a $\ln$ of a function on the $y$ axis.
+We will use this later in the course when we look at generating linear $y=mx+c$ plots (Week \@ref(ch-Workshop3)), because exponetial functions are curved when plotted, and so many graphs which are plotted in chemistry have a $\ln$ of a function on the $y$ axis.
 
 ### A note on logs, exponentials and units
 
@@ -530,7 +530,7 @@ a. What mass of NaOH is required to neutralise the resulting solution?
 
 *Hint: w/w means weight-weight, i.e. the number of g in 100 g. In this case 38 g of HCl in 100 g total of mixture.*
 
-*Hint: you will need to think about units and rearranging equations from Week \@ref(ch:Workshop1).*
+*Hint: you will need to think about units and rearranging equations from Week \@ref(ch-Workshop1).*
 
 ### pK~a~ question. {#sec:pKa}
 

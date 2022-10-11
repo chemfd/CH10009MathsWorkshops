@@ -1,4 +1,4 @@
-# Week 1 - Rearranging equations and units{#ch:Workshop1}
+# Week 1 - Rearranging equations and units{#ch-Workshop1}
 
 ## Preliminary infomation {#sec:Prelim}
 
@@ -89,6 +89,8 @@ Table: (\#tab:nonSI) The relationship between some other common units and the SI
 | cal | energy | 4.184 J |
 | Cal | energy | 4.184 kJ |
 | Å | length | 1 × 10^-10^ m|
+
+The units torr or mm Hg are historic units of pressure which are still occassionally used in science due to how pressure is sometimes measured. It is an unusual unit as it is related to another non-SI measure of pressure, the *'atmosphere'*, 760 mm Hg (or torr) is the height of mercury measured when the external pressure is 1 atmosphere (or 101325 Pa). [An example of converting between torr and Pa can be found here](https://youtu.be/7HWLV0p5zv4) ([and the notes here](http://workitoutwithapencil.xyz/wp-content/uploads/2022/10/Unit-conversions-mmHg-to-Pa.pdf)).
 
 There are myriad other units in use, either with  historical or geographic preference, or just for niche purposes (where would we be without olympic swimming pools or London buses). Examples such as the mile, furlong or beard-second are all units of length.
 
@@ -397,7 +399,7 @@ Where available videos of worked examples are shown in hyperlinks with each answ
 1. 
     a. 3.4 × 10^-3^ mm;    3.4 × 10^-6^ m
     a. [0.2704 kg mol^-1^; 449.0 yg](https://www.youtube.com/embed/IKM6a3VxWKs)
-    a. 23.4 × 10^-3^ mg dm^−3^;    23.4 × 10^-3^ g m^−3^;   and 23.4 × 10^-6^ kg m^−3^
+    a. [23.4 × 10^-3^ mg dm^−3^;    23.4 × 10^-3^ g m^−3^;   and 23.4 × 10^-6^ kg m^−3^](https://youtu.be/UDHRzAC7BnQ) [link to notes](http://workitoutwithapencil.xyz/wp-content/uploads/2022/10/Q1.4.2.1.c.pdf)
     a. 17.5 × 10^-6^ Hz
     a. 0.5796 µm^-1^ and 5.796 × 10^5^ m^-1^
  
